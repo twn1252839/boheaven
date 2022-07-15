@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/Addhtml.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>電子游戲部落格 Page</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <script>PageHeader();</script>
+
+    <!-- 通用  ------------------------------------------------------------------------>
+
+    <!-- MD history.back ------------------------------------------------------------------------>
+    <div class="d-md-none w-100 py-1" style="background-color: #efeee0;">
+        <nav aria-label="breadcrumb">
+            <ul class="d-flex py-0 py-sm-1">
+                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                    <i class="fas fa-angle-left textCoffee fa-lg"></i>
+                </button>
+                <li class="breadcrumb-item"><a href="/index.html" class="textCoffee">首頁</a></li>
+                <li class="breadcrumb-item"><a href="/loginPage/loginPage.html" class="textCoffee">會員中心</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span class="textCoffee pl-2" id="copyTitle"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            let title = $('title').text();
+            $('#copyTitle').html(title);
+        });
+    </script>
+
+
+    <div class="container-fluid p-0 m-0 bgc-flex" style="background-image: url(../img/桌機index_img/BG1.png);">
+        <!--  -->
+        <div class="container py-3">
+            <div class="row pt-3 pb-5">
+                <div class="col-md-8 col-sm-12">
+                    <!--  -->
+                    <p class="w3-large text-123ts-color">娛樂城線上玩其實很安全？有這個前提才安心！</p>
+                    <p class="text-secondary pt-3 text-justify">聽說只要主機是設在國外，在台灣玩娛樂城就比較不會牽涉到法律的問題，
+                        這是真的嗎？就再次提到我們之前說過的前提，只要把主機設置在合法允許
+                        線上博弈的國家，其實就是合法的網路賭場了，玩起來就不會有太大的問題。</p>
+                    <p class="text-secondary pt-3 text-justify">為什麼這麼說呢？其實就像你去國外的真實賭場進行投注一樣，因為在當地
+                        合法，所以玩起來就不會有問題，所以在國外註冊的娛樂城，就像你在國外
+                        玩遊戲一樣，只是透過網路線上的方式來進行投注而已，其他比較可能牽涉
+                        法律上的問題其實是「賭」，也就是現金交易的部分。</p>
+
+                    <!--  -->
+                    <p class="pt-3 w3-large text-123ts-color">娛樂城玩到哪種容易有法律問題？</p>
+                    <p class="text-secondary pt-3 text-justify">聽說只要主機是設在國外，在台灣玩娛樂城就比較不會牽涉到法律的問題，
+                        這是真的嗎？就再次提到我們之前說過的前提，只要把主機設置在合法允許
+                        線上博弈的國家，其實就是合法的網路賭場了，玩起來就不會有太大的問題。</p>
+                    <p class="text-secondary pt-3 text-justify">為什麼這麼說呢？其實就像你去國外的真實賭場進行投注一樣，因為在當地
+                        合法，所以玩起來就不會有問題，所以在國外註冊的娛樂城，就像你在國外
+                        玩遊戲一樣，只是透過網路線上的方式來進行投注而已，其他比較可能牽涉
+                        法律上的問題其實是「賭」，也就是現金交易的部分。</p>
+                    <img src="/123ts/img/blog/img.png" alt="" class="img-fluid py-3">
+                </div>
+                <div class="d-none d-md-block border-left border-secondary col-3 ml-5">
+                    <p class="text-secondary" style="font-size: 1.35rem;">娛樂城最新文章</p>
+                    <p class="text-secondary py-2"><i class="fas fa-angle-right"></i> 娛樂城線上玩其實很安全？...</p>
+                    <p class="text-secondary py-2"><i class="fas fa-angle-right"></i> 娛樂城線上玩其實很安全？...</p>
+                    <p class="text-secondary py-2"><i class="fas fa-angle-right"></i> 娛樂城線上玩其實很安全？...</p>
+                    <p class="text-secondary py-2"><i class="fas fa-angle-right"></i> 娛樂城線上玩其實很安全？...</p>
+                    <p class="text-secondary py-2"><i class="fas fa-angle-right"></i> 娛樂城線上玩其實很安全？...</p>
+                    <p class="text-secondary py-2"><i class="fas fa-angle-right"></i> 娛樂城線上玩其實很安全？...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <script>PCFooter();</script>
+    <script>MDFooter();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

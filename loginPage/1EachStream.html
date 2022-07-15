@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/Addhtml.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>轉帳</title>
+    <style>
+        .gradientBtn {
+            background: linear-gradient(270deg, #bcad93 0%, #bc985e 100%);
+        }
+
+        .gradientBtnA {
+            background: #bc985e;
+        }
+
+        .modalBtn-active {
+            color: #fff;
+            background-color: #fd788e;
+            border-radius: 15px;
+        }
+
+        .textTitle {
+            color: #bc985e;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="d-md-none">
+        <script>
+            PageHeader();
+        </script>
+    </div>
+    <!-- MD history.back ------------------------------------------------------------------------>
+    <div class="d-md-none w-100 py-1" style="background-color: #efeee0;">
+        <nav aria-label="breadcrumb">
+            <ul class="d-flex py-0 py-sm-1">
+                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                    <i class="fas fa-angle-left textCoffee fa-lg"></i>
+                </button>
+                <li class="breadcrumb-item"><a href="../index.html" class="textCoffee">首頁</a></li>
+                <li class="breadcrumb-item"><a href="../loginPage/loginPage.html" class="textCoffee">會員中心</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span class="textCoffee pl-2" id="copyTitle"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="/js/history.js"></script>
+
+    <!-- MD -->
+    <div class="container-fluid p-0 m-0 d-md-none" style="background: url(../img/手機各分頁img/內頁/bg2.png);">
+        <!-- 轉帳 -->
+        <div class="row px-5 textWhite">
+            <!-- 左側 -->
+            <div class="col-12">
+                <!-- 1.從這轉帳 -->
+                <div class="uk-margin pt-5">
+                    <label class="" for="form-horizontal-select">
+                        <p class="">從這轉帳</p>
+                    </label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select h-auto text-123ts-color">
+                            <option>-請選擇 -</option>
+                            <option>主錢包</option>
+                            <option>歐伯</option>
+                            <option>SA</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- 2.轉帳去到 -->
+                <div class="uk-margin">
+                    <label class="" for="form-horizontal-select">
+                        <p class="">轉帳去到</p>
+                    </label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select h-auto">
+                            <option>-請選擇 -</option>
+                            <option>歐伯</option>
+                            <option>SA</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- 3.轉帳金額 -->
+                <div class="uk-margin">
+                    <label class="" for="form-horizontal-select">
+                        <p class="">轉帳金額</p>
+                    </label>
+                    <div class="">
+                        <input class="uk-input h-auto" type="text" placeholder="0.00">
+                    </div>
+                </div>
+                <!-- 4.轉帳 -->
+                <button class="uk-button text-light col-12 mx-auto uk-text-bold lp2 gradientBtnA"
+                    style="border-radius: 5px;" type="button">轉帳</button>
+            </div>
+            <!-- 右側 -->
+            <div class="col-12 py-3 px-5 bgWhite w3-round-medium mt-3">
+                <!-- 錢包 -->
+                <div class="row">
+                    <div class="col-6 text-secondary">錢包</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>餘額</span>
+                        <a href="#" class="btn p-0 m-0">
+                            <i class="fas fa-sync-alt w3-text-amber"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- 主錢包 -->
+                <div class="row">
+                    <div class="col-6 text-secondary">主錢包</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>10,000.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!-- 真人娛樂 -->
+                <div class="row border-bottom pt-3">
+                    <div class="col-6 textTitle">真人娛樂 :</div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">歐博百家樂</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">沙龍百家樂</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">DG百家樂</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">WM百家樂</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!-- 體育球版 -->
+                <div class="row border-bottom pt-3">
+                    <div class="col-6 textTitle">體育球版 :</div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">派大金體育</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">Super體育</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!-- 電子遊戲 -->
+                <div class="row border-bottom pt-3">
+                    <div class="col-6 textTitle">電子遊戲 :</div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">DT電子</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">KA電子</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">BNG電子</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">RTG電子</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">必贏電子</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">SimplePlay電子</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!-- 棋牌遊戲 -->
+                <div class="row border-bottom pt-3">
+                    <div class="col-6 textTitle">棋牌遊戲 :</div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">MG棋牌</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">皇家棋牌</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!-- 賓果彩票 -->
+                <div class="row border-bottom pt-3">
+                    <div class="col-6 textTitle">賓果彩票 :</div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">9K彩票</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">六合彩539</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!-- 捕魚王 -->
+                <div class="row border-bottom pt-3">
+                    <div class="col-6 textTitle">捕魚王 :</div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">KA電子</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">RTG電子</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">必贏電子</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row">
+                    <div class="col-6 text-secondary">SimplePlay電子</div>
+                    <div class="pr-2 text-secondary ml-auto">
+                        <span>0.00</span>
+                        <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
+                    </div>
+                </div>
+                <!-- 一鍵帶回 -->
+                <button style="border-radius: 5px;"
+                    class="gradientBtnA col-12 uk-button my-2 w3-round-medium text-light">一鍵帶回</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <div class="d-md-none">
+        <script>
+            indexLoginFooter();
+        </script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

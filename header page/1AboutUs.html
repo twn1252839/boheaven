@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/Addhtml.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>關於我們</title>
+    <style>
+        #img-switch .small-img a {
+            display: inline-block;
+        }
+
+        #img-switch img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <script>
+        PageHeader();
+    </script>
+
+    <!-- 通用  ------------------------------------------------------------------------>
+
+    <!-- MD history.back ------------------------------------------------------------------------>
+    <div class="d-md-none w-100 py-1" style="background-color: #efeee0;">
+        <nav aria-label="breadcrumb">
+            <ul class="d-flex py-0 py-sm-1">
+                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                    <i class="fas fa-angle-left textCoffee fa-lg"></i>
+                </button>
+                <li class="breadcrumb-item"><a href="/index.html" class="textCoffee">首頁</a></li>
+                <li class="breadcrumb-item"><a href="/loginPage/loginPage.html" class="textCoffee">會員中心</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span class="textCoffee pl-2" id="copyTitle"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        $(document).ready(function () {
+            let title = $('title').text();
+            $('#copyTitle').html(title);
+        });
+    </script>
+
+
+    <div class="container-fluid px-0 py-0 m-0 bgc-flex" style="background-image: url(../img/桌機index_img/bg2.png);">
+        <div class="container pb-3">
+            <!-- PC ------------------------------------------------------------------------>
+            <!-- title -->
+            <div class="col-12 centerCenter border-bottom-title uk-position-relative text-light">
+                <p class="w3-xlarge lp1 text-center font-weight-bold my-1">關於我們</p>
+            </div>
+            <!-- title設定 -->
+            <script>
+                $(document).ready(function () {
+                    const title = $('title').text();
+                    $('#title').text(title);
+                });
+            </script>
+            <!-- 關於我們 -->
+            <div class="row text-light w3-round-medium py-3">
+                <p class="p-3 text-justify">
+                    沙龍集團（SA Group）成立於 2014 年，是亞洲最新興的博彩娛樂集團，我們憑著數十位博彩專家的經驗與心血並結合網絡技術優勢
+                    成功打造出一個以百家樂遊戲為主的超級遊戲平台。卓越的平台功能與設計全以玩家使用點出發，包括首創超級多檯一目盡覽聚龍廳
+                    與快速廳的所有路紙，且可任選四桌或八桌的顯示模式、成功打造出一個以百家樂,運彩,賓果, 電子遊戲為主的超級遊戲平台，讓沙龍
+                    平台推出便成為在業界嶄露頭角的後起之秀。
+                </p>
+            </div>
+            <!-- pc牌照+獎項 -->
+            <div class="row text-light w3-round-medium py-3 px-5 d-none d-md-block">
+                <div class="col-12">
+                    <img src="../img/桌機各分頁img/內頁/關於我們/t1-3.png" alt="">
+                </div>
+                <div class="col-12 pt-5">
+                    <img src="../img/桌機各分頁img/內頁/關於我們/t2-3.png" alt="">
+                </div>
+            </div>
+            <!-- md牌照+獎項 -->
+            <div class="row text-light w3-round-medium py-3 px-5 d-md-none">
+                <div class="col-12 centerCenter">
+                    <img src="../img/手機各分頁img/內頁/關於我們/mdt1-1.png" alt="">
+                </div>
+                <div class="col-12 pt-3">
+                    <img src="../img/手機各分頁img/內頁/關於我們/mdt1-2.png" alt="">
+                </div>
+                <div class="col-12 centerCenter pt-3">
+                    <img src="../img/手機各分頁img/內頁/關於我們/mdt2-1.png" alt="">
+                </div>
+                <div class="col-12 pt-3">
+                    <img src="../img/手機各分頁img/內頁/關於我們/mdt2-2.png" alt="">
+                </div>
+            </div>
+            <!-- 攝影棚 -->
+            <div class="col-12 centerCenter border-bottom-title uk-position-relative text-light">
+                <p class="w3-xlarge lp1 text-center font-weight-bold my-1">真人攝影棚</p>
+            </div>
+            <!-- pc攝影棚 -->
+            <div id="BOX" class="pt-4 centerCenter">
+                <img src="../img/桌機各分頁img/內頁/關於我們/small1.png" width="686" height="387" id="BIG"
+                    style="border: #fff solid 2px; padding: 2px;">
+                <div id="SMALL" class="centerCenter">
+                    <img src="../img/桌機各分頁img/內頁/關於我們/small1.png" width="140" class="pt-2" id="SS1" alt="cling images"
+                        title="攝影1">
+                    <img src="../img/桌機各分頁img/內頁/關於我們/small2.png" width="140" class="pt-2" id="SS2" alt="cling images"
+                        title="攝影2">
+                    <img src="../img/桌機各分頁img/內頁/關於我們/small3.png" width="140" class="pt-2" id="SS3" alt="cling images"
+                        title="攝影3">
+                    <img src="../img/桌機各分頁img/內頁/關於我們/small4.png" width="140" class="pt-2" id="SS4" alt="cling images"
+                        title="攝影4">
+                </div>
+            </div>
+            <div class="row text-light w3-round-medium pb-5">
+                <p class="p-3 text-justify pb-5">
+                    SA Gaming 的真人攝影棚位處歐洲，匯聚東方及西方的特色，為客戶及其玩家還原真實的遊戲體驗。我們攝影棚的遊戲經多個司法管
+                    轄區認可的第三方遊戲認證機構 GLI 的測試及認證，從專業的荷官到全天候現場監控，我們的真人攝影棚是線上娛樂的理想之選。
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <script>
+        PCFooter();
+    </script>
+    <script>
+        MDFooter();
+    </script>
+    <script>
+        $(function () {
+            $("#SMALL img").click(function () {
+                var N = $(this).attr("id").substr(2);
+                $("#BIG").attr("src", "../img/桌機各分頁img/內頁/關於我們/small" + N + ".png");
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

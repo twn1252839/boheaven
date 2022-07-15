@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/Addhtml.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>會員中心</title>
+    <style>
+        .gradientBtn {
+            background: linear-gradient(270deg, #bcad93 0%, #bc985e 100%);
+        }
+
+        .gradientBtnA {
+            background: linear-gradient(270deg, #bcad93 0%, #bc985e 100%);
+        }
+
+        .modalBtn-active {
+            color: #fff;
+            background-color: #bc985e;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="d-md-none">
+        <script>PageHeader();</script>
+    </div>
+    <!-- MD history.back ------------------------------------------------------------------------>
+    <div class="d-md-none w-100 py-1" style="background-color: #efeee0;">
+        <nav aria-label="breadcrumb">
+            <ul class="d-flex py-0 py-sm-1">
+                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                    <i class="fas fa-angle-left textCoffee fa-lg"></i>
+                </button>
+                <li class="breadcrumb-item"><a href="../index.html" class="textCoffee">首頁</a></li>
+                <li class="breadcrumb-item"><a href="../loginPage/loginPage.html" class="textCoffee">會員中心</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span class="textCoffee pl-2" id="copyTitle"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="/js/history.js"></script>
+
+    <!-- MD -->
+    <div class="container-fluid p-0 m-0 d-md-none" style="background: url(../img/手機各分頁img/內頁/bg2.png);">
+        <div class="container-fluid p-0 d-md-none" style="background: #bc985e;">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-6 centerCenter">
+                        <img src="../img/手機各分頁img/內頁/會員中心/頭像.png" class="img-fluid" alt="">
+                        <div class="d-flex centerCenter">
+                            <p class="text-center">玩家</p>
+                                <span class="textWhite">#00878</span>
+                        </div>
+                    </div>
+                    <div class="col-6 centerCenter">
+                        <div class="py-1">
+                            <img src="../img/手機各分頁img/內頁/會員中心/vip.png" class="img-fluid" alt="">
+                            <span>帳號</span>
+                            <span class="textWhite">#00878</span>
+                        </div>
+                        <div class="py-1">
+                            <img src="../img/手機各分頁img/內頁/會員中心/錢.png" class="img-fluid" alt="">
+                            <span class="textWhite">100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0 d-md-none bgc2 bgc-flex">
+            <div class="container">
+                <!--  -->
+                <div class="row p-3" style="align-items: center;">
+                    <div class="col-12 bgWhite py-2">
+                        <div class="row py-2">
+                            <div class="col-4 centerCenter">
+                                <a href="../loginPage/2DepositWthdrawal.html">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/存款.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-4 centerCenter">
+                                <a href="../loginPage/1EachStream.html">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/平台轉帳.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-4 centerCenter">
+                                <a href="../loginPage/2DepositWthdrawal.html">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/提款.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row p-3" style="align-items: center;">
+                    <div class="col-12 bgWhite pt-2 pb-5">
+                        <div class="row py-2 mx-2 border-bottom border-secondary">
+                            <div class="col-8 centerCenter">
+                                <a href="../loginPage/3memberProfile.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/會員.png" alt="">
+                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">會員資料</span>
+                                </a>
+                            </div>
+                            <div class="col-4 centerCenter">
+                                <a href="../loginPage/3memberProfile.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2 mx-2 border-bottom border-secondary">
+                            <div class="col-8 centerCenter">
+                                <a href="../loginPage/4changePassword.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/更改.png" alt="">
+                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">更改密碼</span>
+                                </a>
+                            </div>
+                            <div class="col-4 centerCenter">
+                                <a href="../loginPage/4changePassword.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2 mx-2 border-bottom border-secondary">
+                            <div class="col-8 centerCenter">
+                                <a href="../loginPage/5TransactionRecord.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/紀錄.png" alt="">
+                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">交易紀錄</span>
+                                </a>
+                            </div>
+                            <div class="col-4 centerCenter">
+                                <a href="../loginPage/5TransactionRecord.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2 mx-2 border-bottom border-secondary">
+                            <div class="col-8 centerCenter">
+                                <a href="../loginPage/6EachStream.html.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/流水.png" alt="">
+                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">各廳流水</span>
+                                </a>
+                            </div>
+                            <div class="col-4 centerCenter">
+                                <a href="../loginPage/6EachStream.html.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2 mx-2 border-bottom border-secondary">
+                            <div class="col-8 centerCenter">
+                                <a href="../header page/1AboutUs.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/關於.png" alt="">
+                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">關於我們</span>
+                                </a>
+                            </div>
+                            <div class="col-4 centerCenter">
+                                <a href="../header page/1AboutUs.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row py-2 mx-2">
+                            <div class="col-8 centerCenter">
+                                <a href="../index.html" style="text-decoration:none;">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/登出.png" alt="">
+                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">登出&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                                </a>
+                            </div>
+                            <div class="col-4 centerCenter">
+                                <a href="/index.html">
+                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <div class="d-md-none">
+        <script>MDFooter();</script>
+        <!-- <script>indexLoginFooter();</script> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
