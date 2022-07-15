@@ -159,7 +159,7 @@ p {
 }
 
 .textCoffee {
-  color: #bc985e;
+  color: #365a97;
 }
 
 .textCoffee2 {
@@ -175,7 +175,7 @@ p {
 }
 
 .bgCoffee {
-  background: #bc985e;
+  background: #365a97;
 }
 
 .bgCoffee2 {
@@ -189,15 +189,22 @@ p {
 }
 
 .text-theme {
-  color: #bc985e;
+  color: #365a97;
 }
 
 .bg-theme {
-  background-color: #bc985e;
+  background-color: #f1f8ff;
+}
+.bg-theme2 {
+  background-color: #eee;
+}
+
+.bg-gradient-theme {
+  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
 }
 
 .bd-theme {
-  border-color: #bc985e !important;
+  border-color: #365a97 !important;
 }
 
 .Blog-name-active:hover {
@@ -282,7 +289,7 @@ p {
 }
 
 .border-bottom-title {
-  border-bottom: 2px solid #bc985e;
+  border-bottom: 2px solid #365a97;
 }
 
 .rowEllipsis2 {

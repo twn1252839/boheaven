@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+  .marquee_s {
+    width: 12% !important;
+  }
+  .marquee_b {
+    width: 70% !important;
+  }
+}
+.marquee_s {
+  width: 5%;
+}
+.marquee_b {
+  width: 90%;
+}
+
+/* uk-------------------- */
+.uk-tab > .uk-active > a {
+  /* color: #333; */
+  border-color: transparent;
+}
+
+.font_b {
+  font-weight: 900;
+}

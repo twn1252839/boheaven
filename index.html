@@ -34,11 +34,12 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index-main.css">
 
     <!-- vue -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
 
-    <title>SA36</title>
+    <title>Boheaven</title>
     <style>
         ::-webkit-scrollbar {
             /* display: none; */
@@ -87,20 +88,21 @@
         }
 
         .uk-tab>.uk-active>a {
-            color: #fff;
+            /* color: #fff;
             border-color: #bc985e;
-            background-color: #bc985e;
+            background-color: #bc985e; */
+            filter: blur(0);
         }
 
-        .uk-tab>*>a {
+        /* .uk-tab>*>a {
             color: #bc985e;
             font-size: 1.2rem;
-        }
+        } */
 
-        .uk-tab>*>a:hover {
+        /* .uk-tab>*>a:hover {
             background-color: #bc985e;
             color: #fff;
-        }
+        } */
 
         .card {
             border: 0px solid;
@@ -210,7 +212,7 @@
 
     <!-- 手機板 header ------------------------------------------------------------------------>
     <!-- MD Navigation Bars ------------------------------------>
-    <div class="container-fluid p-0 d-md-none bgc-flex position-fixed fixed-top" id="hi5">
+    <div class="container-fluid p-0 d-md-none bgc-flex position-fixed fixed-top bg-light" id="hi5">
         <div class="container">
             <div class="row py-1" style="align-items: center;">
                 <!-- 漢堡圖 -->
@@ -327,42 +329,24 @@
                 </div>
                 <!-- 登入 -->
                 <div class="col-6 p-0 col-md-4 text-right">
-                    <a href=" ./page/indexLoginPage.html"><input
+                    <!-- <a href=" ./page/indexLoginPage.html"><input
                             class="btn rounded py-1 input-size font-weight-bold text-light"
                             style="background: linear-gradient(180deg, #57D7FF 0%, #1E50A6 100%);" type="submit"
-                            value="登入"></a>
+                            value="登入"></a> -->
                     <a href="./header page/Signup.html" target="_black"><input
                             class="btn py-1 input-size font-weight-bold"
                             style="background: linear-gradient(180deg, #F8E98E 0%, #F2D06F 100%);" type="button"
-                            value="註冊"></a>
+                            value="登出"></a>
+                    <!-- <a href="./header page/Signup.html" target="_black"><input
+                            class="btn py-1 input-size font-weight-bold"
+                            style="background: linear-gradient(180deg, #F8E98E 0%, #F2D06F 100%);" type="button"
+                            value="註冊"></a> -->
                 </div>
                 <!-- 24HR客服 -->
                 <div class="col-2 col-md-2 p-2 uk-position-relative">
-                    <div class="text-right px-2"><img id="hrServiceBtn" src="./img/手機index_img/Subtract.png" alt=""
-                            class="img-fluid" data-toggle="modal" data-target="#exampleModal"></div>
-                </div>
-                <!-- 24HR客服 Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content mx-auto w-75"
-                            style="position: fixed !important;top: 6% !important; left: 10% !important;right: 10% !important;">
-                            <!-- 聯繫我們 -->
-                            <div class="modal-header bg-theme">
-                                <p class="modal-title m-auto text-light" id="exampleModalLabel"
-                                    style="font-size: 1.2rem !important;">聯繫我們
-                                </p>
-                            </div>
-                            <!-- img -->
-                            <div class="modal-body p-0">
-                                <img src="./img/手機index_img/客服側邊-02.png" alt="" class="w-100">
-                            </div>
-                            <!-- Close -->
-                            <div class="w-100 bg-theme">
-                                <div class="py-2 text-center text-light" data-dismiss="modal">Close</div>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="./page/Bingo.html" class="text-right px-2"><img id="hrServiceBtn"
+                            src="./img/手機index_img/Subtract.png" alt="" class="img-fluid" data-toggle="modal"
+                            data-target="#exampleModal"></a>
                 </div>
             </div>
         </div>
@@ -405,12 +389,12 @@
     <div class="container-fluid p-0 m-0 bgc-body-color">
         <div class="container bgc-flex" style="background:url(./img/手機index_img/marqueeBG1.png);">
             <div class="row p-0 m-0">
-                <div class="text-center" style="width: 12%;padding-top: 0.1em;">
+                <div class="text-center marquee_s" style="padding-top: 0.1em;">
                     <img src="./img/手機index_img/marqueeA.png" class="img-fluid" alt="">
                 </div>
-                <div class="" style="width: 70%;">
-                    <marquee direction="left" height="30" scrollamount="5" behavior="left"
-                        class="w3-text-brown h-100 pt-1" onmouseover="this.stop()" onmouseout="this.start()">
+                <div class="marquee_b">
+                    <marquee direction="left" height="30" scrollamount="10" behavior="left"
+                        class="text-theme h-100 pt-1" onmouseover="this.stop()" onmouseout="this.start()">
                         【維護公告】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
                         開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
                         敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】
@@ -418,474 +402,278 @@
                         親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
                     </marquee>
                 </div>
-                <div class="text-center" style="width: 12%;padding-top: 0.1em;">
+                <div class="text-center marquee_s" style="padding-top: 0.1em;">
                     <a href="./page/indexLogin.html"><input class="btn py-0 px-3 rounded-pill
- text-center font-weight-bold text-light" style="background: linear-gradient(180deg, #57D7FF 0%, #1E50A6 100%);"
+ text-center font-weight-bold text-light fsz-08"
+                            style="background: linear-gradient(180deg, #57D7FF 0%, #1E50A6 100%);height: 65%;"
                             type="submit" value="更多"></a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- 手機會員 -->
+    <div class="container-fluid">
+        <div class="row text-theme py-2 font-weight-bold">
+            <div class="col-8"><span>會員: 0987123654
+                    <img style="width: 20%;" class=""
+                        src="data:image/png;base64,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"
+                        alt="..."></span> </div>
+            <div class="col-4">$3,000.00
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </div>
     <!-- 遊戲廳 -->
-    <div class="container-fluid p-0 bgc-flex"
-        style="background: url(./img/桌機index_img/bg1-1.png) #000 top center no-repeat;background-size:cover;">
-        <div class="container pb-3 pt-3 pt-lg-5">
-            <div class="row centerCenter">
-                <ul uk-tab class="row w-100 ">
-                    <li class="col-2 p-0"><a href="#">真人</a></li>
-                    <li class="col-2 p-0"><a href="#">體育</a></li>
-                    <li class="col-2 p-0"><a href="#">賓果</a></li>
-                    <li class="col-2 p-0"><a href="#">棋牌</a></li>
-                    <li class="col-2 p-0"><a href="#">電子</a></li>
-                    <li class="col-2 p-0"><a href="#">捕魚</a></li>
+    <div class="container-fluid p-0 bg-theme">
+        <div class="container" style="height: 95vh;">
+            <div class="row mx-auto justify-content-center pt-3">
+                <ul uk-tab class="col-3 flex-column" style="left: -2%;">
+                    <li class="p-0 card_c"><a href="#" class="p-0"><img src="./img/手機index_img/game1active.png"
+                                alt=""></a>
+                    </li>
+                    <li class="p-0 card_c uk-blend-luminosity"><a href="#" class="p-0"><img
+                                src="./img/手機index_img/game2active.png" alt=""></a></li>
+                    <li class="p-0 card_c uk-blend-luminosity"><a href="#" class="p-0"><img
+                                src="./img/手機index_img/game3active.png" alt=""></a></li>
+                    <li class="p-0 card_c uk-blend-luminosity"><a href="#" class="p-0"><img
+                                src="./img/手機index_img/game4active.png" alt=""></a></li>
+                    <li class="p-0 card_c uk-blend-luminosity"><a href="#" class="p-0"><img
+                                src="./img/手機index_img/game5active.png" alt=""></a></li>
+                    <li class="p-0 card_c uk-blend-luminosity"><a href="#" class="p-0"><img
+                                src="./img/手機index_img/game6active.png" alt=""></a></li>
                 </ul>
 
-                <ul class="uk-switcher pb-3 w-100">
+                <ul class="uk-switcher col-9">
                     <!-- 百家樂 -->
                     <li>
-                        <div class="row pt-3 pt-lg-0 centerCenter">
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                        <div class="row p-0">
+                            <div class="col-6 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/百家樂/sa真人-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/baccarat/baccarat_DG.png" alt="" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                            <div class="col-6 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/百家樂/歐博真人-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/baccarat/baccarat_Ober.png" alt=""
+                                        class="img-fluid">
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                            <div class="col-6 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/百家樂/dg真人-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/baccarat/baccarat_SA.png" alt="" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                            <div class="col-6 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/百家樂/wm真人-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/baccarat/baccarat__WM.png" alt=""
+                                        class="img-fluid">
                                 </a>
                             </div>
+                            <div class="col-6 col-md-3 p-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/手機index_img/game/baccarat/baccarat_OB.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 p-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/手機index_img/game/baccarat/baccarat_OG.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+
+
                         </div>
                     </li>
                     <!-- 體育 -->
                     <li>
-                        <div class="row pt-3 pt-lg-0 centerCenter">
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                        <div class="row">
+                            <div class="col-12 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/體育/super體育-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/sport/sport1.png" alt="" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                            <div class="col-12 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/體育/sa體育-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/sport/sport2.png" alt="" class="img-fluid">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <!-- 賓果 -->
                     <li>
-                        <div class="row pt-3 pt-lg-0 centerCenter">
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                        <div class="row">
+                            <div class="col-12 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/賓果/super彩票-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/bingo/bingo1.png" alt="" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                            <div class="col-12 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/體育/sa體育-2.png" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- 棋牌 -->
-                    <li>
-                        <div class="row pt-3 pt-lg-0 centerCenter">
-                            <div class="col-6 col-md-3 my-1 my-md-0">
-                                <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/棋牌/皇家棋牌-2.png" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
-                                <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/棋牌/mg棋牌-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/bingo/bingo2.png" alt="" class="img-fluid">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <!-- 電子 -->
                     <li>
-                        <div class="row pt-3 pt-lg-0 centerCenter">
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                        <div class="row p-0">
+                            <div class="col-6 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/電子/dt電子-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/slot/slot1.png" alt="" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                            <div class="col-6 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/電子/必贏電子-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/slot/slot2.png" alt="" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                            <div class="col-6 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/電子/sp電子-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/slot/slot3.png" alt="" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                            <div class="col-6 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/電子/rtg電子-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/slot/slot4.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 p-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/手機index_img/game/slot/slot5.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 p-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/手機index_img/game/slot/slot6.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <!-- 棋牌 -->
+                    <li>
+                        <div class="row">
+                            <div class="col-12 col-md-3 p-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/手機index_img/game/card/card1.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-3 p-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/手機index_img/game/card/card2.png" alt="" class="img-fluid">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <!-- 捕魚 -->
                     <li>
-                        <div class="row pt-3 pt-lg-0 centerCenter">
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                        <div class="row">
+                            <div class="col-12 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/捕魚/dt捕魚-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/fish/fish1.png" alt="" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
+                            <div class="col-12 col-md-3 p-0">
                                 <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/捕魚/必贏捕魚-2.png" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
-                                <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/捕魚/sp捕魚-2.png" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="col-6 col-md-3 my-1 my-md-0">
-                                <a href="#" class="btn p-0">
-                                    <img src="./img/桌機index_img/GAME/捕魚/rtg捕魚-2.png" alt="" class="img-fluid">
+                                    <img src="./img/手機index_img/game/fish/fish2.png" alt="" class="img-fluid">
                                 </a>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
+            <div class="row">
+                <div id="arrowDown" class="col h5 font-weight-bold text-secondary text-center"
+                    style="padding-top: 100px;">
+                    <img src="./img/手機index_img/arrowDown.png" alt="">
+                    往下滑看更多
+                </div>
+            </div>
         </div>
     </div>
     <!-- 活動 + 關於我們 -->
-    <div class="container-fluid p-0 m-0 bgc-flex-SA" style="background:url(./img/桌機index_img/bg2.png)">
-        <div class="container">
-            <!-- 活動 -->
-            <div class="row centerCenter py-3 text-light">
-                <!-- title -->
-                <div class="col-12 centerCenter border-bottom-title uk-position-relative">
-                    <p class="w3-xlarge lp1 text-center font-weight-bold my-1">活動花絮</p>
-                    <a href="./header page/Activity.html"
-                        class="uk-position-absolute uk-position-center-right lead text-white-50 w3-hover-text-white">
-                        更多>>
-                    </a>
-                </div>
-                <!-- card -->
-                <div class="row py-3">
-                    <div class="col-12 col-md-6 col-lg-4 my-2 my-md-3 my-lg-0">
-                        <div class="card">
-                            <img src="./img/桌機index_img/活動花絮1.png" class="card-img-top img-fluid" alt="">
-                            <div class="card-body p-0" style="background-color: #EFEEE0;">
-                                <div class="row m-0">
-                                    <p class="bg-theme px-3">2019</p>
-                                    <div class="col-12 px-4 py-1">
-                                        <p class="text-theme font-weight-bold w3-large">PAGE 2019</p>
-                                        <p class="text-secondary w3-small">2019/07/12 - 2019/07/14</p>
-                                        <p class="text-dark rowEllipsis2 font-weight-bold w3-medium">亞博會2020圓滿結束!
-                                            感謝各位到訪的貴賓。點進來看看我們精彩片段吧!</p>
-                                    </div>
-                                    <a href="./header page/ActivityPage.html" class="btn centerCenter font-weight-bold bg-theme text-light mb-2 px-3
-                                        ">了解更多</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-2 my-md-3 my-lg-0 d-none d-md-block">
-                        <div class="card">
-                            <img src="./img/桌機index_img/活動花絮2.png" class="card-img-top img-fluid" alt="">
-                            <div class="card-body p-0" style="background-color: #EFEEE0;">
-                                <div class="row m-0">
-                                    <p class="bg-theme px-3">2027</p>
-                                    <div class="col-12 px-4 py-1">
-                                        <p class="text-theme font-weight-bold w3-large">G2E Asia 2017</p>
-                                        <p class="text-secondary w3-small">2017/05/16 - 2017/05/18</p>
-                                        <p class="text-dark rowEllipsis2 font-weight-bold w3-medium">SA Gaming
-                                            連續第二年參展亞洲國際博彩娛樂展會(G2E
-                                            Asia)。按此
-                                            了解更多盞會相關資訊。</p>
-                                    </div>
-                                    <a href="./header page/ActivityPage.html" class="btn centerCenter font-weight-bold bg-theme text-light mt-1 mb-2 px-3 c12
-                                        ">了解更多</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-2 my-md-3 my-lg-0 d-none d-md-block">
-                        <div class="card">
-                            <img src="./img/桌機index_img/活動花絮3.png" class="card-img-top img-fluid" alt="">
-                            <div class="card-body p-0" style="background-color: #EFEEE0;">
-                                <div class="row m-0">
-                                    <p class="bg-theme px-3">2020</p>
-                                    <div class="col-12 px-4 py-1">
-                                        <p class="text-theme font-weight-bold w3-large">ICE London 2020</p>
-                                        <p class="text-secondary w3-small">2020/02/04 - 2020/02/06</p>
-                                        <p class="text-dark rowEllipsis2 font-weight-bold w3-medium">ICE London2020
-                                            圓滿結束!衷心感謝各位貴賓的來臨!看我們籌備展覽
-                                            的過程以及展期亮點!</p>
-                                    </div>
-                                    <a href="./header page/ActivityPage.html" class="btn centerCenter font-weight-bold bg-theme text-light mt-1 mb-2 px-3 c12
-                                        ">了解更多</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+    <div id="arrowDownList" class="container-fluid p-0 m-0 bg-theme">
+        <div class="container" style="padding-bottom: 350px;">
+            <p class="text-theme font_b h5">關於我們</p>
+            <div class="text-center py-3">
+                <img src="./img/桌機index_img/logo.png" class="w-75" alt="">
             </div>
-            <!-- 關於我們 -->
-            <div class="row centerCenter py-3 text-light">
-                <!-- title -->
-                <div class="col-12 centerCenter border-bottom-title w3-xlarge lp1 font-weight-bold">
-                    關於我們</div>
-
-                <div class="col-12">
-                    <!-- <p class="my-3 w3-large">
-                        SA Gaming 是亞洲實力非凡的線上娛樂平台供應商。SA Gaming 為客戶提供以尖端科技研發的一系列
-                        真人遊戲，包括百家樂等。
-                    </p>
-                    <p class="my-3 w3-large">
-                        每款遊戲均經 SA Gaming 的專業人員精心研發，並提供全面的支援服務，深受各地玩家歡迎。
-                    </p>
-                    <p class="my-3 w3-large">
-                        SA Gaming 榮獲 Malta Gaming Awards 的「年度最佳亞洲平台供應商」，以及 IGA 2020 的「年度最佳
-                        真人娛樂場」大獎，實力備受業界肯定。
-                    </p> -->
-                    <div class="row">
-                        <p class="my-3 w3-large col-12 col-md-6 col-lg-12 order-md-0">
-                            SA Gaming 是亞洲實力非凡的線上娛樂平台供應商。SA Gaming 為客戶提供以尖端科技研發的一系列
-                            真人遊戲，包括百家樂等。
-                        </p>
-                        <p class="my-3 w3-large col-12 col-md-6 col-lg-12 order-md-2">
-                            每款遊戲均經 SA Gaming 的專業人員精心研發，並提供全面的支援服務，深受各地玩家歡迎。
-                        </p>
-                        <p class="my-3 w3-large col-12 col-md-6 col-lg-12 orm1">
-                            SA Gaming 榮獲 Malta Gaming Awards 的「年度最佳亞洲平台供應商」，以及 IGA 2020 的「年度最佳
-                            真人娛樂場」大獎，實力備受業界肯定。
-                        </p>
-                    </div>
-                </div>
+            <div class="text-center py-3">
+                <img src="./img/手機index_img/arrowDownList/1.png" class="img-fluid" alt="">
             </div>
+            <p class="text-theme font_b h5">官網加入</p>
+            <div class="text-center py-3">
+                <img src="./img/手機index_img/arrowDownList/2.png" class="img-fluid" alt="">
+                <img src="./img/手機index_img/arrowDownList/3.png" class="img-fluid" alt="">
+                <img src="./img/手機index_img/arrowDownList/4.png" class="img-fluid" alt="">
+                <img src="./img/手機index_img/arrowDownList/5.png" class="img-fluid" alt="">
+                <img src="./img/手機index_img/arrowDownList/6.png" class="img-fluid" alt="">
+            </div>
+            <p class="text-theme font_b h5">博天堂優勢</p>
+            <p class="text-theme font_b h5">娛樂城存提</p>
+            <p class="text-theme font_b h5">娛樂城Q&A</p>
+            <ul uk-accordion="collapsible: false">
+                <li>
+                    <a class="uk-accordion-title" href="#">Item 1</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Item 2</a>
+                    <div class="uk-accordion-content">
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat. Duis aute irure dolor reprehenderit.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Item 3</a>
+                    <div class="uk-accordion-content">
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            Excepteur sint occaecat cupidatat proident.</p>
+                    </div>
+                </li>
+            </ul>
+            <ul uk-accordion>
+                <li>
+                    <a class="uk-accordion-title" href="#">Item 1</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">Item 2</a>
+                    <div class="uk-accordion-content">
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat. Duis aute irure dolor reprehenderit.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Item 3</a>
+                    <div class="uk-accordion-content">
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            Excepteur sint occaecat cupidatat proident.</p>
+                    </div>
+                </li>
+            </ul>
+
+
         </div>
     </div>
-    <!-- 全方位服務 -->
-    <div class="container-fluid p-0 m-0 bgc-flex-SA" style="background:url(./img/桌機index_img/bg3.png) #000;">
-        <div class="container">
-            <!--  -->
-            <div class="row centerCenter py-3 text-light">
-                <!-- title -->
-                <div class="col-12 centerCenter border-bottom-title w3-xlarge lp1 font-weight-bold">
-                    全方位服務</div>
 
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-6 col-md-3 my-2 my-md-0">
-                            <div class="row py-3">
-                                <div class="col-12 centerCenter py-3">
-                                    <img src="./img/桌機index_img/F服務1.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col-12 py-3 centerCenter">
-                                    <p class="titleChange centerCenter py-1 text-theme">強大後台管理</p>
-                                    <p class="rowEllipsis3">
-                                        不論是實時運營數據，還是管理工具，我們強大的後台系統都應有盡有，有助您了解及評估娛樂場的運營表現，更有效管理業務。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 my-2 my-md-0">
-                            <div class="row py-3">
-                                <div class="col-12 centerCenter py-3">
-                                    <img src="./img/桌機index_img/F服務2.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col-12 py-3 centerCenter">
-                                    <p class="titleChange text-center py-1 text-theme">全天候技術支援</p>
-                                    <p class="rowEllipsis3">我們的專業團隊作您後盾，隨時隨地提供援
-                                        助。確保遊戲產品運行暢順，是我們對客戶
-                                        的最大承諾。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 my-2 my-md-0">
-                            <div class="row py-3">
-                                <div class="col-12 centerCenter py-3">
-                                    <img src="./img/桌機index_img/F服務3.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col-12 py-3 centerCenter">
-                                    <p class="titleChange text-center py-1 text-theme">錢包集成方案</p>
-                                    <p class="rowEllipsis3">備有單一錢包集成方案及轉賬錢包集成方案
-                                        ，您可按業務需要選擇合適方案，而兩款方
-                                        案均容許玩家靈活運用帳戶資金，便利娛樂
-                                        為您造就源源收益。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 my-2 my-md-0">
-                            <div class="row py-3">
-                                <div class="col-12 centerCenter py-3">
-                                    <img src="./img/桌機index_img/F服務4.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col-12 py-3 centerCenter">
-                                    <p class="titleChange text-center py-1 text-theme">線上24小時客服</p>
-                                    <p class="rowEllipsis3">我們的客服人員全天候聆聽您的需要和意見
-                                        歡迎與我們聯絡，讓我們能更好地服務您！</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 獎盃 -->
-    <div class="container-fluid p-0 m-0 bgc-flex-SA" style="background:url(./img/桌機index_img/bg4.png) #000;">
-        <div class="container">
-            <div class="row centerCenter py-0 py-md-3">
-                <!--  -->
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12 col-md-4 centerCenter">
-                            <img src="./img/桌機index_img/C獎狀.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-12 col-md-8 my-0 my-md-auto centerCenter py-3">
-                            <p class="w3-xlarge text-center py-1 text-theme">牌照及機構認證</p>
-                            <p class="text-center text-light">SA Gaming 獲得世界各地專業認證機構的認證，所有產品均符合相關法律及技術規格的要求。 我們榮獲菲律賓 PAG
-                                COR 頒發的牌照我們各款真人遊戲已通過全球超過 400個司法管轄區認可的第三方遊戲認證機構 GLI 的軟件測試。</p>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12 col-md-4 centerCenter order-md-2">
-                            <img src="./img/桌機index_img/C0獎盃.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-12 col-md-8 my-0 my-md-auto centerCenter order-md-1 py-3">
-                            <p class="w3-xlarge text-center py-1 text-theme">獎項</p>
-                            <p class="text-center text-light">SA Gaming 擁有業界最優秀的人才，創造出無數大熱產品，服務質素傲視同儕，並獲得多項大獎，廣受業界認可。
-                            </p>
-                            <div class="row py-3">
-                                <!--  -->
-                                <div class="col-4 my-auto centerCenter">
-                                    <img src="./img/桌機index_img/C2獎項1.png" class="img-fluid" alt="">
-                                </div>
-                                <!--  -->
-                                <div class="col-4 my-auto centerCenter">
-                                    <img src="./img/桌機index_img//C1獎項2.png" class="img-fluid" alt="">
-                                </div>
-                                <!--  -->
-                                <div class="col-4 my-auto centerCenter">
-                                    <img src="./img/桌機index_img/C3獎項3.png" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog -->
-                <div class="d-none d-md-block">
-                    <div class="row py-3 clearfix"
-                        style="color: rgb(255, 255, 255, 0.8);justify-content: space-between;">
-                        <!-- title -->
-                        <div class="col-12 centerCenter mb-5 border-bottom-title w3-xlarge lp1 font-weight-bold">
-                            娛樂城文章</div>
-                        <!--  -->
-                        <div class="my-1 col-12 blogStyle  py-2">
-                            <a href="./blog/AllBlog.html"
-                                class="float-left btn w3-text-white w3-hover-text-orange">歐博app下載教學</a>
-                            <span class="float-right btn text-light" style="cursor:auto;">2021/03/08</span>
-                        </div>
-                        <!--  -->
-                        <div class="my-1 col-12 blogStyle  py-2">
-                            <a href="./blog/AllBlog.html"
-                                class="float-left btn w3-text-white w3-hover-text-orange">歐博app下載教學</a>
-                            <span class="float-right btn text-light" style="cursor:auto;">2021/03/08</span>
-                        </div>
-                        <!--  -->
-                        <div class="my-1 col-12 blogStyle  py-2">
-                            <a href="./blog/AllBlog.html"
-                                class="float-left btn w3-text-white w3-hover-text-orange">歐博app下載教學</a>
-                            <span class="float-right btn text-light" style="cursor:auto;">2021/03/08</span>
-                        </div>
-                        <!--  -->
-                        <div class="my-1 col-12 blogStyle  py-2">
-                            <a href="./blog/AllBlog.html"
-                                class="float-left btn w3-text-white w3-hover-text-orange">歐博app下載教學</a>
-                            <span class="float-right btn text-light" style="cursor:auto;">2021/03/08</span>
-                        </div>
-                        <!--  -->
-                        <div class="my-1 col-12 blogStyle  py-2">
-                            <a href="./blog/AllBlog.html"
-                                class="float-left btn w3-text-white w3-hover-text-orange">歐博app下載教學</a>
-                            <span class="float-right btn text-light" style="cursor:auto;">2021/03/08</span>
-                        </div>
-                        <!--  -->
-                        <div class="my-1 col-12 blogStyle  py-2">
-                            <a href="./blog/AllBlog.html"
-                                class="float-left btn w3-text-white w3-hover-text-orange">歐博app下載教學</a>
-                            <span class="float-right btn text-light" style="cursor:auto;">2021/03/08</span>
-                        </div>
-                        <!--  -->
-                        <div class="my-1 col-12 blogStyle  py-2">
-                            <a href="./blog/AllBlog.html"
-                                class="float-left btn w3-text-white w3-hover-text-orange">歐博app下載教學</a>
-                            <span class="float-right btn text-light" style="cursor:auto;">2021/03/08</span>
-                        </div>
-                        <!--  -->
-                        <div class="my-1 col-12 blogStyle  py-2">
-                            <a href="./blog/AllBlog.html"
-                                class="float-left btn w3-text-white w3-hover-text-orange">歐博app下載教學</a>
-                            <span class="float-right btn text-light" style="cursor:auto;">2021/03/08</span>
-                        </div>
-                        <!--  -->
-                        <div class="my-1 col-12 blogStyle  py-2">
-                            <a href="./blog/AllBlog.html"
-                                class="float-left btn w3-text-white w3-hover-text-orange">歐博app下載教學</a>
-                            <span class="float-right btn text-light" style="cursor:auto;">2021/03/08</span>
-                        </div>
-                        <!--  -->
-                        <div class="my-1 col-12 blogStyle  py-2">
-                            <a href="./blog/AllBlog.html"
-                                class="float-left btn w3-text-white w3-hover-text-orange">歐博app下載教學</a>
-                            <span class="float-right btn text-light" style="cursor:auto;">2021/03/08</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- MD blog d-md-none ------------------------------------------------------------------------>
-        <div class="d-md-none">
-            <div class="row py-2 mt-2 mb-5 px-3 mx-auto">
-                <div class="col-12 border bd-theme py-4 px-5 w3-round-large">
-                    <a href="./blog/AllBlog.html">
-                        <p class="w3-xlarge pb-2 text-justify text-theme uk-text-bold">球版分析-世界盃獨家投注教學！</p>
-                    </a>
-                    <p class="text-light rowEllipsis">
-                        四年一度的世界杯是許都球迷引頸期盼的熱血足球盛事，比賽同時網路運彩的投注也是如火如荼的！但根據球版公司統計這卻是彩迷們贏率最低的賽事！這是為什麼呢？
-                        四年一度的世界杯是許都球迷引頸期盼的熱血足球盛事，比賽同時網路運彩的投注也是如火如荼的！但根據球版公司統計這卻是彩迷們贏率最低的賽事！這是為什麼呢？
-                        四年一度的世界杯是許都球迷引頸期盼的熱血足球盛事，比賽同時網路運彩的投注也是如火如荼的！但根據球版公司統計這卻是彩迷們贏率最低的賽事！這是為什麼呢？
-                        四年一度的世界杯是許都球迷引頸期盼的熱血足球盛事，比賽同時網路運彩的投注也是如火如荼的！但根據球版公司統計這卻是彩迷們贏率最低的賽事！這是為什麼呢？
-                        四年一度的世界杯是許都球迷引頸期盼的熱血足球盛事，比賽同時網路運彩的投注也是如火如荼的！但根據球版公司統計這卻是彩迷們贏率最低的賽事！這是為什麼呢？
-                    </p>
-                    <div class="pt-2">
-                        <span class="text-light w3-medium">2020.09.17</span>
-                        <a href="./blog/AllBlog.html">
-                            <span
-                                class="float-right btn mt-0 pt-0 bg-theme text-light pt-1 font-weight-bold w3-medium">更多詳情
-                                ></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="footerHCopy">123</div>
-    </div>
 
 
 
@@ -1053,28 +841,32 @@
     </div>
 
     <!-- 手機版 fixed bottom -->
-    <div id="footerHCopy" class="container-fluid d-md-none p-0 m-0 fixed-bottom bgc-flex-SA"
-        style="background:url(./img/桌機index_img/footer.png) #000;">
+    <div id="footerHCopy" class="container-fluid d-md-none p-0 m-0 fixed-bottom bg-gradient-theme">
         <div class="container m-0 p-0 centerCenter">
             <div class="row px-0 py-2 m-0">
-                <div class="col centerCenter px-0">
+                <div class="col centerCenter px-0 card_c">
                     <a href="/index.html">
-                        <img src="./img/手機index_img/B1首頁.png" class="img-fluid" alt="">
+                        <img src="./img/手機index_img/bottomList/bottomList1.png" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="col centerCenter px-0">
+                <div class="col centerCenter px-0 card_c uk-blend-luminosity">
                     <a href="./page/Promotion.html">
-                        <img src="./img/手機index_img/B2優惠.png" class="img-fluid" alt="">
+                        <img src="./img/手機index_img/bottomList/bottomList2.png" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="col centerCenter px-0">
+                <div class="col centerCenter px-0 card_c uk-blend-luminosity">
+                    <a href="./page/Promotion.html">
+                        <img src="./img/手機index_img/bottomList/bottomList3.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col centerCenter px-0 card_c uk-blend-luminosity">
                     <a href="./page/indexLoginPage.html">
-                        <img src="./img/手機index_img/B3.png" class="img-fluid" alt="">
+                        <img src="./img/手機index_img/bottomList/bottomList4.png" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="col centerCenter px-0">
+                <div class="col centerCenter px-0 card_c uk-blend-luminosity">
                     <a href="./header page/Signup.html">
-                        <img src="./img/手機index_img/B4.png" class="img-fluid" alt="">
+                        <img src="./img/手機index_img/bottomList/bottomList5.png" class="img-fluid" alt="">
                     </a>
                 </div>
             </div>
@@ -1110,6 +902,7 @@
     <!-- 滾動選軸 -->
     <script>
         $(document).ready(function () {
+            // $("#arrowDownList").hide();
             // 最上方隱藏
             $("#back-to-top").hide();
             // 顯示
@@ -1128,7 +921,17 @@
                 // $('body,html').animate({ scrollTop: $('#axc').offset().top }, 1000);
                 return false;
             });
+            $('.card_c').click(
+                function () {
+                    $(this).siblings().addClass('uk-blend-luminosity');
+                    $(this).toggleClass('uk-blend-luminosity');
+                }
+            )
+            $("#arrowDown").click(function () {
+                $("#arrowDownList").show();
+            });
         });
+
 
     </script>
 
