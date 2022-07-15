@@ -1,0 +1,138 @@
+<div class="container-fluid p-0 bgc-flex"
+        style="background: url(./img/桌機index_img/bg1-1.png) #000 top center no-repeat;background-size:cover;">
+        <div class="container pb-3 pt-3 pt-lg-5">
+            <div class="row centerCenter">
+                <ul uk-tab class="row w-100 ">
+                    <li class="col-2 p-0"><a href="#">真人1</a></li>
+                    <li class="col-2 p-0"><a href="#">體育</a></li>
+                    <li class="col-2 p-0"><a href="#">賓果</a></li>
+                    <li class="col-2 p-0"><a href="#">棋牌</a></li>
+                    <li class="col-2 p-0"><a href="#">電子</a></li>
+                    <li class="col-2 p-0"><a href="#">捕魚</a></li>
+                </ul>
+
+                <ul class="uk-switcher pb-3 w-100">
+                    <!-- 百家樂 -->
+                    <li>
+                        <div class="row pt-3 pt-lg-0 centerCenter">
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/百家樂/sa真人-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/百家樂/歐博真人-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/百家樂/dg真人-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/百家樂/wm真人-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 體育 -->
+                    <li>
+                        <div class="row pt-3 pt-lg-0 centerCenter">
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/體育/super體育-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/體育/sa體育-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 賓果 -->
+                    <li>
+                        <div class="row pt-3 pt-lg-0 centerCenter">
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/賓果/super彩票-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/體育/sa體育-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 棋牌 -->
+                    <li>
+                        <div class="row pt-3 pt-lg-0 centerCenter">
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/棋牌/皇家棋牌-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/棋牌/mg棋牌-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 電子 -->
+                    <li>
+                        <div class="row pt-3 pt-lg-0 centerCenter">
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/電子/dt電子-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/電子/必贏電子-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/電子/sp電子-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/電子/rtg電子-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 捕魚 -->
+                    <li>
+                        <div class="row pt-3 pt-lg-0 centerCenter">
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/捕魚/dt捕魚-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/捕魚/必贏捕魚-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/捕魚/sp捕魚-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 my-1 my-md-0">
+                                <a href="#" class="btn p-0">
+                                    <img src="./img/桌機index_img/GAME/捕魚/rtg捕魚-2.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
