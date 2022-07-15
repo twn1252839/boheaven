@@ -1,153 +1,161 @@
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+}
 
 .input-style {
-    border: 1px solid #000;
-    border-radius: 3.5px;
-    width: 21vw;
-    max-width: 199px;
-    background-color: #EFEEE0;
+  border: 1px solid #000;
+  border-radius: 3.5px;
+  width: 21vw;
+  max-width: 199px;
+  background-color: #efeee0;
 }
 
 .input-style::placeholder {
-    color: #000;
-    font-size: 14px;
+  color: #000;
+  font-size: 14px;
 }
 
 .input-size {
-    height: 30px;
+  height: 30px;
+  width: 80px;
 }
 
 .w3-button:hover {
-    background-color: transparent !important;
-    color: #fff !important;
-    text-decoration: none !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 .NavigationBorder {
-    border-bottom: 5px solid #fb98ac;
+  border-bottom: 5px solid #fb98ac;
 }
 
 .MdNavigationBorder {
-    border-bottom: 2px solid #fb98ac;
+  border-bottom: 2px solid #fb98ac;
 }
 
 .listHove:hover {
-    background: linear-gradient(180deg, #ffbd6700 20%, #ffbd671e 50%, #ffbd67c2 100%);
-    /* border-bottom: 1.5px solid #ffbd67; */
+  background: linear-gradient(
+    180deg,
+    #ffbd6700 20%,
+    #ffbd671e 50%,
+    #ffbd67c2 100%
+  );
+  /* border-bottom: 1.5px solid #ffbd67; */
 }
 
 #showMenu {
-    background-color: rgb(0, 0, 0, 50%);
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    /* display: none; */
-    width: 100%;
-    z-index: 99999;
+  background-color: rgb(0, 0, 0, 50%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* display: none; */
+  width: 100%;
+  z-index: 99999;
 }
 
 .showMenuList {
-    background-color: #f8f2ec;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 70%;
-    line-height: 60px;
+  background-color: #f8f2ec;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  line-height: 60px;
 }
 
 .showMenuList ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .hamburg-border-bottom {
-    border-bottom: 2px solid #d8cac5b4;
+  border-bottom: 2px solid #d8cac5b4;
 }
 
 .BMaintenanceTime {
-    /* width: 50px;
+  /* width: 50px;
     height: 145px; */
-    margin-left: -8px;
-    z-index: 999;
-    position: fixed;
-    left: 0;
-    top: 0;
-    transform: translateY(170%);
+  margin-left: -8px;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateY(170%);
 }
 
 .BMaintenanceTime:focus {
-    outline: none;
-    border-color: transparent;
-    box-shadow: none;
-    border: 1px solid;
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+  border: 1px solid;
 }
 
 .contactUs {
-    width: 50px;
-    /* height: 165px; */
-    z-index: 999;
-    position: fixed;
-    right: 0;
-    top: 0;
-    transform: translateY(108%);
-    background-color: rgba(235, 148, 172, 0.9);
+  width: 50px;
+  /* height: 165px; */
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateY(108%);
+  background-color: rgba(235, 148, 172, 0.9);
 }
 
 .bg-cover:hover {
-    /* background-color: #fd788e; */
-    filter: drop-shadow(.8px 1.2px 5px #ffb8ea);
+  /* background-color: #fd788e; */
+  filter: drop-shadow(0.8px 1.2px 5px #ffb8ea);
 }
 
 .bg-i-purple {
-    background-color: #9383f3;
+  background-color: #9383f3;
 }
 
 .blogStyle {
-    border: #bc985e 2px solid;
-    border-radius: 10px;
-    padding: 2% 2%;
-    /* background: transparent; */
+  border: #bc985e 2px solid;
+  border-radius: 10px;
+  padding: 2% 2%;
+  /* background: transparent; */
 }
 
 #MoreBtn {
-    border: #ccc 1px solid;
-    border-radius: 15px;
-    padding: 0% 2%;
+  border: #ccc 1px solid;
+  border-radius: 15px;
+  padding: 0% 2%;
 }
 
 .blog_tColor {
-    color: #1668db;
+  color: #1668db;
 }
 
 .blog_tColor:hover {
-    color: #f8f550;
+  color: #f8f550;
 }
 
 .bgc1 {
-    background: url(../img/桌機index_img/bg1-1.png);
+  background: url(../img/桌機index_img/bg1-1.png);
 }
 
 .bgc2 {
-    background: url(../img/桌機index_img/bg2.png);
+  background: url(../img/桌機index_img/bg2.png);
 }
 
 .bgc3 {
-    background: url(../img/桌機index_img/bg3.png);
+  background: url(../img/桌機index_img/bg3.png);
 }
 
 .bgc4 {
-    background: url(../img/桌機index_img/bg4.png);
+  background: url(../img/桌機index_img/bg4.png);
 }
 
 .bgcFooter {
-    background: url(../img/桌機index_img/footer.png);
+  background: url(../img/桌機index_img/footer.png);
 }
 
-.btn-fixed{
-    bottom: 2.5rem;right: 1rem;
+.btn-fixed {
+  bottom: 2.5rem;
+  right: 1rem;
 }
 
 .modal-backdrop {
-    z-index: 1;
+  z-index: 1;
 }
