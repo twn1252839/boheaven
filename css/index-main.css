@@ -193,3 +193,11 @@ a {
   height: 20px;
   background: #365a97;
 }
+
+.green_txt {
+  color: #2abf6f;
+}
+
+.w-85 {
+  width: 85%;
+}
