@@ -132,3 +132,7 @@
 .fsz-12 {
   font-size: 1.2rem;
 }
+
+#drw .dropdown-toggle::after {
+  display: none !important;
+}
