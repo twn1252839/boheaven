@@ -35,91 +35,9 @@
     <link rel="stylesheet" href="../css/index.css">
 
     <title>登入</title>
-    <style>
-        .signupbgc {
-            /* width: 900px;
-            height: 617px; */
-            min-height: 750px;
-        }
-
-        .sigNup-input {
-            width: 18.5em !important;
-        }
-
-        .sigNup-input:focus {
-            outline: transparent;
-            color: #fd788e;
-        }
-
-        .sigNup-input2:focus {
-            outline: transparent;
-            color: #fd788e;
-        }
-
-        .gradientBtnA {
-            background: #bc985e;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Header -->
-    <script>PageHeader();</script>
-
-    <!-- MD history.back ------------------------------------------------------------------------>
-    <div class="d-md-none w-100 py-1" style="background-color: #efeee0;">
-        <nav aria-label="breadcrumb">
-            <ul class="d-flex py-0 py-sm-1">
-                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
-                    <i class="fas fa-angle-left textCoffee fa-lg"></i>
-                </button>
-                <li class="breadcrumb-item"><a href="../index.html" class="textCoffee">首頁</a></li>
-                <li class="breadcrumb-item"><a href="../loginPage/loginPage.html" class="textCoffee">會員中心</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                    <span class="textCoffee pl-2" id="copyTitle"></span>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <script>
-        $(document).ready(function () {
-            let title = $('title').text();
-            $('#copyTitle').html(title);
-        });
-    </script>
-
-
-    <div class="container-fluid px-0 py-0 m-0 bgc-flex d-lg-none"
-        style="background: url(../img/手機各分頁img/內頁/bg2.png) center no-repeat;background-size:cover;">
-        <div class="container">
-            <div class="row centerCenter pt-4 pb-3">
-                <!-- 帳號 -->
-                <div class="col-4 py-2 text-right text-light w3-medium">帳號</div>
-                <div class="col-8 py-2">
-                    <input type="text" class=" px-3 py-1 fsz-08" placeholder="4~10碼英文或數字組合"
-                        onfocus="this.placeholder = ''" onblur="this.placeholder = '4~10碼英文或數字組合'" />
-                </div>
-                <!-- 密碼 -->
-                <div class="col-4 py-2 text-right text-light w3-medium">密碼</div>
-                <div class="col-8 py-2">
-                    <input type="password" class=" px-3 py-1 fsz-08" placeholder="密碼"
-                        onfocus="this.placeholder = ''" onblur="this.placeholder = '密碼'" />
-                </div>
-                <!-- 登入 -->
-                <a href="../loginPage/loginPage.html"
-                    class="uk-button my-2 py-0 w3-medium text-light gradientBtnA">登入</a>
-                <div class="col-12 centerCenter py-2">
-                    <a href="../header page/Signup.html" class="text-light lp1">註冊</a>
-                </div>
-                <span class="text-light">忘記密碼修改請洽客服</span>
-                <button class="uk-button text-light gradientBtnA text-light py-0 px-3 ml-2"
-                    data-toggle="modal" data-target="#exampleModal">前往</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <script>MDFooter();</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"

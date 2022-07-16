@@ -103,6 +103,13 @@ p {
   background-size: cover !important;
   background-position: center !important;
 }
+.bgc-flex-bs {
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
+  height: 44px;
+  width: 146px;
+}
 
 /* 遊戲背景 */
 
