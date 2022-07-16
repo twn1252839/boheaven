@@ -138,6 +138,9 @@ p {
   margin-right: auto !important;
 }
 
+.lp12 {
+  letter-spacing: 1.2rem;
+}
 .lp05 {
   letter-spacing: 0.05em;
 }
@@ -212,6 +215,10 @@ p {
 .bg-theme2-hover:hover {
   background-color: #365a97;
   color: #fff;
+}
+
+.bg-linear-theme {
+  background: linear-gradient(180deg, #edf6ff, #fff 53.65%, #f0f7ff);
 }
 
 .bg-gradient-theme {
