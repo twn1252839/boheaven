@@ -187,3 +187,9 @@ a {
 .marquee_bg {
   background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
 }
+
+.line_theme_v {
+  width: 3px;
+  height: 20px;
+  background: #365a97;
+}
