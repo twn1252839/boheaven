@@ -205,6 +205,9 @@ p {
 .bg-theme2 {
   background-color: #eee;
 }
+.bg-theme3 {
+  background-color: #365a97;
+}
 
 .bg-theme2-hover:hover {
   background-color: #365a97;
