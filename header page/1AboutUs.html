@@ -15,6 +15,9 @@
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- w3 -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -32,146 +35,102 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/index.css">
-
-    <title>關於我們</title>
+    <link rel="stylesheet" href="../css/index-main.css">
     <style>
-        #img-switch .small-img a {
-            display: inline-block;
+        /* switch 調整 */
+        .uk-subnav-pill>.uk-active>a {
+            background-color: transparent !important;
+            color: #365a97 !important;
+            font-weight: bold;
         }
 
-        #img-switch img {
-            display: block;
-            max-width: 100%;
-            height: auto;
+        .uk-accordion-title::before {
+            display: none;
+            /* content: "";
+            width: 1.4em;
+            height: 1.4em;
+            margin-left: 10px;
+            float: right;
+            color: #fff !important;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: 50% 50%; */
         }
     </style>
+    <style>
+        .ac {
+            width: 25px;
+            height: 25px;
+            border-radius: 999em;
+            background-color: #365a97;
+        }
+    </style>
+    <title>優惠說明 Promotion</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <script>
-        PageHeader();
-    </script>
-
-    <!-- 通用  ------------------------------------------------------------------------>
-
     <!-- MD history.back ------------------------------------------------------------------------>
-    <div class="d-md-none w-100 py-1" style="background-color: #efeee0;">
-        <nav aria-label="breadcrumb">
-            <ul class="d-flex py-0 py-sm-1">
-                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
-                    <i class="fas fa-angle-left textCoffee fa-lg"></i>
+    <div class="container-fluid p-0 m-0 d-md-none bg-light px-3 uk-position-relative vh-100">
+        <div class="row bg-theme1">
+            <div class="col-12">
+                <button class="btn py-0 uk-position-absolute uk-position-left" type="button" onclick="history.back()"
+                    value="回到上一頁">
+                    <i class="fa-solid fa-caret-left fa-lg"></i>
                 </button>
-                <li class="breadcrumb-item"><a href="/index.html" class="textCoffee">首頁</a></li>
-                <li class="breadcrumb-item"><a href="/loginPage/loginPage.html" class="textCoffee">會員中心</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                    <span class="textCoffee pl-2" id="copyTitle"></span>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <script>
-        $(document).ready(function () {
-            let title = $('title').text();
-            $('#copyTitle').html(title);
-        });
-    </script>
+                <p class="text-center font-weight-bold h5 py-2">關於博天堂</p>
+            </div>
+            <div class="col-12 p-0 pb-5 bg-theme">
+                <div class="centerCenter p-3">
+                    <img src="../img/桌機index_img/logo.png" class="w-50" alt="">
+                    <div class="centerCenter py-3">
+                        <p class="fsz09">自博天堂成立以來，秉著誠信的經營理念，以強大的技術、最貼心優質的客戶服務為保障，得到了廣大會員的一致好評和認可！</p>
+                        <p class="fsz09 pt-3">在老會員源源不斷推薦新會員的過程中，博天堂飛速成長。博天堂時刻心懷感恩，感謝廣大會員的長期不懈的支持！</p>
+                        <p class="fsz09 pt-3 text-theme font-weight-bold">博天堂博彩資質——菲律賓政府頒發合法博彩牌照</p>
+                        <p class="fsz09">博天堂線上娛樂城擁有菲律賓政府根據嚴密指南所頒發的合法經營執照。博天堂向菲律賓網絡博彩委員會繳納了巨額保證金，接受菲律賓博彩委員會監管，是正規合法的專業賭場。
+                        </p>
+                        <p class="fsz09 pt-3 text-theme font-weight-bold">合作方及實力保障</p>
+                        <p class="fsz09">與亞洲最知名的bbin平台是最緊密的戰略合作夥伴，共同打造高品質遊戲平台，具有絕對的公平性。
+                            在澳門各大知名賭場均設有現場賭廳，實力卓越，是客戶現場博彩及線上博彩結合的完美選擇！</p>
+                        <p class="fsz09 pt-3 text-theme font-weight-bold">安全保障</p>
+                        <p class="fsz09">
+                            在網路博彩中除了遊戲多樣化外，網路安全最為重要。我們具有規模宏大的網路安全維護中心，雲集眾多尖端的的網路安全專家，並獲得GEOTRUST國際認證。我們採用了目前最好的加密技術（1024位RSA密鑰交換和
+                            448位blowfish）和防火牆系統保護每位會員的安全、私隱，所有會員資料均經過加密，所有會員在本平台的所有活動均嚴格保密，所有會員隱私得到最高級別的保障，所有銀行交易由國際金融機構在高標準的安全和機密的網絡中進行。
+                        </p>
+                        <p class="fsz09 pt-3 text-theme font-weight-bold">專業服務</p>
+                        <p class="fsz09">
+                            博天堂全年24小時運營，全天候接受客戶諮詢，極速處理會員遊戲中的各種需要，高素質客服團隊以專業、親切的態度著稱，不但讓所有會員皆有賓至如歸的感覺，同時我們以業界前所未見的各種優惠方式回饋會員，絕對是您最明智的選擇！
+                        </p>
+                        <p class="fsz09 pt-3 text-theme font-weight-bold">願景</p>
+                        <p class="fsz09">博天堂以成為全球最誠信最有實力的博彩公司為目標，立志成為給客戶提供最優質服務的博彩業百年老店！</p>
+                    </div>
+                </div>
+            </div>
 
-
-    <div class="container-fluid px-0 py-0 m-0 bgc-flex" style="background-image: url(../img/桌機index_img/bg2.png);">
-        <div class="container pb-3">
-            <!-- PC ------------------------------------------------------------------------>
-            <!-- title -->
-            <div class="col-12 centerCenter border-bottom-title uk-position-relative text-light">
-                <p class="w3-xlarge lp1 text-center font-weight-bold my-1">關於我們</p>
-            </div>
-            <!-- title設定 -->
-            <script>
-                $(document).ready(function () {
-                    const title = $('title').text();
-                    $('#title').text(title);
-                });
-            </script>
-            <!-- 關於我們 -->
-            <div class="row text-light w3-round-medium py-3">
-                <p class="p-3 text-justify">
-                    沙龍集團（SA Group）成立於 2014 年，是亞洲最新興的博彩娛樂集團，我們憑著數十位博彩專家的經驗與心血並結合網絡技術優勢
-                    成功打造出一個以百家樂遊戲為主的超級遊戲平台。卓越的平台功能與設計全以玩家使用點出發，包括首創超級多檯一目盡覽聚龍廳
-                    與快速廳的所有路紙，且可任選四桌或八桌的顯示模式、成功打造出一個以百家樂,運彩,賓果, 電子遊戲為主的超級遊戲平台，讓沙龍
-                    平台推出便成為在業界嶄露頭角的後起之秀。
-                </p>
-            </div>
-            <!-- pc牌照+獎項 -->
-            <div class="row text-light w3-round-medium py-3 px-5 d-none d-md-block">
-                <div class="col-12">
-                    <img src="../img/桌機各分頁img/內頁/關於我們/t1-3.png" alt="">
-                </div>
-                <div class="col-12 pt-5">
-                    <img src="../img/桌機各分頁img/內頁/關於我們/t2-3.png" alt="">
-                </div>
-            </div>
-            <!-- md牌照+獎項 -->
-            <div class="row text-light w3-round-medium py-3 px-5 d-md-none">
-                <div class="col-12 centerCenter">
-                    <img src="../img/手機各分頁img/內頁/關於我們/mdt1-1.png" alt="">
-                </div>
-                <div class="col-12 pt-3">
-                    <img src="../img/手機各分頁img/內頁/關於我們/mdt1-2.png" alt="">
-                </div>
-                <div class="col-12 centerCenter pt-3">
-                    <img src="../img/手機各分頁img/內頁/關於我們/mdt2-1.png" alt="">
-                </div>
-                <div class="col-12 pt-3">
-                    <img src="../img/手機各分頁img/內頁/關於我們/mdt2-2.png" alt="">
-                </div>
-            </div>
-            <!-- 攝影棚 -->
-            <div class="col-12 centerCenter border-bottom-title uk-position-relative text-light">
-                <p class="w3-xlarge lp1 text-center font-weight-bold my-1">真人攝影棚</p>
-            </div>
-            <!-- pc攝影棚 -->
-            <div id="BOX" class="pt-4 centerCenter">
-                <img src="../img/桌機各分頁img/內頁/關於我們/small1.png" width="686" height="387" id="BIG"
-                    style="border: #fff solid 2px; padding: 2px;">
-                <div id="SMALL" class="centerCenter">
-                    <img src="../img/桌機各分頁img/內頁/關於我們/small1.png" width="140" class="pt-2" id="SS1" alt="cling images"
-                        title="攝影1">
-                    <img src="../img/桌機各分頁img/內頁/關於我們/small2.png" width="140" class="pt-2" id="SS2" alt="cling images"
-                        title="攝影2">
-                    <img src="../img/桌機各分頁img/內頁/關於我們/small3.png" width="140" class="pt-2" id="SS3" alt="cling images"
-                        title="攝影3">
-                    <img src="../img/桌機各分頁img/內頁/關於我們/small4.png" width="140" class="pt-2" id="SS4" alt="cling images"
-                        title="攝影4">
-                </div>
-            </div>
-            <div class="row text-light w3-round-medium pb-5">
-                <p class="p-3 text-justify pb-5">
-                    SA Gaming 的真人攝影棚位處歐洲，匯聚東方及西方的特色，為客戶及其玩家還原真實的遊戲體驗。我們攝影棚的遊戲經多個司法管
-                    轄區認可的第三方遊戲認證機構 GLI 的測試及認證，從專業的荷官到全天候現場監控，我們的真人攝影棚是線上娛樂的理想之選。
-                </p>
-            </div>
         </div>
-    </div>
-    </div>
-
-    <!-- Footer -->
-    <script>
-        PCFooter();
-    </script>
-    <script>
-        MDFooter();
-    </script>
-    <script>
-        $(function () {
-            $("#SMALL img").click(function () {
-                var N = $(this).attr("id").substr(2);
-                $("#BIG").attr("src", "../img/桌機各分頁img/內頁/關於我們/small" + N + ".png");
+        <script>
+            $(document).ready(function () {
+                let title = $('title').text();
+                $('#copyTitle').html(title);
             });
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
+        </script>
+
+        <!-- Footer -->
+        <script>PCFooter();</script>
+        <script>MDFooter();</script>
+        <script src='../js/jquery-3.6.0.js'></script>
+        <script>
+            $(document).ready(function () {
+                $('.card_c').click(
+                    function () {
+                        $(this).siblings().addClass('uk-blend-luminosity');
+                        $(this).toggleClass('uk-blend-luminosity');
+                    }
+                )
+            });                                            
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
