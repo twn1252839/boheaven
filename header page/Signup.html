@@ -33,52 +33,69 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/index.css">
+    <style>
+        @media screen and (max-width: 768px) {
+            .bg_change {
+                background: url(../img/手機各分頁img/login/bg.jpg) top center !important;
+            }
 
-    <title>登入</title>
+            .pt_change {
+                padding-top: 0px !important;
+            }
+        }
+
+        .bg_change {
+            background: url(../img/桌機index_img/SINGBG.jpg) top center;
+        }
+
+        .pt_change {
+            padding-top: 100px;
+        }
+    </style>
+    <title>註冊</title>
 </head>
 
 <body>
-    <div class="container-fluid p-0 d-md-none vh-100 bgc-flex"
-        style="background:url(../img/手機各分頁img/login/bg.jpg) top center;background-size: cover;">
-        <div class="container px-5">
-            <div class="row py-5">
+    <div class="container-fluid p-0 vh-100 bgc-flex bg_change" style="background-size: cover;">
+        <div class="container px-5 pt_change">
+            <div class="row py-5 px-0 px-md-5 mx-0 mx-md-5">
                 <div class="col-12 centerCenter text-center py-3">
-                    <img class="img-fluid w-75" src="../img/桌機index_img/logo.png" alt="">
+                    <img class="img-fluid" src="../img/桌機index_img/logo.png" alt="">
                     <p class="text-center h3 font-weight-bold text-theme" style="padding-top: 50px;">會員註冊</p>
                 </div>
                 <div class="col-12 input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text bg-light" id="basic-addon1">
+                        <span class="input-group-text bg-light bd-theme" id="basic-addon1">
                             <img class="img-fluid" src="../img/手機各分頁img/login/User_alt_light.png" alt="">
                         </span>
                     </div>
-                    <input type="text" class="form-control" placeholder="請輸入帳號" aria-label="Username"
+                    <input type="text" class=" form-control bd-theme" placeholder="請輸入帳號" aria-label="Username"
                         aria-describedby="basic-addon1">
                 </div>
                 <div class="col-12 input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text bg-light" id="basic-addon1">
+                        <span class="input-group-text bg-light bd-theme" id="basic-addon2">
                             <img class="img-fluid" src="../img/手機各分頁img/login/Lock_duotone_line.png" alt="">
                         </span>
                     </div>
-                    <input type="text" class="form-control" placeholder="密碼" aria-label="Username"
+                    <input type="text" class=" form-control bd-theme" placeholder="密碼" aria-label="Username"
                         aria-describedby="basic-addon1">
                 </div>
                 <div class="col-12 input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text bg-light" id="basic-addon1">
+                        <span class="input-group-text bg-light bd-theme" id="basic-addon1">
                             <img class="img-fluid" src="../img/手機各分頁img/login/Lock_duotone_line.png" alt="">
                         </span>
                     </div>
-                    <input type="text" class="form-control" placeholder="確認密碼" aria-label="Username"
+                    <input type="text" class=" form-control bd-theme" placeholder="確認密碼" aria-label="Username"
                         aria-describedby="basic-addon1">
                 </div>
                 <div class="col-12 input-group mb-3">
-                    <input type="text" class="form-control" placeholder="請輸入手機號碼" aria-label="Username"
+                    <input type="text" class=" form-control bd-theme" placeholder="請輸入手機號碼" aria-label="Username"
                         aria-describedby="basic-addon1">
                 </div>
                 <div class="col-12 input-group mb-3">
-                    <input type="text" class="form-control  bd-theme fsz-08" placeholder="請輸入轉帳金額"
+                    <input type="text" class=" form-control bd-theme  bd-theme fsz-08" placeholder="請輸入轉帳金額"
                         aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <div class="input-group-append">
                         <span class="input-group-text bd-theme bg-theme3 py-0 px-3 text-light" id="basic-addon2">

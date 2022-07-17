@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+  /* 手機 要加上 important */
   .marquee_s {
     width: 12% !important;
   }
@@ -114,6 +115,11 @@
   margin: 12px 0 17px;
   text-align: justify;
   line-height: 1.5rem;
+}
+
+.CardBg_BG {
+  background: url(../img/手機index_img/CardBgMd.jpg) no-repeat;
+  background-size: cover;
 }
 
 .noFilter {
