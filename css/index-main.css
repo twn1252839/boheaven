@@ -201,3 +201,51 @@ a {
 .w-85 {
   width: 85%;
 }
+/* style start ------------------------------------------------------ */
+.centerCenter {
+  text-align: center !important;
+  justify-content: center !important;
+  justify-self: center !important;
+  justify-items: center !important;
+  align-self: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.text-theme {
+  color: #365a97;
+}
+
+.bg-theme {
+  background-color: #f1f8ff;
+}
+.bg-theme2 {
+  background-color: #eee;
+}
+.bg-theme3 {
+  background-color: #365a97;
+}
+.bg-theme4 {
+  background-color: #ebf5ff;
+}
+
+.bg-theme2-hover:hover {
+  background-color: #365a97;
+  color: #fff;
+}
+
+.bg-linear-theme {
+  background: linear-gradient(180deg, #edf6ff, #fff 53.65%, #f0f7ff);
+}
+
+.bg-gradient-theme {
+  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
+}
+
+.bd-theme {
+  border-color: #365a97 !important;
+}
+
+/* style end ------------------------------------------------------ */
