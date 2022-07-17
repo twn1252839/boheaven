@@ -255,3 +255,9 @@ a {
 }
 
 /* style end ------------------------------------------------------ */
+
+.Game_BG {
+  background: url(../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/BG.png)
+    no-repeat;
+  background-size: cover;
+}
