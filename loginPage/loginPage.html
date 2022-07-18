@@ -2,626 +2,632 @@
 <html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
 
-    <!-- IE兼容 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <!-- IE兼容 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-    <!-- w3 -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- w3 -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!-- UK CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+  <!-- UK CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
 
-    <!-- UK JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+  <!-- UK JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
 
-    <!-- JQ -->
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="../js/Addhtml.js"></script>
+  <!-- JQ -->
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../js/Addhtml.js"></script>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/index.css">
 
-    <title>會員中心</title>
-    <style>
-        .gradientBtn {
-            background: linear-gradient(270deg, #bcad93 0%, #bc985e 100%);
-        }
+  <title>會員中心</title>
+  <style>
+    .gradientBtn {
+      background: linear-gradient(270deg, #bcad93 0%, #bc985e 100%);
+    }
 
-        .gradientBtnA {
-            background: linear-gradient(270deg, #bcad93 0%, #bc985e 100%);
-        }
+    .gradientBtnA {
+      background: linear-gradient(270deg, #bcad93 0%, #bc985e 100%);
+    }
 
-        .modalBtn-active {
-            color: #fff;
-            background-color: #bc985e;
-            border-radius: 15px;
-        }
-    </style>
+    .modalBtn-active {
+      color: #fff;
+      background-color: #bc985e;
+      border-radius: 15px;
+    }
+  </style>
 </head>
 
+
 <body>
-    <!-- login ------------------------------------>
-    <div class="container-fluid  d-none d-md-block p-0 bg-theme2">
-        <div class=" container-lg">
-            <div class="row align-items-center">
-                <div class="col-2 px-0 text-center">
-                    <img src="./img/桌機index_img/logo2.png" class="" style="width: 100px;" alt="">
-                </div>
-                <div class="col-7 px-0 d-inline-flex align-items-center">
-                    <div class="btn-group align-items-center">
-                        <div class="btn py-0 px-2 px-lg-3">
-                            <p class="text-theme font_b border-bottom bd-theme"
-                                style="height: 50px;padding-top: .7rem;border-width: .35rem !important;border-radius: 5%;">
-                                首頁
-                            </p>
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover1">
-                            <span>真人</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover2">
-                            <span>體育</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover3">
-                            <span>賓果</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover4">
-                            <span>電子</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover5">
-                            <span>棋牌</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover6">
-                            <span>捕魚</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover7">
-                            <span>優惠</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3" id="drw">
-                    <div class="row align-items-center btn-group">
-                        <div class="col-2 p-0">
-                            <img src="./img/桌機index_img/user.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-7 p-0 pl-1 dropdown-toggle" style="line-height: .6rem;cursor: pointer;"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p class="fsz-08">0987123654</p>
-                            <span class="fsz-08">$3,000.00</span><span class="fsz-08 px-0 pl-lg-4">會員中心</span> <i
-                                class="fa-solid fa-angle-right fsz-08"></i>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-right bg-theme font-weight-bold">
-                            <div class="row px-3">
-                                <a href="#" class="col">
-                                    <img src="./img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
-                                </a>
-                                <a href="#" class="col">
-                                    <img src="./img/桌機index_img/list/clickList/a2.png" class="img-fluid" alt="">
-                                </a>
-                                <a href="#" class="col">
-                                    <img src="./img/桌機index_img/list/clickList/a3.png" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/1.png" class="img-fluid" alt="">
-                                個人資料
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/2.png" class="img-fluid" alt="">
-                                VIP特權
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/3.png" class="img-fluid" alt="">
-                                優惠達標查詢
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/4.png" class="img-fluid" alt="">
-                                投注紀錄
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/5.png" class="img-fluid" alt="">
-                                交易紀錄
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/6.png" class="img-fluid" alt="">
-                                帳戶管理
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/7.png" class="img-fluid" alt="">
-                                邀請好友
-                            </a>
-                            <a href="#" class="dropdown-item px-3 list-inline" type="button">
-                                <div class="list-inline-item">
-                                    <img src="./img/桌機index_img/list/clickList/8.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="list-inline-item" style="line-height: .6rem;">
-                                    <p class="py-0">幫助中心</p>
-                                    <p class="fsz-06 py-0 text-secondary list-inline-item flex-wrap">(存款、提款、投注疑問看
-                                        這裡)</p>
-                                </div>
-                            </a>
-                            <button
-                                class="d-flex bg-theme2-hover  border btn px-3 py-0 w-75 justify-content-center mx-auto rounded-pill bd-theme text-theme"
-                                type="button" style="border-width: 5rem;">
-                                <p class="px-3 text-center">登出</p>
-                            </button>
-                        </div>
-                        <div class="col p-0">
-                            <a href="./page/Bingo.html" class="text-right px-2"><img id="hrServiceBtn"
-                                    src="./img/手機index_img/Subtract.png" alt="" class="img-fluid" data-toggle="modal"
-                                    data-target="#exampleModal"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Header -->
+  <script>
+    PageHeader();
+  // PageHeaderBanner()
+  </script>
+  <!-- login ------------------------------------>
+  <div class="container-fluid  d-none d-md-block p-0 bg-theme2">
+    <div class=" container-lg">
+      <div class="row align-items-center">
+        <div class="col-2 px-0 text-center">
+          <img src="./img/桌機index_img/logo2.png" class="" style="width: 100px;" alt="">
         </div>
-    </div>
-    <!-- hoveList -->
-    <div class="container-fluid p-0 bg-theme2">
-        <div class="container">
-            <div class="row px-5" id="hover1List">
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10035.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10036.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10037.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10038.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10039.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10040.png" class="" alt="">
-                </div>
+        <div class="col-7 px-0 d-inline-flex align-items-center">
+          <div class="btn-group align-items-center">
+            <div class="btn py-0 px-2 px-lg-3">
+              <p class="text-theme font_b border-bottom bd-theme"
+                style="height: 50px;padding-top: .7rem;border-width: .35rem !important;border-radius: 5%;">
+                首頁
+              </p>
             </div>
-            <div class="row px-5" id="hover2List">
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/sport/1.png" class="" alt="">
-                </div>
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/sport/2.png" class="" alt="">
-                </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover1">
+              <span>真人</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
-            <div class="row px-5" id="hover3List">
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/bingo/1.png" class="" alt="">
-                </div>
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/bingo/2.png" class="" alt="">
-                </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover2">
+              <span>體育</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
-            <div class="row px-5" id="hover4List">
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/1.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/2.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/3.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/4.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/5.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/6.png" class="" alt="">
-                </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover3">
+              <span>賓果</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
-            <div class="row px-5" id="hover5List">
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/card/1.png" class="" alt="">
-                </div>
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/card/2.png" class="" alt="">
-                </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover4">
+              <span>電子</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
-            <div class="row px-5" id="hover6List">
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/fish/1.png" class="" alt="">
-                </div>
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/fish/2.png" class="" alt="">
-                </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover5">
+              <span>棋牌</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover6">
+              <span>捕魚</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+            </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover7">
+              <span>優惠</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+            </div>
+          </div>
         </div>
-    </div>
-
-    <!-- ------------------------------------------------<!-- login ------------------------------------>
-    <div class="container-fluid  d-none d-md-block p-0 bg-theme2">
-        <div class=" container-lg">
-            <div class="row align-items-center">
-                <div class="col-2 px-0 text-center">
-                    <img src="./img/桌機index_img/logo2.png" class="" style="width: 100px;" alt="">
-                </div>
-                <div class="col-7 px-0 d-inline-flex align-items-center">
-                    <div class="btn-group align-items-center">
-                        <div class="btn py-0 px-2 px-lg-3">
-                            <p class="text-theme font_b border-bottom bd-theme"
-                                style="height: 50px;padding-top: .7rem;border-width: .35rem !important;border-radius: 5%;">
-                                首頁
-                            </p>
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover1">
-                            <span>真人</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover2">
-                            <span>體育</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover3">
-                            <span>賓果</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover4">
-                            <span>電子</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover5">
-                            <span>棋牌</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover6">
-                            <span>捕魚</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="btn py-0 px-2 px-lg-3" id="hover7">
-                            <span>優惠</span>
-                            <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3" id="drw">
-                    <div class="row align-items-center btn-group">
-                        <div class="col-2 p-0">
-                            <img src="./img/桌機index_img/user.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-7 p-0 pl-1 dropdown-toggle" style="line-height: .6rem;cursor: pointer;"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p class="fsz-08">0987123654</p>
-                            <span class="fsz-08">$3,000.00</span><span class="fsz-08 px-0 pl-lg-4">會員中心</span> <i
-                                class="fa-solid fa-angle-right fsz-08"></i>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-right bg-theme font-weight-bold">
-                            <div class="row px-3">
-                                <a href="#" class="col">
-                                    <img src="./img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
-                                </a>
-                                <a href="#" class="col">
-                                    <img src="./img/桌機index_img/list/clickList/a2.png" class="img-fluid" alt="">
-                                </a>
-                                <a href="#" class="col">
-                                    <img src="./img/桌機index_img/list/clickList/a3.png" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/1.png" class="img-fluid" alt="">
-                                個人資料
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/2.png" class="img-fluid" alt="">
-                                VIP特權
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/3.png" class="img-fluid" alt="">
-                                優惠達標查詢
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/4.png" class="img-fluid" alt="">
-                                投注紀錄
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/5.png" class="img-fluid" alt="">
-                                交易紀錄
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/6.png" class="img-fluid" alt="">
-                                帳戶管理
-                            </a>
-                            <a href="#" class=" dropdown-item px-3" type="button">
-                                <img src="./img/桌機index_img/list/clickList/7.png" class="img-fluid" alt="">
-                                邀請好友
-                            </a>
-                            <a href="#" class="dropdown-item px-3 list-inline" type="button">
-                                <div class="list-inline-item">
-                                    <img src="./img/桌機index_img/list/clickList/8.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="list-inline-item" style="line-height: .6rem;">
-                                    <p class="py-0">幫助中心</p>
-                                    <p class="fsz-06 py-0 text-secondary list-inline-item flex-wrap">(存款、提款、投注疑問看
-                                        這裡)</p>
-                                </div>
-                            </a>
-                            <button
-                                class="d-flex bg-theme2-hover  border btn px-3 py-0 w-75 justify-content-center mx-auto rounded-pill bd-theme text-theme"
-                                type="button" style="border-width: 5rem;">
-                                <p class="px-3 text-center">登出</p>
-                            </button>
-                        </div>
-                        <div class="col p-0">
-                            <a href="./page/Bingo.html" class="text-right px-2"><img id="hrServiceBtn"
-                                    src="./img/手機index_img/Subtract.png" alt="" class="img-fluid" data-toggle="modal"
-                                    data-target="#exampleModal"></a>
-                        </div>
-                    </div>
-
-                </div>
+        <div class="col-3" id="drw">
+          <div class="row align-items-center btn-group">
+            <div class="col-2 p-0">
+              <img src="./img/桌機index_img/user.png" class="img-fluid" alt="">
             </div>
+            <div class="col-7 p-0 pl-1 dropdown-toggle" style="line-height: .6rem;cursor: pointer;"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <p class="fsz-08">0987123654</p>
+              <span class="fsz-08">$3,000.00</span><span class="fsz-08 px-0 pl-lg-4">會員中心</span> <i
+                class="fa-solid fa-angle-right fsz-08"></i>
+            </div>
+            <div class="dropdown-menu dropdown-menu-right bg-theme font-weight-bold">
+              <div class="row px-3">
+                <a href="#" class="col">
+                  <img src="./img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
+                </a>
+                <a href="#" class="col">
+                  <img src="./img/桌機index_img/list/clickList/a2.png" class="img-fluid" alt="">
+                </a>
+                <a href="#" class="col">
+                  <img src="./img/桌機index_img/list/clickList/a3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/1.png" class="img-fluid" alt="">
+                個人資料
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/2.png" class="img-fluid" alt="">
+                VIP特權
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/3.png" class="img-fluid" alt="">
+                優惠達標查詢
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/4.png" class="img-fluid" alt="">
+                投注紀錄
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/5.png" class="img-fluid" alt="">
+                交易紀錄
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/6.png" class="img-fluid" alt="">
+                帳戶管理
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/7.png" class="img-fluid" alt="">
+                邀請好友
+              </a>
+              <a href="#" class="dropdown-item px-3 list-inline" type="button">
+                <div class="list-inline-item">
+                  <img src="./img/桌機index_img/list/clickList/8.png" class="img-fluid" alt="">
+                </div>
+                <div class="list-inline-item" style="line-height: .6rem;">
+                  <p class="py-0">幫助中心</p>
+                  <p class="fsz-06 py-0 text-secondary list-inline-item flex-wrap">(存款、提款、投注疑問看
+                    這裡)</p>
+                </div>
+              </a>
+              <button
+                class="d-flex bg-theme2-hover  border btn px-3 py-0 w-75 justify-content-center mx-auto rounded-pill bd-theme text-theme"
+                type="button" style="border-width: 5rem;">
+                <p class="px-3 text-center">登出</p>
+              </button>
+            </div>
+            <div class="col p-0">
+              <a href="./page/Bingo.html" class="text-right px-2"><img id="hrServiceBtn"
+                  src="./img/手機index_img/Subtract.png" alt="" class="img-fluid" data-toggle="modal"
+                  data-target="#exampleModal"></a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- hoveList -->
-    <div class="container-fluid p-0 bg-theme2">
-        <div class="container">
-            <div class="row px-5" id="hover1List">
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10035.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10036.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10037.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10038.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10039.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/baccarat/10040.png" class="" alt="">
-                </div>
-            </div>
-            <div class="row px-5" id="hover2List">
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/sport/1.png" class="" alt="">
-                </div>
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/sport/2.png" class="" alt="">
-                </div>
-            </div>
-            <div class="row px-5" id="hover3List">
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/bingo/1.png" class="" alt="">
-                </div>
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/bingo/2.png" class="" alt="">
-                </div>
-            </div>
-            <div class="row px-5" id="hover4List">
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/1.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/2.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/3.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/4.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/5.png" class="" alt="">
-                </div>
-                <div class="col">
-                    <img src="./img/桌機index_img/list/slot/6.png" class="" alt="">
-                </div>
-            </div>
-            <div class="row px-5" id="hover5List">
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/card/1.png" class="" alt="">
-                </div>
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/card/2.png" class="" alt="">
-                </div>
-            </div>
-            <div class="row px-5" id="hover6List">
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/fish/1.png" class="" alt="">
-                </div>
-                <div class="col p-3">
-                    <img src="./img/桌機index_img/list/fish/2.png" class="" alt="">
-                </div>
-            </div>
+  </div>
+  <!-- hoveList -->
+  <div class="container-fluid p-0 bg-theme2">
+    <div class="container">
+      <div class="row px-5" id="hover1List">
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10035.png" class="" alt="">
         </div>
-    </div> -->
-    <!-- Header -->
-    <div class="d-md-none">
-        <script>PageHeader();</script>
-    </div>
-    <!-- MD history.back ------------------------------------------------------------------------>
-    <div class="d-md-none w-100 py-1" style="background-color: #efeee0;">
-        <nav aria-label="breadcrumb">
-            <ul class="d-flex py-0 py-sm-1">
-                <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
-                    <i class="fas fa-angle-left textCoffee fa-lg"></i>
-                </button>
-                <li class="breadcrumb-item"><a href="../index.html" class="textCoffee">首頁</a></li>
-                <li class="breadcrumb-item"><a href="../loginPage/loginPage.html" class="textCoffee">會員中心</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                    <span class="textCoffee pl-2" id="copyTitle"></span>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <script src="/js/history.js"></script>
-
-    <!-- MD -->
-    <div class="container-fluid p-0 m-0 d-md-none" style="background: url(../img/手機各分頁img/內頁/bg2.png);">
-        <div class="container-fluid p-0 d-md-none" style="background: #bc985e;">
-            <div class="container">
-                <div class="row py-3">
-                    <div class="col-6 centerCenter">
-                        <img src="../img/手機各分頁img/內頁/會員中心/頭像.png" class="img-fluid" alt="">
-                        <div class="d-flex centerCenter">
-                            <p class="text-center">玩家</p>
-                            <span class="textWhite">#00878</span>
-                        </div>
-                    </div>
-                    <div class="col-6 centerCenter">
-                        <div class="py-1">
-                            <img src="../img/手機各分頁img/內頁/會員中心/vip.png" class="img-fluid" alt="">
-                            <span>帳號</span>
-                            <span class="textWhite">#00878</span>
-                        </div>
-                        <div class="py-1">
-                            <img src="../img/手機各分頁img/內頁/會員中心/錢.png" class="img-fluid" alt="">
-                            <span class="textWhite">100</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10036.png" class="" alt="">
         </div>
-        <div class="container-fluid p-0 d-md-none bgc2 bgc-flex">
-            <div class="container">
-                <!--  -->
-                <div class="row p-3" style="align-items: center;">
-                    <div class="col-12 bgWhite py-2">
-                        <div class="row py-2">
-                            <div class="col-4 centerCenter">
-                                <a href="../loginPage/2DepositWthdrawal.html">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/存款.png" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="col-4 centerCenter">
-                                <a href="../loginPage/1EachStream.html">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/平台轉帳.png" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="col-4 centerCenter">
-                                <a href="../loginPage/2DepositWthdrawal.html">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/提款.png" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="row p-3" style="align-items: center;">
-                    <div class="col-12 bgWhite pt-2 pb-5">
-                        <div class="row py-2 mx-2 border-bottom border-secondary">
-                            <div class="col-8 centerCenter">
-                                <a href="../loginPage/3memberProfile.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/會員.png" alt="">
-                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">會員資料</span>
-                                </a>
-                            </div>
-                            <div class="col-4 centerCenter">
-                                <a href="../loginPage/3memberProfile.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row py-2 mx-2 border-bottom border-secondary">
-                            <div class="col-8 centerCenter">
-                                <a href="../loginPage/4changePassword.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/更改.png" alt="">
-                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">更改密碼</span>
-                                </a>
-                            </div>
-                            <div class="col-4 centerCenter">
-                                <a href="../loginPage/4changePassword.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row py-2 mx-2 border-bottom border-secondary">
-                            <div class="col-8 centerCenter">
-                                <a href="../loginPage/5TransactionRecord.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/紀錄.png" alt="">
-                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">交易紀錄</span>
-                                </a>
-                            </div>
-                            <div class="col-4 centerCenter">
-                                <a href="../loginPage/5TransactionRecord.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row py-2 mx-2 border-bottom border-secondary">
-                            <div class="col-8 centerCenter">
-                                <a href="../loginPage/6EachStream.html.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/流水.png" alt="">
-                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">各廳流水</span>
-                                </a>
-                            </div>
-                            <div class="col-4 centerCenter">
-                                <a href="../loginPage/6EachStream.html.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row py-2 mx-2 border-bottom border-secondary">
-                            <div class="col-8 centerCenter">
-                                <a href="../header page/1AboutUs.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/關於.png" alt="">
-                                    <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">關於我們</span>
-                                </a>
-                            </div>
-                            <div class="col-4 centerCenter">
-                                <a href="../header page/1AboutUs.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row py-2 mx-2">
-                            <div class="col-8 centerCenter">
-                                <a href="../index.html" style="text-decoration:none;">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/登出.png" alt="">
-                                    <span
-                                        style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">登出&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-                                </a>
-                            </div>
-                            <div class="col-4 centerCenter">
-                                <a href="/index.html">
-                                    <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10037.png" class="" alt="">
         </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10038.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10039.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10040.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row px-5" id="hover2List">
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/sport/1.png" class="" alt="">
+        </div>
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/sport/2.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row px-5" id="hover3List">
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/bingo/1.png" class="" alt="">
+        </div>
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/bingo/2.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row px-5" id="hover4List">
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/1.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/2.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/3.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/4.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/5.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/6.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row px-5" id="hover5List">
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/card/1.png" class="" alt="">
+        </div>
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/card/2.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row px-5" id="hover6List">
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/fish/1.png" class="" alt="">
+        </div>
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/fish/2.png" class="" alt="">
+        </div>
+      </div>
     </div>
+  </div>
 
+  <!-- ------------------------------------------------<!-- login ------------------------------------>
+  <div class="container-fluid  d-none d-md-block p-0 bg-theme2">
+    <div class=" container-lg">
+      <div class="row align-items-center">
+        <div class="col-2 px-0 text-center">
+          <img src="./img/桌機index_img/logo2.png" class="" style="width: 100px;" alt="">
+        </div>
+        <div class="col-7 px-0 d-inline-flex align-items-center">
+          <div class="btn-group align-items-center">
+            <div class="btn py-0 px-2 px-lg-3">
+              <p class="text-theme font_b border-bottom bd-theme"
+                style="height: 50px;padding-top: .7rem;border-width: .35rem !important;border-radius: 5%;">
+                首頁
+              </p>
+            </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover1">
+              <span>真人</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+            </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover2">
+              <span>體育</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+            </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover3">
+              <span>賓果</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+            </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover4">
+              <span>電子</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+            </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover5">
+              <span>棋牌</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+            </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover6">
+              <span>捕魚</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+            </div>
+            <div class="btn py-0 px-2 px-lg-3" id="hover7">
+              <span>優惠</span>
+              <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-3" id="drw">
+          <div class="row align-items-center btn-group">
+            <div class="col-2 p-0">
+              <img src="./img/桌機index_img/user.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-7 p-0 pl-1 dropdown-toggle" style="line-height: .6rem;cursor: pointer;"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <p class="fsz-08">0987123654</p>
+              <span class="fsz-08">$3,000.00</span><span class="fsz-08 px-0 pl-lg-4">會員中心</span> <i
+                class="fa-solid fa-angle-right fsz-08"></i>
+            </div>
+            <div class="dropdown-menu dropdown-menu-right bg-theme font-weight-bold">
+              <div class="row px-3">
+                <a href="#" class="col">
+                  <img src="./img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
+                </a>
+                <a href="#" class="col">
+                  <img src="./img/桌機index_img/list/clickList/a2.png" class="img-fluid" alt="">
+                </a>
+                <a href="#" class="col">
+                  <img src="./img/桌機index_img/list/clickList/a3.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/1.png" class="img-fluid" alt="">
+                個人資料
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/2.png" class="img-fluid" alt="">
+                VIP特權
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/3.png" class="img-fluid" alt="">
+                優惠達標查詢
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/4.png" class="img-fluid" alt="">
+                投注紀錄
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/5.png" class="img-fluid" alt="">
+                交易紀錄
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/6.png" class="img-fluid" alt="">
+                帳戶管理
+              </a>
+              <a href="#" class=" dropdown-item px-3" type="button">
+                <img src="./img/桌機index_img/list/clickList/7.png" class="img-fluid" alt="">
+                邀請好友
+              </a>
+              <a href="#" class="dropdown-item px-3 list-inline" type="button">
+                <div class="list-inline-item">
+                  <img src="./img/桌機index_img/list/clickList/8.png" class="img-fluid" alt="">
+                </div>
+                <div class="list-inline-item" style="line-height: .6rem;">
+                  <p class="py-0">幫助中心</p>
+                  <p class="fsz-06 py-0 text-secondary list-inline-item flex-wrap">(存款、提款、投注疑問看
+                    這裡)</p>
+                </div>
+              </a>
+              <button
+                class="d-flex bg-theme2-hover  border btn px-3 py-0 w-75 justify-content-center mx-auto rounded-pill bd-theme text-theme"
+                type="button" style="border-width: 5rem;">
+                <p class="px-3 text-center">登出</p>
+              </button>
+            </div>
+            <div class="col p-0">
+              <a href="./page/Bingo.html" class="text-right px-2"><img id="hrServiceBtn"
+                  src="./img/手機index_img/Subtract.png" alt="" class="img-fluid" data-toggle="modal"
+                  data-target="#exampleModal"></a>
+            </div>
+          </div>
 
-    <!-- Footer -->
-    <div class="d-md-none">
-        <script>MDFooter();</script>
-        <!-- <script>indexLoginFooter();</script> -->
+        </div>
+      </div>
     </div>
+  </div>
+  <!-- hoveList -->
+  <div class="container-fluid p-0 bg-theme2">
+    <div class="container">
+      <div class="row px-5" id="hover1List">
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10035.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10036.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10037.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10038.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10039.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/baccarat/10040.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row px-5" id="hover2List">
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/sport/1.png" class="" alt="">
+        </div>
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/sport/2.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row px-5" id="hover3List">
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/bingo/1.png" class="" alt="">
+        </div>
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/bingo/2.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row px-5" id="hover4List">
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/1.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/2.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/3.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/4.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/5.png" class="" alt="">
+        </div>
+        <div class="col">
+          <img src="./img/桌機index_img/list/slot/6.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row px-5" id="hover5List">
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/card/1.png" class="" alt="">
+        </div>
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/card/2.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row px-5" id="hover6List">
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/fish/1.png" class="" alt="">
+        </div>
+        <div class="col p-3">
+          <img src="./img/桌機index_img/list/fish/2.png" class="" alt="">
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Header -->
+  <div class="d-md-none">
+    <script>PageHeader();</script>
+  </div>
+  <!-- MD history.back ------------------------------------------------------------------------>
+  <div class="d-md-none w-100 py-1" style="background-color: #efeee0;">
+    <nav aria-label="breadcrumb">
+      <ul class="d-flex py-0 py-sm-1">
+        <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+          <i class="fas fa-angle-left textCoffee fa-lg"></i>
+        </button>
+        <li class="breadcrumb-item"><a href="../index.html" class="textCoffee">首頁</a></li>
+        <li class="breadcrumb-item"><a href="../loginPage/loginPage.html" class="textCoffee">會員中心</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <span class="textCoffee pl-2" id="copyTitle"></span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script src="/js/history.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+  <!-- MD -->
+  <div class="container-fluid p-0 m-0 d-md-none" style="background: url(../img/手機各分頁img/內頁/bg2.png);">
+    <div class="container-fluid p-0 d-md-none" style="background: #bc985e;">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-6 centerCenter">
+            <img src="../img/手機各分頁img/內頁/會員中心/頭像.png" class="img-fluid" alt="">
+            <div class="d-flex centerCenter">
+              <p class="text-center">玩家</p>
+              <span class="textWhite">#00878</span>
+            </div>
+          </div>
+          <div class="col-6 centerCenter">
+            <div class="py-1">
+              <img src="../img/手機各分頁img/內頁/會員中心/vip.png" class="img-fluid" alt="">
+              <span>帳號</span>
+              <span class="textWhite">#00878</span>
+            </div>
+            <div class="py-1">
+              <img src="../img/手機各分頁img/內頁/會員中心/錢.png" class="img-fluid" alt="">
+              <span class="textWhite">100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0 d-md-none bgc2 bgc-flex">
+      <div class="container">
+        <!--  -->
+        <div class="row p-3" style="align-items: center;">
+          <div class="col-12 bgWhite py-2">
+            <div class="row py-2">
+              <div class="col-4 centerCenter">
+                <a href="../loginPage/2DepositWthdrawal.html">
+                  <img src="../img/手機各分頁img/內頁/會員中心/存款.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="col-4 centerCenter">
+                <a href="../loginPage/1EachStream.html">
+                  <img src="../img/手機各分頁img/內頁/會員中心/平台轉帳.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="col-4 centerCenter">
+                <a href="../loginPage/2DepositWthdrawal.html">
+                  <img src="../img/手機各分頁img/內頁/會員中心/提款.png" class="img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row p-3" style="align-items: center;">
+          <div class="col-12 bgWhite pt-2 pb-5">
+            <div class="row py-2 mx-2 border-bottom border-secondary">
+              <div class="col-8 centerCenter">
+                <a href="../loginPage/3memberProfile.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/會員.png" alt="">
+                  <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">會員資料</span>
+                </a>
+              </div>
+              <div class="col-4 centerCenter">
+                <a href="../loginPage/3memberProfile.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row py-2 mx-2 border-bottom border-secondary">
+              <div class="col-8 centerCenter">
+                <a href="../loginPage/4changePassword.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/更改.png" alt="">
+                  <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">更改密碼</span>
+                </a>
+              </div>
+              <div class="col-4 centerCenter">
+                <a href="../loginPage/4changePassword.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row py-2 mx-2 border-bottom border-secondary">
+              <div class="col-8 centerCenter">
+                <a href="../loginPage/5TransactionRecord.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/紀錄.png" alt="">
+                  <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">交易紀錄</span>
+                </a>
+              </div>
+              <div class="col-4 centerCenter">
+                <a href="../loginPage/5TransactionRecord.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row py-2 mx-2 border-bottom border-secondary">
+              <div class="col-8 centerCenter">
+                <a href="../loginPage/6EachStream.html.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/流水.png" alt="">
+                  <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">各廳流水</span>
+                </a>
+              </div>
+              <div class="col-4 centerCenter">
+                <a href="../loginPage/6EachStream.html.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row py-2 mx-2 border-bottom border-secondary">
+              <div class="col-8 centerCenter">
+                <a href="../header page/1AboutUs.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/關於.png" alt="">
+                  <span style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">關於我們</span>
+                </a>
+              </div>
+              <div class="col-4 centerCenter">
+                <a href="../header page/1AboutUs.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row py-2 mx-2">
+              <div class="col-8 centerCenter">
+                <a href="../index.html" style="text-decoration:none;">
+                  <img src="../img/手機各分頁img/內頁/會員中心/登出.png" alt="">
+                  <span
+                    style="color: #4d4d4d; font-size: 1.3rem; font-weight: bold;">登出&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                </a>
+              </div>
+              <div class="col-4 centerCenter">
+                <a href="/index.html">
+                  <img src="../img/手機各分頁img/內頁/會員中心/箭頭.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="d-md-none">
+    <script>MDFooter();</script>
+    <!-- <script>indexLoginFooter();</script> -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

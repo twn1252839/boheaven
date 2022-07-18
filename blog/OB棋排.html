@@ -2,52 +2,52 @@
 <html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <!-- IE兼容 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- IE兼容 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- w3 -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- w3 -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!-- UK CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+  <!-- UK CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
 
-    <!-- UK JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+  <!-- UK JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
 
-    <!-- JQ -->
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="../js/Addhtml.js"></script>
+  <!-- JQ -->
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../js/Addhtml.js"></script>
 
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/index-main.css">
-    <style>
-        /* switch 調整 */
-        .uk-subnav-pill>.uk-active>a {
-            background-color: transparent !important;
-            color: #365a97 !important;
-            font-weight: bold;
-        }
+  <!-- <link rel="stylesheet" href="../css/style.css"> -->
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/index-main.css">
+  <style>
+    /* switch 調整 */
+    .uk-subnav-pill>.uk-active>a {
+      background-color: transparent !important;
+      color: #365a97 !important;
+      font-weight: bold;
+    }
 
-        /* 控制手風琴右邊元素(是否出現) */
-        .uk-accordion-title::before {
-            /* display: none; */
-            /* content: "";
+    /* 控制手風琴右邊元素(是否出現) */
+    .uk-accordion-title::before {
+      /* display: none; */
+      /* content: "";
             width: 1.4em;
             height: 1.4em;
             margin-left: 10px;
@@ -56,154 +56,160 @@
             background-image: none;
             background-repeat: no-repeat;
             background-position: 50% 50%; */
-        }
+    }
 
-        .ac {
-            width: 25px;
-            height: 25px;
-            border-radius: 999em;
-            background-color: #365a97;
-        }
+    .ac {
+      width: 25px;
+      height: 25px;
+      border-radius: 999em;
+      background-color: #365a97;
+    }
 
-        .text-theme {
-            color: #365a97;
-        }
+    .text-theme {
+      color: #365a97;
+    }
 
-        .uk-accordion-title::before {
-            content: "";
-            width: 1.4em;
-            height: 1.4em;
-            margin-left: 10px;
-            float: right;
-            color: #555 !important;
-            background-image: url("../img/手機index_img/arrowDownList/collapsibleIcon.svg");
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-        }
+    .uk-accordion-title::before {
+      content: "";
+      width: 1.4em;
+      height: 1.4em;
+      margin-left: 10px;
+      float: right;
+      color: #555 !important;
+      background-image: url("../img/手機index_img/arrowDownList/collapsibleIcon.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
 
-        .bg-theme3 {
-            background-color: #365a97;
-        }
-    </style>
-    <title>優惠說明 Promotion</title>
+    .bg-theme3 {
+      background-color: #365a97;
+    }
+  </style>
+  <title>OB棋排介紹</title>
 </head>
 
+
 <body>
-    <div class="container-fluid p-0 m-0 d-md-none bg-light px-3 uk-position-relative vh-100">
-        <div class="row bg-theme1">
-            <div class="col-12">
-                <button class="btn py-0 uk-position-absolute uk-position-left" type="button" onclick="history.back()"
-                    value="回到上一頁">
-                    <i class="fa-solid fa-caret-left fa-lg"></i>
-                </button>
-                <p class="text-center my-0  font-weight-bold  h5 py-2">博天堂體育</p>
+  <!-- Header -->
+  <script>
+    PageHeader();
+  // PageHeaderBanner()
+  </script>
+  <div class="container-fluid p-0 m-0 d-md-none bg-light px-3 uk-position-relative vh-100">
+    <div class="row bg-theme1">
+      <div class="col-12">
+        <button class="btn py-0 uk-position-absolute uk-position-left" type="button" onclick="history.back()"
+          value="回到上一頁">
+          <i class="fa-solid fa-caret-left fa-lg"></i>
+        </button>
+        <p class="text-center my-0  font-weight-bold  h5 py-2">博天堂體育</p>
+      </div>
+      <div class="col-12 p-0 pb-5 bg-theme">
+        <div class="p-3">
+          <div class="pb-3">
+            <!--  -->
+            <p class="h5 pb-1 text-theme font-weight-bold ">super體育品牌介紹
+            </p>
+            <div class="text-center">
+              <img src="../img/手機各分頁img/gameBlogPage/superSports/1.png" class="img-fluid" alt="">
             </div>
-            <div class="col-12 p-0 pb-5 bg-theme">
-                <div class="p-3">
-                    <div class="pb-3">
-                        <!--  -->
-                        <p class="h5 pb-1 text-theme font-weight-bold ">super體育品牌介紹
-                        </p>
-                        <div class="text-center">
-                            <img src="../img/手機各分頁img/gameBlogPage/superSports/1.png" class="img-fluid" alt="">
-                        </div>
-                        <p class="text-secondary my-1">
-                            SUPER體育是一個獲得菲律賓政府認證許可的體育博彩系統品牌，品牌多年來一直深耕於網路運彩的市場當中。SUPER體育更被認為是網路運彩品牌當中，國際市場唯二認可營運最穩定的球版博彩品牌。SUPER體育官方提供可投注的運動項目非常多，包含棒球、籃球、網球、電競還有冰球等等的熱門運動項目，總項目超過百種以上，SUPER體育最高賠率有0.97，無論系統或者服務品質，super體育皆是網路運彩的旗艦品牌。
-                        </p>
-                        <!--  -->
-                        <p class="h5 pb-1 text-theme font-weight-bold ">super體育安全有保障
-                        </p>
-                        <p class="text-secondary my-1">
-                            super體育是經由菲律賓的主管機關FCLRC機關所監管以及頒布執照的網路運彩品牌，FCLRC全名為First Cagayan Leisure and Resort
-                            Corporation。
-                        </p>
-                        <p class="col-12 my-3 text-secondary px-0 ">
-                            Super體育的程式系統則是受到菲律賓官方卡加延經濟特區管理局(CEZA)監管的，super體育所有的網路運彩系統營運設計方式，皆須符合CEZA官方的要求來運轉。
-                        </p>
-                        <p class="col-12 my-3 text-secondary px-0 ">
-                            super體育系統是絕對保證不能有任何作弊行為出現，同時亦是一個值得您肯定的網路運彩品牌，亦是在各大線上博彩平台都能看到的運彩系統。
-                        </p>
-                        <!--  -->
-                        <p class="h5 pb-1 text-theme font-weight-bold ">Super體育投注項目最豐富
-                        </p>
-                        <p class="text-secondary my-1">
-                            近年來各大運動項目行銷成功，吸引了許多人的目光，市場也日漸龐大。Super體育所提供的賽事投注都是最熱門有趣的，包含棒球、籃球、足球、冰球與網球等等，您都可在super體育的系統中找到。
-                        </p>
-                        <p class="col-12 my-3 text-secondary px-0 ">
-                            體育投注最熱門的讓分、大小、單雙、場中投注、總進球數、主客隊大小等等超過幾十種的投注玩法，在super體育中通通都能玩到。跟上潮流提供最新最潮的投注玩法，顛覆您對傳統球版的投注玩法，這正是super體育所努力的目標。
-                        </p>
-                        <!--  -->
-                        <p class="h5 pb-1 text-theme font-weight-bold ">Super體育與博天堂合作契機
-                        </p>
-                        <div class=" text-center">
-                            <img src="../img/手機各分頁img/gameBlogPage/superSports/2.png" class="img-fluid" alt="">
-                        </div>
-                        <p class="text-secondary my-1">
-                            正是因為super體育獲得CEZA以及FCLRC兩大菲律賓博彩主管機關的監督，無論是安全性、品牌信任度或者遊戲中的公平程度，皆是值得信任的。Super體育集團在日新月異的網路運彩市場中，不斷擴張海外的營運版圖以及服務方式，創新與堅持積極的態度，正是讓博天堂團隊看到其品牌優勢，經營博彩的理念與博天堂集團相符合。Super體育提供高反水優惠，亦有國際賽事包含奧運、亞運等等的投注服務，super體育系統更支援多元裝置上網的服務，隨時照顧到不同類型的玩家族群。
-                        </p>
-
-                        <div class="p-2">
-                            <span class="bg-theme3 text-light row py-2">
-                                <span class="col-6 centerCenter">標題</span>
-                                <span class="col-6 centerCenter">時間</span>
-                            </span>
-                            <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark">
-                                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
-                                <span class="col-6 centerCenter">2022/04/27</span>
-                            </a>
-                            <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark"
-                                style="background-color: #EAEAEA;">
-                                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
-                                <span class="col-6 centerCenter">2022/04/27</span>
-                            </a>
-                            <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark">
-                                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
-                                <span class="col-6 centerCenter">2022/04/27</span>
-                            </a>
-                            <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark"
-                                style="background-color: #EAEAEA;">
-                                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
-                                <span class="col-6 centerCenter">2022/04/27</span>
-                            </a>
-                            <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark">
-                                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
-                                <span class="col-6 centerCenter">2022/04/27</span>
-                            </a>
-                            <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark"
-                                style="background-color: #EAEAEA;">
-                                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
-                                <span class="col-6 centerCenter">2022/04/27</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <p class="text-secondary my-1">
+              SUPER體育是一個獲得菲律賓政府認證許可的體育博彩系統品牌，品牌多年來一直深耕於網路運彩的市場當中。SUPER體育更被認為是網路運彩品牌當中，國際市場唯二認可營運最穩定的球版博彩品牌。SUPER體育官方提供可投注的運動項目非常多，包含棒球、籃球、網球、電競還有冰球等等的熱門運動項目，總項目超過百種以上，SUPER體育最高賠率有0.97，無論系統或者服務品質，super體育皆是網路運彩的旗艦品牌。
+            </p>
+            <!--  -->
+            <p class="h5 pb-1 text-theme font-weight-bold ">super體育安全有保障
+            </p>
+            <p class="text-secondary my-1">
+              super體育是經由菲律賓的主管機關FCLRC機關所監管以及頒布執照的網路運彩品牌，FCLRC全名為First Cagayan Leisure and Resort
+              Corporation。
+            </p>
+            <p class="col-12 my-3 text-secondary px-0 ">
+              Super體育的程式系統則是受到菲律賓官方卡加延經濟特區管理局(CEZA)監管的，super體育所有的網路運彩系統營運設計方式，皆須符合CEZA官方的要求來運轉。
+            </p>
+            <p class="col-12 my-3 text-secondary px-0 ">
+              super體育系統是絕對保證不能有任何作弊行為出現，同時亦是一個值得您肯定的網路運彩品牌，亦是在各大線上博彩平台都能看到的運彩系統。
+            </p>
+            <!--  -->
+            <p class="h5 pb-1 text-theme font-weight-bold ">Super體育投注項目最豐富
+            </p>
+            <p class="text-secondary my-1">
+              近年來各大運動項目行銷成功，吸引了許多人的目光，市場也日漸龐大。Super體育所提供的賽事投注都是最熱門有趣的，包含棒球、籃球、足球、冰球與網球等等，您都可在super體育的系統中找到。
+            </p>
+            <p class="col-12 my-3 text-secondary px-0 ">
+              體育投注最熱門的讓分、大小、單雙、場中投注、總進球數、主客隊大小等等超過幾十種的投注玩法，在super體育中通通都能玩到。跟上潮流提供最新最潮的投注玩法，顛覆您對傳統球版的投注玩法，這正是super體育所努力的目標。
+            </p>
+            <!--  -->
+            <p class="h5 pb-1 text-theme font-weight-bold ">Super體育與博天堂合作契機
+            </p>
+            <div class=" text-center">
+              <img src="../img/手機各分頁img/gameBlogPage/superSports/2.png" class="img-fluid" alt="">
             </div>
+            <p class="text-secondary my-1">
+              正是因為super體育獲得CEZA以及FCLRC兩大菲律賓博彩主管機關的監督，無論是安全性、品牌信任度或者遊戲中的公平程度，皆是值得信任的。Super體育集團在日新月異的網路運彩市場中，不斷擴張海外的營運版圖以及服務方式，創新與堅持積極的態度，正是讓博天堂團隊看到其品牌優勢，經營博彩的理念與博天堂集團相符合。Super體育提供高反水優惠，亦有國際賽事包含奧運、亞運等等的投注服務，super體育系統更支援多元裝置上網的服務，隨時照顧到不同類型的玩家族群。
+            </p>
 
+            <div class="p-2">
+              <span class="bg-theme3 text-light row py-2">
+                <span class="col-6 centerCenter">標題</span>
+                <span class="col-6 centerCenter">時間</span>
+              </span>
+              <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark">
+                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
+                <span class="col-6 centerCenter">2022/04/27</span>
+              </a>
+              <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark"
+                style="background-color: #EAEAEA;">
+                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
+                <span class="col-6 centerCenter">2022/04/27</span>
+              </a>
+              <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark">
+                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
+                <span class="col-6 centerCenter">2022/04/27</span>
+              </a>
+              <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark"
+                style="background-color: #EAEAEA;">
+                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
+                <span class="col-6 centerCenter">2022/04/27</span>
+              </a>
+              <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark">
+                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
+                <span class="col-6 centerCenter">2022/04/27</span>
+              </a>
+              <a href="../page/BlogPage.html" class="row py-2 font-weight-bold text-dark"
+                style="background-color: #EAEAEA;">
+                <span class="col-6 centerCenter">百家樂 | 北京暴雨！</span>
+                <span class="col-6 centerCenter">2022/04/27</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <script>
-            $(document).ready(function () {
-                let title = $('title').text();
-                $('#copyTitle').html(title);
-            });
-        </script>
+      </div>
 
-        <!-- Footer -->
-        <script>PCFooter();</script>
-        <script>MDFooter();</script>
-        <script src='../js/jquery-3.6.0.js'></script>
-        <script>
-            $(document).ready(function () {
-                $('.card_c').click(
-                    function () {
-                        $(this).siblings().addClass('uk-blend-luminosity');
-                        $(this).toggleClass('uk-blend-luminosity');
-                    }
-                )
-            });                                            
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
+    </div>
+    <script>
+      $(document).ready(function () {
+        let title = $('title').text();
+        $('#copyTitle').html(title);
+      });
+    </script>
+
+    <!-- Footer -->
+    <script>PCFooter();</script>
+    <script>MDFooter();</script>
+    <script src='../js/jquery-3.6.0.js'></script>
+    <script>
+      $(document).ready(function () {
+        $('.card_c').click(
+          function () {
+            $(this).siblings().addClass('uk-blend-luminosity');
+            $(this).toggleClass('uk-blend-luminosity');
+          }
+        )
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
