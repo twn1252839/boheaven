@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/index-main.css">
+  <link rel="stylesheet" href="./css/progress.css">
 
   <!-- vue -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
@@ -430,7 +431,22 @@
       </div>
       <div class="row">
         <div class="col">
-          <img class="img-fluid" src="./img/桌機index_img/G1.png" alt="">
+          <!-- title卡片 -->
+          <div class="uk-inline w-100 d-flex justify-content-center my-3">
+            <img src="./img/桌機index_img/progress/BG1.png" class="img-fluid" alt="">
+            <div class="uk-overlay uk-overlay-default uk-position-center w-100 centerCenter bg-transparent">
+              <div class="progress blue">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <!-- 文字改這 -->
+                <div class="progress-value">90%</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col">
           <img class="img-fluid" src="./img/桌機index_img/G1.png" alt="">
