@@ -122,17 +122,17 @@
     <div class=" container-lg">
       <div class="row align-items-center">
         <div class="col-2 px-0 text-center">
-          <img src="./img/桌機index_img/logo.png" class="img-fluid p-2" alt="">
+          <img src="./img/桌機index_img/logo.png" class="img-fluid px-2" alt="">
         </div>
         <div class="col-7 px-0 d-inline-flex align-items-center">
           <div class="btn-group align-items-center">
-            <div class="btn py-0 px-2 px-lg-3">
+            <div class="btn py-0 px-2 px-lg-3 my-1">
               <p class="text-theme font_b border-bottom bd-theme"
                 style="height: 50px;padding-top: .7rem;border-width: .35rem !important;border-radius: 5%;">
                 首頁
               </p>
             </div>
-            <div class="btn py-0 px-2 px-lg-3" id="hover1">
+            <div class="btn py-0 px-1 px-lg-2 px-xl-3" id="hover1">
               <span>真人</span>
               <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
@@ -320,27 +320,29 @@
         </div>
       </div>
       <ul class="uk-subnav uk-subnav-pill row px-3 CardBgMd-txt rounded-pill" uk-switcher>
-        <li class="col-2 p-0 gameList1"><a href="#" class="p-1 text-center">
-            <img class="" src="./img/桌機index_img/GAME/gameList/List1.png" alt="">
-          </a></li>
-        <li class="col-2 p-0 gameList2"><a href="#" class="p-1 text-center">
-            <img class="" src="./img/桌機index_img/GAME/gameList/2.png" alt="">
+        <li class="col-2 px-0 gameList1">
+          <a href="#" class="p-1 text-center mx-3">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/List1.png" alt="">
           </a>
         </li>
-        <li class="col-2 p-0 gameList3"><a href="#" class="p-1 text-center">
-            <img class="" src="./img/桌機index_img/GAME/gameList/3.png" alt="">
+        <li class="col-2 px-0 gameList2"><a href="#" class="p-1 text-center mx-3">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/2.png" alt="">
           </a>
         </li>
-        <li class="col-2 p-0 gameList4"><a href="#" class="p-1 text-center">
-            <img class="" src="./img/桌機index_img/GAME/gameList/4.png" alt="">
+        <li class="col-2 px-0 gameList3"><a href="#" class="p-1 text-center mx-3">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/3.png" alt="">
           </a>
         </li>
-        <li class="col-2 p-0 gameList5"><a href="#" class="p-1 text-center">
-            <img class="" src="./img/桌機index_img/GAME/gameList/5.png" alt="">
+        <li class="col-2 px-0 gameList4"><a href="#" class="p-1 text-center mx-3">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/4.png" alt="">
           </a>
         </li>
-        <li class="col-2 p-0 gameList6"><a href="#" class="p-1 text-center">
-            <img class="" src="./img/桌機index_img/GAME/gameList/6.png" alt="">
+        <li class="col-2 px-0 gameList5"><a href="#" class="p-1 text-center mx-3">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/5.png" alt="">
+          </a>
+        </li>
+        <li class="col-2 px-0 gameList6"><a href="#" class="p-1 text-center mx-3">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/6.png" alt="">
           </a>
         </li>
       </ul>
@@ -480,18 +482,12 @@
           <p class="text-secondary text-right fsz-08">更多詳情&gt;&gt;</p>
         </button>
       </div>
-      <a href="./page/Blog.html" class="uk-button col-12 p-0 bg-transparent">
-        <div class="uk-child-width-1-2@m" uk-grid>
-          <div class="centerCenter py-3">
-            <div class="uk-inline">
-              <img class="" width="200" src="../img/手機index_img/arrowDownList/button.png" alt="">
-              <div class="uk-overlay uk-overlay-default uk-position-center bg-transparent">
-                <p class="text-light font-weight-bold text-center h5">看更多</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+      <!--  -->
+      <div class="centerCenter py-3">
+        <a href="./page/Blog.html" class="btn bg-transparent  p-0 m-0">
+          <img class="img-fluid " src="./img/桌機index_img/more.png" alt="">
+        </a>
+      </div>
     </div>
   </div>
   <!-- 手機板 header ------------------------------------------------------------------------>
@@ -1310,7 +1306,7 @@
 
   <!-- 右側中 -->
   <div class="uk-position-fixed uk-position-center-right btn-fixed d-none d-md-block"
-    style="width: 5rem; height: auto;margin-top: 50px;z-index: 99999999999;">
+    style="width: 5rem; height: auto;margin-top: -50px;z-index: 99999999999;">
     <button type="button" class="btn  centerCenter rounded-circle p-0" data-toggle="modal"
       data-target="#exampleModalCenter2">
       <img src="./img/桌機index_img/0service.png" class="img-fluid" alt="">
@@ -1355,7 +1351,7 @@
   <!-- back-to-top -->
   <button id="back-to-top"
     class="btn uk-position-fixed uk-position-bottom-right centerCenter bg-theme3 d-none d-md-block rounded-circle btn-fixed"
-    style="height: 2.8em;width: 2.8em;">
+    style="height: 2.8rem;width: 2.8rem;right: 2.5%;">
     <i class="fas fa-angle-up w3-xlarge text-light"></i>
   </button>
 
