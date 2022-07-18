@@ -164,7 +164,7 @@
           <div class="row align-items-center btn-group">
 
             <div class="col-7 p-0 pl-1 dropdown-toggle">
-              <a href=" ./page/indexLoginPage.html" class="pr-2"><input
+              <a href="./page/indexLoginPage.html" class="pr-2"><input
                   class="btn rounded py-1 input-size font-weight-bold text-light"
                   style="background: linear-gradient(180deg, #57D7FF 0%, #1E50A6 100%);" type="submit" value="登入"></a>
               <a href="./header page/Signup.html" target="_black"><input class="btn py-1 input-size font-weight-bold"
@@ -278,7 +278,7 @@
     </div>
   </div>
   <!-- banner -->
-  <div class="container-fluid d-none d-md-block">
+  <div class="container-fluid d-none d-md-block p-0">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -372,12 +372,12 @@
 
         <ul class="uk-subnav uk-subnav-pill col-12 justify-content-center  my-auto" uk-switcher>
           <li class=" card_c">
-            <a href="#" class="px-0">
+            <a href="./header page/1AboutUs.html" class="px-0">
               <img class="" src="./img/桌機index_img/title2button1.png" alt="">
             </a>
           </li>
           <li class=" card_c uk-blend-luminosity">
-            <a href="#" class="px-0">
+            <a href="./header page/2AppDownload.html" class="px-0">
               <img class="" src="./img/桌機index_img/title2button2.png" alt="">
             </a>
           </li>
@@ -1251,16 +1251,16 @@
         <div class="col-12" id="breadcrumb1">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center p-0 mb-0 pt-2">
-              <li class="breadcrumb-item fsz-06"><a href="#">Home</a></li>
-              <li class="breadcrumb-item fsz-06"><a href="#">幫助中心</a></li>
-              <li class="breadcrumb-item fsz-06"><a href="#">邀請好友</a></li>
-              <li class="breadcrumb-item fsz-06"><a href="#">APP下載</a></li>
-              <li class="breadcrumb-item fsz-06"><a href="#">常見問題</a></li>
+              <li class="breadcrumb-item fsz-06"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item fsz-06"><a href="./page/HelpCenter.html">幫助中心</a></li>
+              <li class="breadcrumb-item fsz-06"><a href="./page/inviteFriends.html">邀請好友</a></li>
+              <li class="breadcrumb-item fsz-06"><a href="./header page/2AppDownload.html">APP下載</a></li>
+              <li class="breadcrumb-item fsz-06"><a href="./header page/3FAQ.html">常見問題</a></li>
               <li class="breadcrumb-item fsz-06"><a href="#">合營代理</a></li>
-              <li class="breadcrumb-item fsz-06"><a href="#">娛樂城</a></li>
-              <li class="breadcrumb-item fsz-06"><a href="#">百家樂</a></li>
-              <li class="breadcrumb-item fsz-06"><a href="#">遊戲介紹</a></li>
-              <li class="breadcrumb-item fsz-06"><a href="#">娛樂城文章分享</a></li>
+              <li class="breadcrumb-item fsz-06"><a href="./index.html">娛樂城</a></li>
+              <li class="breadcrumb-item fsz-06"><a href="./index.html">百家樂</a></li>
+              <li class="breadcrumb-item fsz-06"><a href="./page/gameIntroduction.html">遊戲介紹</a></li>
+              <li class="breadcrumb-item fsz-06"><a href="./page/Blog.html">娛樂城文章分享</a></li>
           </nav>
         </div>
       </div>
@@ -1287,7 +1287,7 @@
           </a>
         </div>
         <div class="col centerCenter px-0 card_c uk-blend-luminosity">
-          <a href="#">
+          <a href="./page/MyPurse.html">
             <img src="./img/手機index_img/bottomList/bottomList3.png" class="img-fluid" alt="">
           </a>
         </div>
@@ -1307,19 +1307,52 @@
 
   <!-- 右側中 -->
   <div class="uk-position-fixed uk-position-center-right btn-fixed d-none d-md-block"
-    style="width: 5rem; height: auto;margin-top: 50px;">
-    <button class="btn centerCenter rounded-circle">
-      <img src="./img/桌機index_img/Fline.png" class="img-fluid" alt="">
+    style="width: 5rem; height: auto;margin-top: 50px;z-index: 99999999999;">
+    <button type="button" class="btn  centerCenter rounded-circle p-0" data-toggle="modal"
+      data-target="#exampleModalCenter2">
+      <img src="./img/桌機index_img/0service.png" class="img-fluid" alt="">
     </button>
-    <button class="btn centerCenter rounded-circle">
-      <img src="./img/桌機index_img/F寄信.png" class="img-fluid" alt="">
-    </button>
+    <a href="./page/HelpCenter.html" class="btn centerCenter rounded-circle p-0">
+      <img src="./img/桌機index_img/2help.png" class="img-fluid" alt="">
+    </a>
+    <a href="./header page/3FAQ.html" class="btn centerCenter rounded-circle p-0">
+      <img src="./img/桌機index_img/1announcement.png" class="img-fluid" alt="">
+    </a>
+  </div>
+
+  <!-- 0service Modal -->
+  <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title h5 text-theme font-weight-bold" id="exampleModalLongTitle">聯絡我們
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa-solid fa-xmark text-theme fa-lg"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- 雙直btn -->
+          <button type="button" class="btn bg-transparent p-0">
+            <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/8.png" class="img-fluid py-2" alt="">
+          </button>
+          <button type="button" class="btn bg-transparent p-0">
+            <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/9.png" class="img-fluid py-2" alt="">
+          </button>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
   </div>
 
   <!-- back-to-top -->
   <button id="back-to-top"
-    class="btn uk-position-fixed uk-position-bottom-right centerCenter d-none d-md-block rounded-circle btn-fixed"
-    style="background-color: #000;height: 2.8em;width: 2.8em;">
+    class="btn uk-position-fixed uk-position-bottom-right centerCenter bg-theme3 d-none d-md-block rounded-circle btn-fixed"
+    style="height: 2.8em;width: 2.8em;">
     <i class="fas fa-angle-up w3-xlarge text-light"></i>
   </button>
 
