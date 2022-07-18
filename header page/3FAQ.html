@@ -56,6 +56,41 @@
             background-repeat: no-repeat;
             background-position: 50% 50%; */
     }
+
+
+    /* 強制單頁控制UK SWITCH */
+    /* 啟動背景 */
+    .uk-accordion-title:focus,
+    .uk-accordion-title:hover {
+      color: #000;
+      text-decoration: none;
+      outline: 0;
+      background: none !important;
+      background-color: transparent !important;
+    }
+
+    /* 未啟動背景 */
+    .uk-accordion-title {
+      display: block;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      color: #333;
+      overflow: hidden;
+      background-color: transparent !important;
+      border: transparent !important;
+      filter: none !important;
+      /* border-radius: 8px; */
+    }
+
+    /* body控制 */
+    .tableTittleItem {
+      background-color: transparent !important;
+      border: transparent !important;
+      filter: none !important;
+      border-radius: 8px;
+    }
+
+    /* 強制單頁控制UK SWITCH END ---------------- */
   </style>
   <title>通知中心FAQ</title>
 </head>
@@ -67,6 +102,251 @@
     //PageHeader();
   // PageHeaderBanner()
   </script>
+  <!-- PC -->
+  <div class="container-fluid p-0 m-0 d-none d-md-block CardBg_BG px-3">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-12 p-0 py-3">
+
+          <!-- MOD -->
+          <div class="row">
+            <p class="h2 font-weight-bold">通知中心</p>
+            <ul class="uk-subnav uk-subnav-pill CardBgMd-txt col-12 p-3 justify-content-start" uk-switcher>
+              <li class=" card_c">
+                <a href="../header page/1AboutUs.html" class="px-0">
+                  <img class="" src="../img/headerpage/FAQ/1.png" alt="">
+                </a>
+              </li>
+              <li class=" card_c uk-blend-luminosity">
+                <a href="../header page/2AppDownload.html" class="px-0">
+                  <img class="" src="../img/headerpage/FAQ/2.png" alt="">
+                </a>
+              </li>
+              <li class=" card_c uk-blend-luminosity">
+                <a href="../header page/2AppDownload.html" class="px-0">
+                  <img class="" src="../img/headerpage/FAQ/3.png" alt="">
+                </a>
+              </li>
+            </ul>
+
+            <ul class="uk-switcher uk-margin CardBgMd-txt col-12 centerCenter">
+              <!-- MOD -->
+              <li class="text-center p-5  w-100">
+                <div class="mx-2">
+                  <ul uk-accordion="" class="uk-accordion">
+                    <li class="border-bottom">
+                      <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
+                        <img src="../img/手機各分頁img/g1.png" alt="">
+                        <span>【首儲優惠大禮包】</span>
+                        <span class="float-right">2022-03-25</span>
+                      </a>
+                      <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                        <p class="p-2 text-secondary fsz09">活動時間：12/21至12/27 好禮第一重-首儲儲值禮包：
+                          單筆儲值滿1000即可享額外6%回饋無上限 好禮第二重-首儲洗碼禮包： 洗碼每滿5萬
+                          額外再贈88優惠點數，回饋無上限點擊這裡領取回饋金</p>
+                      </div>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
+                        <img src="../img/手機各分頁img/g1.png" alt="">
+                        <span>【提款規則變更通知】</span>
+                        <span class="float-right">2022-03-25</span>
+                      </a>
+                      <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                        <p class="p-2 text-secondary fsz09">
+                          博天堂娛樂城會員您好，系統進行出款時，會先判定體育注單是否全數派彩完畢後，方支付款項(因賽事有改判、延期等不確定因素)，若玩家手上有未派彩注單，還請耐心等候，如有疑問請洽沙龍客服@918
+                        </p>
+                      </div>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
+                        <img src="../img/手機各分頁img/g1.png" alt="">
+                        <span>【國泰銀行維護公告】</span>
+                        <span class="float-right">2022-03-25</span>
+                      </a>
+                      <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                        <p class="p-2 text-secondary fsz09">活動時間：12/21至12/27 好禮第一重-首儲儲值禮包：
+                          單筆儲值滿1000即可享額外6%回饋無上限 好禮第二重-首儲洗碼禮包： 洗碼每滿5萬
+                          額外再贈88優惠點數，回饋無上限點擊這裡領取回饋金</p>
+                      </div>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
+                        <img src="../img/手機各分頁img/g1.png" alt="">
+                        <span>【系統維護公告】</span>
+                        <span class="float-right">2022-03-25</span>
+                      </a>
+                      <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                        <p class="p-2 text-secondary fsz09">活動時間：12/21至12/27 好禮第一重-首儲儲值禮包：
+                          單筆儲值滿1000即可享額外6%回饋無上限 好禮第二重-首儲洗碼禮包： 洗碼每滿5萬
+                          額外再贈88優惠點數，回饋無上限點擊這裡領取回饋金</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="text-center p-5  w-100">
+                <div class="mx-2">
+                  <ul uk-accordion="" class="uk-accordion">
+                    <li class="border-bottom">
+                      <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
+                        <img src="../img/手機各分頁img/g1.png" alt="">
+                        <span>【存款公告】</span>
+                        <span class="float-right">2022-03-25</span>
+                      </a>
+                      <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                        <p class="p-2 text-secondary fsz09">11/17
+                          00:00開始，因第三方金流成本提高，並為提供更良好的信用卡存款體驗，信用卡手續費將由8％調整至10%，請各位會員知悉，如有其他問題，也可向線上客服詢問，謝謝您的配合及支持
+                        </p>
+                      </div>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
+                        <img src="../img/手機各分頁img/g1.png" alt="">
+                        <span>【系統公告】</span>
+                        <span class="float-right">2022-03-25</span>
+                      </a>
+                      <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                        <p class="p-2 text-secondary fsz09">
+                          博天堂娛樂城會員您好，系統進行出款時，會先判定體育注單是否全數派彩完畢後，方支付款項(因賽事有改判、延期等不確定因素)，若玩家手上有未派彩注單，還請耐心等候，如有疑問請洽沙龍客服@918
+                        </p>
+                      </div>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
+                        <img src="../img/手機各分頁img/g1.png" alt="">
+                        <span>【優惠公告】</span>
+                        <span class="float-right">2022-03-25</span>
+                      </a>
+                      <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                        <p class="p-2 text-secondary fsz09">活動時間：12/21至12/27 好禮第一重-首儲儲值禮包：
+                          單筆儲值滿1000即可享額外6%回饋無上限 好禮第二重-首儲洗碼禮包： 洗碼每滿5萬
+                          額外再贈88優惠點數，回饋無上限點擊這裡領取回饋金</p>
+                      </div>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
+                        <img src="../img/手機各分頁img/g1.png" alt="">
+                        <span>【取款公告】</span>
+                        <span class="float-right">2022-03-25</span>
+                      </a>
+                      <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                        <p class="p-2 text-secondary fsz09">活動時間：12/21至12/27 好禮第一重-首儲儲值禮包：
+                          單筆儲值滿1000即可享額外6%回饋無上限 好禮第二重-首儲洗碼禮包： 洗碼每滿5萬
+                          額外再贈88優惠點數，回饋無上限點擊這裡領取回饋金</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li class="text-center p-5  w-100">
+              <li>
+                <div class="row CardBgMd-txt w3-round-medium py-3 px-5">
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-light text-center bg-danger">緊急維修</p>
+                    <p class="text-center font-weight-bold">目前沒有緊急維修項目</p>
+                  </div>
+                  <div class=" col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary" style="height: 1px;width: 100%;background: #555;">
+                    </p>
+                    <p class="text-light text-center bg-primary mt-2">一般維修</p>
+                  </div>
+
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary">星期一</p>
+                    <p class="text-light text-center bg-i-purple">9K彩票</p>
+                    <p class="text-center text-secondary">00:00 至 00:00</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-light text-center bg-i-purple">Super體育</p>
+                    <p class="text-center text-secondary">12:30 至 16:00</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-light text-center bg-i-purple">WM百家樂</p>
+                    <p class="text-center text-secondary">12:00 至 14:30</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-light text-center bg-i-purple">任你博體育</p>
+                    <p class="text-center text-secondary">16:00 至 18:00</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-light text-center bg-i-purple">六合彩539</p>
+                    <p class="text-center text-secondary">12:30 至 16:30</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-light text-center bg-i-purple">幸運棋牌</p>
+                    <p class="text-center text-secondary">23:00 至 00:00</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-light text-center bg-i-purple">歐博百家樂</p>
+                    <p class="text-center text-secondary">08:00 至 12:00</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-light text-center bg-i-purple">沙龍百家樂</p>
+                    <p class="text-center text-secondary">10:00 至 12:30</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary" style="height: 1px;width: 100%;background: #555;">
+                    </p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary">星期二</p>
+                    <p class="text-light text-center bg-i-purple">RTG電子</p>
+                    <p class="text-center text-secondary">07:00 至 09:00</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary" style="height: 1px;width: 100%;background: #555;">
+                    </p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary">星期三</p>
+                    <p class="text-light text-center bg-i-purple">DG電子</p>
+                    <p class="text-center text-secondary">07:00 至 10:00</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-light text-center bg-i-purple">MG棋牌</p>
+                    <p class="text-center text-secondary">11:00 至 13:00</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary" style="height: 1px;width: 100%;background: #555;">
+                    </p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary">星期四</p>
+                    <p class="text-light text-center bg-i-purple">SimplePlay電子</p>
+                    <p class="text-center text-secondary">11:00 至 13:30</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary" style="height: 1px;width: 100%;background: #555;">
+                    </p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary">星期五</p>
+                    <p class="text-light text-center bg-i-purple">SimplePlay電子</p>
+                    <p class="text-center text-secondary">15:00 至 19:00</p>
+                  </div>
+                  <div class="pt-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary" style="height: 1px;width: 100%;background: #555;">
+                    </p>
+                  </div>
+                  <div class="py-3 col-12 col-md-10 centerCenter col-md-10 centerCenter py-0 py-md-3">
+                    <p class="text-center text-secondary">星期日</p>
+                    <p class="text-light text-center bg-i-purple">BNG電子</p>
+                    <p class="text-center text-secondary">14:30 至 02:30</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
   <!-- MD history.back ------------------------------------------------------------------------>
   <div class="container-fluid p-0 m-0 d-md-none bg-light px-3 uk-position-relative vh-100">
     <div class="row">
@@ -88,7 +368,7 @@
             <div class="mx-2">
               <ul uk-accordion="" class="uk-accordion">
                 <li class="border-bottom">
-                  <a class="uk-accordion-title py-2 fsz09 clearfix" href="#">
+                  <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
                     <img src="../img/手機各分頁img/g1.png" alt="">
                     <span>【首儲優惠大禮包】</span>
                     <span class="float-right">2022-03-25</span>
@@ -100,7 +380,7 @@
                   </div>
                 </li>
                 <li class="border-bottom">
-                  <a class="uk-accordion-title py-2 fsz09 clearfix" href="#">
+                  <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
                     <img src="../img/手機各分頁img/g1.png" alt="">
                     <span>【提款規則變更通知】</span>
                     <span class="float-right">2022-03-25</span>
@@ -112,7 +392,7 @@
                   </div>
                 </li>
                 <li class="border-bottom">
-                  <a class="uk-accordion-title py-2 fsz09 clearfix" href="#">
+                  <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
                     <img src="../img/手機各分頁img/g1.png" alt="">
                     <span>【國泰銀行維護公告】</span>
                     <span class="float-right">2022-03-25</span>
@@ -124,7 +404,7 @@
                   </div>
                 </li>
                 <li class="border-bottom">
-                  <a class="uk-accordion-title py-2 fsz09 clearfix" href="#">
+                  <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
                     <img src="../img/手機各分頁img/g1.png" alt="">
                     <span>【系統維護公告】</span>
                     <span class="float-right">2022-03-25</span>
@@ -142,7 +422,7 @@
             <div class="mx-2">
               <ul uk-accordion="" class="uk-accordion">
                 <li class="border-bottom">
-                  <a class="uk-accordion-title py-2 fsz09 clearfix" href="#">
+                  <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
                     <img src="../img/手機各分頁img/g1.png" alt="">
                     <span>【存款公告】</span>
                     <span class="float-right">2022-03-25</span>
@@ -154,7 +434,7 @@
                   </div>
                 </li>
                 <li class="border-bottom">
-                  <a class="uk-accordion-title py-2 fsz09 clearfix" href="#">
+                  <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
                     <img src="../img/手機各分頁img/g1.png" alt="">
                     <span>【系統公告】</span>
                     <span class="float-right">2022-03-25</span>
@@ -166,7 +446,7 @@
                   </div>
                 </li>
                 <li class="border-bottom">
-                  <a class="uk-accordion-title py-2 fsz09 clearfix" href="#">
+                  <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
                     <img src="../img/手機各分頁img/g1.png" alt="">
                     <span>【優惠公告】</span>
                     <span class="float-right">2022-03-25</span>
@@ -178,7 +458,7 @@
                   </div>
                 </li>
                 <li class="border-bottom">
-                  <a class="uk-accordion-title py-2 fsz09 clearfix" href="#">
+                  <a class="uk-accordion-title p-3 fsz09 clearfix" href="#">
                     <img src="../img/手機各分頁img/g1.png" alt="">
                     <span>【取款公告】</span>
                     <span class="float-right">2022-03-25</span>
@@ -303,6 +583,8 @@
     <!-- Footer -->
     <script>PCFooter();</script>
     <script>MDFooter();</script>
+
+    <script src="../js/filter.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"

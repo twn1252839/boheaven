@@ -1401,10 +1401,11 @@
         // $('body,html').animate({ scrollTop: $('#axc').offset().top }, 1000);
         return false;
       });
+
       $('.card_c').click(
         function () {
           $(this).siblings().addClass('uk-blend-luminosity');
-          $(this).toggleClass('uk-blend-luminosity');
+          $(this).removeClass('uk-blend-luminosity');
         }
       )
 
