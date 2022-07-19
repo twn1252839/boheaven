@@ -448,7 +448,7 @@
 
                     <div class="row p-3">
                       <div class="col-4 row centerCenter font-weight-bold py-2">
-                        <span class="pr-0 pr-md-2 col-3 text-center">轉出</span>
+                        <span class="pr-0 pr-md-2 col-3 text-center text-theme2">轉出</span>
                         <select class="custom-select col-9 bd-theme btn-block">
                           <option selected="">主帳戶 &nbsp 1,500</option>
                           <option value="1">D銀行</option>
@@ -457,7 +457,7 @@
                         </select>
                       </div>
                       <div class="col-4 row centerCenter font-weight-bold py-2">
-                        <span class="pr-0 pr-md-2 col-3 text-center">轉入</span>
+                        <span class="pr-0 pr-md-2 col-3 text-center text-theme">轉入</span>
                         <select class="custom-select col-9 bd-theme btn-block">
                           <option selected="">請選擇</option>
                           <option value="1">D銀行</option>
@@ -480,13 +480,11 @@
 
                       </div>
                       <div class="col-3 centerCenter font-weight-bold py-2">
-                        <button type="button" href="../page/indexLogin.html"
-                          class="btn btn-block bg-theme3 text-light rounded">轉回主帳戶
+                        <button type="button" class="btn btn-block bd-theme text-theme rounded">轉回主帳戶
                         </button>
                       </div>
                       <div class="col-3 centerCenter font-weight-bold py-2">
-                        <button type="button" href="../page/indexLogin.html"
-                          class="btn btn-block bg-theme3 text-light rounded">確定
+                        <button type="button" class="btn btn-block bg-theme3 text-light rounded">確定
                         </button>
                       </div>
                     </div>
@@ -632,25 +630,281 @@
                 <div class="row CardBgMd_txt_BG">
                   <p class="col-12 py-3 h3 font-weight-bold border-bottom">帳號安全</p>
                   <div class="col-12 py-3">
-                    <div class="row">
+                    <div class="row py-2">
                       <div class="col-5 col-lg-3">
-                        :
-
-                        已驗證
-                        更改密碼:
-                        **********
-                        編輯
                         <span class="font-weight-bold pr-3">手機號碼:</span><span>0987****88</span>
                       </div>
                       <div class="flex-grow-1">
-                        <span class="font-weight-bold pr-3">用戶名:</span><span>0987123654</span>
+                        <span class="font-weight-bold pr-3">已驗證</span>
+                      </div>
+                    </div>
+                    <div class="row py-2">
+                      <div class="col-5 col-lg-3">
+
+                        <span class="font-weight-bold pr-3">更改密碼:</span><span>**********</span>
+                      </div>
+                      <div class="flex-grow-1">
+                        <button type="button" class="btn bd-theme text-theme rounded-pill py-1 px-5">編輯</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
               <li class="text-center px-5 w-100">
-                VIP特權 插入
+                <!-- VIP特權 插入 -->
+                <div class="d-none" id="vip">
+                  <div class="row CardBgMd_txt_BG mb-3 px-5">
+                    <div class="col-12 pb-3">
+                      <div class="row pb-3">
+                        <div class="col-2 text-center">
+                          <img class="img-fluid" src="../img/桌機各分頁img/MyPurse/Group 212.png" alt="">
+                        </div>
+                        <div class="flex-grow-1 py-3">
+                          <p class="font-weight-bold fsz-12 pt-3">當前等級:VIP1</p>
+                          <p>保級流水(自2022-03-15)： $0.00</p>
+                        </div>
+                        <div class="col-3 col-md-2 py-3">
+                          <button type="button" class="btn bg-transparent" id="vipBtn">
+                            VIP詳情
+                            <i class="fa-solid fa-angle-right"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col text-center">VIP0</div>
+                          <div class="col text-center">VIP1</div>
+                          <div class="col text-center">VIP2</div>
+                          <div class="col text-center">VIP3</div>
+                          <div class="col text-center">VIP4</div>
+                          <div class="col text-center">VIP5</div>
+                          <div class="col text-center">VIP6</div>
+                        </div>
+                      </div>
+                      <div class="col-12 py-3">
+                        <div class="row py-3">
+                          <div class="progress rounded-pill col-12 p-0">
+                            <div class="progress-bar bg-theme3" role="progressbar" style="width: 25%;"
+                              aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 py-3 bg-theme rounded">
+                        <div class="row">
+                          <p class="col-12 font-weight-bold fsz-12">距離下一等級：VIP2</p>
+                          <div class="col-12">
+                            <div class="row centerCenter py-2">
+                              <div class="col-1 text-center">存款
+                              </div>
+                              <div class="flex-grow-1">
+                                <div class="progress rounded-pill col-12 p-0">
+                                  <div class="progress-bar bg-theme5" role="progressbar" style="width: 25%;"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                              <div class="col-3 col-md-2">
+                                還需存款約 6,000
+                              </div>
+                            </div>
+                            <div class="row centerCenter py-2">
+                              <div class="col-1 text-center">流水
+                              </div>
+                              <div class="flex-grow-1">
+                                <div class="progress rounded-pill col-12 p-0">
+                                  <div class="progress-bar bg-theme5" role="progressbar" style="width: 25%;"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                              <div class="col-3 col-md-2">
+                                還需流水約 59,330
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row CardBgMd_txt_BG mb-3 px-5 py-3">
+                    <p class="col-12 font-weight-bold fsz-12">VIP1尊享</p>
+                    <!-- <div class="row px-5">
+                        <div class="col-3 py-2 text-left">
+                          <img class="img-fluid" src="../img/桌機各分頁img/MyPurse/Group 8741.png" alt="">
+                          <p class="font-weight-bold text-theme">1</p>
+                          <p class="font-weight-bold text-secondary">每日提款次數</p>
+                        </div>
+                        <div class="col-3  py-2">
+                          <p class="font-weight-bold text-theme">0.3</p>
+                          <p class="font-weight-bold text-secondary">體育返水</p>
+                        </div>
+                        <div class="col-3  py-2">
+                          <p class="font-weight-bold text-theme">0.3</p>
+                          <p class="font-weight-bold text-secondary">體育返水</p>
+                        </div>
+                        <div class="col-3  py-2">
+                          <p class="font-weight-bold text-theme">0.3</p>
+                          <p class="font-weight-bold text-secondary">體育返水</p>
+                        </div>
+                      </div> -->
+                    <div class="col-12 px-3 d-flex">
+                      <div class="text-center p-3">
+                        <img class="img-fluid" src="../img/桌機各分頁img/MyPurse/Group 8741.png" alt="">
+                        <p class="font-weight-bold text-theme text-center pt-2">1</p>
+                        <p class="text-secondary text-center">每日提款次數</p>
+                      </div>
+                      <div class="text-center p-3">
+                        <img class="img-fluid" src="../img/桌機各分頁img/MyPurse/Group 8743.png" alt="">
+                        <p class="font-weight-bold text-theme text-center pt-2">0.00</p>
+                        <p class="text-secondary text-center">生日禮金</p>
+                        <button type="button" class="btn btn-block bg-theme3 text-light text-secondary py-0 rounded">領取
+                      </div>
+                      <div class="text-center p-3">
+                        <img class="img-fluid" src="../img/桌機各分頁img/MyPurse/Group 8744.png" alt="">
+                        <p class="font-weight-bold text-theme text-center pt-2">0.00</p>
+                        <p class="text-secondary text-center">升級禮金</p>
+                        <button type="button" class="btn btn-block bg-theme3 text-light text-secondary py-0 rounded">領取
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row CardBgMd_txt_BG mb-3 px-5">
+                    <div class="col-12 py-3 px-3">
+                      <p class="col-12 font-weight-bold fsz-12">VIP1優惠</p>
+                      <div class="row px-5">
+                        <div class="col-3  py-2">
+                          <p class="font-weight-bold text-theme">0.3</p>
+                          <p class="font-weight-bold text-secondary">真人返水</p>
+                        </div>
+                        <div class="col-3  py-2">
+                          <p class="font-weight-bold text-theme">0.3</p>
+                          <p class="font-weight-bold text-secondary">體育返水</p>
+                        </div>
+                        <div class="col-3  py-2">
+                          <p class="font-weight-bold text-theme">0.3</p>
+                          <p class="font-weight-bold text-secondary">體育返水</p>
+                        </div>
+                        <div class="col-3  py-2">
+                          <p class="font-weight-bold text-theme">0.3</p>
+                          <p class="font-weight-bold text-secondary">體育返水</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="" id="vipPage">
+                  <div class="col-12 my-3 CardBgMd_txt_BG">
+                    <p class="py-3 h3 font-weight-bold border-bottom">VIP返水</p>
+                    <div class="table-responsive-sm">
+
+                      <table class="table table-striped">
+                        <thead>
+                          <tr class="text-center">
+                            <th scope="col">VIP等級</th>
+                            <th scope="col">週有效投注額</th>
+                            <th scope="col">真人返水</th>
+                            <th scope="col">電子返水</th>
+                            <th scope="col">賓果返水</th>
+                            <th scope="col">體育返水</th>
+                            <th scope="col">晉級禮金</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="text-center">
+                            <th>
+                              <img class="w-50" src="../img/手機index_img/V1.png" alt="">
+                            </th>
+                            <td>50萬以內</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>X</td>
+                          </tr>
+                          <tr class="text-center">
+                            <th>
+                              <img class="w-50" src="../img/手機index_img/V2.png" alt="">
+                            </th>
+                            <td>50-200萬</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.1%</td>
+                            <td>588</td>
+                          </tr>
+                          <tr class="text-center">
+                            <th>
+                              <img class="w-50" src="../img/手機index_img/V3.png" alt="">
+                            </th>
+                            <td>200-1000萬</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.1%</td>
+                            <td>1288</td>
+                          </tr>
+                          <tr class="text-center">
+                            <th>
+                              <img class="w-50" src="../img/手機index_img/V4.png" alt="">
+                            </th>
+                            <td>1000-4000萬</td>
+                            <td>0.4%</td>
+                            <td>0.4%</td>
+                            <td>0.4%</td>
+                            <td>0.1%</td>
+                            <td>2888</td>
+                          </tr>
+                          <tr class="text-center">
+                            <th>
+                              <img class="w-50" src="../img/手機index_img/V5.png" alt="">
+                            </th>
+                            <td>4000-1億</td>
+                            <td>0.4%</td>
+                            <td>0.5%</td>
+                            <td>0.4%</td>
+                            <td>0.2%</td>
+                            <td>4888</td>
+                          </tr>
+                          <tr class="text-center">
+                            <th>
+                              <img class="w-50" src="../img/手機index_img/V6.png" alt="">
+                            </th>
+                            <td>1億以上</td>
+                            <td>0.5%</td>
+                            <td>0.6%</td>
+                            <td>0.5%</td>
+                            <td>0.3%</td>
+                            <td>8888</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="col-12 my-3 CardBgMd_txt_BG">
+                    <p class="py-3 h3 font-weight-bold border-bottom">提款規則</p>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr class="text-center">
+                            <th scope="col">VIP每日免手續提款次數</th>
+                            <th scope="col">每日提款額度</th>
+                            <th scope="col">棋牌返水</th>
+                            <th scope="col">捕魚返水</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="text-center">
+                            <td>1</td>
+                            <td>無上限</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li class="text-center px-5 w-100">
                 優惠達標查詢 插入
