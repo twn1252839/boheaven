@@ -36,12 +36,14 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/index-main.css">
+  <link rel="stylesheet" href="../css/UK_Blue.css">
   <style>
-    /* switch 調整 */
-    .uk-subnav-pill>.uk-active>a {
-      background-color: transparent !important;
-      color: #365a97 !important;
-      font-weight: bold;
+    .ac {
+      width: 25px;
+      /* width: auto; */
+      height: 25px;
+      /* border-radius: 999em; */
+      background-color: #365a97;
     }
   </style>
   <title>客服中心</title>
@@ -74,7 +76,6 @@
 
           </div>
 
-          <!-- MOD -->
           <!-- <div class="row">
             <div class="col-12">
               <img src="../img/桌機index_img/user.png" class="img-fluid" alt="">
@@ -90,67 +91,69 @@
 
           <!-- 照片switch -->
           <div class="row px-3">
-            <ul class="uk-subnav  pb-5 col-3 row col-xl-2 CardBgMd-txt text-center justify-content-center" uk-switcher>
-              <li class="col-4 p-0 ">
+            <ul
+              class="uk-subnavt  pb-5 pt-3 col-3 row col-xl-2 CardBgMd-txt text-center  justify-content-center align-self-start"
+              uk-switcher>
+              <li class="col-4 pb-3 px-0">
                 <a href="#" class="p-2 text-center">
                   <img src="../img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
                 </a>
               </li>
-              <li class="col-4 p-0 ">
+              <li class="col-4 pb-3 px-0">
                 <a href="#" class="p-2 text-center">
                   <img src="../img/桌機index_img/list/clickList/a2.png" class="img-fluid" alt="">
                 </a>
               </li>
-              <li class="col-4 p-0 ">
+              <li class="col-4 pb-3 px-0">
                 <a href="#" class="p-2 text-center">
                   <img src="../img/桌機index_img/list/clickList/a3.png" class="img-fluid" alt="">
                 </a>
               </li>
 
 
-              <li class="w-100 pl-2 pl-lg-3">
+              <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class="" type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/1.png" class="img-fluid" alt="">
                   <span class="h5 pl-0 pl-xl-2 text-dark">個人資料</span>
                 </a>
               </li>
-              <li class="w-100 pl-2 pl-lg-3">
+              <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class="" type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/2.png" class="img-fluid" alt="">
                   <span class=" h5 pl-0 pl-xl-2 text-dark">VIP特權</span>
                 </a>
               </li>
-              <li class="w-100 pl-2 pl-lg-3">
+              <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class=" " type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/3.png" class="img-fluid" alt="">
                   <span class=" h5 pl-0 pl-xl-2 text-dark">優惠達標查詢</span>
                 </a>
               </li>
-              <li class="w-100 pl-2 pl-lg-3">
+              <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class=" " type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/4.png" class="img-fluid" alt="">
                   <span class=" h5 pl-0 pl-xl-2 text-dark">投注紀錄</span>
                 </a>
               </li>
-              <li class="w-100 pl-2 pl-lg-3">
+              <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class=" " type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/5.png" class="img-fluid" alt="">
                   <span class=" h5 pl-0 pl-xl-2 text-dark">交易紀錄</span>
                 </a>
               </li>
-              <li class="w-100 pl-2 pl-lg-3">
+              <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class=" " type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/6.png" class="img-fluid" alt="">
                   <span class=" h5 pl-0 pl-xl-2 text-dark">帳戶管理</span>
                 </a>
               </li>
-              <li class="w-100 pl-2 pl-lg-3">
-                <a href="#" class=" " type="button">
+              <li class="w-100 pl-2 pl-lg-3 py-1" onclick="window.location.replace(window.location.href);">
+                <a href="#" target="_blank" class=" " type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/7.png" class="img-fluid" alt="">
                   <span class=" h5 pl-0 pl-xl-2 text-dark">邀請好友</span>
                 </a>
               </li>
-              <li class="w-100 pl-2 pl-lg-3">
+              <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class=" " type="button">
 
                   <div class="media">
@@ -175,8 +178,9 @@
             </ul>
 
             <ul class="uk-switcher uk-margin col-9 col-xl-10 justify-content-center" style="margin-top: -1500px;">
-              <!-- <li class="text-center px-5 w-100"></li> -->
-              <li class="text-center px-5 w-100">
+
+              <!-- MOD -->
+              <li class="uk-active text-center pl-5 w-100">
 
                 <p class="col-12 py-3 h3 font-weight-bold">請選擇付款方式</p>
                 <ul class="uk-subnav CardBgMd-txt py-3 text-left justify-content-start" uk-switcher>
@@ -198,7 +202,7 @@
                 </ul>
 
                 <ul class="uk-switcher">
-                  <li>
+                  <li class="uk-active">
                     <div class=" CardBgMd_txt_BG p-3 rounded border">
                       <div class="row">
                         <div class="col-12 font-weight-bold py-2">
@@ -218,31 +222,31 @@
                         <div class="col-12 font-weight-bold py-2">
                           <span class="">存款金額</span>
                           <!-- <div class="row px-3">
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$500</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$1000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$2000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$5000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$10000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$20000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$30000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$50000</button>
-                            </div>
-                          </div> -->
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$500</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$1000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$2000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$5000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$10000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$20000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$30000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$50000</button>
+                                    </div>
+                                  </div> -->
                           <div class="input-group">
                             <div class="input-group-prepend">
                               <span class="input-group-text bg-transparent" id="basic-addon1">$</span>
@@ -251,11 +255,11 @@
                               aria-describedby="basic-addon1">
                           </div>
                           <!-- <select class="custom-select">
-                                                              <option selected>富邦銀行</option>
-                                                              <option value="1">D銀行</option>
-                                                              <option value="2">C銀行</option>
-                                                              <option value="3">H銀行</option>
-                                                            </select> -->
+                                                                      <option selected>富邦銀行</option>
+                                                                      <option value="1">D銀行</option>
+                                                                      <option value="2">C銀行</option>
+                                                                      <option value="3">H銀行</option>
+                                                                    </select> -->
                           <p class="px-2 text-danger fsz09">刷卡需收10%手續費，最低儲值金額1,000</p>
                           <div class="py-3">
                             <button class="btn bg-theme3 text-light w-25">立即存款</button>
@@ -286,31 +290,31 @@
                         <div class="col-12 font-weight-bold py-2">
                           <span class="">存款金額</span>
                           <!-- <div class="row px-3">
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$500</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$1000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$2000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$5000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$10000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$20000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$30000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$50000</button>
-                            </div>
-                          </div> -->
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$500</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$1000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$2000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$5000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$10000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$20000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$30000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$50000</button>
+                                    </div>
+                                  </div> -->
                           <div class="input-group">
                             <div class="input-group-prepend">
                               <span class="input-group-text bg-transparent" id="basic-addon1">$</span>
@@ -319,11 +323,11 @@
                               aria-describedby="basic-addon1">
                           </div>
                           <!-- <select class="custom-select">
-                                                              <option selected>富邦銀行</option>
-                                                              <option value="1">D銀行</option>
-                                                              <option value="2">C銀行</option>
-                                                              <option value="3">H銀行</option>
-                                                            </select> -->
+                                                                      <option selected>富邦銀行</option>
+                                                                      <option value="1">D銀行</option>
+                                                                      <option value="2">C銀行</option>
+                                                                      <option value="3">H銀行</option>
+                                                                    </select> -->
                           <div class="py-3">
                             <button class="btn bg-theme3 text-light w-25">立即存款</button>
                           </div>
@@ -345,7 +349,8 @@
                             <option value="2">C銀行</option>
                             <option value="3">H銀行</option>
                           </select>
-                          <p class="p-3 text-danger fsz09">存款請使用本人銀行操作，若非本人而影響出款權益須自行承擔</p>
+                          <p class="p-3 text-danger fsz09">存款請使用本人銀行操作，若非本人而影響出款權益須自行承擔
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -354,31 +359,31 @@
                         <div class="col-12 font-weight-bold py-2">
                           <span class="">存款金額</span>
                           <!-- <div class="row px-3">
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$500</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$1000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$2000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$5000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$10000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$20000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$30000</button>
-                            </div>
-                            <div class="col-3 p-1 centerCenter">
-                              <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$50000</button>
-                            </div>
-                          </div> -->
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$500</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$1000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$2000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$5000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$10000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$20000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$30000</button>
+                                    </div>
+                                    <div class="col-3 p-1 centerCenter">
+                                      <button class=" btn p-2 bg-theme4 text-theme font-weight-bold">$50000</button>
+                                    </div>
+                                  </div> -->
                           <div class="input-group">
                             <div class="input-group-prepend">
                               <span class="input-group-text bg-transparent" id="basic-addon1">$</span>
@@ -387,11 +392,11 @@
                               aria-describedby="basic-addon1">
                           </div>
                           <!-- <select class="custom-select">
-                                                              <option selected>富邦銀行</option>
-                                                              <option value="1">D銀行</option>
-                                                              <option value="2">C銀行</option>
-                                                              <option value="3">H銀行</option>
-                                                            </select> -->
+                                                                      <option selected>富邦銀行</option>
+                                                                      <option value="1">D銀行</option>
+                                                                      <option value="2">C銀行</option>
+                                                                      <option value="3">H銀行</option>
+                                                                    </select> -->
                           <p class="px-2 text-danger fsz09">刷卡需收10%手續費，最低儲值金額1,000</p>
                           <div class="py-3">
                             <button class="btn bg-theme3 text-light w-25">立即存款</button>
@@ -406,7 +411,7 @@
                 </ul>
 
               </li>
-              <li class="text-center px-5 w-100">
+              <li class="text-center pl-5 w-100">
                 <div class="col-12 CardBgMd_txt_BG py-3 px-0 vh-100">
                   <div class=" py-1">
                     <p class="col-12 py-3 h3 font-weight-bold">銀行帳戶</p>
@@ -441,7 +446,7 @@
                 </div>
               </li>
 
-              <li class="text-center px-5 w-100">
+              <li class="text-center pl-5 w-100">
                 <div class="col-12 CardBgMd_txt_BG py-3 px-0">
                   <div class=" py-1">
                     <p class="col-12 py-3 h3 font-weight-bold">轉點</p>
@@ -604,8 +609,7 @@
 
                 </div>
               </li>
-
-              <li class="text-center px-5 w-100">
+              <li class="text-center pl-5 w-100">
                 <!-- 個人資料 插入 -->
                 <div class="row CardBgMd_txt_BG mb-3">
                   <p class="col-12 py-3 h3 font-weight-bold border-bottom">基本資料</p>
@@ -650,7 +654,7 @@
                   </div>
                 </div>
               </li>
-              <li class="text-center px-5 w-100">
+              <li class="text-center pl-5 w-100">
                 <!-- VIP特權 插入 -->
                 <div class="d-none" id="vip">
                   <div class="row CardBgMd_txt_BG mb-3 px-5">
@@ -699,7 +703,8 @@
                               <div class="flex-grow-1">
                                 <div class="progress rounded-pill col-12 p-0">
                                   <div class="progress-bar bg-theme5" role="progressbar" style="width: 25%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                  </div>
                                 </div>
                               </div>
                               <div class="col-3 col-md-2">
@@ -712,7 +717,8 @@
                               <div class="flex-grow-1">
                                 <div class="progress rounded-pill col-12 p-0">
                                   <div class="progress-bar bg-theme5" role="progressbar" style="width: 25%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                  </div>
                                 </div>
                               </div>
                               <div class="col-3 col-md-2">
@@ -728,24 +734,24 @@
                   <div class="row CardBgMd_txt_BG mb-3 px-5 py-3">
                     <p class="col-12 font-weight-bold fsz-12">VIP1尊享</p>
                     <!-- <div class="row px-5">
-                        <div class="col-3 py-2 text-left">
-                          <img class="img-fluid" src="../img/桌機各分頁img/MyPurse/Group 8741.png" alt="">
-                          <p class="font-weight-bold text-theme">1</p>
-                          <p class="font-weight-bold text-secondary">每日提款次數</p>
-                        </div>
-                        <div class="col-3  py-2">
-                          <p class="font-weight-bold text-theme">0.3</p>
-                          <p class="font-weight-bold text-secondary">體育返水</p>
-                        </div>
-                        <div class="col-3  py-2">
-                          <p class="font-weight-bold text-theme">0.3</p>
-                          <p class="font-weight-bold text-secondary">體育返水</p>
-                        </div>
-                        <div class="col-3  py-2">
-                          <p class="font-weight-bold text-theme">0.3</p>
-                          <p class="font-weight-bold text-secondary">體育返水</p>
-                        </div>
-                      </div> -->
+                                <div class="col-3 py-2 text-left">
+                                  <img class="img-fluid" src="../img/桌機各分頁img/MyPurse/Group 8741.png" alt="">
+                                  <p class="font-weight-bold text-theme">1</p>
+                                  <p class="font-weight-bold text-secondary">每日提款次數</p>
+                                </div>
+                                <div class="col-3  py-2">
+                                  <p class="font-weight-bold text-theme">0.3</p>
+                                  <p class="font-weight-bold text-secondary">體育返水</p>
+                                </div>
+                                <div class="col-3  py-2">
+                                  <p class="font-weight-bold text-theme">0.3</p>
+                                  <p class="font-weight-bold text-secondary">體育返水</p>
+                                </div>
+                                <div class="col-3  py-2">
+                                  <p class="font-weight-bold text-theme">0.3</p>
+                                  <p class="font-weight-bold text-secondary">體育返水</p>
+                                </div>
+                              </div> -->
                     <div class="col-12 px-3 d-flex">
                       <div class="text-center p-3">
                         <img class="img-fluid" src="../img/桌機各分頁img/MyPurse/Group 8741.png" alt="">
@@ -904,26 +910,2662 @@
                       </table>
                     </div>
                   </div>
+
+                  <div class="col-12 my-3 CardBgMd_txt_BG">
+                    <p class="py-3 h3 font-weight-bold">活動規則</p>
+                    <div class="w-100 d-flex px-3 py-2">
+                      <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">1</div>
+                      <p class="">晉級獎金統計周期為：每周一00:00至周日23:59，並於隔周一由系統統計派發</p>
+                    </div>
+                    <div class="w-100 d-flex px-3 py-2">
+                      <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">2</div>
+                      <p class="col">每周一系統將會自動統計玩家有效投註額及星級情況，晉級獎金將於18:00前添加到賬，晉級獎金可隨時申請提款，也可以選擇繼續投注遊戲
+                      </p>
+                    </div>
+                    <div class="w-100 d-flex px-3 py-2">
+                      <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">3</div>
+                      <p class="col">若是當周已達成條件，下周流水須達到一半的條件方能保級，如果未達成一半流水條件，將會下降一星級，例如:
+                        A會員在這周單廳流水300萬，可晉升成3星會員，則下周須達成單廳流水100萬，方可維持3星級，若低於100萬，將會掉至2星級....依此類推
+                      </p>
+                    </div>
+                    <div class="w-100 d-flex px-3 py-2">
+                      <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">4</div>
+                      <p class="col">
+                        同一會員同一周只能享受一次晉級獎金，如客戶最高升級6星級，可享受6星級對應獎金，不能同時享受5星級對應獎金，且同一星級的獎金無法重複領取。
+                      </p>
+                    </div>
+                    <div class="w-100 d-flex px-3 py-2">
+                      <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">5</div>
+                      <p class="col">若是當周已達成條件，下周流水須達到一半的條件方能保級，如果未達成一半流水條件，將會下降一星級，例如:
+                        A會員在這周單廳流水300萬，可晉升成3星會員，則下周須達成單廳流水100萬，方可維持3星級，若低於100萬，將會掉至2星級....依此類推
+                      </p>
+                    </div>
+                    <div class="w-100 d-flex px-3 py-2">
+                      <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">6</div>
+                      <p class="col">
+                        同一會員同一周只能享受一次晉級獎金，如客戶最高升級6星級，可享受6星級對應獎金，不能同時享受5星級對應獎金，且同一星級的獎金無法重複領取。
+                      </p>
+                    </div>
+
+                  </div>
+
                 </div>
               </li>
-              <li class="text-center px-5 w-100">
-                優惠達標查詢 插入
+              <li class="text-center pl-5 w-100">
+                <!-- 優惠達標查詢 插入 -->
+                <div class="col-12 my-3 CardBgMd_txt_BG">
+                  <p class="py-3 h3 font-weight-bold">優惠達標查詢</p>
+                  <p class="py-3 h5 font-weight-bold">未完成流水:2,000.00</p>
+                  <div class="table-responsive">
+
+                    <table class="table ">
+                      <thead>
+                        <tr class="text-center">
+                          <th scope="col">類型</th>
+                          <th scope="col">金額</th>
+                          <th scope="col">流水</th>
+                          <th scope="col">時間</th>
+                          <th scope="col">交易編號</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="text-center text-secondary">
+                          <th>
+                            儲值
+                          </th>
+                          <td>1000.00</td>
+                          <td>1000.00</td>
+                          <td>2022-03-30 15:20:51</td>
+                          <td>DC2220646HC5</td>
+                        </tr>
+                        <tr class="text-center text-secondary">
+                          <th>
+                            優惠
+                          </th>
+                          <td>1600.00</td>
+                          <td>xxx</td>
+                          <td>2022-03-30 15:20:51</td>
+                          <td>DC2220646HC5</td>
+                        </tr>
+                        <tr class="text-center text-secondary">
+                          <th>
+                            儲值
+                          </th>
+                          <td>1000.00</td>
+                          <td>1000.00</td>
+                          <td>2022-03-30 15:20:51</td>
+                          <td>DC2220646HC5</td>
+                        </tr>
+                        <tr class="text-center text-secondary">
+                          <th>
+                            優惠
+                          </th>
+                          <td>1600.00</td>
+                          <td>xxx</td>
+                          <td>2022-03-30 15:20:51</td>
+                          <td>DC2220646HC5</td>
+                        </tr>
+                        <tr class="text-center text-secondary">
+                          <th>
+                            儲值
+                          </th>
+                          <td>1000.00</td>
+                          <td>1000.00</td>
+                          <td>2022-03-30 15:20:51</td>
+                          <td>DC2220646HC5</td>
+                        </tr>
+                        <tr class="text-center text-secondary">
+                          <th>
+                            優惠
+                          </th>
+                          <td>1600.00</td>
+                          <td>xxx</td>
+                          <td>2022-03-30 15:20:51</td>
+                          <td>DC2220646HC5</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
               </li>
-              <li class="text-center px-5 w-100">
-                投注紀錄 插入
+              <li class="text-center pl-5 w-100">
+                <!-- 投注紀錄 插入 -->
+                <div class="col-12 my-3 CardBgMd_txt_BG">
+                  <p class="py-3 h3 font-weight-bold">投注紀錄日期查詢</p>
+                  <form class="p-3 row" action="uk-margin" method="post">
+                    <input class="px-1 py-0 text-secondary col-5 pr-3 rounded border bg-transparent"
+                      type="datetime-local" name="" id="">
+                    <div class="p-1 col flex-grow-1">
+                      <button type="button"
+                        class="btn bg-theme3 px-4 py-1 rounded rounded-pill text-light text-secondary py-0 rounded">查詢
+                      </button>
+                    </div>
+                  </form>
+
+                </div>
+                <div class="CardBgMd_txt_BG">
+
+                  <ul class="uk-subnav uk-subnav-pill row centerCenter p-3" uk-switcher="">
+                    <li style="width: 25%;" class="uk-active"><a
+                        class="centerCenter w3-round-medium text-dark rounded rounded-pill py-2 px-0" href="#"
+                        aria-expanded="true">今日</a>
+                    </li>
+                    <li style="width: 25%;"><a
+                        class="centerCenter w3-round-medium text-dark rounded rounded-pill py-2 px-0" href="#"
+                        aria-expanded="false">昨日</a>
+                    </li>
+                    <li style="width: 25%;"><a
+                        class="centerCenter w3-round-medium text-dark rounded rounded-pill py-2 px-0" href="#"
+                        aria-expanded="false">本週</a>
+                    </li>
+                    <li style="width: 25%;"><a
+                        class="centerCenter w3-round-medium text-dark rounded rounded-pill py-2 px-0" href="#"
+                        aria-expanded="false">上週</a>
+                    </li>
+                  </ul>
+
+                  <ul class="uk-switcher px-5 py-2 w3-round-medium" style="touch-action: pan-y pinch-zoom;"
+                    id="bettingHistory">
+                    <!-- 今日 -->
+                    <li class="uk-active">
+                      <p class="pb-3 h3 font-weight-bold">投注紀錄日期查詢</p>
+                      <div class="row">
+                        <div class="col">
+                          <span class="pr-2">投注金額:</span><span>10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">有效投注:</span><span>10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">輸/贏:</span><span class="text-theme2">10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">返水金額:</span><span>10,000</span>
+                        </div>
+                      </div>
+                      <div class="row py-2">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">真人</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">體育</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">賓果</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">電子</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">棋牌</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    <span class="text-theme2">100.00</span></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">捕魚</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <p class="pb-3 h3 font-weight-bold">投注紀錄日期查詢</p>
+                      <div class="row">
+                        <div class="col">
+                          <span class="pr-2">投注金額:</span><span>10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">有效投注:</span><span>10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">輸/贏:</span><span class="text-theme2">10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">返水金額:</span><span>10,000</span>
+                        </div>
+                      </div>
+                      <div class="row py-2">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">體育</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">真人</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">賓果</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">電子</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">棋牌</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    <span class="text-theme2">100.00</span></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">捕魚</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <p class="pb-3 h3 font-weight-bold">投注紀錄日期查詢</p>
+                      <div class="row">
+                        <div class="col">
+                          <span class="pr-2">投注金額:</span><span>10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">有效投注:</span><span>10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">輸/贏:</span><span class="text-theme2">10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">返水金額:</span><span>10,000</span>
+                        </div>
+                      </div>
+                      <div class="row py-2">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">真人</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">體育</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">賓果</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">電子</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">棋牌</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    <span class="text-theme2">100.00</span></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">捕魚</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <p class="pb-3 h3 font-weight-bold">投注紀錄日期查詢</p>
+                      <div class="row">
+                        <div class="col">
+                          <span class="pr-2">投注金額:</span><span>10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">有效投注:</span><span>10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">輸/贏:</span><span class="text-theme2">10,000</span>
+                        </div>
+                        <div class="col">
+                          <span class="pr-2">返水金額:</span><span>10,000</span>
+                        </div>
+                      </div>
+                      <div class="row py-2">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">體育</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">真人</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">賓果</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">電子</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">棋牌</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    <span class="text-theme2">100.00</span></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                          <div class="card my-2 card_color border-0">
+                            <!--  -->
+                            <div class="card-header">
+                              <div class="row align-items-center">
+                                <div class="col">
+                                  <i class="fa-solid fa-pipe line_theme_v"></i>
+                                  <span class="text-center font-weight-bold">捕魚</span>
+                                </div>
+                                <div class="col">
+                                  <p class="text-right">
+                                    <button type="button" class="btn bg-transparent bettingHistory">
+                                      <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item px-3 py-1 bg-transparent">
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">投注金額
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right"></span>
+                                </div>
+                                <div class="row clearfix">
+                                  <span class="col text-secondary fsz09">有效投注
+                                    0.00</span>
+                                  <span class="col text-secondary fsz09 float-right text-right">輸/贏
+                                    0.00</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="uk-switcher px-3 py-2 w3-round-medium" style="touch-action: pan-y pinch-zoom;"
+                    id="bettingHistoryPage">
+                    <!-- 今日 -->
+                    <li class="uk-active">
+
+                      <div class="col-12 mb-3 CardBgMd_txt_BG">
+
+                        <p class="border rounded p-3 mt-3">
+                          <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
+                            <i class="fa-solid fa-angle-left"></i>
+                          </button>
+                          共計2筆投注，投注金額200.00 有效投注 100.00 <span class="text-theme2">輸/贏
+                            200.00</span>
+                        </p>
+
+                        <div class="table-responsive py-3">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr class="text-center">
+                                <th scope="col">日期</th>
+                                <th scope="col">平台</th>
+                                <th scope="col">投注金額</th>
+                                <th scope="col">有效投注</th>
+                                <th scope="col">輸/贏</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                          <!-- 頁碼 -->
+                          <div class="text-center p-2">
+                            <div class="btn btn-active"><i class="fas fa-caret-left"></i></div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">1</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">2</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">3</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">4</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">5</div>
+                            <div class="btn btn-active"><i class="fas fa-caret-right"></i></div>
+                            <style>
+                              .btn-active:hover {
+                                color: #365a97;
+                                border-color: #365a97 !important;
+                                font-size: 1.1rem;
+                              }
+                            </style>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                    <li>
+
+                      <div class="col-12 mb-3 CardBgMd_txt_BG">
+
+                        <p class="border rounded p-3 mt-3">
+                          <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
+                            <i class="fa-solid fa-angle-left"></i>
+                          </button>
+                          共計2筆投注，投注金額200.00 有效投注 100.00 <span class="text-theme2">輸/贏
+                            200.00</span>
+                        </p>
+
+                        <div class="table-responsive py-3">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr class="text-center">
+                                <th scope="col">日期</th>
+                                <th scope="col">平台</th>
+                                <th scope="col">投注金額</th>
+                                <th scope="col">有效投注</th>
+                                <th scope="col">輸/贏</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                          <!-- 頁碼 -->
+                          <div class="text-center p-2">
+                            <div class="btn btn-active"><i class="fas fa-caret-left"></i></div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">1</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">2</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">3</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">4</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">5</div>
+                            <div class="btn btn-active"><i class="fas fa-caret-right"></i></div>
+                            <style>
+                              .btn-active:hover {
+                                color: #365a97;
+                                border-color: #365a97 !important;
+                                font-size: 1.1rem;
+                              }
+                            </style>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                    <li>
+
+                      <div class="col-12 mb-3 CardBgMd_txt_BG">
+
+                        <p class="border rounded p-3 mt-3">
+                          <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
+                            <i class="fa-solid fa-angle-left"></i>
+                          </button>
+                          共計2筆投注，投注金額200.00 有效投注 100.00 <span class="text-theme2">輸/贏
+                            200.00</span>
+                        </p>
+
+                        <div class="table-responsive py-3">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr class="text-center">
+                                <th scope="col">日期</th>
+                                <th scope="col">平台</th>
+                                <th scope="col">投注金額</th>
+                                <th scope="col">有效投注</th>
+                                <th scope="col">輸/贏</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                          <!-- 頁碼 -->
+                          <div class="text-center p-2">
+                            <div class="btn btn-active"><i class="fas fa-caret-left"></i></div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">1</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">2</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">3</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">4</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">5</div>
+                            <div class="btn btn-active"><i class="fas fa-caret-right"></i></div>
+                            <style>
+                              .btn-active:hover {
+                                color: #365a97;
+                                border-color: #365a97 !important;
+                                font-size: 1.1rem;
+                              }
+                            </style>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                    <li>
+
+                      <div class="col-12 mb-3 CardBgMd_txt_BG">
+
+                        <p class="border rounded p-3 mt-3">
+                          <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
+                            <i class="fa-solid fa-angle-left"></i>
+                          </button>
+                          共計2筆投注，投注金額200.00 有效投注 100.00 <span class="text-theme2">輸/贏
+                            200.00</span>
+                        </p>
+
+                        <div class="table-responsive py-3">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr class="text-center">
+                                <th scope="col">日期</th>
+                                <th scope="col">平台</th>
+                                <th scope="col">投注金額</th>
+                                <th scope="col">有效投注</th>
+                                <th scope="col">輸/贏</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                          <!-- 頁碼 -->
+                          <div class="text-center p-2">
+                            <div class="btn btn-active"><i class="fas fa-caret-left"></i></div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">1</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">2</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">3</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">4</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">5</div>
+                            <div class="btn btn-active"><i class="fas fa-caret-right"></i></div>
+                            <style>
+                              .btn-active:hover {
+                                color: #365a97;
+                                border-color: #365a97 !important;
+                                font-size: 1.1rem;
+                              }
+                            </style>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                  </ul>
+
+                </div>
+
               </li>
-              <li class="text-center px-5 w-100">
-                交易紀錄 插入
+              <li class="text-center pl-5 w-100">
+                <!-- 交易紀錄 插入 -->
+                <div class="col-12 my-3 CardBgMd_txt_BG">
+                  <p class="py-3 h3 font-weight-bold">交易紀錄查詢</p>
+                  <select class="custom-select col-5">
+                    <option selected>存款</option>
+                    <option value="1">提款</option>
+                    <option value="2">轉點</option>
+                  </select>
+                  <form class="p-3 row" action="uk-margin" method="post">
+                    <input class="px-1 py-0 text-secondary col-5 pr-3 rounded border bg-transparent"
+                      type="datetime-local" name="" id="">
+                    <div class="p-1 col flex-grow-1">
+                      <button type="button"
+                        class="btn bg-theme3 px-4 py-1 rounded rounded-pill text-light text-secondary py-0 rounded">查詢
+                      </button>
+                    </div>
+                  </form>
+
+                </div>
+                <div class="CardBgMd_txt_BG">
+
+                  <ul class="uk-subnav uk-subnav-pill row centerCenter p-3" uk-switcher="">
+                    <li style="width: 25%;" class="uk-active"><a
+                        class="centerCenter w3-round-medium text-dark rounded rounded-pill py-2 px-0" href="#"
+                        aria-expanded="true">今日</a>
+                    </li>
+                    <li style="width: 25%;"><a
+                        class="centerCenter w3-round-medium text-dark rounded rounded-pill py-2 px-0" href="#"
+                        aria-expanded="false">昨日</a>
+                    </li>
+                    <li style="width: 25%;"><a
+                        class="centerCenter w3-round-medium text-dark rounded rounded-pill py-2 px-0" href="#"
+                        aria-expanded="false">本週</a>
+                    </li>
+                    <li style="width: 25%;"><a
+                        class="centerCenter w3-round-medium text-dark rounded rounded-pill py-2 px-0" href="#"
+                        aria-expanded="false">上週</a>
+                    </li>
+                  </ul>
+
+                  <ul class="uk-switcher px-3 py-2 w3-round-medium" style="touch-action: pan-y pinch-zoom;">
+                    <!-- 今日 -->
+                    <li class="uk-active">
+
+                      <div class="col-12 mb-3 CardBgMd_txt_BG">
+
+                        <div class="table-responsive py-3">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr class="text-center">
+                                <th scope="col">日期</th>
+                                <th scope="col">訂單編號</th>
+                                <th scope="col">銀行帳戶</th>
+                                <th scope="col">金額</th>
+                                <th scope="col">狀態</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>DC2220646HC5</td>
+                                <td>富邦銀行</td>
+                                <td>1000.00</td>
+                                <td class="text-theme2">成功</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>DC2220646HC5</td>
+                                <td>富邦銀行</td>
+                                <td>1000.00</td>
+                                <td class="text-theme3">失敗</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>DC2220646HC5</td>
+                                <td>富邦銀行</td>
+                                <td>1000.00</td>
+                                <td class="text-theme2">成功</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>DC2220646HC5</td>
+                                <td>富邦銀行</td>
+                                <td>1000.00</td>
+                                <td class="text-theme3">失敗</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>DC2220646HC5</td>
+                                <td>富邦銀行</td>
+                                <td>1000.00</td>
+                                <td class="text-theme2">成功</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>DC2220646HC5</td>
+                                <td>富邦銀行</td>
+                                <td>1000.00</td>
+                                <td class="text-theme3">失敗</td>
+                              </tr>
+
+
+                            </tbody>
+                          </table>
+                          <!-- 頁碼 -->
+                          <div class="text-center p-2">
+                            <div class="btn btn-active"><i class="fas fa-caret-left"></i></div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">1</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">2</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">...</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">9</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">10</div>
+                            <div class="btn btn-active"><i class="fas fa-caret-right"></i></div>
+                            <style>
+                              .btn-active:hover {
+                                color: #365a97;
+                                border-color: #365a97 !important;
+                                font-size: 1.1rem;
+                              }
+                            </style>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                    <li>
+
+                      <div class="col-12 mb-3 CardBgMd_txt_BG">
+
+                        <p class="border rounded p-3 mt-3">
+                          <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
+                            <i class="fa-solid fa-angle-left"></i>
+                          </button>
+                          共計2筆投注，投注金額200.00 有效投注 100.00 <span class="text-theme2">輸/贏
+                            200.00</span>
+                        </p>
+
+                        <div class="table-responsive py-3">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr class="text-center">
+                                <th scope="col">日期</th>
+                                <th scope="col">平台</th>
+                                <th scope="col">投注金額</th>
+                                <th scope="col">有效投注</th>
+                                <th scope="col">輸/贏</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                          <!-- 頁碼 -->
+                          <div class="text-center p-2">
+                            <div class="btn btn-active"><i class="fas fa-caret-left"></i></div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">1</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">2</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">3</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">4</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">5</div>
+                            <div class="btn btn-active"><i class="fas fa-caret-right"></i></div>
+                            <style>
+                              .btn-active:hover {
+                                color: #365a97;
+                                border-color: #365a97 !important;
+                                font-size: 1.1rem;
+                              }
+                            </style>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                    <li>
+
+                      <div class="col-12 mb-3 CardBgMd_txt_BG">
+
+                        <p class="border rounded p-3 mt-3">
+                          <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
+                            <i class="fa-solid fa-angle-left"></i>
+                          </button>
+                          共計2筆投注，投注金額200.00 有效投注 100.00 <span class="text-theme2">輸/贏
+                            200.00</span>
+                        </p>
+
+                        <div class="table-responsive py-3">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr class="text-center">
+                                <th scope="col">日期</th>
+                                <th scope="col">平台</th>
+                                <th scope="col">投注金額</th>
+                                <th scope="col">有效投注</th>
+                                <th scope="col">輸/贏</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                          <!-- 頁碼 -->
+                          <div class="text-center p-2">
+                            <div class="btn btn-active"><i class="fas fa-caret-left"></i></div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">1</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">2</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">3</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">4</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">5</div>
+                            <div class="btn btn-active"><i class="fas fa-caret-right"></i></div>
+                            <style>
+                              .btn-active:hover {
+                                color: #365a97;
+                                border-color: #365a97 !important;
+                                font-size: 1.1rem;
+                              }
+                            </style>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                    <li>
+
+                      <div class="col-12 mb-3 CardBgMd_txt_BG">
+
+                        <p class="border rounded p-3 mt-3">
+                          <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
+                            <i class="fa-solid fa-angle-left"></i>
+                          </button>
+                          共計2筆投注，投注金額200.00 有效投注 100.00 <span class="text-theme2">輸/贏
+                            200.00</span>
+                        </p>
+
+                        <div class="table-responsive py-3">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr class="text-center">
+                                <th scope="col">日期</th>
+                                <th scope="col">平台</th>
+                                <th scope="col">投注金額</th>
+                                <th scope="col">有效投注</th>
+                                <th scope="col">輸/贏</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+                              <tr class="text-center text-secondary">
+                                <th>2022-04-21</th>
+                                <td>賓果/北京賽車</td>
+                                <td>100.00</td>
+                                <td>100.00</td>
+                                <td class="text-theme2">100.00</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                          <!-- 頁碼 -->
+                          <div class="text-center p-2">
+                            <div class="btn btn-active"><i class="fas fa-caret-left"></i></div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">1</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">2</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">3</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">4</div>
+                            <div class="btn btn-active btn-sm border-secondary mx-1">5</div>
+                            <div class="btn btn-active"><i class="fas fa-caret-right"></i></div>
+                            <style>
+                              .btn-active:hover {
+                                color: #365a97;
+                                border-color: #365a97 !important;
+                                font-size: 1.1rem;
+                              }
+                            </style>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                  </ul>
+
+                </div>
+
               </li>
-              <li class="text-center px-5 w-100">
-                帳戶管理 插入
+
+              <li class="text-center pl-5 w-100">
+                <!-- 帳戶管理 插入 -->
+                <div class="d-none" id="AccountNanagement">
+                  <div class="col-12 my-3 CardBgMd_txt_BG">
+                    <p class="py-3 clearfix">
+                      <span class="h3 font-weight-bold">銀行帳戶</span>
+                      <span class="float-right"><span>1</span>/3</span>
+                    </p>
+                    <div class="row p-3">
+                      <div class="col-4 px-3">
+                        <button class="p-0 btn bg-transparent">
+                          <img src="../img/手機各分頁img/bankcard.png" alt="" class="">
+                        </button>
+                      </div>
+                      <div class="col-4 px-3">
+                        <button class="p-0 btn bg-transparent">
+                          <img src="../img/手機各分頁img/add_bankcard.png" alt="" class="">
+                        </button>
+                      </div>
+                      <div class="col-4 px-3 d-none">
+                        <button class="p-0 btn bg-transparent">
+                          <img src="../img/手機各分頁img/add_bankcard.png" alt="" class="">
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-12 my-3 CardBgMd_txt_BG">
+                    <p class="py-3 clearfix">
+                      <span class="h3 font-weight-bold">信用卡</span>
+                      <span class="float-right"><span>1</span>/3</span>
+                    </p>
+                    <div class="row p-3">
+                      <div class="col-4 px-3">
+                        <button class="p-0 btn bg-transparent">
+                          <img src="../img/手機各分頁img/bankcard.png" alt="" class="">
+                        </button>
+                      </div>
+                      <div class="col-4 px-3">
+                        <button class="p-0 btn bg-transparent">
+                          <img src="../img/手機各分頁img/Frame 736.png" alt="" class="">
+                        </button>
+                      </div>
+                      <div class="col-4 px-3 d-none">
+                        <button class="p-0 btn bg-transparent">
+                          <img src="../img/手機各分頁img/Frame 736.png" alt="" class="">
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="">
+                  <div class="col-12 my-3 CardBgMd_txt_BG">
+                    <p class="p-3 mt-3">
+                      <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
+                        <i class="fa-solid fa-angle-left"></i>
+                      </button>
+                      <span class="h3 font-weight-bold">新增銀行帳戶</span>
+                    </p>
+                    <div class="col-12 bg-linear-theme py-3">
+                      <div class="py-2">
+                        <p class="font-weight-bold text-dark">帳戶人姓名</p>
+                        <input type="text" class="btn-block bg-transparent border-bottom fsz09" placeholder="請輸入帳戶人姓名">
+                        <p class="fsz-08 text-black-50">為了您的資金能夠迅速到帳，請確保填寫的姓名與銀行卡的開戶姓名一致</p>
+                      </div>
+                      <div class="py-2">
+                        <p class="font-weight-bold text-dark">銀行代碼與名稱</p>
+                        <input type="text" class="btn-block bg-transparent border-bottom fsz09" placeholder="請選擇銀行">
+                      </div>
+                      <div class="py-2">
+                        <p class="font-weight-bold text-dark">銀行帳號</p>
+                        <input type="text" class="btn-block bg-transparent border-bottom fsz09" placeholder="請輸入帳號">
+                        <p class="fsz-08 text-black-50">請認真檢查儀行帳號，帳號錯誤資金無法到帳</p>
+                      </div>
+                      <p class="font-weight-bold text-dark px-5 text-center">信息在確認後將無法修改如需幫忙，請<a href="#"
+                          class="text-theme">聯繫客服</a>
+                      </p>
+                      <div class="py-2">
+                        <div class="btn btn-block bg-transparent border border-secondary py-5">
+                          <p class="centerCenter text-black-50 font-weight-bold">點擊此處上傳驗證資料</p>
+                          <p class="centerCenter text-black-50 font-weight-bold">身分證+健保卡(或第二有效證件)+銀行存摺 合拍(示意圖)</p>
+                          <p class="centerCenter text-black-50 font-weight-bold">*最多上傳40筆，上傳檔案大小請在5MB以下</p>
+                        </div>
+                        <input type="submit" value="上傳" class="btn-secondary mt-4 btn btn-block w-25 centerCenter">
+                      </div>
+                      <p class="font-weight-bold text-dark">範例:</p>
+                      <div class="row">
+                        <div class="col-12">
+                          <img class="img-fluid w-75" src="../img/桌機各分頁img/MyPurse/Group 140.jpg" alt="">
+                        </div>
+                        <div class="col-12">
+                          <input type="submit" value="完成"
+                            class="bg-theme3 pr-3 font-weight-bold text-light mt-3 btn rounded rounded-pill px-4 centerCenter">
+                          <input type="submit" value="取消"
+                            class="font-weight-bold text-dark border mt-3 btn rounded rounded-pill px-4 centerCenter"
+                            style="background-color: #fff;">
+                          <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<a href="#"
+                              class="text-theme">聯繫客服</a>
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="col-12 my-3 CardBgMd_txt_BG">
+                    <p class="p-3 mt-3">
+                      <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
+                        <i class="fa-solid fa-angle-left"></i>
+                      </button>
+                      <span class="h3 font-weight-bold">新增信用卡</span>
+                    </p>
+                    <div class="py-2">
+                      <p class="font-weight-bold text-dark">持卡人姓名</p>
+                      <input type="text" class="btn-block bg-transparent border-bottom fsz09" placeholder="請輸入帳戶人姓名">
+                      <p class="fsz-08 text-black-50">為了您的資金能夠迅速到帳，請確保填寫的姓名與銀行卡的開戶姓名一致</p>
+                    </div>
+                    <div class="py-2">
+                      <p class="font-weight-bold text-dark">信用卡卡號</p>
+                      <input type="text" class="btn-block bg-transparent border-bottom fsz09" placeholder="請輸入卡號">
+                    </div>
+
+                    <div class="py-2">
+                      <div class="btn btn-block bg-transparent border border-secondary py-5">
+                        <p class="centerCenter text-black-50 font-weight-bold">點擊此處上傳驗證資料</p>
+                        <p class="centerCenter text-black-50 font-weight-bold">身分證+健保卡(或第二有效證件)+銀行存摺 合拍(示意圖)</p>
+                        <p class="centerCenter text-black-50 font-weight-bold">*最多上傳40筆，上傳檔案大小請在5MB以下</p>
+                      </div>
+                      <input type="submit" value="上傳" class="btn-secondary mt-4 btn btn-block w-25 centerCenter">
+                    </div>
+                    <p class="font-weight-bold text-dark">範例:</p>
+                    <div class="row">
+                      <div class="col-12">
+                        <img class="img-fluid" src="../img/桌機各分頁img/MyPurse/Group 139.jpg" alt="">
+                      </div>
+                      <div class="col-12">
+                        <img src="../img/手機各分頁img/Frame749.png" alt="" class="w-25 img-fluid pt-2">
+                      </div>
+                      <div class="col-12">
+                        <input type="submit" value="完成"
+                          class="bg-theme3 pr-3 font-weight-bold text-light mt-3 btn rounded rounded-pill px-4 centerCenter">
+                        <input type="submit" value="取消"
+                          class="font-weight-bold text-dark border mt-3 btn rounded rounded-pill px-4 centerCenter"
+                          style="background-color: #fff;">
+                        <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<a href="#"
+                            class="text-theme">聯繫客服</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="text-center px-5 w-100">
-                邀請好友 插入
+
+              <li class="text-center pl-5 w-100">
+                <!-- 邀請好友 插入 -->
               </li>
-              <li class="text-center px-5 w-100">
-                幫助中心 插入
+
+              <li class="text-center pl-5 w-100">
+                <!-- 幫助中心 插入 -->
+                <div class="col-12 p-0 pb-5 CardBgMd_txt_BG p-3" id="uk_set">
+                  <p class="py-3 h3 font-weight-bold">幫助中心</p>
+                  <ul class="uk-subnav uk-subnav-pill row p-3" uk-switcher="">
+                    <li class="uk-active"><a
+                        class="centerCenter w3-round-medium text-dark px-5 py-2 rounded rounded-pill" href="#"
+                        aria-expanded="true">新手幫助</a>
+                    </li>
+                    <li><a class="centerCenter w3-round-medium text-dark px-5 py-2 rounded rounded-pill" href="#"
+                        aria-expanded="false">合營代理</a>
+                    </li>
+                    <li><a class="centerCenter w3-round-medium text-dark px-5 py-2 rounded rounded-pill" href="#"
+                        aria-expanded="false">常見問題</a>
+                    </li>
+                  </ul>
+
+
+                  <ul class="uk-switcher" style="touch-action: pan-y pinch-zoom;">
+                    <!-- MOD -->
+                    <li class="px-4 uk-active">
+                      <ul class="justify-content-between uk-tab row" uk-tab="">
+                        <li class="uk-active centerCenter col-4"><a href="#" aria-expanded="true">提款</a></li>
+                        <li class=" centerCenter col-4"><a href="#" aria-expanded="false">存款</a></li>
+                        <li class=" centerCenter col-4"><a href="#" aria-expanded="false">轉帳</a></li>
+                      </ul>
+
+                      <ul class="uk-switcher uk-margin" style="touch-action: pan-y pinch-zoom;">
+                        <li class="uk-active">
+                          <!--  -->
+                          <div class="row px-3 py-2">
+                            <div class="">
+                              <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">1</div>
+                            </div>
+                            <div class="col">
+                              <p class="font-weight-bold fsz-12">提款規則？</p>
+                              <p class="text-secondary">一般存款沒有享受任何優惠的情況下，達到1倍流水即可出款。</p>
+                            </div>
+                          </div>
+                          <div class="row px-3 py-2">
+                            <div class="">
+                              <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">2</div>
+                            </div>
+                            <div class="col">
+                              <p class="font-weight-bold fsz-12">提款手續費</p>
+                              <p class="text-secondary">每天一次免費次數，第二次起手續費收取1%</p>
+                            </div>
+                          </div>
+                          <div class="row px-3 py-2">
+                            <div class="">
+                              <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">3</div>
+                            </div>
+                            <div class="col">
+                              <p class="font-weight-bold fsz-12">驗證本人帳戶身分</p>
+                              <p class="text-secondary">
+                                首次存款後，需要驗證您存款的銀行帳戶資訊，請您提供雙證件(身分證+駕照或健保卡)及存摺，於＂綁定銀行帳戶＂頁面綁定銀行帳戶及上傳照片，或依照客服指示放置物品，並傳送圖片檔案給客服確認。
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <!--  -->
+                          <div class="row px-3 py-2">
+                            <div class="">
+                              <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">1</div>
+                            </div>
+                            <div class="col">
+                              <p class="font-weight-bold fsz-12">如何儲值？</p>
+                              <p class="text-secondary">首先您需要加入博天堂娛樂會員，在您註冊完成後登入博天堂娛樂帳戶，即可在首頁右上角找到儲值按鈕，進入後即可找到適合您的存款方式。
+                              </p>
+                              <p class="text-secondary">作為我們尊貴的客戶，我們會一直努力讓銀行免收取何任費用，讓你不會被我們收取任何在存款時或從您的帳戶中提款時的費用。</p>
+                            </div>
+                          </div>
+                          <div class="row px-3 py-2">
+                            <div class="">
+                              <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">2</div>
+                            </div>
+                            <div class="col">
+                              <p class="font-weight-bold fsz-12">儲值一般多久到帳戶？</p>
+                              <p class="text-secondary">系統約於5~20分鐘內自動入點，若繳費完90分鐘後點數仍未入帳，請洽詢線上客服。</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <!--  -->
+
+                          <div class="row px-3 py-2">
+                            <div class="">
+                              <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">1</div>
+                            </div>
+                            <div class="col">
+                              <p class="font-weight-bold fsz-12">怎麼轉帳？</p>
+                              <p class="text-secondary">登錄帳號——點擊官網首頁上方會員帳號——我的錢包——點擊轉帳——轉帳頁面
+                              </p>
+                              <p class="text-secondary">轉帳步驟：</p>
+                              <ol>
+                                <li>A. 在轉帳該頁面選擇轉出轉入的錢包</li>
+                                <li>B.輸入金額，或點擊最大金額</li>
+                                <li>C. 點擊立即轉帳</li>
+                              </ol>
+                            </div>
+                          </div>
+                          <div class="row px-3 py-2">
+                            <div class="">
+                              <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">2</div>
+                            </div>
+                            <div class="col">
+                              <p class="font-weight-bold fsz-12">轉帳到遊戲錢包，金額變少？</p>
+                              <p class="text-secondary">大部分金額變少或金額變負數是系統二次結算導致的結果，若對該部分有疑問可聯繫線上客服進行詳細諮詢。</p>
+                            </div>
+                          </div>
+                          <div class="row px-3 py-2">
+                            <div class="">
+                              <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">3</div>
+                            </div>
+                            <div class="col">
+                              <p class="font-weight-bold fsz-12">主錢包，轉遊戲錢包失敗？</p>
+                              <p class="text-secondary">查看對應遊戲是否處於維護當中，若遊戲處於維護狀態是不可以進行轉帳的。
+                                是否存在頻繁轉帳操作，因轉帳人數較多，單個帳戶若頻繁轉帳會有網路延遲，從而造成資料更新不及時或資料丟失。 請嘗試轉入整數。</p>
+                              <p class="text-secondary">聯繫 線上客服 進行諮詢。</p>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </li>
+                    <li class="px-4 ">
+                      <div class="table-responsive py-3">
+                        <p class="bg-theme3 text-light py-2 text-center">退傭</p>
+                        <table class="table table-striped">
+                          <thead>
+                            <tr class="text-center">
+                              <th scope="col">輸贏值</th>
+                              <th scope="col">退傭比例</th>
+                              <th scope="col">活躍人數</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-center">
+                              <th>10W</th>
+                              <td>20%</td>
+                              <td>有效會員人數3個</td>
+                            </tr>
+                            <tr class="text-center">
+                              <th>20W-30W</th>
+                              <td>30%</td>
+                              <td>有效會員人數15個</td>
+                            </tr>
+                            <tr class="text-center">
+                              <th>30W-100W</th>
+                              <td>35%</td>
+                              <td>有效會員人數20個</td>
+                            </tr>
+                            <tr class="text-center">
+                              <th>100W以上</th>
+                              <td>40%</td>
+                              <td>有效會員人數30個</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+
+                      <!--  -->
+                      <p class="text-theme centerCenter h5 font-weight-bold">獎金無上限</p>
+                      <p class=" centerCenter">若是想洽談其他的方式進行代理請聯繫客服</p>
+                      <!--  -->
+                      <div class="row px-3 py-2">
+                        <div class="">
+                          <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">1</div>
+                        </div>
+                        <div class="col">
+                          <p class="">統計周期為自然月的00:00:00-23:59:59。</p>
+                        </div>
+                      </div>
+                      <div class="row px-3 py-2">
+                        <div class="">
+                          <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">2</div>
+                        </div>
+                        <div class="col">
+                          <p class="">退傭計算為下線的會員總負盈利值，若當月會員總輸贏值為正，將累計到下個月並扣除上月的正盈利值，直到總輸贏值為負且符合有效會員人數，即可啟動退傭模式。</p>
+                          <p class="">舉例:</p>
+                          <p class="">
+                            A代理下線3月總輸贏值為-150000，優惠領取2000，洗碼2000，計算退傭方式為150000*0.25-2000-2000，故實得傭金為33500B代理下線3月總輸贏值為+300000，優惠領取5000，洗碼2000，4月總輸贏值為-500000，優惠領取5000，洗碼2000，計算退傭方式為500000-300000=200000(對應退傭比例為25%)，故200000*0.25-3月優惠7000-4月優惠7000=50000-7000-7000=36000為實得傭金。
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row px-3 py-2">
+                        <div class="">
+                          <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">3</div>
+                        </div>
+                        <div class="col">
+                          <p class="">有效會員人數定義為當月有效投注額滿5萬，為一個有效會員人數。
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row px-3 py-2">
+                        <div class="">
+                          <div class="ac text-center p-0 text-light rounded rounded-circle mr-2">4</div>
+                        </div>
+                        <div class="col">
+                          <p class="">同IP、電話、銀行卡進行多帳號投注或是註冊不同帳號，會視為1個有效會員。
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="px-4 ">
+                      <ul uk-accordion="" class="uk-accordion" id="FAQ">
+                        <li class="uk-open pt-3">
+                          <a class="uk-accordion-title" href="#">如何查詢流水</a>
+                          <div class=" uk-accordion-content m-0">
+                            <p class=" ">電腦版，點擊上方會員選單&gt;進會員中心頁&gt;選擇要查詢的期間&gt;點擊搜尋，即可查詢各廳流水</p>
+                            <p class=" ">手機版，點擊右下方我的&gt;投注紀錄&gt;選擇要查詢的期間&gt;點擊搜尋，即可查詢各廳流水</p>
+                            <p class=" ">※流水最多查詢15天</p>
+                          </div>
+                        </li>
+                        <li>
+                          <a class="uk-accordion-title" href="#">怎樣在手機允許第三方cookies？ 怎樣清除手機
+                            緩存？</a>
+                          <div class=" uk-accordion-content m-0" hidden="">
+                            <p class=" ">電腦版，點擊上方會員選單&gt;進會員中心頁&gt;選擇要查詢的期間&gt;點擊搜尋，即可查詢各廳流水</p>
+                            <p class=" ">手機版，點擊右下方我的&gt;投注紀錄&gt;選擇要查詢的期間&gt;點擊搜尋，即可查詢各廳流水</p>
+                            <p class=" ">※流水最多查詢15天</p>
+                          </div>
+                        </li>
+                        <li>
+                          <a class="uk-accordion-title" href="#">怎樣清除緩存在手機裏?</a>
+                          <div class=" uk-accordion-content m-0" hidden="">
+                            <p class=" ">電腦版，點擊上方會員選單&gt;進會員中心頁&gt;選擇要查詢的期間&gt;點擊搜尋，即可查詢各廳流水</p>
+                            <p class=" ">手機版，點擊右下方我的&gt;投注紀錄&gt;選擇要查詢的期間&gt;點擊搜尋，即可查詢各廳流水</p>
+                            <p class=" ">※流水最多查詢15天</p>
+                          </div>
+                        </li>
+                        <li>
+                          <a class="uk-accordion-title" href="#">推薦金優惠介紹</a>
+                          <div class=" uk-accordion-content m-0" hidden="">
+                            <p class=" ">電腦版，點擊上方會員選單&gt;進會員中心頁&gt;選擇要查詢的期間&gt;點擊搜尋，即可查詢各廳流水</p>
+                            <p class=" ">手機版，點擊右下方我的&gt;投注紀錄&gt;選擇要查詢的期間&gt;點擊搜尋，即可查詢各廳流水</p>
+                            <p class=" ">※流水最多查詢15天</p>
+                          </div>
+                        </li>
+                        <li>
+                          <a class="uk-accordion-title" href="#">支付方式流程教學</a>
+                          <div class=" uk-accordion-content m-0" hidden="">
+                            <p class=" ">電腦版，點擊上方會員選單&gt;進會員中心頁&gt;選擇要查詢的期間&gt;點擊搜尋，即可查詢各廳流水</p>
+                            <p class=" ">手機版，點擊右下方我的&gt;投注紀錄&gt;選擇要查詢的期間&gt;點擊搜尋，即可查詢各廳流水</p>
+                            <p class=" ">※流水最多查詢15天</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+
+                  </ul>
+                </div>
               </li>
+
 
 
             </ul>
@@ -977,7 +3619,7 @@
             <p class="fsz09 text-center font-weight-bold text-dark">交易紀錄</p>
             <p class="fsz-08 text-center text-secondary">(存提轉查詢)</p>
           </a>
-          <a href="#" class="col-3 p-1">
+          <a href="./AccountManagement.html" class="col-3 p-1">
             <img src="../img/手機各分頁img/mypurse/4.png" class="img-fluid p-1" alt="">
             <p class="fsz09 text-center font-weight-bold text-dark">帳戶管理</p>
           </a>
@@ -1040,6 +3682,16 @@
     $(document).ready(function () {
       let title = $('title').text();
       $('#copyTitle').html(title);
+
+      // UK switch ul 對切
+      // $(".bettingHistory").click(function () {
+      //   $("#bettingHistory").addClass("d-none");
+      //   $("#bettingHistoryPage").removeClass('d-none');
+      // });
+      // $(".bettingHistoryPage").click(function () {
+      //   $("#bettingHistoryPage").addClass("d-none");
+      //   $("#bettingHistory").removeClass('d-none');
+      // });
     });
   </script>
 

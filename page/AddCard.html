@@ -65,7 +65,7 @@
       background-color: #365a97;
     }
   </style>
-  <title>帳戶管理</title>
+  <title>新增信用卡</title>
 </head>
 
 
@@ -83,71 +83,34 @@
           value="回到上一頁">
           <i class="fa-solid fa-caret-left fa-lg"></i>
         </button>
-        <p class="text-center font-weight-bold h5 py-2">帳戶管理</p>
+        <p class="text-center font-weight-bold h5 py-2">新增信用卡</p>
       </div>
-      <div class="col-12 p-0">
-        <!--  -->
-        <ul class="uk-subnav uk-subnav-pill justify-content-between border bg-theme2 px-5" uk-switcher>
-          <li><a href="#">銀行帳戶</a></li>
-          <li><a href="#">信用卡</a></li>
-        </ul>
+      <div class="col-12 p-3 bg-theme">
+        <div class="py-2">
+          <p class="font-weight-bold text-dark">持卡人姓名</p>
+          <input type="text" class="btn-block bg-transparent border-bottom fsz09" placeholder="請輸入帳戶人姓名">
+          <p class="fsz-08 text-black-50">為了您的資金能夠迅速到帳，請確保填寫的姓名與銀行卡的開戶姓名一致</p>
+        </div>
+        <div class="py-2">
+          <p class="font-weight-bold text-dark">信用卡卡號</p>
+          <input type="text" class="btn-block bg-transparent border-bottom fsz09" placeholder="請輸入卡號">
+        </div>
 
-        <!--  -->
-        <ul class="uk-switcher bg-theme min-vh-100">
+        <div class="py-2">
+          <div class="btn btn-block bg-transparent border border-secondary">
+            <p class="centerCenter text-black-50 font-weight-bold">點擊此處上傳驗證資料</p>
+            <p class="centerCenter text-black-50 font-weight-bold">身分證+健保卡(或第二有效證件)+銀行存摺 合拍(示意圖)</p>
+            <p class="centerCenter text-black-50 font-weight-bold">*最多上傳40筆，上傳檔案大小請在5MB以下</p>
+          </div>
+          <input type="submit" value="上傳" class="btn-secondary btn btn-block w-50 centerCenter">
+        </div>
+        <p class="font-weight-bold text-dark">範例:</p>
+        <img src="../img/手機各分頁img/Group138.png" alt="">
+        <img src="../img/手機各分頁img/Frame749.png" alt="" class="w-50 pt-2">
+        <input type="submit" value="完成" class="bg-theme3 text-light mt-3 btn btn-block centerCenter">
+        <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<a href="#" class="text-theme">聯繫客服</a>
+        </p>
 
-          <li class="p-4">
-
-
-            <p class="clearfix font-weight-bold">
-              <span class="">我的帳戶</span>
-              <span class="float-right"><span>1</span>/3</span>
-            </p>
-            <div class="uk-inline">
-              <img src="../img/手機各分頁img/bankcard.png" alt="" class="img-fluid">
-
-              <!-- uk-overlay 卡片定位 -->
-              <div class="uk-overlay uk-overlay-default uk-position-center bg-transparent">
-                <div class="row">
-                  <div class="col-12 text-right h5 font-weight-bold">富邦銀行</div>
-                  <div class="col-12 text-center font-weight-bold">XXXX - XXXX - XXXX - 1234</div>
-                </div>
-              </div>
-            </div>
-            <a href="./AddBankAccount.html"
-              class="btn bg-light text-dark btn-block py-3 my-3 border font-weight-bold">新增銀行帳戶
-              <img src="../img/手機各分頁img/carbon_add-filled.png" class="img-fluid p-2" alt="">
-            </a>
-            <p class="font-weight-bold text-black-50 text-center fsz09">最多綁定3個帳戶</p>
-          </li>
-          <li class="p-4">
-
-
-            <p class="clearfix font-weight-bold">
-              <span class="">我的信用卡</span>
-              <span class="float-right"><span>1</span>/3</span>
-            </p>
-            <div class="uk-inline">
-              <img src="../img/手機各分頁img/bankcard.png" alt="" class="img-fluid">
-
-              <div class="uk-overlay uk-overlay-default uk-position-center bg-transparent">
-                <div class="row">
-                  <div class="col-12 text-center">
-                    <div class="row px-3">
-                      <div class="col text-left h5 font-weight-bold">信用卡</div>
-                      <div class="col text-right h5 font-weight-bold">富邦銀行</div>
-                    </div>
-                  </div>
-                  <div class="col-12 text-center font-weight-bold">XXXX - XXXX - XXXX - 1234</div>
-                </div>
-              </div>
-            </div>
-            <a href="./AddCard.html" class="btn bg-light text-dark btn-block py-3 my-3 border font-weight-bold">新增信用卡
-              <img src="../img/手機各分頁img/carbon_add-filled.png" class="img-fluid p-2" alt="">
-            </a>
-            <p class="font-weight-bold text-black-50 text-center fsz09">最多綁定3個帳戶</p>
-          </li>
-
-        </ul>
       </div>
 
     </div>
