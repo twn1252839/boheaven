@@ -111,6 +111,19 @@
     .card {
       border: 0px solid;
     }
+
+    .hoverListIItem .col {
+      cursor: pointer;
+    }
+
+    .line_ss {
+      height: 50px;
+      padding-top: .7rem;
+      border-width: .35rem !important;
+      border-radius: 5%;
+      border-bottom: 1px solid #1E50A6;
+      color: #1E50A6;
+    }
   </style>
 </head>
 
@@ -119,45 +132,49 @@
 
   <!-- 電腦板  ------------------------------------------------------------------------>
   <!-- login ------------------------------------>
-  <div class="container-fluid  d-none d-md-block p-0 bg-theme2">
-    <div class=" container-lg">
+  <div class="container-fluid  d-none d-md-block p-0 bg-theme2 uk-position-relative">
+    <div class="container-lg">
       <div class="row align-items-center">
         <div class="col-2 px-0 text-center">
           <img src="./img/桌機index_img/logo.png" class="img-fluid px-2" alt="">
         </div>
         <div class="col-7 px-0 d-inline-flex align-items-center">
-          <div class="btn-group align-items-center">
-            <div class="btn py-0 px-2 px-lg-3 my-1">
-              <p class="text-theme font_b border-bottom bd-theme"
-                style="height: 50px;padding-top: .7rem;border-width: .35rem !important;border-radius: 5%;">
+          <div class="btn-group">
+            <div class="btn py-0 px-1 px-lg-2 my-auto">
+              <p class="font_b line_ss">
                 首頁
               </p>
             </div>
-            <div class="btn py-0 px-1 px-lg-2 px-xl-3" id="hover1">
+            <div class="btn py-0 px-1 px-lg-2 my-auto hoverList ">
+              <!-- 使用藍底線 -->
+              <!-- <p class="line_ss">
+                真人
+                <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+              </p> -->
               <span>真人</span>
               <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
-            <div class="btn py-0 px-2 px-lg-3" id="hover2">
+            <div class="btn py-0 px-1 px-lg-2 my-auto hoverList">
               <span>體育</span>
               <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
-            <div class="btn py-0 px-2 px-lg-3" id="hover3">
+            <div class="btn py-0 px-1 px-lg-2 my-auto hoverList">
               <span>賓果</span>
               <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
-            <div class="btn py-0 px-2 px-lg-3" id="hover4">
+            <div class="btn py-0 px-1 px-lg-2 my-auto hoverList">
               <span>電子</span>
               <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
-            <div class="btn py-0 px-2 px-lg-3" id="hover5">
+            <div class="btn py-0 px-1 px-lg-2 my-auto hoverList">
               <span>棋牌</span>
               <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
-            <div class="btn py-0 px-2 px-lg-3" id="hover6">
+            <div class="btn py-0 px-1 px-lg-2 my-auto hoverList">
               <span>捕魚</span>
               <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </div>
-            <a href="./page/Promotion.html" class="btn py-0 px-2 px-lg-3" id="hover7">
+            <a href="./page/Promotion.html" class="btn py-0 px-1 px-lg-2 my-auto hoverList">
               <span>優惠</span>
               <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
             </a>
@@ -177,80 +194,82 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- hoveList -->
-  <div class="container-fluid p-0 ">
-    <div class="container">
-      <div class="row px-5" id="hover1List">
-        <div class="col">
-          <img src="./img/桌機index_img/list/baccarat/10035.png" class="" alt="">
+    <!-- hoveList -->
+    <div class="p-0">
+      <div class="container-lg">
+        <!--  <div class="row px-5 py-3 hoverListIItem uk-position-fixed uk-position-top-center bg-light"
+          style="top: 65px;z-index: 999999999999999999999;"> -->
+        <div class="row px-5 hoverListIItem">
+          <div class="col">
+            <img src="./img/桌機index_img/list/baccarat/10035.png" class="" alt="">
+          </div>
+          <div class="col">
+            <img src="./img/桌機index_img/list/baccarat/10036.png" class="" alt="">
+          </div>
+          <div class="col">
+            <img src="./img/桌機index_img/list/baccarat/10037.png" class="" alt="">
+          </div>
+          <div class="col">
+            <img src="./img/桌機index_img/list/baccarat/10038.png" class="" alt="">
+          </div>
+          <div class="col">
+            <img src="./img/桌機index_img/list/baccarat/10039.png" class="" alt="">
+          </div>
+          <div class="col">
+            <img src="./img/桌機index_img/list/baccarat/10040.png" class="" alt="">
+          </div>
         </div>
-        <div class="col">
-          <img src="./img/桌機index_img/list/baccarat/10036.png" class="" alt="">
+        <div class="row px-5 hoverListIItem">
+          <div class="col p-3">
+            <img src="./img/桌機index_img/list/sport/1.png" class="" alt="">
+          </div>
+          <div class="col p-3">
+            <img src="./img/桌機index_img/list/sport/2.png" class="" alt="">
+          </div>
         </div>
-        <div class="col">
-          <img src="./img/桌機index_img/list/baccarat/10037.png" class="" alt="">
+        <div class="row px-5 hoverListIItem">
+          <div class="col p-3">
+            <img src="./img/桌機index_img/list/bingo/1.png" class="" alt="">
+          </div>
+          <div class="col p-3">
+            <img src="./img/桌機index_img/list/bingo/2.png" class="" alt="">
+          </div>
         </div>
-        <div class="col">
-          <img src="./img/桌機index_img/list/baccarat/10038.png" class="" alt="">
+        <div class="row px-5 py-3 hoverListIItem">
+          <div class="col">
+            <img src="./img/桌機index_img/list/slot/1.png" class="" alt="">
+          </div>
+          <div class="col">
+            <img src="./img/桌機index_img/list/slot/2.png" class="" alt="">
+          </div>
+          <div class="col">
+            <img src="./img/桌機index_img/list/slot/3.png" class="" alt="">
+          </div>
+          <div class="col">
+            <img src="./img/桌機index_img/list/slot/4.png" class="" alt="">
+          </div>
+          <div class="col">
+            <img src="./img/桌機index_img/list/slot/5.png" class="" alt="">
+          </div>
+          <div class="col">
+            <img src="./img/桌機index_img/list/slot/6.png" class="" alt="">
+          </div>
         </div>
-        <div class="col">
-          <img src="./img/桌機index_img/list/baccarat/10039.png" class="" alt="">
+        <div class="row px-5 hoverListIItem">
+          <div class="col p-3">
+            <img src="./img/桌機index_img/list/card/1.png" class="" alt="">
+          </div>
+          <div class="col p-3">
+            <img src="./img/桌機index_img/list/card/2.png" class="" alt="">
+          </div>
         </div>
-        <div class="col">
-          <img src="./img/桌機index_img/list/baccarat/10040.png" class="" alt="">
-        </div>
-      </div>
-      <div class="row px-5" id="hover2List">
-        <div class="col p-3">
-          <img src="./img/桌機index_img/list/sport/1.png" class="" alt="">
-        </div>
-        <div class="col p-3">
-          <img src="./img/桌機index_img/list/sport/2.png" class="" alt="">
-        </div>
-      </div>
-      <div class="row px-5" id="hover3List">
-        <div class="col p-3">
-          <img src="./img/桌機index_img/list/bingo/1.png" class="" alt="">
-        </div>
-        <div class="col p-3">
-          <img src="./img/桌機index_img/list/bingo/2.png" class="" alt="">
-        </div>
-      </div>
-      <div class="row px-5" id="hover4List">
-        <div class="col">
-          <img src="./img/桌機index_img/list/slot/1.png" class="" alt="">
-        </div>
-        <div class="col">
-          <img src="./img/桌機index_img/list/slot/2.png" class="" alt="">
-        </div>
-        <div class="col">
-          <img src="./img/桌機index_img/list/slot/3.png" class="" alt="">
-        </div>
-        <div class="col">
-          <img src="./img/桌機index_img/list/slot/4.png" class="" alt="">
-        </div>
-        <div class="col">
-          <img src="./img/桌機index_img/list/slot/5.png" class="" alt="">
-        </div>
-        <div class="col">
-          <img src="./img/桌機index_img/list/slot/6.png" class="" alt="">
-        </div>
-      </div>
-      <div class="row px-5" id="hover5List">
-        <div class="col p-3">
-          <img src="./img/桌機index_img/list/card/1.png" class="" alt="">
-        </div>
-        <div class="col p-3">
-          <img src="./img/桌機index_img/list/card/2.png" class="" alt="">
-        </div>
-      </div>
-      <div class="row px-5" id="hover6List">
-        <div class="col p-3">
-          <img src="./img/桌機index_img/list/fish/1.png" class="" alt="">
-        </div>
-        <div class="col p-3">
-          <img src="./img/桌機index_img/list/fish/2.png" class="" alt="">
+        <div class="row px-5 hoverListIItem">
+          <div class="col p-3">
+            <img src="./img/桌機index_img/list/fish/1.png" class="" alt="">
+          </div>
+          <div class="col p-3">
+            <img src="./img/桌機index_img/list/fish/2.png" class="" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -322,37 +341,53 @@
       </div>
       <ul class="uk-subnav uk-subnav-pill row px-3 CardBgMd-txt rounded-pill" uk-switcher>
         <li class="col-2 px-0 gameList1">
-          <a href="#" class="p-1 text-center mx-3">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
             <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/List1.png" alt="">
           </a>
         </li>
-        <li class="col-2 px-0 gameList2"><a href="#" class="p-1 text-center mx-3">
+        <li class="col-2 px-0 gameList2">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
             <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/2.png" alt="">
           </a>
         </li>
-        <li class="col-2 px-0 gameList3"><a href="#" class="p-1 text-center mx-3">
+        <li class="col-2 px-0 gameList3">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
             <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/3.png" alt="">
           </a>
         </li>
-        <li class="col-2 px-0 gameList4"><a href="#" class="p-1 text-center mx-3">
+        <li class="col-2 px-0 gameList4">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
             <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/4.png" alt="">
           </a>
         </li>
-        <li class="col-2 px-0 gameList5"><a href="#" class="p-1 text-center mx-3">
+        <li class="col-2 px-0 gameList5">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
             <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/5.png" alt="">
           </a>
         </li>
-        <li class="col-2 px-0 gameList6"><a href="#" class="p-1 text-center mx-3">
+        <li class="col-2 px-0 gameList6">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
             <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/6.png" alt="">
           </a>
         </li>
       </ul>
 
-      <ul class="uk-switcher uk-margin uk-position-relative vh-100">
-        <li>
-          <img class="uk-position-absolute uk-position-bottom-center" src="./img/桌機index_img/GAME/gameList/stage.png"
-            alt="">
-          <img class="" src="./img/桌機index_img/GAME/gameList/6.png" alt="">
+      <!-- MOD -->
+      <ul class="uk-switcher uk-margin uk-position-relative">
+        <li class="uk-active">
+          <!-- uk-overlay 卡片定位 -->
+          <div class="uk-inline">
+            <div class="w-100 centerCenter row">
+              <img src="./img/桌機index_img/GAME/gameList/stage.png" alt="" class="img-fluid col">
+            </div>
+
+            <div class="uk-overlay uk-overlay-default uk-position-top-center bg-transparent">
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+            </div>
+          </div>
         </li>
         <li>Hello again!</li>
         <li>Bazinga!</li>
@@ -1409,22 +1444,30 @@
         }
       )
 
-      $("#arrowDown").click(function () {
-        $("#arrowDownList").show();
-      });
-      $("#hover1List,#hover2List,#hover3List,#hover4List,#hover5List,#hover6List,#hover7List").hide();
-      $("#hover1,#hover2,#hover3,#hover4,#hover5,#hover6,#hover7").hover(function () {
-        hover = $(this).attr("id");
-        // console.log(hover);
-        // hover2 = $('#' + hover + 'List').attr("id");
-        // console.log(hover2);
-        $('#' + hover + 'List').show();
-      }, function () {
-        $('#' + hover + 'List').hide();
+
+      // hoverList
+      let hoverListIItem = document.querySelectorAll('.hoverListIItem');
+      let hoverList = document.querySelectorAll('.hoverList');
+      // console.log(hoverListIItem);
+      for (let i = 0; i < hoverList.length; i++) {
+        $(hoverListIItem).hide();
+        $(hoverList[i]).hover(function () {
+          $(hoverListIItem).hide();
+          $(hoverListIItem[i]).show();
+        }
+        );
+        $(hoverListIItem[i]).hover(function () {
+          $(this).show();
+        }, function () {
+          $(this).hide();
+        }
+        );
+
+        // $(".hoverListIItem .col").hover(function () {
+        //   $(this).addClass('uk-animation-shake');
+        // }
+        // );
       }
-      );
-
-
     });
   </script>
   <script src="./js/gameList.js"></script>
