@@ -1,3 +1,9 @@
+/* UK_SET */
+.uk-subnavt li {
+  list-style: none;
+}
+
+/* UK_SET_END */
 @media screen and (max-width: 768px) {
 }
 
