@@ -29,6 +29,9 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
 
+  <!-- VUE -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.7/dist/vue.js"></script>
+
   <!-- JQ -->
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script src="../js/Addhtml.js"></script>
@@ -56,7 +59,7 @@
   </script>
   <!-- MD history.back ------------------------------------------------------------------------>
   <div class="container-fluid p-0 m-0 d-md-none bg-light px-3 uk-position-relative vh-100">
-    <div class="row pb-5">
+    <div class="row pb-5 vh-100">
       <div class="col-12">
         <button class="btn py-0 uk-position-absolute uk-position-left" type="button" onclick="history.back()"
           value="回到上一頁">
@@ -66,15 +69,15 @@
         <a href="./transactionRecordNo.html"
           class="text-center pr-2 py-2 uk-position-absolute uk-position-right text-black-50">交易紀錄</a>
       </div>
-      <div class="col-12 bg-linear-theme py-3 vh-100">
-        <div class="bg-light py-3 border-bottom border-secondary rounded">
+      <div class="col-12 bg-linear-theme py-3">
+        <div class="bg-light py-3 border-bottom filter_a border-secondary rounded-top">
           <p class="font-weight-bold text-dark px-5 text-center h3">主錢包帳戶</p>
           <p class="font-weight-bold px-5 py-2 text-center h5" style="color: #2ABF6F;">$1500.00</p>
           <div class=" text-center">
             <button class="btn bg-transparent bd-theme px-5 py-2">一鍵轉回主帳戶</button>
           </div>
         </div>
-        <div class="bg-light p-3 rounded">
+        <div class="bg-light p-3 rounded-bottom filter_a">
           <div class="row">
             <a href="./deposit.html" class="col">
               <img src="../img/手機各分頁img/mypurse/11.png" class="img-fluid" alt="">
@@ -95,213 +98,20 @@
           </div>
         </div>
 
-        <div class="bg-light">
-          <div class="flex-grow-1 border w3-round-medium p-3" style="max-height: 350px;overflow: auto;">
+
+        <div class="bg-light mt-3 rounded" id="v-for-array">
+          <div class="flex-grow-1 w3-round-medium p-3" style="max-height: 350px;overflow: auto;">
             <!-- 錢包 -->
-            <div class="row">
-              <div class="col-6 text-secondary">錢包</div>
+            <div class="row border-bottom" v-for="item in items">
+              <div class="col-6 text-secondary">{{ item.message }}</div>
               <div class="pr-2 text-secondary ml-auto">
-                <span>餘額</span>
-                <a href="#" class="btn p-0 m-0">
-                  <i class="fas fa-sync-alt w3-text-amber"></i>
-                </a>
+                <span class="text-theme2 pr-1">{{ item.money }}</span>
               </div>
             </div>
-            <!-- 主錢包 -->
-            <div class="row">
-              <div class="col-6 text-secondary">主錢包</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>10,000.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!-- 真人娛樂 -->
-            <div class="row">
-              <div class="col-6 textTitle">真人娛樂 :</div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">歐博百家樂</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">沙龍百家樂</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">DG百家樂</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">WM百家樂</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!-- 體育球版 -->
-            <div class="row">
-              <div class="col-6 textTitle">體育球版 :</div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">派大金體育</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">Super體育</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!-- 電子遊戲 -->
-            <div class="row">
-              <div class="col-6 textTitle">電子遊戲 :</div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">DT電子</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">KA電子</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">BNG電子</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">RTG電子</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">必贏電子</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">SimplePlay電子</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!-- 棋牌遊戲 -->
-            <div class="row">
-              <div class="col-6 textTitle">棋牌遊戲 :</div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">MG棋牌</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">皇家棋牌</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!-- 賓果彩票 -->
-            <div class="row">
-              <div class="col-6 textTitle">賓果彩票 :</div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">9K彩票</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">六合彩539</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!-- 捕魚王 -->
-            <div class="row">
-              <div class="col-6 textTitle">捕魚王 :</div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">KA電子</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">RTG電子</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">必贏電子</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
-            <!--  -->
-            <div class="row">
-              <div class="col-6 text-secondary">SimplePlay電子</div>
-              <div class="pr-2 text-secondary ml-auto">
-                <span>0.00</span>
-                <a href="#" class="btn p-0"><i class="fas fa-sync-alt w3-text-amber"></i></a>
-              </div>
-            </div>
+
             <!-- 一鍵帶回 -->
             <button style="border-radius: 5px;"
-              class="gradientBtnV col-12 uk-button my-2 w3-round-medium text-light">一鍵帶回</button>
+              class="gradientBtnV bg-theme3 col-12 uk-button my-2 w3-round-medium text-light">一鍵帶回</button>
           </div>
         </div>
       </div>
@@ -314,6 +124,33 @@
       let title = $('title').text();
       $('#copyTitle').html(title);
     });
+
+    var example1 = new Vue({
+      el: '#v-for-array',
+      data: {
+        items: [
+          { message: 'DG真人', money: '0' },
+          { message: '歐博真人', money: '0' },
+          { message: 'SA真人', money: '0' },
+          { message: 'WM真人', money: '0' },
+          { message: 'OB真人', money: '0' },
+          { message: 'OG真人', money: '0' },
+          { message: '博天堂體育', money: '0' },
+          { message: 'SUPER體育', money: '0' },
+          { message: 'SUPER彩票', money: '0' },
+          { message: 'DT電子', money: '0' },
+          { message: 'SP電子', money: '0' },
+          { message: 'RTG電子', money: '0' },
+          { message: 'BNG電子', money: '0' },
+          { message: '必贏電子', money: '0' },
+          { message: 'PLAY電子', money: '0' },
+          { message: '博樂棋牌', money: '0' },
+          { message: 'OB棋牌', money: '0' },
+          { message: 'SP捕魚', money: '0' },
+          { message: '必贏捕魚', money: '0' },
+        ]
+      }
+    })
   </script>
 
   <!-- Footer -->
