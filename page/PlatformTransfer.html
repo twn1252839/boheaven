@@ -29,6 +29,9 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
 
+  <!-- VUE -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.7/dist/vue.js"></script>
+
   <!-- JQ -->
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script src="../js/Addhtml.js"></script>
@@ -55,8 +58,8 @@
   // PageHeaderBanner()
   </script>
   <!-- MD history.back ------------------------------------------------------------------------>
-  <div class="container-fluid p-0 m-0 d-md-none bg-light px-3 uk-position-relative vh-100">
-    <div class="row pb-5">
+  <div class="container-fluid p-0 m-0 d-md-none bg-light px-3 uk-position-relative">
+    <div class="row">
       <div class="col-12">
         <button class="btn py-0 uk-position-absolute uk-position-left" type="button" onclick="history.back()"
           value="回到上一頁">
@@ -64,18 +67,29 @@
         </button>
         <p class="text-center font-weight-bold h5 py-2">平台轉帳</p>
       </div>
-      <div class="col-12 bg-linear-theme py-1 vh-100 px-0">
+      <div class="col-12 bg-linear-theme py-1 px-0  min-vh-100">
         <!-- 框字幕 -->
-        <div class="bg-light p-3 rounded border">
+        <div class="bg-light px-3 rounded border">
           <div class="row">
             <div class="col-12 font-weight-bold border-bottom py-2"><span class="pr-3">總額度</span><span
                 class="green_txt">1,500</span></div>
             <div class="col-12 font-weight-bold border-bottom py-2 clearfix"><span class="pr-3">轉出帳戶</span><span
-                class="">主帳戶</span><span class="text-right float-right">0<i
-                  class="fa-solid fa-sort-down pl-2 text-secondary" style="margin-top: -10px;"></i></span></div>
-            <div class="col-12 font-weight-bold py-2 clearfix"><span class="pr-3">轉入帳戶</span><span
-                class="text-theme">DG真人</span><span class="text-right float-right text-theme">1,000<i
-                  class="fa-solid fa-sort-down pl-2 text-secondary" style="margin-top: -10px;"></i></span></div>
+                class="">主帳戶</span>
+              <button type="button" class="btn p-0 bg-transparent float-right" data-toggle="modal"
+                data-target="#exampleModalCenter">
+                <span class="text-right">0<i class="fa-solid fa-sort-down pl-2 text-secondary"
+                    style="margin-top: -10px;"></i></span>
+              </button>
+
+            </div>
+            <div class="col-12 font-weight-bold py-2 clearfix">
+              <span class="pr-3">轉入帳戶</span><span class="text-theme">DG真人</span>
+              <button type="button" class="btn p-0 bg-transparent float-right" data-toggle="modal"
+                data-target="#exampleModalCenter">
+                <span class="text-right">0<i class="fa-solid fa-sort-down pl-2 text-secondary"
+                    style="margin-top: -10px;"></i></span>
+              </button>
+            </div>
           </div>
         </div>
         <div class="bg-light px-3 py-1 my-3 rounded border">
@@ -93,16 +107,95 @@
           </div>
         </div>
       </div>
-
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog uk-position-bottom h-75" role="document">
+          <div class="modal-content bg-theme" id="v-for-array">
+            <div class="modal-header border-bottom-0 py-1">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="modal-body pt-0">
+              <div class="row centerCenter">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col pl-2">
+                      <p class="text-left fsz-12">帳戶選擇</p>
+                    </div>
+                    <div class="col text-right">
+                      <button class="btn bg-theme3 text-light rounded rounded-pill px-4 py-0">完成
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 py-2">
+                  <div class="row px-0">
+                    <div class="col-5 px-2 centerCenter py-1 d-flex justify-content-between bg-light border">
+                      <p class="text-left col p-0">主帳戶</p>
+                      <p class="text-theme2 text-right col p-0">1,500</p>
+                    </div>
+                    <div class="col centerCenter">
+                      <img class="img-fluid" src="../img/手機各分頁img/mypurse/Group 156.png" alt="">
+                    </div>
+                    <div class="col-5 px-2 centerCenter py-1 d-flex justify-content-between bg-light border">
+                      <p class="text-left col p-0">DG真人</p>
+                      <p class="text-theme2 text-right col p-0">0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row centerCenter bg-light px-0" v-for="item in items">
+                <div class="col d-flex justify-content-between py-0 px-1 border-bottom">
+                  <p class="text-left col p-0 ">{{ item.message }}</p>
+                  <p class="text-theme2 text-right col p-0 ">{{ item.money }}</p>
+                </div>
+                <div class="col d-flex justify-content-between py-0 px-1 border-bottom">
+                  <p class="text-left col p-0">{{ item.message }}</p>
+                  <p class="text-theme2 text-right col p-0">{{ item.money }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
   <script>
     $(document).ready(function () {
       let title = $('title').text();
       $('#copyTitle').html(title);
     });
+
+    var example1 = new Vue({
+      el: '#v-for-array',
+      data: {
+        items: [
+          { message: 'DG真人', money: '0' },
+          { message: '歐博真人', money: '0' },
+          { message: 'SA真人', money: '0' },
+          { message: 'WM真人', money: '0' },
+          { message: 'OB真人', money: '0' },
+          { message: 'OG真人', money: '0' },
+          { message: '博天堂體育', money: '0' },
+          { message: 'SUPER體育', money: '0' },
+          { message: 'SUPER彩票', money: '0' },
+          { message: 'DT電子', money: '0' },
+          { message: 'SP電子', money: '0' },
+          { message: 'RTG電子', money: '0' },
+          { message: 'BNG電子', money: '0' },
+          { message: '必贏電子', money: '0' },
+          { message: 'PLAY電子', money: '0' },
+          { message: '博樂棋牌', money: '0' },
+          { message: 'OB棋牌', money: '0' },
+          { message: 'SP捕魚', money: '0' },
+          { message: '必贏捕魚', money: '0' },
+        ]
+      }
+    })
   </script>
+
 
   <!-- Footer -->
   <script>PCFooter();</script>

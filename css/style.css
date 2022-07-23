@@ -262,6 +262,9 @@ p {
 .fsz-06 {
   font-size: 0.6em !important;
 }
+.fsz-1 {
+  font-size: 1rem !important;
+}
 
 /* MD breadcrumb -------------------------------------------------------- */
 

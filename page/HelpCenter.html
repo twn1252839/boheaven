@@ -55,14 +55,58 @@
             background-repeat: no-repeat;
             background-position: 50% 50%; */
     }
-  </style>
-  <style>
+
     .ac {
       width: 25px;
       height: 25px;
       border-radius: 999em;
       background-color: #365a97;
     }
+
+    /* UK 完整手風琴設定 -------------------------------------- */
+    .uk-open>.uk-accordion-title::before {
+      background-image: url("../img/ukIconOpen.png");
+    }
+
+    /* UK 手風琴 NO ICON .uk-open> */
+    .uk-accordion-title::before {
+      /* display: none; */
+      content: "";
+      width: 1.4em;
+      height: 1.4em;
+      margin-left: 10px;
+      float: right;
+      background-image: url("../img/ukIcon.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    /* 啟動背景 */
+    .uk-accordion-title:focus,
+    .uk-accordion-title:hover {
+      text-decoration: none;
+      outline: 0;
+      color: #333;
+      background: transparent;
+    }
+
+    /* 未啟動背景 */
+    .uk-accordion-title {
+      margin-top: -15px;
+      display: block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      line-height: 1;
+      color: #333;
+      border: none;
+      overflow: hidden;
+      background: transparent;
+      filter: none;
+      /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+      border-radius: 8px;
+    }
+
+    /* UK 完整手風琴設定 END -------------------------------------- */
   </style>
   <title>幫助中心</title>
 </head>
@@ -93,8 +137,8 @@
           <li><a href="#">合營代理</a></li>
           <li><a href="#">常見問題</a></li>
         </ul>
-        <ul class="uk-switcher bg-theme min-vh-100">
-          <li class="px-4">
+        <ul class="uk-switcher bg-theme min-vh-100 px-3">
+          <li class="uk-active">
             <ul class="justify-content-between" uk-tab>
               <li><a href="#">提款</a></li>
               <li><a href="#">存款</a></li>
@@ -182,7 +226,7 @@
               </li>
             </ul>
           </li>
-          <li class="px-4">
+          <li class="">
             <img src="../img/手機各分頁img/table.png" alt="" class="img-fluid pt-2">
             <p class="text-theme centerCenter">獎金無上限</p>
             <p class=" centerCenter">若是想洽談其他的方式進行代理請聯繫客服</p>
@@ -216,44 +260,44 @@
               </div>
             </div>
           </li>
-          <li class="px-4">
+          <li class="">
             <ul uk-accordion>
               <li class="uk-open pt-3">
-                <a class="uk-accordion-title" href="#">如何查詢流水</a>
-                <div class="uk-accordion-content">
+                <a class="uk-accordion-title pt-3 fsz-1" href="#">如何查詢流水</a>
+                <div class="uk-accordion-content m-0 m-0">
                   <p class=" fsz-08">電腦版，點擊上方會員選單>進會員中心頁>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水</p>
                   <p class=" fsz-08">手機版，點擊右下方我的>投注紀錄>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水</p>
                   <p class=" fsz-08">※流水最多查詢15天</p>
                 </div>
               </li>
-              <li>
-                <a class="uk-accordion-title" href="#">怎樣在手機允許第三方cookies？ 怎樣清除手機
+              <li class="pt-3">
+                <a class="uk-accordion-title fsz-1" href="#">怎樣在手機允許第三方cookies？ 怎樣清除手機
                   緩存？</a>
-                <div class="uk-accordion-content">
+                <div class="uk-accordion-content m-0 m-0">
                   <p class=" fsz-08">電腦版，點擊上方會員選單>進會員中心頁>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水</p>
                   <p class=" fsz-08">手機版，點擊右下方我的>投注紀錄>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水</p>
                   <p class=" fsz-08">※流水最多查詢15天</p>
                 </div>
               </li>
-              <li>
-                <a class="uk-accordion-title" href="#">怎樣清除緩存在手機裏?</a>
-                <div class="uk-accordion-content">
+              <li class="pt-3">
+                <a class="uk-accordion-title fsz-1" href="#">怎樣清除緩存在手機裏?</a>
+                <div class="uk-accordion-content m-0 m-0">
                   <p class=" fsz-08">電腦版，點擊上方會員選單>進會員中心頁>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水</p>
                   <p class=" fsz-08">手機版，點擊右下方我的>投注紀錄>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水</p>
                   <p class=" fsz-08">※流水最多查詢15天</p>
                 </div>
               </li>
-              <li>
-                <a class="uk-accordion-title" href="#">推薦金優惠介紹</a>
-                <div class="uk-accordion-content">
+              <li class="pt-3">
+                <a class="uk-accordion-title fsz-1 " href="#">推薦金優惠介紹</a>
+                <div class="uk-accordion-content m-0 m-0">
                   <p class=" fsz-08">電腦版，點擊上方會員選單>進會員中心頁>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水</p>
                   <p class=" fsz-08">手機版，點擊右下方我的>投注紀錄>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水</p>
                   <p class=" fsz-08">※流水最多查詢15天</p>
                 </div>
               </li>
-              <li>
-                <a class="uk-accordion-title" href="#">支付方式流程教學</a>
-                <div class="uk-accordion-content">
+              <li class="pt-3">
+                <a class="uk-accordion-title fsz-1 " href="#">支付方式流程教學</a>
+                <div class="uk-accordion-content m-0 m-0">
                   <p class=" fsz-08">電腦版，點擊上方會員選單>進會員中心頁>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水</p>
                   <p class=" fsz-08">手機版，點擊右下方我的>投注紀錄>選擇要查詢的期間>點擊搜尋，即可查詢各廳流水</p>
                   <p class=" fsz-08">※流水最多查詢15天</p>
