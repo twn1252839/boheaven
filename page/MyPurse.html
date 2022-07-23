@@ -51,7 +51,22 @@
       /* border-radius: 999em; */
       background-color: #365a97;
     }
+
+    /* -------------- */
+    #UkBgc .uk-active {
+      background-color: #365a97;
+    }
+
+    #UkBgc .uk-active a {
+      color: #fff;
+    }
+
+    #UkBgc a {
+      color: black;
+      text-decoration: none;
+    }
   </style>
+
   <title>客服中心</title>
 </head>
 
@@ -64,7 +79,7 @@
   </script>
   <!-- PC -->
   <div class="container-fluid p-0 m-0 d-none d-md-block CardBg_BG px-3">
-    <div class="centerCenter min-vh-100" style="width: 85vw;">
+    <div class="centerCenter container p-0 min-vh-100">
       <div class="row py-3">
         <div class="col-12 px-0 py-3">
           <!-- 右字 media -->
@@ -97,20 +112,20 @@
 
           <!-- 照片switch -->
           <div class="row px-3">
-            <ul
-              class="uk-subnavt  pb-5 pt-3 col-3 row col-xl-2 CardBgMd-txt text-center  justify-content-center align-self-start"
+            <ul id="UkBgc"
+              class="uk-subnavt pb-5 px-0 pt-3 col-3 row col-xl-2 CardBgMd-txt text-center  justify-content-center align-self-start"
               uk-switcher>
-              <li class="col-4 pb-3 px-0">
+              <li class="col-4 pb-3 px-0 bg-transparent">
                 <a href="#" class="p-2 text-center">
                   <img src="../img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
                 </a>
               </li>
-              <li class="col-4 pb-3 px-0">
+              <li class="col-4 pb-3 px-0 bg-transparent">
                 <a href="#" class="p-2 text-center">
                   <img src="../img/桌機index_img/list/clickList/a2.png" class="img-fluid" alt="">
                 </a>
               </li>
-              <li class="col-4 pb-3 px-0">
+              <li class="col-4 pb-3 px-0 bg-transparent">
                 <a href="#" class="p-2 text-center">
                   <img src="../img/桌機index_img/list/clickList/a3.png" class="img-fluid" alt="">
                 </a>
@@ -120,43 +135,43 @@
               <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class="" type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/1.png" class="img-fluid" alt="">
-                  <span class="h5 pl-0 pl-xl-2 text-dark">個人資料</span>
+                  <span class="h5 pl-0 pl-xl-2">個人資料</span>
                 </a>
               </li>
               <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class="" type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/2.png" class="img-fluid" alt="">
-                  <span class=" h5 pl-0 pl-xl-2 text-dark">VIP特權</span>
+                  <span class=" h5 pl-0 pl-xl-2">VIP特權</span>
                 </a>
               </li>
               <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class=" " type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/3.png" class="img-fluid" alt="">
-                  <span class=" h5 pl-0 pl-xl-2 text-dark">優惠達標查詢</span>
+                  <span class=" h5 pl-0 pl-xl-2">優惠達標查詢</span>
                 </a>
               </li>
               <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class=" " type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/4.png" class="img-fluid" alt="">
-                  <span class=" h5 pl-0 pl-xl-2 text-dark">投注紀錄</span>
+                  <span class=" h5 pl-0 pl-xl-2">投注紀錄</span>
                 </a>
               </li>
               <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class=" " type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/5.png" class="img-fluid" alt="">
-                  <span class=" h5 pl-0 pl-xl-2 text-dark">交易紀錄</span>
+                  <span class=" h5 pl-0 pl-xl-2">交易紀錄</span>
                 </a>
               </li>
               <li class="w-100 pl-2 pl-lg-3 py-1">
                 <a href="#" class=" " type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/6.png" class="img-fluid" alt="">
-                  <span class=" h5 pl-0 pl-xl-2 text-dark">帳戶管理</span>
+                  <span class=" h5 pl-0 pl-xl-2">帳戶管理</span>
                 </a>
               </li>
               <li class="w-100 pl-2 pl-lg-3 py-1" onclick="window.location.assign('./inviteFriends.html');">
                 <a href="./inviteFriends.html" class=" " type="button">
                   <img src="../img/桌機index_img/list/clickList/PC/7.png" class="img-fluid" alt="">
-                  <span class=" h5 pl-0 pl-xl-2 text-dark">邀請好友</span>
+                  <span class=" h5 pl-0 pl-xl-2">邀請好友</span>
                 </a>
               </li>
               <li class="w-100 pl-2 pl-lg-3 py-1">
@@ -165,8 +180,8 @@
                   <div class="media">
                     <img src="../img/桌機index_img/list/clickList/PC/8.png" class="img-fluid" alt="">
                     <div class="media-body">
-                      <span class="h5 pl-0 pl-xl-2 text-dark">幫助中心</span>
-                      <p class="pl-0 pl-xl-2 text-secondary fsz-08">(存款、提款、投注疑問看這裡)</p>
+                      <span class="h5 pl-0 pl-xl-2">幫助中心</span>
+                      <p class="pl-0 pl-xl-2 fsz-08">(存款、提款、投注疑問看這裡)</p>
                     </div>
                   </div>
 
@@ -270,7 +285,15 @@
                           <div class="py-3">
                             <button class="btn bg-theme3 text-light w-25">立即存款</button>
                           </div>
-                          <p class="font-weight-bold text-dark">如需幫助，請<a href="#" class="text-theme">聯繫客服</a>
+                          <p class="font-weight-bold text-dark">如需幫助，請
+                            <!-- <a href="#" class="text-theme"></a> -->
+                            <button type="button" class="uk-button bg-transparent text-theme centerCenter px-0 py-1"
+                              data-toggle="modal" data-target="#exampleModalCenter2">
+                              <button type="button" class="uk-button bg-transparent text-theme centerCenter px-0 py-1"
+                                data-toggle="modal" data-target="#exampleModalCenter2">
+                                聯繫客服
+                              </button>
+                            </button>
                           </p>
                         </div>
                       </div>
@@ -337,8 +360,14 @@
                           <div class="py-3">
                             <button class="btn bg-theme3 text-light w-25">立即存款</button>
                           </div>
-                          <p class="font-weight-bold text-dark">如需幫助，請<a href="#" class="text-theme">聯繫客服</a>
-                          </p>
+                          <p class="font-weight-bold text-dark">如需幫助，請 <button type="button"
+                              class="uk-button bg-transparent text-theme centerCenter px-0 py-1" data-toggle="modal"
+                              data-target="#exampleModalCenter2">
+                              <button type="button" class="uk-button bg-transparent text-theme centerCenter px-0 py-1"
+                                data-toggle="modal" data-target="#exampleModalCenter2">
+                                聯繫客服
+                              </button>
+                            </button>
                           </p>
                         </div>
                       </div>
@@ -407,8 +436,14 @@
                           <div class="py-3">
                             <button class="btn bg-theme3 text-light w-25">立即存款</button>
                           </div>
-                          <p class="font-weight-bold text-dark">如需幫助，請<a href="#" class="text-theme">聯繫客服</a>
-                          </p>
+                          <p class="font-weight-bold text-dark">如需幫助，請 <button type="button"
+                              class="uk-button bg-transparent text-theme centerCenter px-0 py-1" data-toggle="modal"
+                              data-target="#exampleModalCenter2">
+                              <button type="button" class="uk-button bg-transparent text-theme centerCenter px-0 py-1"
+                                data-toggle="modal" data-target="#exampleModalCenter2">
+                                聯繫客服
+                              </button>
+                            </button>
                           </p>
                         </div>
                       </div>
@@ -443,14 +478,22 @@
                     </div>
                     <p class="px-2 text-danger fsz09">你尚有未完成流水1000.00，無法進行提款</p>
                     <div class="text-center py-2">
-                      <button class="btn btn-block bg-theme3 text-light">立即存款</button>
+                      <button class="btn btn-block bg-theme3 text-light">立即提款</button>
                     </div>
                     <p class="px-2 text-dark fsz09 py-1">為了方便您快速提款，請將全部金額轉回主錢包</p>
-                    <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<a href="#" class="text-theme">聯繫客服</a>
+                    <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請 <button type="button"
+                        class="uk-button bg-transparent text-theme centerCenter px-0 py-1" data-toggle="modal"
+                        data-target="#exampleModalCenter2">
+                        <button type="button" class="uk-button bg-transparent text-theme centerCenter px-0 py-1"
+                          data-toggle="modal" data-target="#exampleModalCenter2">
+                          聯繫客服
+                        </button>
+                      </button>
                     </p>
                   </div>
                 </div>
               </li>
+
 
               <li class="text-center pl-5 w-100">
                 <div class="col-12 CardBgMd_txt_BG py-3 px-0">
@@ -624,7 +667,14 @@
                   </div>
                   <div class="col-12 py-3">
                     <span class="font-weight-bold pr-3">真實姓名:</span><span class="pr-3">秋香</span><span
-                      class="text-secondary">姓名需與銀行帳戶人姓名一致，否則無法提款，如需更改請<a href="#" class="text-theme">聯繫客服</a></span>
+                      class="text-secondary">姓名需與銀行帳戶人姓名一致，否則無法提款，如需更改請 <button type="button"
+                        class="uk-button bg-transparent text-theme centerCenter px-0 py-1" data-toggle="modal"
+                        data-target="#exampleModalCenter2">
+                        <button type="button" class="uk-button bg-transparent text-theme centerCenter px-0 py-1"
+                          data-toggle="modal" data-target="#exampleModalCenter2">
+                          聯繫客服
+                        </button>
+                      </button></span>
                   </div>
                   <div class="col-12 py-3">
                     <span class="font-weight-bold pr-3">性別:</span><span>男</span>
@@ -641,20 +691,21 @@
                   <p class="col-12 py-3 h3 font-weight-bold border-bottom">帳號安全</p>
                   <div class="col-12 py-3">
                     <div class="row py-2">
-                      <div class="col-5 col-lg-3">
+                      <div class="col-6">
                         <span class="font-weight-bold pr-3">手機號碼:</span><span>0987****88</span>
                       </div>
-                      <div class="flex-grow-1">
+                      <div class="col-6">
                         <span class="font-weight-bold pr-3">已驗證</span>
                       </div>
                     </div>
                     <div class="row py-2">
-                      <div class="col-5 col-lg-3">
+                      <div class="col-6">
 
                         <span class="font-weight-bold pr-3">更改密碼:</span><span>**********</span>
                       </div>
-                      <div class="flex-grow-1">
-                        <button type="button" class="btn bd-theme text-theme rounded-pill py-1 px-5">編輯</button>
+                      <div class="col-6">
+                        <a href="./changePassword.html" target="_blank"
+                          class="btn bd-theme text-theme rounded-pill py-1 px-5">編輯</a>
                       </div>
                     </div>
                   </div>
@@ -3239,17 +3290,17 @@
 
               <li class="text-center pl-5 w-100">
                 <!-- 帳戶管理 插入 -->
-                <div class="d-none" id="AccountNanagement">
+                <div class="" id="AccountNanagement">
                   <div class="col-12 my-3 CardBgMd_txt_BG">
                     <p class="py-3 clearfix">
                       <span class="h3 font-weight-bold">銀行帳戶</span>
-                      <span class="float-right"><span>1</span>/3</span>
+                      <span class="float-right"><span>1</span><span>/3</span></span>
                     </p>
                     <div class="row p-3">
                       <div class="col-4 px-3">
-                        <button class="p-0 btn bg-transparent">
+                        <div class="p-0">
                           <img src="../img/手機各分頁img/bankcard.png" alt="" class="">
-                        </button>
+                        </div>
                       </div>
                       <div class="col-4 px-3">
                         <button class="p-0 btn bg-transparent">
@@ -3267,13 +3318,13 @@
                   <div class="col-12 my-3 CardBgMd_txt_BG">
                     <p class="py-3 clearfix">
                       <span class="h3 font-weight-bold">信用卡</span>
-                      <span class="float-right"><span>1</span>/3</span>
+                      <span class="float-right"><span>1</span><span>/3</span></span>
                     </p>
                     <div class="row p-3">
                       <div class="col-4 px-3">
-                        <button class="p-0 btn bg-transparent">
+                        <div class="p-0">
                           <img src="../img/手機各分頁img/bankcard.png" alt="" class="">
-                        </button>
+                        </div>
                       </div>
                       <div class="col-4 px-3">
                         <button class="p-0 btn bg-transparent">
@@ -3289,7 +3340,7 @@
 
                   </div>
                 </div>
-                <div class="">
+                <div class="d-none">
                   <div class="col-12 my-3 CardBgMd_txt_BG">
                     <p class="p-3 mt-3">
                       <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
@@ -3313,7 +3364,11 @@
                         <p class="fsz-08 text-black-50">請認真檢查儀行帳號，帳號錯誤資金無法到帳</p>
                       </div>
                       <p class="font-weight-bold text-dark px-5 text-center">信息在確認後將無法修改如需幫忙，請<a href="#"
-                          class="text-theme">聯繫客服</a>
+                          class="text-theme"> <button type="button"
+                            class="uk-button bg-transparent text-theme centerCenter px-0 py-1" data-toggle="modal"
+                            data-target="#exampleModalCenter2">
+                            聯繫客服
+                          </button></a>
                       </p>
                       <div class="py-2">
                         <div class="btn btn-block bg-transparent border border-secondary py-5">
@@ -3334,8 +3389,11 @@
                           <input type="submit" value="取消"
                             class="font-weight-bold text-dark border mt-3 btn rounded rounded-pill px-4 centerCenter"
                             style="background-color: #fff;">
-                          <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<a href="#"
-                              class="text-theme">聯繫客服</a>
+                          <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<a href="#" class="text-theme">
+                              <button type="button" class="uk-button bg-transparent text-theme centerCenter px-0 py-1"
+                                data-toggle="modal" data-target="#exampleModalCenter2">
+                                聯繫客服
+                              </button></a>
                           </p>
                         </div>
                       </div>
@@ -3343,7 +3401,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="">
+                <div class="d-none">
                   <div class="col-12 my-3 CardBgMd_txt_BG">
                     <p class="p-3 mt-3">
                       <button type="button" class="btn bg-transparent bettingHistoryPage p-0 pr-3">
@@ -3383,8 +3441,11 @@
                         <input type="submit" value="取消"
                           class="font-weight-bold text-dark border mt-3 btn rounded rounded-pill px-4 centerCenter"
                           style="background-color: #fff;">
-                        <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<a href="#"
-                            class="text-theme">聯繫客服</a>
+                        <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<a href="#" class="text-theme">
+                            <button type="button" class="uk-button bg-transparent text-theme centerCenter px-0 py-1"
+                              data-toggle="modal" data-target="#exampleModalCenter2">
+                              聯繫客服
+                            </button></a>
                         </p>
                       </div>
                     </div>
@@ -3561,7 +3622,11 @@
 
                       <!--  -->
                       <p class="text-theme centerCenter h5 font-weight-bold">獎金無上限</p>
-                      <p class=" centerCenter">若是想洽談其他的方式進行代理請聯繫客服</p>
+                      <p class=" centerCenter">若是想洽談其他的方式進行代理請 <button type="button"
+                          class="uk-button bg-transparent text-theme centerCenter px-0 py-1" data-toggle="modal"
+                          data-target="#exampleModalCenter2">
+                          聯繫客服
+                        </button></p>
                       <!--  -->
                       <div class="row px-3 py-2">
                         <div class="">
@@ -3657,6 +3722,38 @@
             </ul>
           </div>
 
+        </div>
+      </div>
+    </div>
+    <!-- 0service Modal 聯繫克服 -->
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title h5 text-theme font-weight-bold" id="exampleModalLongTitle">聯絡我們
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fa-solid fa-xmark text-theme fa-lg"></i></span>
+            </button>
+          </div>
+          <div class="modal-body pt-0">
+            <!-- 雙直btn -->
+            <div class=" py-2">
+              <button type="button" class="btn bg-transparent p-0">
+                <img src="../img/桌機index_img/Frame 554.png" class="img-fluid" alt="...">
+              </button>
+            </div>
+            <div class=" py-2">
+              <button type="button" class="btn bg-transparent p-0">
+                <img src="../img/桌機index_img/Frame 555.png" class="img-fluid" alt="...">
+              </button>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
         </div>
       </div>
     </div>

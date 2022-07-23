@@ -79,7 +79,11 @@
           <input type="text" class="btn-block bg-transparent border-bottom fsz09" placeholder="請輸入帳號">
           <p class="fsz-08 text-black-50">請認真檢查儀行帳號，帳號錯誤資金無法到帳</p>
         </div>
-        <p class="font-weight-bold text-dark px-5 text-center">信息在確認後將無法修改如需幫忙，請<a href="#" class="text-theme">聯繫客服</a>
+        <p class="font-weight-bold text-dark px-5 text-center">信息在確認後將無法修改如需幫忙，請<button type="button"
+            class="uk-button bg-transparent text-theme centerCenter px-0 py-1" data-toggle="modal"
+            data-target="#exampleModalCenter2">
+            聯繫客服
+          </button>
         </p>
         <div class="py-2">
           <div class="btn btn-block bg-transparent border border-secondary">
@@ -92,13 +96,48 @@
         <p class="font-weight-bold text-dark">範例:</p>
         <img src="../img/手機各分頁img/Group137.png" alt="">
         <input type="submit" value="完成" class="bg-theme3 text-light mt-3 btn btn-block centerCenter">
-        <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<a href="#" class="text-theme">聯繫客服</a>
+        <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<button type="button"
+            class="uk-button bg-transparent text-theme centerCenter px-0 py-1" data-toggle="modal"
+            data-target="#exampleModalCenter2">
+            聯繫客服
+          </button>
         </p>
 
       </div>
 
     </div>
-
+    <!-- 0service Modal -->
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title h5 text-theme font-weight-bold" id="exampleModalLongTitle">聯絡我們
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fa-solid fa-xmark text-theme fa-lg"></i></span>
+            </button>
+          </div>
+          <div class="modal-body pt-0">
+            <!-- 雙直btn -->
+            <div class=" py-2">
+              <button type="button" class="btn bg-transparent p-0">
+                <img src="../img/桌機index_img/Frame 554.png" class="img-fluid" alt="...">
+              </button>
+            </div>
+            <div class=" py-2">
+              <button type="button" class="btn bg-transparent p-0">
+                <img src="../img/桌機index_img/Frame 555.png" class="img-fluid" alt="...">
+              </button>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+      </div>
+    </div>
   </div>
   <script>
     $(document).ready(function () {

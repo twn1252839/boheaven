@@ -108,26 +108,63 @@
         <img src="../img/手機各分頁img/Group138.png" alt="">
         <img src="../img/手機各分頁img/Frame749.png" alt="" class="w-50 pt-2">
         <input type="submit" value="完成" class="bg-theme3 text-light mt-3 btn btn-block centerCenter">
-        <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<a href="#" class="text-theme">聯繫客服</a>
+        <p class="font-weight-bold text-dark px-5 text-center">如需幫助，請<button type="button"
+            class="uk-button bg-transparent text-theme centerCenter px-0 py-1" data-toggle="modal"
+            data-target="#exampleModalCenter2">
+            聯繫客服
+          </button>
         </p>
 
       </div>
 
     </div>
-    <script>
-      $(document).ready(function () {
-        let title = $('title').text();
-        $('#copyTitle').html(title);
-      });
-    </script>
+    <!-- 0service Modal -->
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title h5 text-theme font-weight-bold" id="exampleModalLongTitle">聯絡我們
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fa-solid fa-xmark text-theme fa-lg"></i></span>
+            </button>
+          </div>
+          <div class="modal-body pt-0">
+            <!-- 雙直btn -->
+            <div class=" py-2">
+              <button type="button" class="btn bg-transparent p-0">
+                <img src="../img/桌機index_img/Frame 554.png" class="img-fluid" alt="...">
+              </button>
+            </div>
+            <div class=" py-2">
+              <button type="button" class="btn bg-transparent p-0">
+                <img src="../img/桌機index_img/Frame 555.png" class="img-fluid" alt="...">
+              </button>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      let title = $('title').text();
+      $('#copyTitle').html(title);
+    });
+  </script>
 
-    <!-- Footer -->
-    <script>PCFooter();</script>
-    <script>MDFooter();</script>
+  <!-- Footer -->
+  <script>PCFooter();</script>
+  <script>MDFooter();</script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
