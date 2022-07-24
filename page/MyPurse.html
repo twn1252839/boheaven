@@ -79,6 +79,7 @@
   </script>
   <!-- PC -->
   <div class="container-fluid p-0 m-0 d-none d-md-block CardBg_BG px-3">
+
     <div class="centerCenter container p-0 min-vh-100">
       <div class="row py-3">
         <div class="col-12 px-0 py-3">
@@ -113,12 +114,25 @@
                     <img src="../img/桌機各分頁img/MyPurse/V1.png" class="img-fluid pl-1" alt="">
                   </div>
                   <div class="col-12">
-                    <span class="">$3,000.00</span>
+                    <button class="p-0 text-right btn" type=" button" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">$3,000.00
+                      <i class="fa-solid fa-angle-down pl-2" style="margin-top: -5px;"></i>
+                    </button>
+                    <!-- dropdown-menu -->
+                    <div class="dropdown-menu dropdown-menu border-0">
+                      <div class="row">
+                        <div class="col">Something</div>
+                        <div class="col">Something</div>
+                      </div>
+                      <a class="dropdown-item active" href="#">Active link</a>
+                      <h6 class="dropdown-header">Dropdown header</h6>
+                      <button class="dropdown-item" type="button">Something else here</button>
+                    </div>
                   </div>
                 </div>
               </li>
               <!--  -->
-              <li class="col-4 pb-3 px-0 bg-transparent">
+              <li class="col-4 pb-3 px-0 bg-transparent uk-active">
                 <a href="#" class="p-2 text-center">
                   <img src="../img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
                 </a>
@@ -202,7 +216,7 @@
             </ul>
 
             <ul class="uk-switcher uk-margin col-9 col-xl-10 justify-content-center" style="margin-top: -1500px;">
-              <li class="text-center pl-5 w-100"></li>
+              <li class="text-center pl-5 w-100 d-none"></li>
               <!-- MOD -->
               <li class="uk-active text-center pl-5 w-100">
 
