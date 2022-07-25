@@ -1279,19 +1279,58 @@
   </div>
   <!-- 手機會員 -->
   <div class="container-fluid d-md-none">
-    <div class="row text-theme py-1 font-weight-bold centerCenter">
+    <div class="row text-theme py-0 font-weight-bold centerCenter">
       <div class="col-8 p-0"><span>會員: 0987123654</span>
         <img class="img-fluid" src="./img/手機index_img/V1_1.png" alt="">
       </div>
-      <button class="col-4 p-0 text-right btn" type=" button" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false">$3,000.00
-        <i class="fa-solid fa-angle-down pl-2" style="margin-top: -5px;"></i>
-      </button>
-      <!-- dropdown-menu -->
-      <div class="dropdown-menu dropdown-menu-right uk-position-center-right-out">
-        <button class="dropdown-item" type="button">Action</button>
-        <button class="dropdown-item" type="button">Another action</button>
-        <button class="dropdown-item" type="button">Something else here</button>
+
+      <!-- 自製dropdown -->
+      <div class="col-4 p-0 uk-inline clearfix">
+        <button class="uk-button bg-transparent tr fsz-1 m-0 p-0 text-right" type=" button">
+          <span>$3,000.00</span>
+          <i class="fa-solid fa-angle-down pl-2" style="margin-top: -5px;"></i>
+        </button>
+        <!-- dropdown-menu -->
+        <div uk-dropdown="mode: click" class="py-1 px-4 m-0" style="background-color: rgba(0, 0, 0, 0.8);width: 60vw;">
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">DG真人</div>
+            <div class="col pl-2 text-theme5">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">歐博真人</div>
+            <div class="col pl-2 text-theme5">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">SA真人</div>
+            <div class="col pl-2 text-theme5">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">WM真人</div>
+            <div class="col pl-2 text-theme5">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">OB真人</div>
+            <div class="col pl-2 text-theme5">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">OG真人</div>
+            <div class="col pl-2 text-theme5">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">SUPER體育</div>
+            <div class="col pl-2 text-theme5">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">OB體育</div>
+            <div class="col pl-2 text-theme5">0</div>
+          </div>
+          <div class="row pt-3">
+            <div class="col text-right pl-2 text-theme5">總額度:3,000.00</div>
+          </div>
+          <button class="btn bg-theme3 rounded rounded-pill py-1 my-1 btn-block text-light">
+            一鍵轉回
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1334,7 +1373,7 @@
 
         <ul class="uk-switcher col-9 px-2">
           <!-- 百家樂 -->
-          <li>
+          <li class="uk-active">
             <div class="row">
               <div class="col-6 col-md-3 p-0 centerCenter text-center">
                 <button type="button" class="btn bg-transparent p-0" data-toggle="modal"
@@ -2096,6 +2135,10 @@
         // }
         // );
       }
+      $('#dropdown_menu').hide();
+      $(".dropdown_menu").click(function () {
+        $('#dropdown_menu').toggle();
+      });
     });
   </script>
   <script src="./js/gameList.js"></script>

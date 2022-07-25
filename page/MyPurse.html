@@ -71,7 +71,7 @@
 </head>
 
 
-<body>
+<body id="app">
   <!-- Header -->
   <script>
     //PageHeader();
@@ -100,49 +100,82 @@
 
           <!-- 照片switch -->
           <div class="row px-3">
+            <!-- MMOD -->
             <ul id="UkBgc"
-              class="uk-subnavt pb-5 px-0 pt-3 col-3 row col-xl-2 CardBgMd-txt text-center  justify-content-center align-self-start"
+              class="uk-subnavt pb-5 px-0 pt-3 col-4 row col-xl-3 CardBgMd-txt text-center  justify-content-center align-self-start"
               uk-switcher>
-              <!-- MMOD -->
               <li class="w-100 pl-2 pl-lg-3 py-1 bg-transparent">
                 <div class="row centerCenter">
                   <div class="col-12 text-center pl-1">
                     <img src="../img/桌機index_img/user.png" class="img-fluid" alt="">
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 centerCenter">
                     <span class="">0987123654</span>
                     <img src="../img/桌機各分頁img/MyPurse/V1.png" class="img-fluid pl-1" alt="">
                   </div>
-                  <div class="col-12">
-                    <button class="p-0 text-right btn" type=" button" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">$3,000.00
+                  <div class="col-12 uk-inline centerCenter pl-1">
+                    <button class="uk-button bg-transparent p-0 text-right uk-position-relative dropdown_menu"
+                      type=" button">
+                      $3,000.00
                       <i class="fa-solid fa-angle-down pl-2" style="margin-top: -5px;"></i>
                     </button>
-                    <!-- dropdown-menu -->
-                    <div class="dropdown-menu dropdown-menu border-0">
-                      <div class="row">
-                        <div class="col">Something</div>
-                        <div class="col">Something</div>
+                    <div id="dropdown_menu" class="uk-position-absolute uk-position-top-center w-100 py-2 px-4"
+                      style="background-color: rgba(0, 0, 0, 0.8);top: 30px; z-index: 999999999;">
+                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                        <div class="col px-0 border-right border-secondary py-0">DG真人</div>
+                        <div class="col pl-2 text-theme5">0</div>
                       </div>
-                      <a class="dropdown-item active" href="#">Active link</a>
-                      <h6 class="dropdown-header">Dropdown header</h6>
-                      <button class="dropdown-item" type="button">Something else here</button>
+                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                        <div class="col px-0 border-right border-secondary py-0">歐博真人</div>
+                        <div class="col pl-2 text-theme5">0</div>
+                      </div>
+                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                        <div class="col px-0 border-right border-secondary py-0">SA真人</div>
+                        <div class="col pl-2 text-theme5">0</div>
+                      </div>
+                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                        <div class="col px-0 border-right border-secondary py-0">WM真人</div>
+                        <div class="col pl-2 text-theme5">0</div>
+                      </div>
+                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                        <div class="col px-0 border-right border-secondary py-0">OB真人</div>
+                        <div class="col pl-2 text-theme5">0</div>
+                      </div>
+                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                        <div class="col px-0 border-right border-secondary py-0">OG真人</div>
+                        <div class="col pl-2 text-theme5">0</div>
+                      </div>
+                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                        <div class="col px-0 border-right border-secondary py-0">SUPER體育</div>
+                        <div class="col pl-2 text-theme5">0</div>
+                      </div>
+                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                        <div class="col px-0 border-right border-secondary py-0">OB體育</div>
+                        <div class="col pl-2 text-theme5">0</div>
+                      </div>
+                      <div class="row pt-5">
+                        <div class="col text-right pl-2 text-theme5">總額度:3,000.00</div>
+                      </div>
+                      <button class="btn bg-theme3 rounded rounded-pill py-1 my-1 btn-block text-light">
+                        一鍵轉回
+                      </button>
                     </div>
                   </div>
                 </div>
               </li>
+
               <!--  -->
-              <li class="col-4 pb-3 px-0 bg-transparent uk-active">
+              <li class="col-4 pb-3 px-0 bg-transparent uk-active centerCenter">
                 <a href="#" class="p-2 text-center">
                   <img src="../img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
                 </a>
               </li>
-              <li class="col-4 pb-3 px-0 bg-transparent">
+              <li class="col-4 pb-3 px-0 bg-transparent centerCenter">
                 <a href="#" class="p-2 text-center">
                   <img src="../img/桌機index_img/list/clickList/a2.png" class="img-fluid" alt="">
                 </a>
               </li>
-              <li class="col-4 pb-3 px-0 bg-transparent">
+              <li class="col-4 pb-3 px-0 bg-transparent centerCenter">
                 <a href="#" class="p-2 text-center">
                   <img src="../img/桌機index_img/list/clickList/a3.png" class="img-fluid" alt="">
                 </a>
@@ -215,10 +248,10 @@
               </li> -->
             </ul>
 
-            <ul class="uk-switcher uk-margin col-9 col-xl-10 justify-content-center" style="margin-top: -1500px;">
+            <ul class="uk-switcher uk-margin col-8 col-xl-9 justify-content-center" style="margin-top: -1500px;">
               <li class="text-center pl-5 w-100 d-none"></li>
               <!-- MOD -->
-              <li class="uk-active text-center pl-5 w-100">
+              <li class="uk-active text-center pl-3 w-100">
 
                 <p class="col-12 py-3 h3 font-weight-bold">請選擇付款方式</p>
                 <ul class="uk-subnav CardBgMd-txt py-3 text-left justify-content-start" uk-switcher>
@@ -3892,6 +3925,10 @@
       //   $("#bettingHistoryPage").addClass("d-none");
       //   $("#bettingHistory").removeClass('d-none');
       // });
+      $('#dropdown_menu').hide();
+      $(".dropdown_menu").click(function () {
+        $('#dropdown_menu').toggle();
+      });
     });
   </script>
 
