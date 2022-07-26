@@ -468,8 +468,8 @@ a {
 
 /* 強制單頁控制UK SWITCH */
 /* 啟動背景 */
-#JA .uk-accordion-title:focus,
-#JA .uk-accordion-title:hover {
+.JA .uk-accordion-title:focus,
+.JA .uk-accordion-title:hover {
     color: #fff;
     text-decoration: none;
     outline: 0;
@@ -477,7 +477,7 @@ a {
 }
 
 /* 未啟動背景 */
-#JA .uk-accordion-title {
+.JA .uk-accordion-title {
     display: block;
     font-size: 1.25rem;
     line-height: 1.4;
@@ -493,10 +493,10 @@ a {
     /* border-radius: 8px; */
 }
 
-#JA .uk-open > .uk-accordion-title::before {
+.JA .uk-open > .uk-accordion-title::before {
     background-image: url('../img/手機index_img/arrowDownList/Vector.png');
 }
 
-#JA .uk-accordion-title::before {
+.JA .uk-accordion-title::before {
     background-image: url('../img/手機index_img/arrowDownList/Vector1.png');
 }
