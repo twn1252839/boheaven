@@ -9,6 +9,11 @@
   font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
 }
 
+/* listNone */
+.listNone li {
+  list-style: none !important;
+}
+
 body {
   margin: 0;
   padding: 0;
