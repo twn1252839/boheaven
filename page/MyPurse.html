@@ -748,15 +748,35 @@
                         <span class="font-weight-bold pr-3">已驗證</span>
                       </div>
                     </div>
-                    <div class="row py-2">
+                    <div class="row py-2" id="changePassword_hide">
                       <div class="col-6">
 
                         <span class="font-weight-bold pr-3">更改密碼:</span><span>**********</span>
                       </div>
                       <div class="col-6">
-                        <a href="./changePassword.html" target="_blank"
-                          class="btn bd-theme text-theme rounded-pill py-1 px-5">編輯</a>
+                        <button class="btn bd-theme text-theme rounded-pill py-1 px-5" id="changePassword">編輯</button>
                       </div>
+                    </div>
+                    <div class="row m-0 py-2" id="changePassword_show">
+                      <div class="col-12 m-0 p-0 py-2">
+                        <div class="row m-0 p-0">
+                          <span class="font-weight-bold pr-3">舊密碼:</span>
+                          <input type="text" class="bg-transparent border-bottom fsz09" placeholder="請輸入原密碼">
+                        </div>
+                      </div>
+                      <div class="col-12 m-0 p-0 py-2">
+                        <div class="row m-0 p-0">
+                          <span class="font-weight-bold pr-3">新密碼:</span>
+                          <input type="text" class="bg-transparent border-bottom fsz09" placeholder="請輸入新密碼">
+                        </div>
+                      </div>
+                      <div class="col-12 m-0 p-0 py-2">
+                        <div class="row m-0 p-0">
+                          <span class="font-weight-bold pr-3">確認密碼:</span>
+                          <input type="text" class="bg-transparent border-bottom fsz09" placeholder="確認密碼">
+                        </div>
+                      </div>
+                      <button class="btn bd-theme text-theme rounded-pill py-1 px-5">完成</button>
                     </div>
                   </div>
                 </div>
@@ -3761,6 +3781,12 @@
       $('#dropdown_menu').hide();
       $(".dropdown_menu").click(function () {
         $('#dropdown_menu').toggle();
+      });
+
+      $("#changePassword_show").hide();
+      $("#changePassword").click(function () {
+        $("#changePassword_show").show();
+        $("#changePassword_hide").hide();
       });
     });
   </script>
