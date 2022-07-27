@@ -419,6 +419,10 @@ a {
   background: linear-gradient(180deg, #edf6ff, #fff 53.65%, #f0f7ff);
 }
 
+.bg-linear-theme2 {
+  background: linear-gradient(180deg, #f0f7ff, #fff 53.65%, #edf6ff);
+}
+
 .bg-gradient-theme {
   background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
 }
