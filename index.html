@@ -358,8 +358,7 @@
   </div>
 
   <!--  -->
-  <div class="container-fluid p-0 d-none d-md-block bgc-flex-v"
-    style="background:url(../img/手機index_img/CardBgMd.jpg);">
+  <div class="container-fluid p-0 d-none d-md-block bgc-flex-v" style="background:url(./img/手機index_img/CardBgMd.jpg);">
     <div class="container">
       <div class="row py-3">
         <div class="col">
@@ -1931,6 +1930,8 @@
   </div>
 
   <!-- 手機版 fixed bottom -->
+  <div id="indexFooterBtnItemBG" class="m-0 p-0 container-fluid d-none vh-100 fixed-bottom"
+    style="background-color: #000;opacity: .5;"></div>
   <div id="footerHCopy" class="container-fluid d-md-none p-0 m-0 fixed-bottom bg-gradient-theme">
     <div class="container m-0 p-0 centerCenter">
       <div class="row m-0 p-0 py-1 d-none" id="indexFooterBtnItem">
@@ -2041,8 +2042,9 @@
   <!-- 滾動選軸 -->
   <script>
     $(document).ready(function () {
-      $("#indexFooterBtn").click(function () {
+      $("#indexFooterBtn,#indexFooterBtnItemBG").click(function () {
         $("#indexFooterBtnItem").toggleClass('d-none');
+        $("#indexFooterBtnItemBG").toggleClass('d-none');
       });
 
       $("#arrowDownList").hide();
