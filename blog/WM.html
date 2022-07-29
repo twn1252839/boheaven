@@ -83,6 +83,11 @@
     .bg-theme3 {
       background-color: #365a97;
     }
+
+    .gameIntroductionBgSet {
+      background: url('../img/手機各分頁img/gameBlogPage/WM/PC/1.png') center right no-repeat;
+      background-size: cover;
+    }
   </style>
   <title>WM品牌介紹</title>
 </head>
@@ -95,19 +100,18 @@
   // PageHeaderBanner()
   </script>
   <!-- PC -->
-  <div class="container-fluid p-0 m-0 d-none d-md-block bgc-flex Game_BG">
-    <div class="uk-inline w-100">
-      <img src="../img/手機各分頁img/gameBlogPage/SA/PC/1.png" class="img-fluid w-100" alt="">
-      <div class="uk-overlay uk-overlay-default uk-position-center-left bg-transparent" style="left: 15%;">
-        <div class="CardBgMd-txt font-weight-bold row">
+  <div class="container-fluid p-0 m-0 d-none d-md-block gameIntroductionBgSet">
+    <div class="row m-0">
+      <div class="col-12 col-md-7 col-lg-6 p-3">
+        <div class="CardBgMd-txt font-weight-bold row centerCenter m-0" style="width: 65%;">
           <div class="col-12 m-0 font-weight-bold py-0 my-0 h5 py-3">內容目錄</div>
-          <ol class="pl-5 py-0 my-0 pb-4">
+          <ol class="pl-5 py-0 text-left">
             <li class="py-2">
-              <span class="fsz-12">關於WM百家樂</span>
+              <a href="#title1" class="fsz-12 text-dark text-decoration-none">關於WM百家樂</a>
             </li>
             <li class="py-2">
-              <span class="fsz-12">WM遊戲產品種類</span>
-              <ol class="text-dark">
+              <a href="#title2" class="fsz-12 text-dark text-decoration-none">WM遊戲產品種類</a>
+              <ol class="text-secondary">
                 <li>
                   <span class="fsz-12">WM百家樂：電影007龐德的最愛！</span>
                 </li>
@@ -120,8 +124,8 @@
               </ol>
             </li>
             <li class="py-2">
-              <span class="fsz-12">WM真人遊戲廳</span>
-              <ol class="text-dark">
+              <a href="#title3" class="fsz-12 text-dark text-decoration-none">WM真人遊戲廳</a>
+              <ol class="text-secondary">
                 <li>
                   <span class="fsz-12">WM專業培訓、頂級真人荷官</span>
                 </li>
@@ -131,18 +135,24 @@
               </ol>
             </li>
             <li class="py-2">
-              <span class="fsz-12">WM百家樂獨創RNG虛擬遊戲</span>
+              <a href="#title4" class="fsz-12 text-dark text-decoration-none">WM百家樂獨創RNG虛擬遊戲</a>
             </li>
             <li class="py-2">
-              <span class="fsz-12">WM百家樂PTT網友評價</span>
+              <a href="#title5" class="fsz-12 text-dark text-decoration-none">WM百家樂PTT網友評價</a>
             </li>
             <li class="py-2">
-              <span class="fsz-12">WM百家樂APP下載</span>
+              <a href="#title6" class="fsz-12 text-dark text-decoration-none">WM百家樂APP下載</a>
             </li>
           </ol>
         </div>
       </div>
+      <div class="col-12 col-md-5 col-lg-6 p-0 m-0 centerCenter">
+        <img src="../img/手機各分頁img/gameBlogPage/WM/PC/1-1.png" class="img-fluid m-0" alt="">
+      </div>
     </div>
+  </div>
+
+  <div class="container-fluid p-0 m-0 bgc-flex d-none d-md-block bg-theme">
     <div class="w-75 centerCenter">
       <div class="row">
         <div class="col-12 p-0 py-5">
@@ -150,7 +160,7 @@
             <!-- title卡片(大尺寸) -->
             <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
             <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-              <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-2">關於WM百家樂</div>
+              <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-1" id="title1">關於WM百家樂</div>
             </div>
           </div>
 
@@ -169,7 +179,7 @@
             <div class="uk-inline w-100 d-flex justify-content-center my-3">
               <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
               <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-                <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-2">WM遊戲產品種類</div>
+                <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-1" id="title2">WM遊戲產品種類</div>
               </div>
             </div>
 
@@ -233,7 +243,7 @@
             <div class="uk-inline w-100 d-flex justify-content-center my-3">
               <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
               <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-                <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-2">WM真人遊戲廳</div>
+                <div class="h2 pb-3 text-theme font-weight-bold pr-5  pt-1" id="title3">WM真人遊戲廳</div>
               </div>
             </div>
             <p class="text-dark my-1 text-left ">
@@ -305,7 +315,7 @@
             <div class="uk-inline w-100 d-flex justify-content-center my-3">
               <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
               <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-                <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-2">WM百家樂獨創RNG</div>
+                <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-1" id="title4">WM百家樂獨創RNG</div>
               </div>
             </div>
 
@@ -332,7 +342,7 @@
             <div class="uk-inline w-100 d-flex justify-content-center my-3">
               <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
               <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-                <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-2">WM百家樂網友評價</div>
+                <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-1" id="title5">WM百家樂網友評價</div>
               </div>
             </div>
             <p class="text-dark my-1 text-left ">
@@ -347,7 +357,7 @@
             <div class="uk-inline w-100 d-flex justify-content-center my-3">
               <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
               <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-                <div class="h4 pb-3 text-theme font-weight-bold pr-5 pt-2">WM百家樂APP下載</div>
+                <div class="h4 pb-3 text-theme font-weight-bold pr-5 pt-1" id="title6">WM百家樂APP下載</div>
               </div>
             </div>
 
@@ -667,7 +677,7 @@
             </div>
 
             <!--  -->
-            <p class="h5 pb-1 text-theme font-weight-bold ">WM百家樂獨創RNG</p>
+            <p class="h5 pb-1 text-theme font-weight-bold pt-1" id="title1">WM百家樂獨創RNG</p>
             <img src="../img/手機各分頁img/gameBlogPage/WM/6.png" class="img-fluid" alt="">
 
             <p class="text-secondary my-1">

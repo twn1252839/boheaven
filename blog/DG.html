@@ -83,6 +83,11 @@
     .bg-theme3 {
       background-color: #365a97;
     }
+
+    .gameIntroductionBgSet {
+      background: url('../img/手機各分頁img/gameBlogPage/DG/PC/1.png') center right no-repeat;
+      background-size: cover;
+    }
   </style>
   <title>DG品牌介紹</title>
 </head>
@@ -95,18 +100,17 @@
   // PageHeaderBanner()
   </script>
   <!-- PC -->
-  <div class="container-fluid p-0 m-0 d-none d-md-block bgc-flex Game_BG">
-    <div class="uk-inline w-100">
-      <img src="../img/手機各分頁img/gameBlogPage/SA/PC/1.png" class="img-fluid w-100" alt="">
-      <div class="uk-overlay uk-overlay-default uk-position-center-left bg-transparent" style="left: 15%;">
-        <div class="CardBgMd-txt font-weight-bold row">
+  <div class="container-fluid p-0 m-0 d-none d-md-block gameIntroductionBgSet">
+    <div class="row m-0">
+      <div class="col-12 col-md-7 col-lg-6 p-3">
+        <div class="CardBgMd-txt font-weight-bold row centerCenter m-0" style="width: 65%;">
           <div class="col-12 m-0 font-weight-bold py-0 my-0 h5 py-3">內容目錄</div>
-          <ol class="pl-5 py-0 my-0 pb-4">
+          <ol class="pl-5 py-0 text-left">
             <li class="py-2">
-              <span class="fsz-12">DG真人品牌介紹</span>
+              <a href="#title1" class="fsz-12 text-dark text-decoration-none">DG真人品牌介紹</a>
             </li>
             <li class="py-2">
-              <span class="fsz-12">DG百家樂特色介紹</span>
+              <a href="#title2" class="fsz-12 text-dark text-decoration-none">DG百家樂特色介紹</a>
               <ol class="text-secondary">
                 <li>
                   <span class="fsz-12">DG娛樂城官方直營DreamGaming</span>
@@ -123,7 +127,7 @@
               </ol>
             </li>
             <li class="py-2">
-              <span class="fsz-12">DG真人遊戲介紹</span>
+              <a href="#title3" class="fsz-12 text-dark text-decoration-none">DG真人遊戲介紹</a>
               <ol class="text-secondary">
                 <li>
                   <span class="fsz-12">龍虎介紹</span>
@@ -134,30 +138,27 @@
                 <li>
                   <span class="fsz-12">骰寶介紹</span>
                 </li>
-                <li>
-                  <span class="fsz-12">sa36輪盤</span>
-                </li>
-                <li>
-                  <span class="fsz-12">sa36幸運六</span>
-                </li>
-                <li>
-                  <span class="fsz-12">sa36骰寶</span>
-                </li>
               </ol>
             </li>
             <li class="py-2">
-              <span class="fsz-12">DG百家樂玩法介紹</span>
+              <a href="#title4" class="fsz-12 text-dark text-decoration-none">DG百家樂玩法介紹</a>
             </li>
             <li class="py-2">
-              <span class="fsz-12">DG真人評價</span>
+              <a href="#title5" class="fsz-12 text-dark text-decoration-none">DG真人評價</a>
             </li>
             <li class="py-2">
-              <span class="fsz-12">DG真人取得安全認證、支援多平台</span>
+              <a href="#title6" class="fsz-12 text-dark text-decoration-none">DG真人取得安全認證、支援多平台</a>
             </li>
           </ol>
         </div>
       </div>
+      <div class="col-12 col-md-5 col-lg-6 p-0 m-0 centerCenter">
+        <img src="../img/手機各分頁img/gameBlogPage/DG/PC/1-1.png" class="img-fluid m-0" alt="">
+      </div>
     </div>
+  </div>
+
+  <div class="container-fluid p-0 m-0 bgc-flex d-none d-md-block bg-theme">
     <div class="w-75 centerCenter">
       <div class="row">
         <div class="col-12 p-0 py-5">
@@ -165,7 +166,7 @@
             <!-- title卡片(大尺寸) -->
             <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
             <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-              <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-2">DG真人品牌介紹</div>
+              <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-1" id="title1">DG真人品牌介紹</div>
             </div>
           </div>
 
@@ -184,7 +185,7 @@
             <!-- title卡片(大尺寸) -->
             <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
             <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-              <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-2">DG百家樂特色介紹</div>
+              <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-1" id="title2">DG百家樂特色介紹</div>
             </div>
           </div>
 
@@ -310,7 +311,7 @@
             <div class="uk-inline w-100 d-flex justify-content-center my-3">
               <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
               <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-                <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-2">龍虎介紹</div>
+                <div class="h2 pb-3 text-theme font-weight-bold pr-5  pt-1" id="title3">龍虎介紹</div>
               </div>
             </div>
 
@@ -360,7 +361,7 @@
             <div class="uk-inline w-100 d-flex justify-content-center my-3">
               <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
               <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-                <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-2">DG百家樂玩法介紹</div>
+                <div class="h2 pb-3 text-theme font-weight-bold pr-5 pt-1" id="title4">DG百家樂玩法介紹</div>
               </div>
             </div>
 
@@ -397,7 +398,7 @@
             <div class="uk-inline w-100 d-flex justify-content-center my-3">
               <img src="../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/00.png" class="img-fluid" alt="">
               <div class="uk-overlay uk-overlay-default uk-position-center w-100 text-center bg-transparent">
-                <div class="h4 pb-3 text-theme font-weight-bold pr-5 pt-2">DG百家樂支援多裝置遊玩</div>
+                <div class="h4 pb-3 text-theme font-weight-bold pr-5 pt-1" id="title6">DG百家樂支援多裝置遊玩</div>
               </div>
             </div>
 
