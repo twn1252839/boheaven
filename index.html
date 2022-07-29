@@ -329,7 +329,6 @@
 
   </div>
 
-
   <!-- banner -->
   <div class="container-fluid d-none d-md-block p-0 CardBg_BG" style="margin-top: 100px;">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -1983,10 +1982,7 @@
   <!-- 滾動選軸 -->
   <script>
     $(document).ready(function () {
-      $("#indexFooterBtn,#indexFooterBtnItemBG").click(function () {
-        $("#indexFooterBtnItem").toggleClass('d-none');
-        $("#indexFooterBtnItemBG").toggleClass('d-none');
-      });
+
 
       $("#arrowDownList").hide();
       // 最上方隱藏
@@ -2019,30 +2015,6 @@
 
       )
 
-
-      // hoverList
-      let hoverListIItem = document.querySelectorAll('.hoverListIItem');
-      let hoverList = document.querySelectorAll('.hoverList');
-      // console.log(hoverListIItem);
-      for (let i = 0; i < hoverList.length; i++) {
-        $(hoverListIItem).hide();
-        $(hoverList[i]).hover(function () {
-          $(hoverListIItem).hide();
-          $(hoverListIItem[i]).show();
-        }
-        );
-        $(hoverListIItem[i]).hover(function () {
-          $(this).show();
-        }, function () {
-          $(this).hide();
-        }
-        );
-
-        // $(".hoverListIItem .col").hover(function () {
-        //   $(this).addClass('uk-animation-shake');
-        // }
-        // );
-      }
       $('#dropdown_menu').hide();
       $(".dropdown_menu").click(function () {
         $('#dropdown_menu').toggle();
@@ -2056,6 +2028,8 @@
   <script src="./js/gameList.js"></script>
   <script src="./js/MDgameList.js"></script>
   <script src="./js/progress.js"></script>
+  <script src="./js/hoverList.js"></script>
+  <script src="./js/indexFooterBtn.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
