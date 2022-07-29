@@ -16,6 +16,9 @@
 
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- w3 -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -49,6 +52,13 @@
       background-color: #efeee0;
       border-radius: 15px;
     }
+
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+      color: #fff;
+      text-decoration: none;
+      background-color: #365a97;
+    }
   </style>
 </head>
 
@@ -56,150 +66,281 @@
 <body>
   <!-- Header -->
   <script>
-    PageHeader();
+  // PageHeader();
   // PageHeaderBanner()
   </script>
   <!-- PC -->
-  <div class="container-fluid d-none d-md-block p-0 bgc-header-color">
-    <div class="container">
-      <div class="row py-2">
-        <div class="col-12 text-right">
-          <!-- 1.各廰流水 -->
-          <a href="#modal-example1"
-            class="btn rounded-lg px-4 py-1 fsz-08 textWhite mx-1 w3-hover-text-pink border-light" uk-toggle>各廰流水
+  <div class="position-fixed fixed-top">
+    <!-- login ------------------------------------>
+    <div class="container-fluid  d-none d-md-block p-0 bg-gradient-theme uk-position-relative">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <a href="../index.html" class="col-2 px-0 text-center">
+            <img src="../img/桌機index_img/logo.png" class="img-fluid px-2" alt="">
           </a>
-
-          <div id="modal-example1" uk-modal>
-            <div class="uk-modal-dialog w3-round-large">
-              <div class="px-3 py-1 gradientBtn" style="border-radius: 8px 8px 0  0;">
-                <h2 class="text-center textWhite" style="font-size: 1.35rem;">各廰流水</h2>
-                <button class="uk-modal-close-default textWhite" type="button" uk-close></button>
+          <div class="col-7 px-0 d-inline-flex align-items-center">
+            <div class="btn-group">
+              <div class="btn py-0 px-1 px-lg-2 my-auto">
+                <p class="font_b line_ss">
+                  首頁
+                </p>
               </div>
-              <div class="bgCoffee">
-                <div class="row px-5 py-3">
-                  <!-- 開始日期 -->
-                  <form class="col-6" action="uk-margin" method="post">
-                    <label>
-                      <span class="lp1">開始日期</span>
-                    </label>
-                    <input class="px-1 py-2 w-100 bgWhite text-secondary" type="datetime-local" name="" id="">
-                  </form>
-                  <!-- 結束日期 -->
-                  <form class="col-6" action="uk-margin" method="post">
-                    <label>
-                      <span class="lp1">結束日期</span>
-                    </label>
-                    <input class="px-1 py-2 w-100 bgWhite text-secondary" type="datetime-local" name="" id="">
-                  </form>
-                  <!-- 搜尋 -->
-                  <div class="col-12 pb-2 pt-4">
-                    <button class="uk-button centerCenter w-100 w3-round-large gradientBtnA textCoffee"
-                      type="button">搜尋</button>
-                  </div>
-                  <!--  -->
-                  <div class="col-12 modalBtn-c py-3 w3-round-large" uk-switcher>
-                    <div class="btn modalBtn modalBtn-active p-0" style="width: 24%;">
-                      <p class="text-center pt-1">今日</p>
-                    </div>
-                    <div class="btn modalBtn p-0" style="width: 24%;">
-                      <p class="text-center pt-1">昨日</p>
-                    </div>
-                    <div class="btn modalBtn p-0" style="width: 24%;">
-                      <p class="text-center pt-1">本週</p>
-                    </div>
-                    <div class="btn modalBtn p-0" style="width: 24%;">
-                      <p class="text-center pt-1">上週</p>
-                    </div>
-                  </div>
-
-                  <!--  -->
-                  <div class="uk-switcher col-12 px-3">
-                    <div class="row">
-                      <div class="col-6 d-flex">
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect1">顯示</label>
-                          <select class="form-control-sm" style="border: 1px solid #ced4da;"
-                            id="exampleFormControlSelect1">
-                            <option>5</option>
-                            <option>10</option>
-                            <option>20</option>
-                          </select>
-                        </div>
-                        <span class="pt-1 pl-1">項結束</span>
-                      </div>
-                      <div class="col-6 text-right d-flex">
-                        <div class="form-group mb-2">
-                          <label for="staticEmail2" class=" pr-2">搜尋</label>
-                          <input type="text" class="form-control-sm" id="staticEmail2" value="">
-                        </div>
-                      </div>
-                      <!--  -->
-                      <div class="col-12 px-3">
-                        <div class="row centerCenter bgWhite w3-round-medium text-secondary">
-                          <div class="col-12">
-                            <div class="row py-1 border-bottom" style="border-color: #aaa;">
-                              <div class="col-6 centerCenter">遊戲廳</div>
-                              <div class="col-6 centerCenter">有效投注</div>
-                            </div>
-                            <div class="row py-1">
-                              <div class="col-6 centerCenter">BNG電子</div>
-                              <div class="col-6 centerCenter">120</div>
-                            </div>
-                            <div class="row py-1">
-                              <div class="col-6 centerCenter">BTX電子</div>
-                              <div class="col-6 centerCenter">30</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="bgWhite" style="min-height: 200px;">
-                      <p class="text-center pl-2">昨日 尚無任何記錄</p>
-                    </div>
-                    <div class="bgWhite" style="min-height: 200px;">
-                      <p class="text-center pl-2">本週 尚無任何記錄</p>
-                    </div>
-                    <div class="bgWhite" style="min-height: 200px;">
-                      <p class="text-center pl-2">上週 尚無任何記錄</p>
-                    </div>
-                  </div>
-
+              <div class="btn py-0 px-1 px-lg-2 my-auto hoverList ">
+                <!-- 使用藍底線 -->
+                <!-- <p class="line_ss">
+                      真人
+                      <img src="../img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+                    </p> -->
+                <span>真人</span>
+                <img src="../img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+              </div>
+              <div class="btn py-0 px-1 px-lg-2 my-auto hoverList">
+                <span>體育</span>
+                <img src="../img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+              </div>
+              <div class="btn py-0 px-1 px-lg-2 my-auto hoverList">
+                <span>賓果</span>
+                <img src="../img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+              </div>
+              <div class="btn py-0 px-1 px-lg-2 my-auto hoverList">
+                <span>電子</span>
+                <img src="../img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+              </div>
+              <div class="btn py-0 px-1 px-lg-2 my-auto hoverList">
+                <span>棋牌</span>
+                <img src="../img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+              </div>
+              <div class="btn py-0 px-1 px-lg-2 my-auto hoverList">
+                <span>捕魚</span>
+                <img src="../img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+              </div>
+              <a href="../page/Promotion.html" class="btn py-0 px-1 px-lg-2 my-auto hoverList">
+                <span>優惠</span>
+                <img src="../img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-3" id="drw">
+            <div class="row align-items-center btn-group">
+              <div class="col-2 p-0">
+                <img src="../img/桌機index_img/user.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-7 p-0 pl-1 dropdown-toggle" style="line-height: .6rem;cursor: pointer;"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <p class="">0987123654</p>
+                <span class="">$3,000.00</span><span class=" px-0 pl-lg-2">會員中心</span> <i
+                  class="fa-solid fa-angle-right "></i>
+              </div>
+              <div class="dropdown-menu dropdown-menu-right bg-theme font-weight-bold">
+                <div class="row px-1 m-0">
+                  <a href="#" class="col">
+                    <img src="../img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
+                  </a>
+                  <a href="#" class="col">
+                    <img src="../img/桌機index_img/list/clickList/a2.png" class="img-fluid" alt="">
+                  </a>
+                  <a href="#" class="col">
+                    <img src="../img/桌機index_img/list/clickList/a3.png" class="img-fluid" alt="">
+                  </a>
                 </div>
+                <!--  -->
+                <a href="#" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="../img/桌機index_img/list/clickList/PC/1.png" class="img-fluid" alt="">
+                  個人資料
+                </a>
+                <a href="#" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="../img/桌機index_img/list/clickList/PC/2.png" class="img-fluid" alt="">
+                  VIP特權
+                </a>
+                <a href="#" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="../img/桌機index_img/list/clickList/PC/3.png" class="img-fluid" alt="">
+                  優惠達標查詢
+                </a>
+                <a href="#" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="../img/桌機index_img/list/clickList/PC/4.png" class="img-fluid" alt="">
+                  投注紀錄
+                </a>
+                <a href="#" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="../img/桌機index_img/list/clickList/PC/5.png" class="img-fluid" alt="">
+                  交易紀錄
+                </a>
+                <a href="#" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="../img/桌機index_img/list/clickList/PC/6.png" class="img-fluid" alt="">
+                  帳戶管理
+                </a>
+                <a href="#" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="../img/桌機index_img/list/clickList/PC/7.png" class="img-fluid" alt="">
+                  邀請好友
+                </a>
+                <a href="#" class="dropdown-item px-3 fsz-12 list-inline" type="button">
+                  <div class="list-inline-item">
+                    <img src="../img/桌機index_img/list/clickList/PC/8.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="list-inline-item" style="line-height: .6rem;">
+                    <p class="py-0">幫助中心</p>
+                    <p class="fsz-08 py-0 list-inline-item flex-wrap" style="color: #555;">(存款、提款、投注疑問看
+                      這裡)</p>
+                  </div>
+                </a>
+                <button
+                  class="d-flex bg-theme2-hover  border btn px-3 my-3 py-0 w-75 justify-content-center mx-auto rounded-pill bd-theme text-theme"
+                  type="button" style="border-width: 5rem;">
+                  <p class="px-3 text-center">登出</p>
+                </button>
+              </div>
+              <div class="col p-0">
+                <a href="./page/Bingo.html" class="text-right px-2"><img id="hrServiceBtn"
+                    src="../img/手機index_img/Subtract.png" alt="" class="img-fluid" data-toggle="modal"
+                    data-target="#exampleModal"></a>
               </div>
             </div>
           </div>
-          <!-- 我的錢包 -->
-          <a href="./MyPurse.html"
-            class="btn rounded-lg px-4 py-1 fsz-08 textWhite mx-1 w3-hover-text-pink border-light">我的錢包</a>
-          <!-- APP下載 -->
-          <!-- <a href="../header page/2AppDownload.html"
-                        class="btn rounded-lg px-4 py-1 fsz-08 textWhite mx-1 w3-hover-text-pink border-light">APP下載</a> -->
-          <!-- user -->
-          <span class="textWhite w3-small">你好，玩家</span><span class="textWhite w3-medium">#8868</span>
-          <!-- 登出 -->
-          <a href="../index.html"><input class="btn py-0 ml-2 input-size font-weight-bold"
-              style="background-color: #EEC96B;" type="submit" value="登出"></a>
+        </div>
+      </div>
+
+      <!-- hoveList -->
+      <div class="p-0" style="background-color: rgba(255, 255, 255, 0.5);">
+        <div class="container-lg">
+          <!--  <div class="row px-5 py-3 hoverListIItem uk-position-fixed uk-position-top-center bg-light"
+                            style="top: 65px;z-index: 999999999999999999999;"> -->
+          <div class="row px-5 hoverListIItem">
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/baccarat/10035.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/baccarat/10036.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/baccarat/10037.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/baccarat/10038.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/baccarat/10039.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/baccarat/10040.png" class="" alt="">
+            </button>
+          </div>
+          <div class="row px-5 hoverListIItem">
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/sport/1.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/sport/2.png" class="" alt="">
+            </button>
+          </div>
+          <div class="row px-5 hoverListIItem">
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/bingo/1.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/bingo/2.png" class="" alt="">
+            </button>
+          </div>
+          <div class="row px-5 py-3 hoverListIItem">
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/slot/1.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/slot/2.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/slot/3.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/slot/4.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/slot/5.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/slot/6.png" class="" alt="">
+            </button>
+          </div>
+          <div class="row px-5 hoverListIItem">
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/card/1.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/card/2.png" class="" alt="">
+            </button>
+          </div>
+          <div class="row px-5 hoverListIItem">
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/fish/1.png" class="" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="../img/桌機index_img/list/fish/2.png" class="" alt="">
+            </button>
+          </div>
         </div>
       </div>
     </div>
+
+    <!--  uk-position-relative -->
+    <div class="container-fluid p-0 m-0 bgc-body-color d-none d-md-block marquee_bg border">
+      <div class="container bgc-flex">
+        <div class="row p-0 m-0">
+          <div class="text-center" style="padding-top: 0.1em;width: 12%;">
+            <img
+              src="data:image/png;base64,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"
+              alt="...">
+            <span class="font-weight-bold pl-1">最新公告</span>
+          </div>
+          <div class="" style="width: 80%;">
+            <marquee direction="left" height="30" scrollamount="10" behavior="left" class=" h-100 pt-1"
+              onmouseover="this.stop()" onmouseout="this.start()">
+              【維護公告0】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
+              開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
+              敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】
+              親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】
+              親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
+            </marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
 
   <!-- PC -->
-  <script>indexLoginHeader();</script>
+  <!-- <script>indexLoginHeader();</script> -->
 
   <!-- Header -->
-  <div class="d-md-none">
+  <!-- <div class="d-md-none">
     <script>PageHeader();</script>
-  </div>
+  </div> -->
 
   <!-- MD -->
 
   <!-- Footer -->
-  <div class="d-md-none">
+  <!-- <div class="d-md-none">
     <script>indexLoginFooter();</script>
-  </div>
+  </div> -->
 
   <script>
     $(".modalBtn-c div").click(
@@ -216,6 +357,7 @@
     )
   </script>
 
+  <script src="../js/hoverList.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>

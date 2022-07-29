@@ -349,18 +349,18 @@ function PageHeader() {
   document.writeln("        </div>");
   document.writeln("      </div>");
   document.writeln("    </div>");
+  document.writeln("");
+  document.writeln("  </div>");
   document.writeln(
     "  <div class='row m-0 p-0 d-none d-md-block' style='min-height: 90px;'></div>"
   );
   document.writeln("");
-  document.writeln("");
-  document.writeln("  </div>");
 }
 
 // Banner 上方
 function PageHeaderBanner() {
   document.writeln(
-    "<div class='container-fluid d-none d-md-block p-0 CardBg_BG' style='margin-top: 100px;'>"
+    "<div class='container-fluid d-none d-md-block p-0 CardBg_BG'>"
   );
   document.writeln(
     "    <div id='carouselExampleIndicators' class='carousel slide' data-ride='carousel'>"
