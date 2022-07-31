@@ -4334,12 +4334,19 @@
                     </p>
                     <div class="row p-3">
                       <div class="col-4 px-3">
-                        <div class="p-0">
-                          <img src="../img/手機各分頁img/bankcard.png" alt="" class="">
+                        <div class="uk-inline">
+                          <img src="../img/手機各分頁img/bankcard.png" alt="" class="img-fluid">
+
+                          <div class="uk-overlay uk-overlay-default uk-position-center bg-transparent">
+                            <div class="row">
+                              <div class="col-12 text-right h5 font-weight-bold">富邦銀行</div>
+                              <div class="col-12 text-left font-weight-bold">XXXX - 1234</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <div class="col-4 px-3">
-                        <button class="p-0 btn bg-transparent">
+                        <button class="p-0 btn bg-transparent" id="AccountNanagement1Btn">
                           <img src="../img/手機各分頁img/add_bankcard.png" alt="" class="">
                         </button>
                       </div>
@@ -4358,12 +4365,19 @@
                     </p>
                     <div class="row p-3">
                       <div class="col-4 px-3">
-                        <div class="p-0">
-                          <img src="../img/手機各分頁img/bankcard.png" alt="" class="">
+                        <div class="uk-inline">
+                          <img src="../img/手機各分頁img/bankcard.png" alt="" class="img-fluid">
+
+                          <div class="uk-overlay uk-overlay-default uk-position-center bg-transparent">
+                            <div class="row">
+                              <div class="col-12 text-right h5 font-weight-bold">富邦銀行</div>
+                              <div class="col-12 text-left font-weight-bold">XXXX - 1234</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <div class="col-4 px-3">
-                        <button class="p-0 btn bg-transparent">
+                        <button class="p-0 btn bg-transparent" id="AccountNanagement2Btn">
                           <img src="../img/手機各分頁img/Frame 736.png" alt="" class="">
                         </button>
                       </div>
@@ -4376,10 +4390,10 @@
 
                   </div>
                 </div>
-                <div class="d-none">
+                <div class="" id="AccountNanagement1">
                   <div class="col-12 my-2 CardBgMd_txt_BG">
                     <p class="p-3 mt-3">
-                      <button type="button" class="btn bg-transparent  p-0 pr-3">
+                      <button type="button" class="btn bg-transparent  p-0 pr-3 AccountNanagementBtn">
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
                       <span class="h3 font-weight-bold">新增銀行帳戶</span>
@@ -4437,10 +4451,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-none">
+                <div class="" id="AccountNanagement2">
                   <div class="col-12 my-2 CardBgMd_txt_BG">
                     <p class="p-3 mt-3">
-                      <button type="button" class="btn bg-transparent  p-0 pr-3">
+                      <button type="button" class="btn bg-transparent  p-0 pr-3 AccountNanagementBtn">
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
                       <span class="h3 font-weight-bold">新增信用卡</span>
@@ -5079,6 +5093,21 @@
       $(".bettingHistoryBtn").click(function () {
         a = bettingHistoryParent4.children().next().hide();
         a.prevAll().show()
+      });
+
+      // AccountNanagement AccountNanagement2Btn
+      $("#AccountNanagement1,#AccountNanagement2").hide();
+      $("#AccountNanagement1Btn").click(function () {
+        $("#AccountNanagement1").show();
+        $("#AccountNanagement").hide();
+      });
+      $("#AccountNanagement2Btn").click(function () {
+        $("#AccountNanagement2").show();
+        $("#AccountNanagement").hide();
+      });
+      $(".AccountNanagementBtn").click(function () {
+        $("#AccountNanagement1,#AccountNanagement2").hide();
+        $("#AccountNanagement").show();
       });
     });
   </script>
