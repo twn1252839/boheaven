@@ -355,6 +355,35 @@ function PageHeader() {
     "  <div class='row m-0 p-0 d-none d-md-block' style='min-height: 90px;'></div>"
   );
   document.writeln("");
+  document.writeln(
+    "<div class='uk-position-fixed uk-position-center-right btn-fixed d-none d-md-block'"
+  );
+  document.writeln(
+    "    style='width: 5rem; height: auto;margin-top: -50px;z-index: 99999999999;'>"
+  );
+  document.writeln(
+    "    <button type='button' class='uk-button bg-transparent  centerCenter px-0 py-1' data-toggle='modal'"
+  );
+  document.writeln("      data-target='#exampleModalCenter2'>");
+  document.writeln(
+    "      <img src='../img/桌機index_img/0service.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("    </button>");
+  document.writeln(
+    "    <a href='../page/MyPurse.html' class='uk-button bg-transparent  centerCenter px-0 py-1'>"
+  );
+  document.writeln(
+    "      <img src='../img/桌機index_img/2help.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("    </a>");
+  document.writeln(
+    "    <a href='../header page/3FAQ.html' class='uk-button bg-transparent  centerCenter px-0 py-1'>"
+  );
+  document.writeln(
+    "      <img src='../img/桌機index_img/1announcement.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("    </a>");
+  document.writeln("  </div>");
 }
 
 // Banner 上方
