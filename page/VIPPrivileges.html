@@ -94,13 +94,145 @@
           <p class="">還需流水約 100,000</p>
         </div>
       </div>
-      <div class="col-12 py-1">
-        <a href="./VIPPrivilegesPage.html" class="uk-inline">
-          <img src="../img/手機各分頁img/vipCard.png" class="img-fluid" alt="">
-          <div class="uk-overlay uk-overlay-default uk-position-center bg-transparent">
-            <p class="text-dark font-weight-bold text-center h5 lp05">所有VIP特權介紹</p>
+      <!-- MMC -->
+      <div class="col-12 py-1 pt-3" style="min-height: 230px;">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <!-- Demo styles -->
+        <style>
+          .bgLine {
+            height: 3px;
+            width: 350px;
+            background-color: #365a97;
+            top: 30px;
+          }
+
+          .swiper {
+            width: 100%;
+            height: 100%;
+          }
+
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: transparent;
+            /*  */
+            width: 100% !important;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .swiper-pagination-bullet {
+            /*  */
+            width: 50px;
+            height: 25px;
+            line-height: 25px;
+            border: 1px solid transparent;
+            border-radius: 50rem !important;
+            text-align: center;
+            font-size: 12px;
+            color: #000;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.2);
+          }
+
+          .swiper-horizontal>.swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal,
+          .swiper-pagination-custom,
+          .swiper-pagination-fraction {
+            top: 0;
+            left: -130px;
+            width: 600px;
+            height: 30px;
+            /*  */
+            /* overflow: scroll; */
+          }
+
+          .swiper-pagination .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #365a97;
+          }
+        </style>
+        </head>
+
+        <body>
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper" style="top: 23px;">
+              <div class="swiper-slide">
+                <div class="pr-3">
+                  <img class="img-fluid" src="../img/手機各分頁img/v1.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pr-3">
+                  <img class="img-fluid" src="../img/手機各分頁img/v2.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pr-3">
+                  <img class="img-fluid" src="../img/手機各分頁img/v3.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pr-3">
+                  <img class="img-fluid" src="../img/手機各分頁img/v4.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pr-3">
+                  <img class="img-fluid" src="../img/手機各分頁img/v5.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pr-3">
+                  <img class="img-fluid" src="../img/手機各分頁img/v6.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
-        </a>
+
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              pagination: {
+                el: ".swiper-pagination",
+                // 
+                slidesPerView: 6,
+                spaceBetween: 0,
+                loop: true,
+                centeredSlides: true,
+                // 
+                clickable: true,
+                renderBullet: function (index, className) {
+                  return '<span class="' + className + '">' + 'Lv' + (index + 1) + "</span>";
+                },
+              },
+            });
+          </script>
       </div>
       <div class="col-12 py-1 px-4 border-bottom">
         <p class="font-weight-bold">VIP1尊享</p>
