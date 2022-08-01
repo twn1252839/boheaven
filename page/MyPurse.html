@@ -43,6 +43,8 @@
   <link rel="stylesheet" href="../css/index-main.css">
   <link rel="stylesheet" href="../css/UK_Blue.css">
   <link rel="stylesheet" href="../css/section5.css">
+  <link rel="stylesheet" href="../css/scrollbar.css">
+
   <style>
     .ac {
       width: 25px;
@@ -121,90 +123,106 @@
                       <i class="fa-solid fa-angle-down pl-2" style="margin-top: -5px;"></i>
                     </button>
                     <!-- UK_dropdown 控制位置 -->
-                    <div uk-dropdown="mode: click;pos: bottom-center;"
+                    <!-- div uk-dropdown="mode: click;pos: bottom-center;"
                       class="py-1 px-4 m-0 uk-dropdown uk-dropdown-bottom-right pb-3"
-                      style="background-color: rgba(0, 0, 0, 0.8); width: 18vw;z-index: 99999999999;height: 600px;overflow: scroll;">
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">DG真人</div>
-                        <div class="col pl-2 text-theme5">0</div>
+                      style="background-color: rgba(0, 0, 0, 0.8); width: 18vw;z-index: 99999999999;height: 600px;overflow: scroll;"> -->
+                    <div uk-dropdown="mode: click;pos: bottom-center;" class="py-1 px-3 m-0 pb-3 arrow_up1"
+                      style="background-color: rgba(0, 0, 0, 0.8); width: 20vw;z-index: 99999999999;">
+                      <style>
+                        .arrow_up1:before {
+                          border-bottom: .5rem solid rgba(0, 0, 0, .8);
+                          border-left: .35rem solid transparent;
+                          border-right: .35rem solid transparent;
+                          content: "";
+                          position: absolute;
+                          right: 3.95rem;
+                          top: -.5rem;
+                        }
+                      </style>
+                      <!-- MMC -->
+                      <div class=" py-3" style="height: 250px;overflow-y: scroll;overflow-x: hidden;">
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">DG真人</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">歐博真人</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">SA真人</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">WM真人</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">OB真人</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">OG真人</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">SUPER體育</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">OB體育</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">SUPER彩票</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">9K彩票</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">DT電子</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">SP電子</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">RTG電子</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">BNG電子</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">必贏電子</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">PLAY電子</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">博樂棋牌</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">OB棋牌</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                          <div class="col px-0 border-right border-secondary py-0">SP捕魚</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
+                        <div class="row px-3 py-1 text-light">
+                          <div class="col px-0 border-right border-secondary py-0">必贏捕魚</div>
+                          <div class="col pl-2 text-theme5">0</div>
+                        </div>
                       </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">歐博真人</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">SA真人</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">WM真人</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">OB真人</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">OG真人</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">SUPER體育</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">OB體育</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">SUPER彩票</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">9K彩票</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">DT電子</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">SP電子</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">RTG電子</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">BNG電子</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">必贏電子</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">PLAY電子</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">博樂棋牌</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">OB棋牌</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">SP捕魚</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row px-3 py-1 text-light border-bottom border-secondary">
-                        <div class="col px-0 border-right border-secondary py-0">必贏捕魚</div>
-                        <div class="col pl-2 text-theme5">0</div>
-                      </div>
-                      <div class="row pt-3">
+                      <div class="row pt-3 border-top border-secondary">
                         <div class="col text-right pl-2 text-theme5">總額度:3,000.00</div>
                       </div>
                       <button class="btn bg-theme3 rounded rounded-pill py-1 my-1 btn-block text-light">
@@ -4839,89 +4857,103 @@
             </button>
           </div>
           <!-- UK_dropdown -->
-          <div uk-dropdown="mode: click" class="py-1 px-4 m-0"
+          <div uk-dropdown="mode: click" class="py-1 px-3 m-0 pb-3 arrow_up"
             style="background-color: rgba(0, 0, 0, 0.8);width: 60vw;">
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">DG真人</div>
-              <div class="col pl-2 text-theme5">0</div>
+            <style>
+              .arrow_up:before {
+                border-bottom: .5rem solid rgba(0, 0, 0, .8);
+                border-left: .35rem solid transparent;
+                border-right: .35rem solid transparent;
+                content: "";
+                position: absolute;
+                right: 1.5rem;
+                top: -.5rem;
+              }
+            </style>
+            <!-- MMC -->
+            <div class=" py-3" style="height: 250px;overflow-y: scroll;overflow-x: hidden;">
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">DG真人</div>
+                <div class="col pl-2 text-theme5">10</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">歐博真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">SA真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">WM真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">OB真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">OG真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">SUPER體育</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">OB體育</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">SUPER彩票</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">9K彩票</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">DT電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">SP電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">RTG電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">BNG電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">必贏電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">PLAY電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">博樂棋牌</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">OB棋牌</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">SP捕魚</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light">
+                <div class="col px-0 border-right border-secondary py-0">必贏捕魚</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
             </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">歐博真人</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">SA真人</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">WM真人</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">OB真人</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">OG真人</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">SUPER體育</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">OB體育</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">SUPER彩票</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">9K彩票</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">DT電子</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">SP電子</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">RTG電子</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">BNG電子</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">必贏電子</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">PLAY電子</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">博樂棋牌</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">OB棋牌</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">SP捕魚</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row px-3 py-1 text-light border-bottom border-secondary">
-              <div class="col px-0 border-right border-secondary py-0">必贏捕魚</div>
-              <div class="col pl-2 text-theme5">0</div>
-            </div>
-            <div class="row pt-3">
+            <div class="row pt-3 border-top border-secondary">
               <div class="col text-right pl-2 text-theme5">總額度:3,000.00</div>
             </div>
             <button class="btn bg-theme3 rounded rounded-pill py-1 my-1 btn-block text-light">

@@ -48,21 +48,30 @@
     }
 
     ::-webkit-scrollbar {
-      display: none;
-      width: 10px;
+      /* display: none; */
+      width: 5px;
     }
 
     /* 長條 */
     ::-webkit-scrollbar-track {
       /* box-shadow: inset 0 0 5px grey; */
       border-radius: 10px;
-      background: #aaa;
+      background: #555;
     }
 
     /* 短條 */
     ::-webkit-scrollbar-thumb {
-      background: rgb(240, 167, 167);
+      background: #1E50A6;
       border-radius: 10px;
+    }
+
+    /* hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgb(210, 121, 121);
+    }
+
+    .titleChange {
+      font-size: 18px;
     }
   </style>
   <title>我的錢包</title>
