@@ -141,9 +141,12 @@
             object-fit: cover;
           }
 
+          /* 變動的地方以下 */
+          /* 清單 */
           .swiper-pagination-bullet {
             /*  */
-            width: 50px;
+            display: inline-block;
+            width: 90px;
             height: 25px;
             line-height: 25px;
             border: 1px solid transparent;
@@ -155,18 +158,28 @@
             background: rgba(0, 0, 0, 0.2);
           }
 
-          .swiper-horizontal>.swiper-pagination-bullets,
-          .swiper-pagination-bullets.swiper-pagination-horizontal,
-          .swiper-pagination-custom,
-          .swiper-pagination-fraction {
+          /* 清單容器包含其他swiper */
+         
+
+          /* 清單容器 */
+          .swiper-pagination {
+            position: absolute;
             top: 0;
-            left: -130px;
-            width: 600px;
-            height: 30px;
-            /*  */
-            /* overflow: scroll; */
+            left: 0;
+            height: 40px;
+            white-space: nowrap;
+            text-align: center;
+            transition: .3s opacity;
+            transform: translate3d(0, 0, 0);
+            z-index: 10;
+            overflow-x: scroll;
           }
 
+          .swiper-pagination::-webkit-scrollbar {
+            display: none;
+          }
+
+          /* 變動的地方以上 */
           .swiper-pagination .swiper-pagination-bullet-active {
             color: #fff;
             background: #365a97;
@@ -220,12 +233,12 @@
             var swiper = new Swiper(".mySwiper", {
               pagination: {
                 el: ".swiper-pagination",
-                //
+                // 
                 slidesPerView: 6,
                 spaceBetween: 0,
                 loop: true,
                 centeredSlides: true,
-                //
+                // 
                 clickable: true,
                 renderBullet: function (index, className) {
                   return '<span class="' + className + '">' + 'Lv' + (index + 1) + "</span>";
