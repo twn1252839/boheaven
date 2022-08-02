@@ -125,14 +125,26 @@
               <div class="col-2 p-0">
                 <img src="../img/桌機index_img/user.png" class="img-fluid" alt="">
               </div>
-              <div class="col-7 p-0 pl-1 dropdown-toggle" style="line-height: .6rem;cursor: pointer;"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="col-7 p-0 pl-1 dropdown-toggle" style="line-height: .6rem;cursor: pointer;">
                 <p class="">0987123654</p>
-                <span class="">$3,000.00</span><span class=" px-0 pl-lg-2">會員中心</span> <i
-                  class="fa-solid fa-angle-down "></i>
+                <span class="">$3,000.00</span>
+                <button class="uk-button bg-transparent p-0 m-0"><span class=" px-0 pl-lg-2">會員中心</span> <i
+                    class="fa-solid fa-angle-down "></i></button>
               </div>
-              <div class="dropdown-menu dropdown-menu-right bg-theme font-weight-bold"
-                style="margin-top: 50px;left: 30px;">
+              <!-- MMC -->
+              <div uk-dropdown="mode: click;pos: bottom-center;" class="py-1 px-0 m-0 pb-3 arrow_up1"
+                style="width: 16vw;z-index: 99999999999;">
+                <style>
+                  .arrow_up1:before {
+                    border-bottom: .5rem solid rgba(0, 0, 0, .8);
+                    border-left: .35rem solid transparent;
+                    border-right: .35rem solid transparent;
+                    content: "";
+                    position: absolute;
+                    right: 3.95rem;
+                    top: -.5rem;
+                  }
+                </style>
                 <div class="row px-1 m-0">
                   <a href="#" class="col centerCenter">
                     <img src="../img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
@@ -179,8 +191,8 @@
                   </div>
                   <div class="list-inline-item" style="line-height: .6rem;">
                     <p class="py-0">幫助中心</p>
-                    <p class="fsz-08 py-0 list-inline-item flex-wrap" style="color: #555;">(存款、提款、投注疑問看
-                      這裡)</p>
+                    <p class="fsz-08 py-0 list-inline-item">(存款、提款、投注)</p>
+                    <!-- 疑問看這裡 -->
                   </div>
                 </a>
                 <button
@@ -189,6 +201,10 @@
                   <p class="px-3 text-center">登出</p>
                 </button>
               </div>
+              <!-- <div class="dropdown-menu dropdown-menu-right bg-theme font-weight-bold"
+                style="margin-top: 50px;margin-right: 10px; left: 30px!important;top: 0 !important;">
+
+              </div> -->
               <div class="col p-0 clearfix">
                 <a href="../header page/3FAQ.html" class="text-right float-right"><img id="hrServiceBtn"
                     src="../img/手機index_img/Subtract.png" alt="" class=" img-fluid" data-toggle="modal"

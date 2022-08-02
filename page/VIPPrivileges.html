@@ -110,6 +110,7 @@
           .swiper {
             width: 100%;
             height: 100%;
+            position: absolute;
           }
 
           .swiper-slide {
@@ -142,26 +143,27 @@
           }
 
           /* 變動的地方以下 */
-          /* 清單 */
-          .swiper-pagination-bullet {
-            /*  */
-            display: inline-block;
-            width: 90px;
-            height: 25px;
-            line-height: 25px;
-            border: 1px solid transparent;
-            border-radius: 50rem !important;
-            text-align: center;
-            font-size: 12px;
-            color: #000;
-            opacity: 1;
-            background: rgba(0, 0, 0, 0.2);
+
+
+          .swiper-horizontal>.swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal,
+          .swiper-pagination-custom,
+          .swiper-pagination-fraction {
+            bottom: 10px;
+            left: 0;
+            width: 95%;
           }
 
-          /* 清單容器包含其他swiper */
-         
-
           /* 清單容器 */
+          .li-wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100vw;
+            /* margin: 0 auto; */
+          }
+
           .swiper-pagination {
             position: absolute;
             top: 0;
@@ -171,18 +173,84 @@
             text-align: center;
             transition: .3s opacity;
             transform: translate3d(0, 0, 0);
-            z-index: 10;
             overflow-x: scroll;
+            z-index: 10;
+
+          }
+
+          .line {
+
+            display: flex;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            overflow-x: auto;
+
+            /* gap: 50px; */
+
+
+          }
+
+          /* 後面那條 */
+          .swiper-pagination::before {
+            content: '';
+
+            position: absolute;
+            left: 5px;
+            top: 12px;
+
+            width: 550px;
+            height: 2px;
+            background-color: rgb(0, 0, 0);
+
+            z-index: -1;
           }
 
           .swiper-pagination::-webkit-scrollbar {
             display: none;
           }
 
+          /* 清單 */
+
+
+          .swiper-pagination-bullet {
+            /*  */
+            /* display: inline-block; */
+            position: relative;
+            width: 90px;
+            height: 25px;
+            line-height: 25px;
+            /* border: 1px solid transparent; */
+            border-radius: 50rem !important;
+            text-align: center;
+            font-size: 12px;
+            color: #000;
+            opacity: 1;
+            background: rgb(255, 255, 255);
+            z-index: 22;
+            flex: 0 0 auto;
+          }
+
+          .swiper-pagination-bullet::after {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 50rem !important;
+            content: '';
+            background: rgba(32, 32, 32, 0.3);
+
+          }
+
+
           /* 變動的地方以上 */
           .swiper-pagination .swiper-pagination-bullet-active {
+
             color: #fff;
             background: #365a97;
+
           }
         </style>
         </head>
@@ -193,36 +261,39 @@
             <div class="swiper-wrapper" style="top: 23px;">
               <div class="swiper-slide">
                 <div class="pr-3">
-                  <img class="img-fluid" src="../img/手機各分頁img/v1.png" alt="">
+                  <img class="img-fluid p-3" src="../img/手機各分頁img/v1.png" alt="">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="pr-3">
-                  <img class="img-fluid" src="../img/手機各分頁img/v2.png" alt="">
+                  <img class="img-fluid p-3" src="../img/手機各分頁img/v2.png" alt="">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="pr-3">
-                  <img class="img-fluid" src="../img/手機各分頁img/v3.png" alt="">
+                  <img class="img-fluid p-3" src="../img/手機各分頁img/v3.png" alt="">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="pr-3">
-                  <img class="img-fluid" src="../img/手機各分頁img/v4.png" alt="">
+                  <img class="img-fluid p-3" src="../img/手機各分頁img/v4.png" alt="">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="pr-3">
-                  <img class="img-fluid" src="../img/手機各分頁img/v5.png" alt="">
+                  <img class="img-fluid p-3" src="../img/手機各分頁img/v5.png" alt="">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="pr-3">
-                  <img class="img-fluid" src="../img/手機各分頁img/v6.png" alt="">
+                  <img class="img-fluid p-3" src="../img/手機各分頁img/v6.png" alt="">
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <!-- line -->
+            <div class="li-wrap">
+              <div class="swiper-pagination line"></div>
+            </div>
           </div>
 
           <!-- Swiper JS -->
@@ -233,12 +304,12 @@
             var swiper = new Swiper(".mySwiper", {
               pagination: {
                 el: ".swiper-pagination",
-                // 
+                //
                 slidesPerView: 6,
                 spaceBetween: 0,
                 loop: true,
                 centeredSlides: true,
-                // 
+                //
                 clickable: true,
                 renderBullet: function (index, className) {
                   return '<span class="' + className + '">' + 'Lv' + (index + 1) + "</span>";
