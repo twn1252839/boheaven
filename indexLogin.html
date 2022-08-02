@@ -108,22 +108,75 @@
       border-bottom: 1px solid #1E50A6;
       color: #1E50A6;
     }
+
+    #UkBgc .dropdown-item .uk-active {
+      background-color: #365a97;
+    }
+
+    #UkBgc .dropdown-item .uk-active a {
+      color: #fff;
+    }
+
+    #UkBgc .dropdown-item {
+      color: black;
+      text-decoration: none;
+    }
+
+    #UkBgc .dropdown-item:focus,
+    #UkBgc .dropdown-item:hover {
+      color: #fff;
+      background-color: #365a97;
+      text-decoration: none;
+    }
   </style>
 </head>
 
 
 <body>
-
   <!-- 電腦板  ------------------------------------------------------------------------>
+
   <div class="position-fixed fixed-top">
+    <!--  -->
+    <div class="container-fluid d-none d-md-block p-0 bg-theme3">
+      <div class="container-lg clearfix">
+        <div class="row m-0 p-0 text-right float-right">
+          <a href="./page/MyPurse.html" class="col m-0 p-0 px-2">
+            <img src="./img/桌機index_img/header/1.png" class="img-fluid" alt="">
+            <span class="text-white">我的錢包</span>
+          </a>
+          <a href="./page/MyPurse.html" class="col m-0 p-0 px-2">
+            <img src="./img/桌機index_img/header/2.png" class="img-fluid" alt="">
+            <span class="text-white">投注紀錄</span>
+          </a>
+          <a href="./page/MyPurse.html" class="col m-0 p-0 px-2">
+            <img src="./img/桌機index_img/header/3.png" class="img-fluid" alt="">
+            <span class="text-white">交易紀錄</span>
+          </a>
+          <a href="./page/MyPurse.html" class="col m-0 p-0 px-2">
+            <img src="./img/桌機index_img/header/4.png" class="img-fluid" alt="">
+            <span class="text-white">帳戶管理</span>
+          </a>
+          <a href="./page/MyPurse.html" class="col m-0 p-0 px-2">
+            <img src="./img/桌機index_img/header/5.png" class="img-fluid" alt="">
+            <span class="text-white">會員中心</span>
+          </a>
+          <a href="./header page/3FAQ.html" class=""><img class="img-fluid pl-5" src="./img/桌機index_img/header/7.png"
+              alt=""></a>
+          <a href="./index.html" class=" m-0 p-0">
+            <img src="./img/桌機index_img/header/6.png" class="img-fluid pl-2" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
     <!-- login ------------------------------------>
-    <div class="container-fluid d-none d-md-block p-0 bg-gradient-theme uk-position-relative">
+    <div class="container-fluid  d-none d-md-block p-0 bg-gradient-theme uk-position-relative">
       <div class="container-lg">
         <div class="row align-items-center">
-          <div class="col-2 px-0 text-center">
+          <a href="./index.html" class="col-2 px-0 text-center">
             <img src="./img/桌機index_img/logo.png" class="img-fluid px-2" alt="">
-          </div>
-          <div class="col-7 px-0 d-inline-flex align-items-center">
+          </a>
+          <div class="col-6 px-0 d-inline-flex align-items-center">
             <div class="btn-group">
               <div class="btn py-0 px-1 px-lg-2 my-auto">
                 <p class="font_b line_ss">
@@ -133,9 +186,9 @@
               <div class="btn py-0 px-1 px-lg-2 my-auto hoverList ">
                 <!-- 使用藍底線 -->
                 <!-- <p class="line_ss">
-                    真人
-                    <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
-                  </p> -->
+                        真人
+                        <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
+                      </p> -->
                 <span>真人</span>
                 <img src="./img/桌機index_img/headerArrow.png" class="img-fluid" alt="">
               </div>
@@ -165,16 +218,203 @@
               </a>
             </div>
           </div>
-          <div class="col-3" id="drw">
-            <div class="row align-items-center btn-group">
+          <div class="col-4" id="drw">
 
-              <div class="col-7 p-0 pl-1 dropdown-toggle">
-                <a href="./page/indexLoginPage.html" class="pr-2"><input
-                    class="btn rounded py-1 input-size font-weight-bold text-light"
-                    style="background: linear-gradient(180deg, #57D7FF 0%, #1E50A6 100%);" type="submit" value="登入"></a>
-                <a href="./header page/Signup.html" target="_black"><input class="btn py-1 input-size font-weight-bold"
-                    style="background: linear-gradient(180deg, #F8E98E 0%, #F2D06F 100%);" type="button" value="註冊"></a>
+            <div class="row btn-group centerCenter p-0 m-0">
+              <div class="col-6 p-0 d-flex pr-2">
+                <a href="./page/MyPurse.html" class="centerCenter px-0">
+                  <img src="./img/桌機index_img/header/9.png" class="img-fluid" alt="">
+                </a>
+                <a href="./page/MyPurse.html" class="centerCenter px-0">
+                  <img src="./img/桌機index_img/header/10.png" class="img-fluid" alt="">
+                </a>
+                <a href="./page/MyPurse.html" class="centerCenter px-0">
+                  <img src="./img/桌機index_img/header/11.png" class="img-fluid" alt="">
+                </a>
               </div>
+              <div class="col-2 p-0">
+                <img src="./img/桌機index_img/user.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-4 p-0 pl-2 dropdown-toggle text-right" style="line-height: .6rem;cursor: pointer;">
+                <div class="d-flex align-items-center">
+                  <p class="">0987123654</p><img src="../img/手機index_img/V1_1.png" class="img-fluid pl-1" alt="">
+                </div>
+                <img src="./img/桌機index_img/header/8.png" class="img-fluid" alt="">
+                <span class="">$3,000.00</span>
+                <button class="uk-button bg-transparent p-0 m-0"><i class="fa-solid fa-angle-down pl-1"></i></button>
+              </div>
+              <!-- MMC -->
+              <div uk-dropdown="mode: click;pos: bottom-center;" class="py-1 px-3 m-0 pb-3 arrow_up1"
+                style="background-color: rgba(0, 0, 0, 0.8); width: 16vw;z-index: 99999999999;">
+                <style>
+                  .arrow_up1:before {
+                    border-bottom: .5rem solid rgba(0, 0, 0, .8);
+                    border-left: .35rem solid transparent;
+                    border-right: .35rem solid transparent;
+                    content: "";
+                    position: absolute;
+                    right: 3.95rem;
+                    top: -.5rem;
+                  }
+                </style>
+                <!-- MMC -->
+                <div class=" py-3" style="height: 250px;overflow-y: scroll;overflow-x: hidden;">
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">DG真人</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">歐博真人</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">SA真人</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">WM真人</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">OB真人</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">OG真人</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">SUPER體育</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">OB體育</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">SUPER彩票</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">9K彩票</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">DT電子</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">SP電子</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">RTG電子</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">BNG電子</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">必贏電子</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">PLAY電子</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">博樂棋牌</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">OB棋牌</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                    <div class="col px-0 border-right border-secondary py-0">SP捕魚</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                  <div class="row px-3 py-1 text-light">
+                    <div class="col px-0 border-right border-secondary py-0">必贏捕魚</div>
+                    <div class="col pl-2 text-theme5">0</div>
+                  </div>
+                </div>
+                <div class="row pt-3 border-top border-secondary">
+                  <div class="col text-right pl-2 text-theme5">總額度:3,000.00</div>
+                </div>
+                <button class="btn bg-theme3 rounded rounded-pill py-1 my-1 btn-block text-light">
+                  一鍵轉回
+                </button>
+              </div>
+              <!-- index 舊的 dropdown 3,000 -->
+              <!-- <div uk-dropdown="mode: click;pos: bottom-center;" class="py-1 px-0 m-0 pb-3 arrow_up1 bg-theme"
+                style="width: 250px;z-index: 99999999999;" id="UkBgc">
+                <style>
+                  .arrow_up1:before {
+                    border-bottom: .5rem solid #f1f8ff;
+                    border-left: .35rem solid transparent;
+                    border-right: .35rem solid transparent;
+                    content: "";
+                    position: absolute;
+                    right: 3.95rem;
+                    top: -.5rem;
+                  }
+                </style>
+                <div class="row px-1 m-0">
+                  <a href="./page/MyPurse.html" class="col centerCenter">
+                    <img src="./img/桌機index_img/list/clickList/a1.png" class="img-fluid" alt="">
+                  </a>
+                  <a href="./page/MyPurse.html" class="col centerCenter">
+                    <img src="./img/桌機index_img/list/clickList/a2.png" class="img-fluid" alt="">
+                  </a>
+                  <a href="./page/MyPurse.html" class="col centerCenter">
+                    <img src="./img/桌機index_img/list/clickList/a3.png" class="img-fluid" alt="">
+                  </a>
+                </div>
+                <a href="./page/MyPurse.html" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="./img/桌機index_img/list/clickList/PC/1.png" class="img-fluid" alt="">
+                  個人資料
+                </a>
+                <a href="./page/MyPurse.html" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="./img/桌機index_img/list/clickList/PC/2.png" class="img-fluid" alt="">
+                  VIP特權
+                </a>
+                <a href="./page/MyPurse.html" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="./img/桌機index_img/list/clickList/PC/3.png" class="img-fluid" alt="">
+                  優惠達標查詢
+                </a>
+                <a href="./page/MyPurse.html" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="./img/桌機index_img/list/clickList/PC/4.png" class="img-fluid" alt="">
+                  投注紀錄
+                </a>
+                <a href="./page/MyPurse.html" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="./img/桌機index_img/list/clickList/PC/5.png" class="img-fluid" alt="">
+                  交易紀錄
+                </a>
+                <a href="./page/MyPurse.html" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="./img/桌機index_img/list/clickList/PC/6.png" class="img-fluid" alt="">
+                  帳戶管理
+                </a>
+                <a href="./page/inviteFriends.html" class=" dropdown-item px-3 fsz-12" type="button">
+                  <img src="./img/桌機index_img/list/clickList/PC/7.png" class="img-fluid" alt="">
+                  邀請好友
+                </a>
+                <a href="./page/MyPurse.html" class="dropdown-item px-3 fsz-12 list-inline" type="button">
+                  <div class="list-inline-item">
+                    <img src="./img/桌機index_img/list/clickList/PC/8.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="list-inline-item" style="line-height: .6rem;">
+                    <p class="py-0">幫助中心</p>
+                    <p class="fsz-08 py-0 list-inline-item">(存款、提款、投注)</p>
+                  </div>
+                </a>
+                <a href="./index.html"
+                  class="d-flex bg-theme2-hover  border btn px-3 my-3 py-0 w-75 justify-content-center mx-auto rounded-pill bd-theme text-theme"
+                  style="border-width: 5rem;">
+                  <p class="px-3 text-center">登出</p>
+                </a>
+              </div> -->
             </div>
           </div>
         </div>
@@ -184,7 +424,7 @@
       <div class="p-0" style="background-color: rgba(255, 255, 255, 0.5);">
         <div class="container-lg">
           <!--  <div class="row px-5 py-3 hoverListIItem uk-position-fixed uk-position-top-center bg-light"
-                          style="top: 65px;z-index: 999999999999999999999;"> -->
+                              style="top: 65px;z-index: 999999999999999999999;"> -->
           <div class="row px-5 hoverListIItem">
             <button class="uk-button bg-transparent py-1 px-2 col centerCenter" data-toggle="modal"
               data-target="#exampleModalCenter">
@@ -1762,46 +2002,40 @@
           <div class="row w-100">
             <div class="col-3 p-1 centerCenter">
               <button
-                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">+100</button>
+                class="btn py-1 px-3 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">100</button>
             </div>
             <div class="col-3 p-1 centerCenter">
               <button
-                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">+500</button>
+                class="btn py-1 px-3 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">500</button>
             </div>
             <div class="col-3 p-1 centerCenter">
               <button
-                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">+1000</button>
+                class="btn py-1 px-3 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">1000</button>
             </div>
             <div class="col-3 p-1 centerCenter">
               <button
-                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">+5000</button>
+                class="btn py-1 px-3 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">5000</button>
             </div>
             <div class="col-3 p-1 centerCenter">
               <button
-                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">+10000</button>
+                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">10000</button>
             </div>
             <div class="col-3 p-1 centerCenter">
               <button
-                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">+20000</button>
+                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">20000</button>
             </div>
             <div class="col-3 p-1 centerCenter">
               <button
-                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">+30000</button>
+                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">30000</button>
             </div>
             <div class="col-3 p-1 centerCenter">
               <button
-                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">+50000</button>
+                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">50000</button>
             </div>
           </div>
           <div class="row w-100">
             <div class="col-6 p-1 text-center">
-              <button class="btn bg-theme3 text-light btn-block">全部轉入</button>
-            </div>
-            <div class="col-6 p-1 text-center">
-              <button class="btn bg-theme3 text-light btn-block">全部轉出</button>
-            </div>
-            <div class="col-6 p-1 text-center">
-              <button class="btn bg-theme3 text-light btn-block">確認轉帳</button>
+              <button class="btn bg-theme3 text-light btn-block">立即轉帳</button>
             </div>
             <div class="col-6 p-1 text-center">
               <button class="btn bg-theme3 text-light btn-block">進入遊戲</button>
