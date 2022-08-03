@@ -88,7 +88,7 @@ function PageHeader() {
   document.writeln("              </a>");
   document.writeln("            </div>");
   document.writeln("          </div>");
-  document.writeln("          <div class='col-3' id='drw'>");
+  document.writeln("          <div class='col-3 centerCenter' id='drw'>");
   document.writeln(
     "            <div class='row align-items-center btn-group'>"
   );
