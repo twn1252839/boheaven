@@ -181,7 +181,7 @@
 /* uk-------------------- */
 .uk-tab > .uk-active > a {
     /* color: #333; */
-    border-color: transparent;
+    /* border-color: transparent; */
 }
 
 .uk-open > .uk-accordion-title::before {
