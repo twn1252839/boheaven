@@ -522,3 +522,8 @@ a {
   border-bottom: 1px solid #1e50a6;
   color: #1e50a6;
 }
+
+.table_set {
+  height: 500px;
+  overflow-y: scroll;
+}
