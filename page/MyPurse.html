@@ -4420,7 +4420,8 @@
                                     </div>
                                     <div class="col">
                                       <p class="text-right">
-                                        <button type="button" class="btn bg-transparent bettingHistory">
+                                        <button type="button" class="btn bg-transparent"
+                                          onclick="bettingHistory('person')">
                                           <i class="fa-solid fa-angle-right"></i>
                                         </button>
                                       </p>
@@ -4456,7 +4457,8 @@
                                     </div>
                                     <div class="col">
                                       <p class="text-right">
-                                        <button type="button" class="btn bg-transparent bettingHistory">
+                                        <button type="button" class="btn bg-transparent"
+                                          onclick="bettingHistory('sport')">
                                           <i class="fa-solid fa-angle-right"></i>
                                         </button>
                                       </p>
@@ -8037,6 +8039,15 @@
         $("#AccountNanagement").show();
       });
     });
+
+    // 
+    // function bettingHistory(data) {
+    //   if (data == 'person') {
+    //     console.log('person');
+    //   } else {
+    //     console.log('sport');
+    //   }
+    // }
   </script>
 
   <!-- Footer -->
