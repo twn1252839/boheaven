@@ -513,3 +513,12 @@ a {
 .JA .uk-accordion-title::before {
   background-image: url("../img/手機index_img/arrowDownList/Vector1.png");
 }
+
+.line_ss {
+  height: 70px;
+  padding-top: 1.3rem;
+  border-width: 0.35rem !important;
+  border-radius: 5%;
+  border-bottom: 1px solid #1e50a6;
+  color: #1e50a6;
+}

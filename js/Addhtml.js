@@ -19,7 +19,7 @@ function PageHeader() {
   );
   document.writeln("            <div class='btn-group'>");
   document.writeln("              <div class='btn py-0 px-1 px-lg-2 my-auto'>");
-  document.writeln("                <p class='font_b line_ss'>");
+  document.writeln("                <p class='font_b line_ss m-0'>");
   document.writeln("                  首頁");
   document.writeln("                </p>");
   document.writeln("              </div>");
@@ -406,7 +406,7 @@ function PageHeader2() {
   );
   document.writeln("            <div class='btn-group'>");
   document.writeln("              <div class='btn py-0 px-1 px-lg-2 my-auto'>");
-  document.writeln("                <p class='font_b line_ss'>");
+  document.writeln("                <p class='font_b line_ss m-0'>");
   document.writeln("                  首頁");
   document.writeln("                </p>");
   document.writeln("              </div>");
