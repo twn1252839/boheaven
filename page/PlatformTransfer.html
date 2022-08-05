@@ -146,14 +146,32 @@
                   </div>
                 </div>
               </div>
-              <div class="row centerCenter bg-light px-0" v-for="item in items">
-                <div class="col d-flex justify-content-between py-0 px-1 border-bottom">
+              <!-- <div class="row centerCenter bg-light px-0">
+                <div class="col d-flex justify-content-between py-0 px-1 border-bottom" v-for="item in items">
                   <p class="text-left col p-0 ">{{ item.message }}</p>
                   <p class="text-theme2 text-right col p-0 ">{{ item.money }}</p>
                 </div>
-                <div class="col d-flex justify-content-between py-0 px-1 border-bottom">
+                <div class="col d-flex justify-content-between py-0 px-1 border-bottom" v-for="item in items">
                   <p class="text-left col p-0">{{ item.message }}</p>
                   <p class="text-theme2 text-right col p-0">{{ item.money }}</p>
+                </div>
+              </div> -->
+              <div class="row justify-content-center bg-light px-0">
+                <div class="col">
+                  <div class="row m-0 p-0">
+                    <div class="col-12 d-flex justify-content-between py-0 px-1 border-bottom" v-for="item in items">
+                      <p class="text-left col p-0 fsz09">{{ item.message }}</p>
+                      <p class="text-theme2 text-right col p-0 ">{{ item.money }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row m-0 p-0">
+                    <div class="col-12 d-flex justify-content-between py-0 px-1 border-bottom" v-for="item1 in items1">
+                      <p class="text-left col p-0 fsz09">{{ item1.message }}</p>
+                      <p class="text-theme2 text-right col p-0 ">{{ item1.money }}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -172,6 +190,7 @@
       el: '#v-for-array',
       data: {
         items: [
+          { message: '主帳戶', money: '0' },
           { message: 'DG真人', money: '0' },
           { message: '歐博真人', money: '0' },
           { message: 'SA真人', money: '0' },
@@ -191,7 +210,29 @@
           { message: 'OB棋牌', money: '0' },
           { message: 'SP捕魚', money: '0' },
           { message: '必贏捕魚', money: '0' },
-        ]
+        ],
+        items1: [
+          // { message1: '主帳戶', money: '0' },
+          { message: 'DG真人', money: '0' },
+          { message: '歐博真人', money: '0' },
+          { message: 'SA真人', money: '0' },
+          { message: 'WM真人', money: '0' },
+          { message: 'OB真人', money: '0' },
+          { message: 'OG真人', money: '0' },
+          { message: '博天堂體育', money: '0' },
+          { message: 'SUPER體育', money: '0' },
+          { message: 'SUPER彩票', money: '0' },
+          { message: 'DT電子', money: '0' },
+          { message: 'SP電子', money: '0' },
+          { message: 'RTG電子', money: '0' },
+          { message: 'BNG電子', money: '0' },
+          { message: '必贏電子', money: '0' },
+          { message: 'PLAY電子', money: '0' },
+          { message: '博樂棋牌', money: '0' },
+          { message: 'OB棋牌', money: '0' },
+          { message: 'SP捕魚', money: '0' },
+          { message: '必贏捕魚', money: '0' },
+        ],
       }
     })
   </script>
