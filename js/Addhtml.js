@@ -352,7 +352,7 @@ function PageHeader() {
   document.writeln("");
   document.writeln("  </div>");
   document.writeln(
-    "  <div class='row m-0 p-0 d-none d-md-block' style='min-height: 85px;'></div>"
+    "  <div class='row m-0 p-0 d-none d-md-block' style='min-height: 109px;'></div>"
   );
   document.writeln("");
   document.writeln(
