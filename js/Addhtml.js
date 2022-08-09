@@ -874,7 +874,7 @@ function PCFooter() {
   document.writeln(
     "              <li class='breadcrumb-item fsz-06'><a class='text-decoration-none p-0 w3-hover-text-light-gray'"
   );
-  document.writeln("                  href='#'>Home</a>");
+  document.writeln("                  href='../index.html'>Home</a>");
   document.writeln("              </li>");
   document.writeln(
     "              <li class='breadcrumb-item fsz-06'><a class='text-decoration-none p-0 w3-hover-text-light-gray'"
@@ -888,13 +888,7 @@ function PCFooter() {
   document.writeln(
     "                  href='../page/MyPurse.html'>邀請好友</a></li>"
   );
-  document.writeln(
-    "              <li class='breadcrumb-item fsz-06'><a class='text-decoration-none p-0 w3-hover-text-light-gray'"
-  );
-  document.writeln(
-    "                  href='../page/gameIntroduction.html'>APP下載</a></li>"
-  );
-  document.writeln(
+   document.writeln(
     "              <li class='breadcrumb-item fsz-06'><a class='text-decoration-none p-0 w3-hover-text-light-gray'"
   );
   document.writeln(
@@ -903,7 +897,7 @@ function PCFooter() {
   document.writeln(
     "              <li class='breadcrumb-item fsz-06'><a class='text-decoration-none p-0 w3-hover-text-light-gray'"
   );
-  document.writeln("                  href='#'>合營代理</a></li>");
+  document.writeln("                  href='../page/MyPurse.html'>合營代理</a></li>");
   document.writeln(
     "              <li class='breadcrumb-item fsz-06'><a class='text-decoration-none p-0 w3-hover-text-light-gray'"
   );
@@ -915,9 +909,7 @@ function PCFooter() {
   document.writeln(
     "              <li class='breadcrumb-item fsz-06'><a class='text-decoration-none p-0 w3-hover-text-light-gray'"
   );
-  document.writeln(
-    "                  href='../page/gameIntroduction.html'>遊戲介紹</a></li>"
-  );
+  document.writeln("                  href='../page/gameIntroduction.html'>遊戲介紹</a></li>");
   document.writeln(
     "              <li class='breadcrumb-item fsz-06'><a class='text-decoration-none p-0 w3-hover-text-light-gray'"
   );
@@ -9619,8 +9611,41 @@ document.writeln("    </div>");
 document.writeln("  </div>");
 }
 
-// 登入頁面 上方
-function indexLoginHeader() {}
+// table
+function table() {document.writeln(" <table class='table table-striped p-2 pb-5 m-0'>");
+document.writeln('        <thead>');
+document.writeln("          <tr class='text-center bg-theme3 text-light'>");
+document.writeln("            <th scope='' class='col-6'>標題</th>");
+document.writeln("            <th scope='' class='col-6'>時間</th>");
+document.writeln('          </tr>');
+document.writeln('        </thead>');
+document.writeln('        <tbody>');
+document.writeln("          <tr class='text-center'>");
+document.writeln('            <th>百家樂教學 | 北京暴雨！</th>');
+document.writeln('            <td>2022/04/27</td>');
+document.writeln('          </tr>');
+document.writeln("          <tr class='text-center'>");
+document.writeln('            <th>百家樂教學 | 北京暴雨！</th>');
+document.writeln('            <td>2022/04/27</td>');
+document.writeln('          </tr>');
+document.writeln("          <tr class='text-center'>");
+document.writeln('            <th>百家樂教學 | 北京暴雨！</th>');
+document.writeln('            <td>2022/04/27</td>');
+document.writeln('          </tr>');
+document.writeln("          <tr class='text-center'>");
+document.writeln('            <th>百家樂教學 | 北京暴雨！</th>');
+document.writeln('            <td>2022/04/27</td>');
+document.writeln('          </tr>');
+document.writeln("          <tr class='text-center'>");
+document.writeln('            <th>百家樂教學 | 北京暴雨！</th>');
+document.writeln('            <td>2022/04/27</td>');
+document.writeln('          </tr>');
+document.writeln("          <tr class='text-center'>");
+document.writeln('            <th>百家樂教學 | 北京暴雨！</th>');
+document.writeln('            <td>2022/04/27</td>');
+document.writeln('          </tr>');
+document.writeln('        </tbody>');
+document.writeln('      </table>');}
 
 // 登入頁面 Footer
 function indexLoginFooter() {}
