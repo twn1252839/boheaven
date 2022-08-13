@@ -968,7 +968,9 @@ function MDFooter() {
   document.writeln("        </a>");
   document.writeln("      </div>");
   document.writeln("      <div class='row px-0 py-1 m-0'>");
-  document.writeln("        <div class='col centerCenter px-0 card_c'>");
+  document.writeln(
+    "        <div class='col centerCenter px-0 card_c uk-blend-luminosity'>"
+  );
   document.writeln("          <a href='../index.html'>");
   document.writeln(
     "            <img src='../img/手機index_img/bottomList/bottomList1.png' class='img-fluid' alt=''>"
@@ -1002,9 +1004,7 @@ function MDFooter() {
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
-  document.writeln(
-    "        <div class='col centerCenter px-0 card_c uk-blend-luminosity'>"
-  );
+  document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/MyPurse.html'>");
   document.writeln(
     "            <img src='../img/手機index_img/bottomList/bottomList5.png' class='img-fluid' alt=''>"
@@ -1015,6 +1015,7 @@ function MDFooter() {
   document.writeln("    </div>");
   document.writeln("  </div>");
   document.writeln("  <script src='../js/indexFooterBtn.js'></script>");
+  document.writeln("  <script src='./js/Addhtml.js'></script>");
   document.writeln("");
 }
 
