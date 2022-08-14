@@ -67,7 +67,7 @@
     }
   </style>
 
-  <title>客服中心</title>
+  <title>個人資料</title>
 </head>
 
 
@@ -300,7 +300,7 @@
                 </a>
               </li>
               <li class='col-3 pb-3 px-1 bg-transparent text-center'>
-                <a href="#" class='cursor_pointer text-center'>
+                <a href="./AccountManagement.html" class='cursor_pointer text-center'>
                   <img src='../img/手機各分頁img/mypurse/4.png' class='img-fluid' alt=''>
                   <p class='fsz09 text-center font-weight-bold text-dark text-nowrap'>帳戶管理</p>
                 </a>
@@ -376,167 +376,77 @@
             </ul>
 
             <ul class='col-8 col-xl-9 justify-content-center list-unstyled'>
-              <li class='text-center pl-3 w-100'>
-                <div class='col-12 CardBgMd_txt_BG py-3 px-0'>
-                  <div class=' py-1'>
-                    <!-- <p class='col-12 py-3 h3 font-weight-bold'>轉點</p> -->
-
-                    <div class='row p-3'>
-                      <div class='col-4 row centerCenter font-weight-bold py-2'>
-                        <span class='pr-0 pr-md-2 col-3 text-center text-theme2'>轉出</span>
-                        <select class='custom-select col-9 bd-theme btn-block'>
-                          <option selected=''>主帳戶 &nbsp 1,500</option>
-                          <option value='1'>D銀行</option>
-                          <option value='2'>C銀行</option>
-                          <option value='3'>H銀行</option>
-                        </select>
+              <!-- 個人資料 插入 -->
+              <li class='text-center pl-4 w-100'>
+                <div class='row CardBgMd_txt_BG mb-3'>
+                  <p class='col-12 py-3 h3 font-weight-bold border-bottom'>基本資料</p>
+                  <div class='col-12 py-3'>
+                    <span class='font-weight-bold pr-3'>用戶名:</span><span>0987123654</span>
+                  </div>
+                  <div class='col-12 py-3'>
+                    <span class='font-weight-bold pr-3'>真實姓名:</span><span class='pr-3'>秋香</span><span
+                      class='text-secondary'>姓名需與銀行帳戶人姓名一致，否則無法提款，如需更改請 <button type='button'
+                        class='uk-button bg-transparent text-theme centerCenter px-0 py-1' data-toggle='modal'
+                        data-target='#exampleModalCenter2'>
+                        <button type='button' class='uk-button bg-transparent text-theme centerCenter px-0 py-1'
+                          data-toggle='modal' data-target='#exampleModalCenter2'>
+                          聯繫客服
+                        </button>
+                      </button></span>
+                  </div>
+                  <div class='col-12 py-3'>
+                    <span class='font-weight-bold pr-3'>性別:</span><span>男</span>
+                  </div>
+                  <div class='col-12 py-3'>
+                    <span class='font-weight-bold pr-3'>VIP特權:</span><span>VIP1</span>
+                  </div>
+                  <div class='col-12 py-3'>
+                    <span class='font-weight-bold pr-3'>LINE ID:</span><input class='form-control w-25 d-inline'
+                      type='text' placeholder='請輸入 LINE ID'>
+                  </div>
+                </div>
+                <div class='row CardBgMd_txt_BG'>
+                  <p class='col-12 py-3 h3 font-weight-bold border-bottom'>帳號安全</p>
+                  <div class='col-12 py-3'>
+                    <div class='row py-2'>
+                      <div class='col-6'>
+                        <span class='font-weight-bold pr-3'>手機號碼:</span><span>0987****88</span>
                       </div>
-                      <div class='col-4 row centerCenter font-weight-bold py-2'>
-                        <span class='pr-0 pr-md-2 col-3 text-center text-theme'>轉入</span>
-                        <select class='custom-select col-9 bd-theme btn-block'>
-                          <option selected=''>請選擇</option>
-                          <option value='1'>D銀行</option>
-                          <option value='2'>C銀行</option>
-                          <option value='3'>H銀行</option>
-                        </select>
-                      </div>
-                      <div class='col-4 row centerCenter font-weight-bold py-2'>
-                        <span class='pr-0 pr-md-2 col-3 text-center'>金額</span>
-                        <input class='form-control w-auto d-inline bd-theme col-9' type='text' placeholder='請輸入金額'>
+                      <div class='col-6'>
+                        <span class='font-weight-bold pr-3'>已驗證</span>
                       </div>
                     </div>
+                    <div class='row py-2' id='changePassword_hide'>
+                      <div class='col-6'>
 
-                    <div class='row p-3'>
-                      <div class='col-3 centerCenter font-weight-bold py-2'>
-                        <span class='fsz-12'>主帳戶:</span><span class='fsz-12 pl-2'>1,500</span>
+                        <span class='font-weight-bold pr-3'>更改密碼:</span><span>**********</span>
                       </div>
-                      <div class='col-3 centerCenter font-weight-bold py-2'>
-                        <span class='fsz-12'>總額度:</span><span class='fsz-12 pl-2'>3,300</span>
-
-                      </div>
-                      <div class='col-3 centerCenter font-weight-bold py-2'>
-                        <button type='button' class='btn btn-block bd-theme text-theme rounded'>轉回主帳戶
-                        </button>
-                      </div>
-                      <div class='col-3 centerCenter font-weight-bold py-2'>
-                        <button type='button' class='btn btn-block bg-theme3 text-light rounded'>確定
-                        </button>
+                      <div class='col-6'>
+                        <button class='btn bd-theme text-theme rounded-pill py-1 px-5' id='changePassword'>編輯</button>
                       </div>
                     </div>
-
-                    <!-- MOD -->
-                    <div class='row px-5'>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>DG真人</p>
-                          <p class='text-center text-theme'>$100.00</p>
+                    <div class='row m-0 py-2' id='changePassword_show'>
+                      <div class='col-12 m-0 p-0 py-2'>
+                        <div class='row m-0 p-0'>
+                          <span class='font-weight-bold pr-3'>舊密碼:</span>
+                          <input type='text' class='bg-transparent border-bottom fsz09' placeholder='請輸入原密碼'>
                         </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>歐博真人</p>
-                          <p class='text-center text-theme'>$100.00</p>
+                      </div>
+                      <div class='col-12 m-0 p-0 py-2'>
+                        <div class='row m-0 p-0'>
+                          <span class='font-weight-bold pr-3'>新密碼:</span>
+                          <input type='text' class='bg-transparent border-bottom fsz09' placeholder='請輸入新密碼'>
                         </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>SA真人</p>
-                          <p class='text-center text-theme'>$100.00</p>
+                      </div>
+                      <div class='col-12 m-0 p-0 py-2'>
+                        <div class='row m-0 p-0'>
+                          <span class='font-weight-bold pr-3'>確認密碼:</span>
+                          <input type='text' class='bg-transparent border-bottom fsz09' placeholder='確認密碼'>
                         </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>WM真人</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>SUPER體育</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>博天堂體育</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>SUPER彩票</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>9K彩票</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>DT電子</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>SP電子</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>BNG電子</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>RTG電子</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>必贏電子</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>PLAY電子</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>博樂棋牌</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>OB棋牌</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>必贏捕魚</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
-                      <button class='btn font-weight-bold w-auto col-4 col-lg-3 my-3 my-lg-2' style='height: 6rem;'>
-                        <div class='p-3 bg-theme4 rounded'>
-                          <p class='text-center'>SP捕魚</p>
-                          <p class='text-center text-theme'>$100.00</p>
-                        </div>
-                      </button>
+                      </div>
+                      <button class='btn bd-theme text-theme rounded-pill py-1 px-5'>完成</button>
                     </div>
                   </div>
-
                 </div>
               </li>
 
@@ -548,7 +458,6 @@
         </div>
       </div>
     </div>
-
 
     <!-- 真人M -->
     <div class='modal fade' id='exampleModalCenter11' tabindex='-1' role='dialog'
@@ -1534,9 +1443,9 @@
             </div>
           </div>
           <!-- <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div> -->
         </div>
       </div>
     </div>

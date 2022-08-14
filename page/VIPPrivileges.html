@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+  <!-- WOW CSS -->
+  <!-- <link rel="stylesheet" href="./css/animation.css"> -->
+  <!-- <link rel="stylesheet" href="./css/index.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -36,25 +41,1565 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/index-main.css">
+  <link rel="stylesheet" href="../css/MyPurse.css">
+
   <style>
-    /* switch 調整 */
-    .uk-subnav-pill>.uk-active>a {
-      background-color: transparent !important;
-      color: #365a97 !important;
-      font-weight: bold;
+    .ac {
+      width: 25px;
+      /* width: auto; */
+      height: 25px;
+      /* border-radius: 999em; */
+      background-color: #365a97;
+    }
+
+    /* -------------- */
+    #UkBgc .uk-active {
+      background-color: #365a97;
+    }
+
+    #UkBgc .uk-active a {
+      color: #fff;
+    }
+
+    #UkBgc a {
+      color: black;
+      text-decoration: none;
     }
   </style>
+
   <title>VIP特權</title>
 </head>
 
 
-<body>
+<body id="app">
   <!-- Header -->
   <script>
     PageHeader();
-    // PageHeaderBanner()
-    MyPurse();
+    // PageHeaderBanner();
+    // MyPurse();
   </script>
+  <!-- PC -->
+  <div class='container-fluid p-0 m-0 d-none d-md-block CardBg_BG px-3'>
+
+    <!-- <div class='row m-0 p-0 min-vh-100 bg-danger' id='dropdown_menu_BG'></div> -->
+    <div class='centerCenter container p-0 min-vh-100'>
+      <div class='row py-3'>
+        <div class='col-12 px-0 py-3'>
+          <!-- 右字 media -->
+          <!-- <div class='media CardBgMd_txt_BG p-3 centerCenter'>
+            <div class='centerCenter p-0'>
+              <img src='../img/桌機index_img/user.png' class='img-fluid' alt=''>
+            </div>
+            <div class='media-body pl-3'>
+              <div class=''>
+                <span class=''>0987123654</span>
+                <img src='../img/桌機各分頁img/MyPurse/V1.png' class='img-fluid pl-1' alt=''>
+              </div>
+              <span class=''>$3,000.00</span>
+            </div>
+
+          </div> -->
+
+          <!-- 照片switch -->
+          <div class='row px-3'>
+            <!-- MMOD -->
+            <ul id='UkBgc'
+              class='pb-5 pt-3 col-4 col-xl-3 row px-0 CardBgMd_txt_BG text-center m-0  justify-content-center align-self-start list-unstyled'>
+              <li class='w-100 pl-2 pl-lg-3 py-1 bg-transparent'>
+                <div class='row centerCenter'>
+                  <div class='col-12 text-center pl-1'>
+                    <img src='../img/桌機index_img/user.png' class='img-fluid' alt=''>
+                  </div>
+                  <div class='col-12 centerCenter'>
+                    <span class=''>0987123654</span>
+                    <img src='../img/桌機各分頁img/MyPurse/V1.png' class='img-fluid pl-1' alt=''>
+                  </div>
+                  <div class='col-12 uk-inline centerCenter pl-1'>
+                    <button class='uk-button bg-transparent tr fsz-1 m-0 p-0 text-right' type=' button'
+                      aria-expanded='false' style='z-index: 1;'>
+                      <span>$3,000.00</span>
+                      <i class='fa-solid fa-angle-down pl-2' style='margin-top: -5px;'></i>
+                    </button>
+                    <!-- UK_dropdown 控制位置 -->
+                    <!-- div uk-dropdown='mode: click;pos: bottom-center;'
+                      class='py-1 px-4 m-0 uk-dropdown uk-dropdown-bottom-right pb-3'
+                      style='background-color: rgba(0, 0, 0, 0.8); width: 18vw;z-index: 99999999999;height: 600px;overflow: scroll;'> -->
+                    <div uk-dropdown='mode: click;pos: bottom-center;' class='py-1 px-3 m-0 pb-3 arrow_up1'
+                      style='background-color: rgba(0, 0, 0, 0.8); width: 16vw;z-index: 99999999999;'>
+                      <style>
+                        .arrow_up1:before {
+                          border-bottom: .5rem solid rgba(0, 0, 0, .8);
+                          border-left: .35rem solid transparent;
+                          border-right: .35rem solid transparent;
+                          content: '';
+                          position: absolute;
+                          right: 3.95rem;
+                          top: -.5rem;
+                        }
+                      </style>
+                      <!-- MMC -->
+                      <div class=' py-3' style='height: 250px;overflow-y: scroll;overflow-x: hidden;'>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>DG真人</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>歐博真人</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>SA真人</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>WM真人</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>OB真人</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>OG真人</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>SUPER體育</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>OB體育</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>SUPER彩票</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>9K彩票</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>DT電子</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>SP電子</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>RTG電子</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>BNG電子</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>必贏電子</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>PLAY電子</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>博樂棋牌</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>OB棋牌</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                          <div class='col px-0 border-right border-secondary py-0'>SP捕魚</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                        <div class='row px-3 py-1 text-light'>
+                          <div class='col px-0 border-right border-secondary py-0'>必贏捕魚</div>
+                          <div class='col pl-2 text-theme5'>0</div>
+                        </div>
+                      </div>
+                      <div class='row pt-3 border-top border-secondary'>
+                        <div class='col text-right pl-2 text-theme5'>總額度:3,000.00</div>
+                      </div>
+                      <button class='btn bg-theme3 rounded rounded-pill py-1 my-1 btn-block text-light'>
+                        一鍵轉回
+                      </button>
+                    </div>
+                    <!-- ........ -->
+                    <!-- <button class='uk-button bg-transparent p-0 text-right uk-position-relative dropdown_menu'
+                      type=' button'>
+                      $3,000.00
+                      <i class='fa-solid fa-angle-down pl-2' style='margin-top: -5px;'></i>
+                    </button>
+                    <div id='dropdown_menu' class='uk-position-absolute uk-position-top-center w-100 py-2 px-4'
+                      style='background-color: rgba(0, 0, 0, 0.8);top: 30px; z-index: 999999999;'>
+                      <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                        <div class='col px-0 border-right border-secondary py-0'>DG真人</div>
+                        <div class='col pl-2 text-theme5'>0</div>
+                      </div>
+                      <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                        <div class='col px-0 border-right border-secondary py-0'>歐博真人</div>
+                        <div class='col pl-2 text-theme5'>0</div>
+                      </div>
+                      <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                        <div class='col px-0 border-right border-secondary py-0'>SA真人</div>
+                        <div class='col pl-2 text-theme5'>0</div>
+                      </div>
+                      <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                        <div class='col px-0 border-right border-secondary py-0'>WM真人</div>
+                        <div class='col pl-2 text-theme5'>0</div>
+                      </div>
+                      <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                        <div class='col px-0 border-right border-secondary py-0'>OB真人</div>
+                        <div class='col pl-2 text-theme5'>0</div>
+                      </div>
+                      <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                        <div class='col px-0 border-right border-secondary py-0'>OG真人</div>
+                        <div class='col pl-2 text-theme5'>0</div>
+                      </div>
+                      <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                        <div class='col px-0 border-right border-secondary py-0'>SUPER體育</div>
+                        <div class='col pl-2 text-theme5'>0</div>
+                      </div>
+                      <div class='row px-3 py-1 text-light border-bottom border-secondary'>
+                        <div class='col px-0 border-right border-secondary py-0'>OB體育</div>
+                        <div class='col pl-2 text-theme5'>0</div>
+                      </div>
+                      <div class='row pt-5'>
+                        <div class='col text-right pl-2 text-theme5'>總額度:3,000.00</div>
+                      </div>
+                      <button class='btn bg-theme3 rounded rounded-pill py-1 my-1 btn-block text-light'>
+                        一鍵轉回
+                      </button>
+                    </div> -->
+                  </div>
+                </div>
+              </li>
+
+              <!--  -->
+              <li class='col-3 m-0 pb-3 px-1 bg-transparent text-center'>
+                <a href="./MyPursePage.html" class='cursor_pointer text-center'>
+                  <img src='../img/手機各分頁img/mypurse/1.png' class='img-fluid' alt=''>
+                  <p class='fsz09 text-center font-weight-bold text-dark text-nowrap'>我的錢包</p>
+                </a>
+              </li>
+              <li class='col-3 pb-3 px-1 bg-transparent text-center'>
+                <a href="./bettingHistory.html" class='cursor_pointer text-center'>
+                  <img src='../img/手機各分頁img/mypurse/2.png' class='img-fluid' alt=''>
+                  <p class='fsz09 text-center font-weight-bold text-dark text-nowrap'>投注紀錄</p>
+                  <p class='fsz-08 text-center text-secondary text-nowrap'>(返水查詢)</p>
+                </a>
+              </li>
+              <li class='col-3 pb-3 px-1 bg-transparent text-center'>
+                <a href="./transactionRecord.html" class='cursor_pointer text-center'>
+                  <img src='../img/手機各分頁img/mypurse/3.png' class='img-fluid' alt=''>
+                  <p class='fsz09 text-center font-weight-bold text-dark text-nowrap'>交易紀錄</p>
+                  <p class='fsz-08 text-center text-secondary text-nowrap'>(存提轉)</p>
+                </a>
+              </li>
+              <li class='col-3 pb-3 px-1 bg-transparent text-center'>
+                <a href="./AccountManagement.html" class='cursor_pointer text-center'>
+                  <img src='../img/手機各分頁img/mypurse/4.png' class='img-fluid' alt=''>
+                  <p class='fsz09 text-center font-weight-bold text-dark text-nowrap'>帳戶管理</p>
+                </a>
+              </li>
+
+
+              <li class='w-100 pl-2 pl-lg-3 py-1'>
+                <a href='./personalInformation.html' class='' type='button'>
+                  <img src='../img/桌機index_img/list/clickList/PC/1.png' class='img-fluid' alt=''>
+                  <span class='h5 pl-0 pl-xl-2'>個人資料</span>
+                </a>
+              </li>
+              <li class='w-100 pl-2 pl-lg-3 py-1 bg-theme3'>
+                <a href='./VIPPrivileges.html' class='text-white' type='button'>
+                  <img src='../img/桌機index_img/list/clickList/PC/2.png' class='img-fluid' alt=''>
+                  <span class=' h5 pl-0 pl-xl-2'>VIP特權</span>
+                </a>
+              </li>
+              <li class='w-100 pl-2 pl-lg-3 py-1'>
+                <a href='./OffersUp.html' class=' ' type='button'>
+                  <img src='../img/桌機index_img/list/clickList/PC/3.png' class='img-fluid' alt=''>
+                  <span class=' h5 pl-0 pl-xl-2'>優惠達標查詢</span>
+                </a>
+              </li>
+              <li class='w-100 pl-2 pl-lg-3 py-1'>
+                <a href='./bettingHistory.html' class=' ' type='button'>
+                  <img src='../img/桌機index_img/list/clickList/PC/4.png' class='img-fluid' alt=''>
+                  <span class=' h5 pl-0 pl-xl-2'>投注紀錄</span>
+                </a>
+              </li>
+              <li class='w-100 pl-2 pl-lg-3 py-1'>
+                <a href='./transactionRecord.html' class=' ' type='button'>
+                  <img src='../img/桌機index_img/list/clickList/PC/5.png' class='img-fluid' alt=''>
+                  <span class=' h5 pl-0 pl-xl-2'>交易紀錄</span>
+                </a>
+              </li>
+              <li class='w-100 pl-2 pl-lg-3 py-1'>
+                <a href='./AccountManagement.html' class=' ' type='button'>
+                  <img src='../img/桌機index_img/list/clickList/PC/6.png' class='img-fluid' alt=''>
+                  <span class=' h5 pl-0 pl-xl-2'>帳戶管理</span>
+                </a>
+              </li>
+              <!-- 導向網頁 -->
+              <!-- <li class='w-100 pl-2 pl-lg-3 py-1' onclick='window.location.assign('./inviteFriends.html');'> -->
+              <li class='w-100 pl-2 pl-lg-3 py-1'>
+                <a href='./inviteFriends.html' class=' ' type='button'>
+                  <img src='../img/桌機index_img/list/clickList/PC/7.png' class='img-fluid' alt=''>
+                  <span class=' h5 pl-0 pl-xl-2'>邀請好友</span>
+                </a>
+              </li>
+              <li class='w-100 pl-2 pl-lg-3 py-1'>
+                <a href='./HelpCenter.html' class=' ' type='button'>
+
+                  <div class='media'>
+                    <img src='../img/桌機index_img/list/clickList/PC/8.png' class='img-fluid' alt=''>
+                    <div class='media-body'>
+                      <span class='h5 pl-0 pl-xl-2'>幫助中心</span>
+                      <p class='pl-0 pl-xl-2 fsz-08'>(存款、提款、投注疑問看這裡)</p>
+                    </div>
+                  </div>
+
+                </a>
+              </li>
+              <!-- <li class=' pl-2'>
+                <a href='#' class=' d-flex' type='button'>
+                  <img src='../img/桌機index_img/list/clickList/PC/7.png' class='img-fluid' alt=''>
+                  <div class='pl-0 pl-lg-2'>
+                    <p class='text-dark'>幫助中心</p>
+                    <span class='text-secondary fsz-08'>(存款、提款、投注疑問看這裡)</span>
+                  </div>
+                </a>
+              </li> -->
+            </ul>
+
+            <ul class='col-8 col-xl-9 justify-content-center list-unstyled'>
+              <!-- MMM -->
+              <!-- VIP特權 插入 -->
+              <li class='text-center pl-3 w-100'>
+                <div class='pl-3' id='vip'>
+                  <div class='row CardBgMd_txt_BG mb-3 px-3'>
+                    <div class='col-12 pb-3'>
+                      <div class='row pb-3'>
+                        <div class='col-2 text-center'>
+                          <img class='img-fluid' src='../img/桌機各分頁img/MyPurse/Group 212.png' alt=''>
+                        </div>
+                        <div class='flex-grow-1 py-3'>
+                          <p class='font-weight-bold fsz-12 pt-3'>當前等級:VIP1</p>
+                          <p>保級流水(自2022-03-15)： $0.00</p>
+                        </div>
+                        <div class='col-3 col-md-2 py-3'>
+                          <button type='button' class='btn bg-transparent' id='vipBtn'>
+                            VIP詳情
+                            <i class='fa-solid fa-angle-right'></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class='col-12'>
+                        <div class='row'>
+                          <div class='col text-center'>VIP0</div>
+                          <div class='col text-center'>VIP1</div>
+                          <div class='col text-center'>VIP2</div>
+                          <div class='col text-center'>VIP3</div>
+                          <div class='col text-center'>VIP4</div>
+                          <div class='col text-center'>VIP5</div>
+                          <div class='col text-center'>VIP6</div>
+                        </div>
+                      </div>
+                      <div class='col-12 py-3'>
+                        <div class='row py-3'>
+                          <div class='progress rounded-pill col-12 p-0'>
+                            <div class='progress-bar bg-theme3' role='progressbar' style='width: 25%;'
+                              aria-valuenow='90' aria-valuemin='0' aria-valuemax='100'></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='col-12 py-3 bg-theme rounded'>
+                        <div class='row'>
+                          <p class='col-12 font-weight-bold fsz-12'>距離下一等級：VIP2</p>
+                          <div class='col-12'>
+                            <div class='row centerCenter py-2'>
+                              <div class='col-1 text-center'>存款
+                              </div>
+                              <div class='flex-grow-1'>
+                                <div class='progress rounded-pill col-12 p-0'>
+                                  <div class='progress-bar bg-theme5' role='progressbar' style='width: 25%;'
+                                    aria-valuenow='90' aria-valuemin='0' aria-valuemax='100'>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class='col-3 col-md-2'>
+                                還需存款約 6,000
+                              </div>
+                            </div>
+                            <div class='row centerCenter py-2'>
+                              <div class='col-1 text-center'>流水
+                              </div>
+                              <div class='flex-grow-1'>
+                                <div class='progress rounded-pill col-12 p-0'>
+                                  <div class='progress-bar bg-theme5' role='progressbar' style='width: 25%;'
+                                    aria-valuenow='90' aria-valuemin='0' aria-valuemax='100'>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class='col-3 col-md-2'>
+                                還需流水約 59,330
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='row CardBgMd_txt_BG mb-3 px-5 py-3'>
+                    <p class='col-12 font-weight-bold fsz-12'>VIP1尊享</p>
+                    <!-- <div class='row px-5'>
+                                              <div class='col-3 py-2 text-left'>
+                                                <img class='img-fluid' src='../img/桌機各分頁img/MyPurse/Group 8741.png' alt=''>
+                                                <p class='font-weight-bold text-theme'>1</p>
+                                                <p class='font-weight-bold text-secondary'>每日提款次數</p>
+                                              </div>
+                                              <div class='col-3  py-2'>
+                                                <p class='font-weight-bold text-theme'>0.3</p>
+                                                <p class='font-weight-bold text-secondary'>體育返水</p>
+                                              </div>
+                                              <div class='col-3  py-2'>
+                                                <p class='font-weight-bold text-theme'>0.3</p>
+                                                <p class='font-weight-bold text-secondary'>體育返水</p>
+                                              </div>
+                                              <div class='col-3  py-2'>
+                                                <p class='font-weight-bold text-theme'>0.3</p>
+                                                <p class='font-weight-bold text-secondary'>體育返水</p>
+                                              </div>
+                                            </div> -->
+                    <div class='col-12 px-3 d-flex'>
+                      <div class='text-center p-3'>
+                        <img class='img-fluid' src='../img/桌機各分頁img/MyPurse/Group 8741.png' alt=''>
+                        <p class='font-weight-bold text-theme text-center pt-2'>1</p>
+                        <p class='text-secondary text-center'>每日提款次數</p>
+                      </div>
+                      <div class='text-center p-3'>
+                        <img class='img-fluid' src='../img/桌機各分頁img/MyPurse/Group 8743.png' alt=''>
+                        <p class='font-weight-bold text-theme text-center pt-2'>0.00</p>
+                        <p class='text-secondary text-center'>生日禮金</p>
+                        <button type='button' class='btn btn-block bg-secondary text-light text-secondary py-0 rounded'
+                          disabled>領取
+                      </div>
+                      <div class='text-center p-3'>
+                        <img class='img-fluid' src='../img/桌機各分頁img/MyPurse/Group 8744.png' alt=''>
+                        <p class='font-weight-bold text-theme text-center pt-2'>0.00</p>
+                        <p class='text-secondary text-center'>升級禮金</p>
+                        <button type='button' class='btn btn-block bg-secondary text-light text-secondary py-0 rounded'
+                          disabled>領取
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='row CardBgMd_txt_BG mb-3 px-5'>
+                    <div class='col-12 py-3 px-3'>
+                      <p class='col-12 font-weight-bold fsz-12'>VIP1優惠</p>
+                      <div class='row px-5'>
+                        <div class='col-3  py-2'>
+                          <p class='font-weight-bold text-theme'>0.3</p>
+                          <p class='font-weight-bold text-secondary'>真人返水</p>
+                        </div>
+                        <div class='col-3  py-2'>
+                          <p class='font-weight-bold text-theme'>0.3</p>
+                          <p class='font-weight-bold text-secondary'>體育返水</p>
+                        </div>
+                        <div class='col-3  py-2'>
+                          <p class='font-weight-bold text-theme'>0.3</p>
+                          <p class='font-weight-bold text-secondary'>體育返水</p>
+                        </div>
+                        <div class='col-3  py-2'>
+                          <p class='font-weight-bold text-theme'>0.3</p>
+                          <p class='font-weight-bold text-secondary'>體育返水</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='' id='vipPage'>
+                  <div class='col-12 my-2 CardBgMd_txt_BG'>
+                    <button type='button' class='btn bg-transparent' id='vipBtn2'>
+                      <i class='fa-solid fa-angle-left'></i>
+                      <span class='pt-3'>VIP詳情</span>
+                    </button>
+
+                    <!-- 補特效 -->
+
+                    <div class='table-responsive-sm'>
+
+                      <table class='table table-striped'>
+                        <thead>
+                          <tr class='text-center'>
+                            <th scope='col'>VIP等級</th>
+                            <th scope='col'>週有效投注額</th>
+                            <th scope='col'>真人返水</th>
+                            <th scope='col'>電子返水</th>
+                            <th scope='col'>賓果返水</th>
+                            <th scope='col'>體育返水</th>
+                            <th scope='col'>晉級禮金</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class='text-center'>
+                            <th>
+                              <img class='w-50' src='../img/手機index_img/V1.png' alt=''>
+                            </th>
+                            <td>50萬以內</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>X</td>
+                          </tr>
+                          <tr class='text-center'>
+                            <th>
+                              <img class='w-50' src='../img/手機index_img/V2.png' alt=''>
+                            </th>
+                            <td>50-200萬</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.1%</td>
+                            <td>588</td>
+                          </tr>
+                          <tr class='text-center'>
+                            <th>
+                              <img class='w-50' src='../img/手機index_img/V3.png' alt=''>
+                            </th>
+                            <td>200-1000萬</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                            <td>0.1%</td>
+                            <td>1288</td>
+                          </tr>
+                          <tr class='text-center'>
+                            <th>
+                              <img class='w-50' src='../img/手機index_img/V4.png' alt=''>
+                            </th>
+                            <td>1000-4000萬</td>
+                            <td>0.4%</td>
+                            <td>0.4%</td>
+                            <td>0.4%</td>
+                            <td>0.1%</td>
+                            <td>2888</td>
+                          </tr>
+                          <tr class='text-center'>
+                            <th>
+                              <img class='w-50' src='../img/手機index_img/V5.png' alt=''>
+                            </th>
+                            <td>4000-1億</td>
+                            <td>0.4%</td>
+                            <td>0.5%</td>
+                            <td>0.4%</td>
+                            <td>0.2%</td>
+                            <td>4888</td>
+                          </tr>
+                          <tr class='text-center'>
+                            <th>
+                              <img class='w-50' src='../img/手機index_img/V6.png' alt=''>
+                            </th>
+                            <td>1億以上</td>
+                            <td>0.5%</td>
+                            <td>0.6%</td>
+                            <td>0.5%</td>
+                            <td>0.3%</td>
+                            <td>8888</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class='col-12 my-2 CardBgMd_txt_BG'>
+                    <p class='py-3 h3 font-weight-bold border-bottom'>提款規則</p>
+                    <div class='table-responsive'>
+                      <table class='table table-striped'>
+                        <thead>
+                          <tr class='text-center'>
+                            <th scope='col'>VIP每日免手續提款次數</th>
+                            <th scope='col'>每日提款額度</th>
+                            <th scope='col'>棋牌返水</th>
+                            <th scope='col'>捕魚返水</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class='text-center'>
+                            <td>1</td>
+                            <td>無上限</td>
+                            <td>0.3%</td>
+                            <td>0.3%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class='col-12 my-2 CardBgMd_txt_BG'>
+                    <p class='py-3 h3 font-weight-bold'>活動規則</p>
+                    <div class='w-100 d-flex px-3 py-2'>
+                      <div class='ac text-center p-0 text-light rounded rounded-circle mr-2'>1</div>
+                      <p class='col'>晉級獎金統計周期為：每周一00:00至周日23:59，並於隔周一由系統統計派發</p>
+                    </div>
+                    <div class='w-100 d-flex px-3 py-2'>
+                      <div class='ac text-center p-0 text-light rounded rounded-circle mr-2'>2</div>
+                      <p class='col'>每周一系統將會自動統計玩家有效投註額及星級情況，晉級獎金將於18:00前添加到賬，晉級獎金可隨時申請提款，也可以選擇繼續投注遊戲
+                      </p>
+                    </div>
+                    <div class='w-100 d-flex px-3 py-2'>
+                      <div class='ac text-center p-0 text-light rounded rounded-circle mr-2'>3</div>
+                      <p class='col'>若是當周已達成條件，下周流水須達到一半的條件方能保級，如果未達成一半流水條件，將會下降一星級，例如:
+                        A會員在這周單廳流水300萬，可晉升成3星會員，則下周須達成單廳流水100萬，方可維持3星級，若低於100萬，將會掉至2星級....依此類推
+                      </p>
+                    </div>
+                    <div class='w-100 d-flex px-3 py-2'>
+                      <div class='ac text-center p-0 text-light rounded rounded-circle mr-2'>4</div>
+                      <p class='col'>
+                        同一會員同一周只能享受一次晉級獎金，如客戶最高升級6星級，可享受6星級對應獎金，不能同時享受5星級對應獎金，且同一星級的獎金無法重複領取。
+                      </p>
+                    </div>
+                    <div class='w-100 d-flex px-3 py-2'>
+                      <div class='ac text-center p-0 text-light rounded rounded-circle mr-2'>5</div>
+                      <p class='col'>若是當周已達成條件，下周流水須達到一半的條件方能保級，如果未達成一半流水條件，將會下降一星級，例如:
+                        A會員在這周單廳流水300萬，可晉升成3星會員，則下周須達成單廳流水100萬，方可維持3星級，若低於100萬，將會掉至2星級....依此類推
+                      </p>
+                    </div>
+                    <div class='w-100 d-flex px-3 py-2'>
+                      <div class='ac text-center p-0 text-light rounded rounded-circle mr-2'>6</div>
+                      <p class='col'>
+                        同一會員同一周只能享受一次晉級獎金，如客戶最高升級6星級，可享受6星級對應獎金，不能同時享受5星級對應獎金，且同一星級的獎金無法重複領取。
+                      </p>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 真人M -->
+    <div class='modal fade' id='exampleModalCenter11' tabindex='-1' role='dialog'
+      aria-labelledby='exampleModalCenterTitle2' aria-hidden='true'>
+      <div class='modal-dialog modal-dialog-centered modal-lg' role='document'>
+        <div class='modal-content CardBgMd_txt_BG'>
+          <div class='modal-header border-0'>
+            <h5 class='modal-title font-weight-bold' id='exampleModalLongTitle'>共計2筆投注，投注金額200.00 有效投注
+              100.00<span class='text-theme2'>輸/贏
+                200.00</span>
+            </h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'><i class='fa-solid fa-xmark text-theme fa-lg'></i></span>
+            </button>
+          </div>
+          <div class='modal-body pt-0'>
+            <div class='col-12 mb-3'>
+              <div class='table-responsive py-3 table_set'>
+
+                <table class='table table-striped'>
+                  <thead>
+                    <tr class='text-center'>
+                      <th scope='col'>日期</th>
+                      <th scope='col'>平台</th>
+                      <th scope='col'>投注金額</th>
+                      <th scope='col'>有效投注</th>
+                      <th scope='col'>輸/贏</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>真人遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- 頁碼 -->
+              <div class='text-center p-2'>
+                <div class='btn btn-active'><i class='fas fa-caret-left'></i></div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>1</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>2</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>3</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>4</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>5</div>
+                <div class='btn btn-active'><i class='fas fa-caret-right'></i></div>
+                <style>
+                  .btn-active:hover {
+                    color: #365a97;
+                    border-color: #365a97 !important;
+                    font-size: 1.1rem;
+                  }
+                </style>
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class='modal-footer'>
+                  <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+                  <button type='button' class='btn btn-primary'>Save changes</button>
+                </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- 體育M -->
+    <div class='modal fade' id='exampleModalCenter12' tabindex='-1' role='dialog'
+      aria-labelledby='exampleModalCenterTitle2' aria-hidden='true'>
+      <div class='modal-dialog modal-dialog-centered modal-lg' role='document'>
+        <div class='modal-content CardBgMd_txt_BG'>
+          <div class='modal-header border-0'>
+            <h5 class='modal-title font-weight-bold' id='exampleModalLongTitle'>共計2筆投注，投注金額200.00 有效投注
+              100.00<span class='text-theme2'>輸/贏
+                200.00</span>
+            </h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'><i class='fa-solid fa-xmark text-theme fa-lg'></i></span>
+            </button>
+          </div>
+          <div class='modal-body pt-0'>
+            <div class='col-12 mb-3'>
+              <div class='table-responsive py-3 table_set'>
+
+                <table class='table table-striped'>
+                  <thead>
+                    <tr class='text-center'>
+                      <th scope='col'>日期</th>
+                      <th scope='col'>平台</th>
+                      <th scope='col'>投注金額</th>
+                      <th scope='col'>有效投注</th>
+                      <th scope='col'>輸/贏</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>體育遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- 頁碼 -->
+              <div class='text-center p-2'>
+                <div class='btn btn-active'><i class='fas fa-caret-left'></i></div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>1</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>2</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>3</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>4</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>5</div>
+                <div class='btn btn-active'><i class='fas fa-caret-right'></i></div>
+                <style>
+                  .btn-active:hover {
+                    color: #365a97;
+                    border-color: #365a97 !important;
+                    font-size: 1.1rem;
+                  }
+                </style>
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class='modal-footer'>
+                  <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+                  <button type='button' class='btn btn-primary'>Save changes</button>
+                </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- 賓果M -->
+    <div class='modal fade' id='exampleModalCenter13' tabindex='-1' role='dialog'
+      aria-labelledby='exampleModalCenterTitle2' aria-hidden='true'>
+      <div class='modal-dialog modal-dialog-centered modal-lg' role='document'>
+        <div class='modal-content CardBgMd_txt_BG'>
+          <div class='modal-header border-0'>
+            <h5 class='modal-title font-weight-bold' id='exampleModalLongTitle'>共計2筆投注，投注金額200.00 有效投注
+              100.00<span class='text-theme2'>輸/贏
+                200.00</span>
+            </h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'><i class='fa-solid fa-xmark text-theme fa-lg'></i></span>
+            </button>
+          </div>
+          <div class='modal-body pt-0'>
+            <div class='col-12 mb-3'>
+              <div class='table-responsive py-3 table_set'>
+
+                <table class='table table-striped'>
+                  <thead>
+                    <tr class='text-center'>
+                      <th scope='col'>日期</th>
+                      <th scope='col'>平台</th>
+                      <th scope='col'>投注金額</th>
+                      <th scope='col'>有效投注</th>
+                      <th scope='col'>輸/贏</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>賓果/北京賽車</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- 頁碼 -->
+              <div class='text-center p-2'>
+                <div class='btn btn-active'><i class='fas fa-caret-left'></i></div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>1</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>2</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>3</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>4</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>5</div>
+                <div class='btn btn-active'><i class='fas fa-caret-right'></i></div>
+                <style>
+                  .btn-active:hover {
+                    color: #365a97;
+                    border-color: #365a97 !important;
+                    font-size: 1.1rem;
+                  }
+                </style>
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class='modal-footer'>
+              <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+              <button type='button' class='btn btn-primary'>Save changes</button>
+            </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- 電子M -->
+    <div class='modal fade' id='exampleModalCenter14' tabindex='-1' role='dialog'
+      aria-labelledby='exampleModalCenterTitle2' aria-hidden='true'>
+      <div class='modal-dialog modal-dialog-centered modal-lg' role='document'>
+        <div class='modal-content CardBgMd_txt_BG'>
+          <div class='modal-header border-0'>
+            <h5 class='modal-title font-weight-bold' id='exampleModalLongTitle'>共計2筆投注，投注金額200.00 有效投注
+              100.00<span class='text-theme2'>輸/贏
+                200.00</span>
+            </h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'><i class='fa-solid fa-xmark text-theme fa-lg'></i></span>
+            </button>
+          </div>
+          <div class='modal-body pt-0'>
+            <div class='col-12 mb-3'>
+              <div class='table-responsive py-3 table_set'>
+
+                <table class='table table-striped'>
+                  <thead>
+                    <tr class='text-center'>
+                      <th scope='col'>日期</th>
+                      <th scope='col'>平台</th>
+                      <th scope='col'>投注金額</th>
+                      <th scope='col'>有效投注</th>
+                      <th scope='col'>輸/贏</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>電子遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- 頁碼 -->
+              <div class='text-center p-2'>
+                <div class='btn btn-active'><i class='fas fa-caret-left'></i></div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>1</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>2</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>3</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>4</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>5</div>
+                <div class='btn btn-active'><i class='fas fa-caret-right'></i></div>
+                <style>
+                  .btn-active:hover {
+                    color: #365a97;
+                    border-color: #365a97 !important;
+                    font-size: 1.1rem;
+                  }
+                </style>
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class='modal-footer'>
+              <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+              <button type='button' class='btn btn-primary'>Save changes</button>
+            </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- 棋牌M -->
+    <div class='modal fade' id='exampleModalCenter15' tabindex='-1' role='dialog'
+      aria-labelledby='exampleModalCenterTitle2' aria-hidden='true'>
+      <div class='modal-dialog modal-dialog-centered modal-lg' role='document'>
+        <div class='modal-content CardBgMd_txt_BG'>
+          <div class='modal-header border-0'>
+            <h5 class='modal-title font-weight-bold' id='exampleModalLongTitle'>共計2筆投注，投注金額200.00 有效投注
+              100.00<span class='text-theme2'>輸/贏
+                200.00</span>
+            </h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'><i class='fa-solid fa-xmark text-theme fa-lg'></i></span>
+            </button>
+          </div>
+          <div class='modal-body pt-0'>
+            <div class='col-12 mb-3'>
+              <div class='table-responsive py-3 table_set'>
+
+                <table class='table table-striped'>
+                  <thead>
+                    <tr class='text-center'>
+                      <th scope='col'>日期</th>
+                      <th scope='col'>平台</th>
+                      <th scope='col'>投注金額</th>
+                      <th scope='col'>有效投注</th>
+                      <th scope='col'>輸/贏</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>棋牌遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- 頁碼 -->
+              <div class='text-center p-2'>
+                <div class='btn btn-active'><i class='fas fa-caret-left'></i></div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>1</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>2</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>3</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>4</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>5</div>
+                <div class='btn btn-active'><i class='fas fa-caret-right'></i></div>
+                <style>
+                  .btn-active:hover {
+                    color: #365a97;
+                    border-color: #365a97 !important;
+                    font-size: 1.1rem;
+                  }
+                </style>
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class='modal-footer'>
+              <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+              <button type='button' class='btn btn-primary'>Save changes</button>
+            </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- 捕魚M -->
+    <div class='modal fade' id='exampleModalCenter16' tabindex='-1' role='dialog'
+      aria-labelledby='exampleModalCenterTitle2' aria-hidden='true'>
+      <div class='modal-dialog modal-dialog-centered modal-lg' role='document'>
+        <div class='modal-content CardBgMd_txt_BG'>
+          <div class='modal-header border-0'>
+            <h5 class='modal-title font-weight-bold' id='exampleModalLongTitle'>共計2筆投注，投注金額200.00 有效投注
+              100.00<span class='text-theme2'>輸/贏
+                200.00</span>
+            </h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'><i class='fa-solid fa-xmark text-theme fa-lg'></i></span>
+            </button>
+          </div>
+          <div class='modal-body pt-0'>
+            <div class='col-12 mb-3'>
+              <div class='table-responsive py-3 table_set'>
+
+                <table class='table table-striped'>
+                  <thead>
+                    <tr class='text-center'>
+                      <th scope='col'>日期</th>
+                      <th scope='col'>平台</th>
+                      <th scope='col'>投注金額</th>
+                      <th scope='col'>有效投注</th>
+                      <th scope='col'>輸/贏</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+                    <tr class='text-center text-secondary'>
+                      <th>2022-04-21</th>
+                      <td>捕魚遊戲</td>
+                      <td>100.00</td>
+                      <td>100.00</td>
+                      <td class='text-theme2'>100.00</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- 頁碼 -->
+              <div class='text-center p-2'>
+                <div class='btn btn-active'><i class='fas fa-caret-left'></i></div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>1</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>2</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>3</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>4</div>
+                <div class='btn btn-active btn-sm border-secondary mx-1'>5</div>
+                <div class='btn btn-active'><i class='fas fa-caret-right'></i></div>
+                <style>
+                  .btn-active:hover {
+                    color: #365a97;
+                    border-color: #365a97 !important;
+                    font-size: 1.1rem;
+                  }
+                </style>
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class='modal-footer'>
+              <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+              <button type='button' class='btn btn-primary'>Save changes</button>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- MD history.back ------------------------------------------------------------------------>
   <div class="container-fluid p-0 m-0 d-md-none bg-light px-3 uk-position-relative">
     <div class="row pb-5">
@@ -387,10 +1932,88 @@
     });
   </script>
 
+
+  <script>
+    $(document).ready(function () {
+      let title = $('title').text();
+      $('#copyTitle').html(title);
+
+      // UK switch ul 對切
+      // 如要做切換請搜MMC
+      // $(".bettingHistory").click(function () {
+      //   $(".bettingHistoryPage").addClass('uk-active');
+      // });
+      // $(".bettingHistoryPage").click(function () {
+      //   $("#bettingHistoryPage").addClass("d-none");
+      //   $("#bettingHistory").removeClass('d-none');
+      // });
+
+      // $('#dropdown_menu').hide();
+      // $(".dropdown_menu").click(function () {
+      //   $('#dropdown_menu').toggle();
+      // });
+
+      $("#changePassword_show").hide();
+      $("#changePassword").click(function () {
+        $("#changePassword_show").show();
+        $("#changePassword_hide").hide();
+      })
+
+      // vipBtn
+      $("#vipPage").hide();
+      $("#vipBtn").click(function () {
+        $("#vipPage").show();
+        $("#vip").hide();
+      });
+      $("#vipBtn2").click(function () {
+        $("#vip").show();
+        $("#vipPage").hide();
+      });
+
+      // bettingHistory1
+      bettingHistoryParent1 = $(".bettingHistoryParent1");
+      bettingHistoryParent1.children().next().hide();
+      // bettingHistory2
+      bettingHistoryParent2 = $(".bettingHistoryParent2");
+      bettingHistoryParent2.children().next().hide();
+      // bettingHistory3
+      bettingHistoryParent3 = $(".bettingHistoryParent3");
+      bettingHistoryParent3.children().next().hide();
+      // bettingHistory4
+      bettingHistoryParent4 = $(".bettingHistoryParent4");
+      bettingHistoryParent4.children().next().hide();
+
+      // AccountNanagement AccountNanagement2Btn
+      $("#AccountNanagement1,#AccountNanagement2").hide();
+      $("#AccountNanagement1Btn").click(function () {
+        $("#AccountNanagement1").show();
+        $("#AccountNanagement").hide();
+      });
+      $("#AccountNanagement2Btn").click(function () {
+        $("#AccountNanagement2").show();
+        $("#AccountNanagement").hide();
+      });
+      $(".AccountNanagementBtn").click(function () {
+        $("#AccountNanagement1,#AccountNanagement2").hide();
+        $("#AccountNanagement").show();
+      });
+    });
+
+    //
+    // function bettingHistory(data) {
+    //   if (data == 'person') {
+    //     console.log('person');
+    //   } else {
+    //     console.log('sport');
+    //   }
+    // }
+  </script>
+
   <!-- Footer -->
   <script>PCFooter();</script>
   <script>MDFooter();</script>
 
+  <script src="../js/filter.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
