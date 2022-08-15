@@ -1569,7 +1569,8 @@
               <div class="row justify-content-center bg-light px-0">
                 <div class="col">
                   <div class="row m-0 p-0">
-                    <div class="col-12 d-flex justify-content-between py-0 px-1 border-bottom" v-for="item in items">
+                    <div class="col-12 d-flex justify-content-between py-0 px-1 border-bottom" v-for="item in items"
+                      onclick="text(elem)">
                       <p class="text-left col p-0 fsz09">{{ item.message }}</p>
                       <p class="text-theme2 text-right col p-0 ">{{ item.money }}</p>
                     </div>
@@ -1643,7 +1644,14 @@
           { message: 'SP捕魚', money: '0' },
           { message: '必贏捕魚', money: '0' },
         ],
-      }
+      },
+      watch: {
+        text(elem) {
+          // var elem_child = elem.childNodes.value;
+          // var elem_child = elem.childNodes;
+          // console.log(elem_child);
+        }
+      },
     })
   </script>
 
