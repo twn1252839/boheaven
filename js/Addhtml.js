@@ -370,7 +370,7 @@ function PageHeader() {
   );
   document.writeln("    </button>");
   document.writeln(
-    "    <a href='../page/MyPurse.html' class='uk-button bg-transparent  centerCenter px-0 py-1'>"
+    "    <a href='../page/HelpCenter.html' class='uk-button bg-transparent  centerCenter px-0 py-1'>"
   );
   document.writeln(
     "      <img src='../img/桌機index_img/2help.png' class='img-fluid' alt=''>"
@@ -754,7 +754,7 @@ function PageHeader2() {
   );
   document.writeln("    </button>");
   document.writeln(
-    "    <a href='../page/MyPurse.html' class='uk-button bg-transparent  centerCenter px-0 py-1'>"
+    "    <a href='../page/HelpCenter.html' class='uk-button bg-transparent  centerCenter px-0 py-1'>"
   );
   document.writeln(
     "      <img src='../img/桌機index_img/2help.png' class='img-fluid' alt=''>"
@@ -15714,5 +15714,921 @@ function table() {
   document.writeln("      </table>");
 }
 
-// 登入頁面 Footer
-function indexLoginFooter() {}
+// 登入頁面
+function indexLogin() {
+  document.writeln("<!-- 右側中 -->");
+  document.writeln(
+    "  <div class='uk-position-fixed uk-position-center-right btn-fixed d-none d-md-block'"
+  );
+  document.writeln(
+    "    style='width: 5rem; height: auto;margin-top: -50px;z-index: 99999999999;'>"
+  );
+  document.writeln(
+    "    <button type='button' class='uk-button bg-transparent  centerCenter px-0 py-1' data-toggle='modal'"
+  );
+  document.writeln("      data-target='#exampleModalCenter2'>");
+  document.writeln(
+    "      <img src='../img/桌機index_img/0service.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("    </button>");
+  document.writeln(
+    "    <a href='../page/MyPurse.html' class='uk-button bg-transparent  centerCenter px-0 py-1'>"
+  );
+  document.writeln(
+    "      <img src='../img/桌機index_img/2help.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("    </a>");
+  document.writeln(
+    "    <a href='../header page/3FAQ.html' class='uk-button bg-transparent  centerCenter px-0 py-1'>"
+  );
+  document.writeln(
+    "      <img src='../img/桌機index_img/1announcement.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("    </a>");
+  document.writeln("  </div>");
+  document.writeln("<div class='position-fixed fixed-top'>");
+  document.writeln("    <!--  -->");
+  document.writeln(
+    "    <div class='container-fluid d-none d-md-block p-0 bg-theme3'>"
+  );
+  document.writeln("      <div class='container-lg clearfix'>");
+  document.writeln(
+    "        <div class='row m-0 p-0 text-right float-right align-items-center'>"
+  );
+  document.writeln(
+    "          <a href='../page/MyPursePage.html' class='col m-0 p-0 px-2'>"
+  );
+  document.writeln(
+    "            <img src='../img/桌機index_img/header/1.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("            <span class='text-white'>我的錢包</span>");
+  document.writeln("          </a>");
+  document.writeln(
+    "          <a href='../page/bettingHistory.html' class='col m-0 p-0 px-2'>"
+  );
+  document.writeln(
+    "            <img src='../img/桌機index_img/header/2.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("            <span class='text-white'>投注紀錄</span>");
+  document.writeln("          </a>");
+  document.writeln(
+    "          <a href='../page/transactionRecord.html' class='col m-0 p-0 px-2'>"
+  );
+  document.writeln(
+    "            <img src='../img/桌機index_img/header/3.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("            <span class='text-white'>交易紀錄</span>");
+  document.writeln("          </a>");
+  document.writeln(
+    "          <a href='../page/AccountManagement.html' class='col m-0 p-0 px-2'>"
+  );
+  document.writeln(
+    "            <img src='../img/桌機index_img/header/4.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("            <span class='text-white'>帳戶管理</span>");
+  document.writeln("          </a>");
+  document.writeln(
+    "          <a href='../page/personalInformation.html' class='col m-0 p-0 px-2'>"
+  );
+  document.writeln(
+    "            <img src='../img/桌機index_img/header/5.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("            <span class='text-white'>會員中心</span>");
+  document.writeln("          </a>");
+  document.writeln(
+    "          <a href='../header page/3FAQ.html' class=''><img class='img-fluid pl-5' src='../img/桌機index_img/header/7.png'"
+  );
+  document.writeln("              alt=''></a>");
+  document.writeln("          <a href='../index.html'");
+  document.writeln(
+    "            class=' m-0 p-0 text-white border border-white rounded px-2 mx-2 my-1 text-decoration-none'>"
+  );
+  document.writeln(
+    "            <!-- <img src='../img/桌機index_img/header/6.png' class='img-fluid pl-2' alt=''> -->"
+  );
+  document.writeln("            登出");
+  document.writeln("          </a>");
+  document.writeln("");
+  document.writeln("        </div>");
+  document.writeln("      </div>");
+  document.writeln("    </div>");
+  document.writeln("    <!-- login ------------------------------------>");
+  document.writeln(
+    "    <div class='container-fluid  d-none d-md-block p-0 bg-gradient-theme uk-position-relative'>"
+  );
+  document.writeln("      <div class='container-lg'>");
+  document.writeln("        <div class='row align-items-center'>");
+  document.writeln(
+    "          <a href='../index.html' class='col-2 px-0 text-center'>"
+  );
+  document.writeln(
+    "            <img src='../img/桌機index_img/logo.png' class='img-fluid px-2' alt=''>"
+  );
+  document.writeln("          </a>");
+  document.writeln(
+    "          <div class='col-6 px-0 d-inline-flex align-items-center'>"
+  );
+  document.writeln("            <div class='btn-group'>");
+  document.writeln("              <div class='btn py-0 px-1 px-lg-2 my-auto'>");
+  document.writeln("                <p class='font_b line_ss'>");
+  document.writeln("                  首頁");
+  document.writeln("                </p>");
+  document.writeln("              </div>");
+  document.writeln(
+    "              <div class='btn py-0 px-1 px-lg-2 my-auto hoverList '>"
+  );
+  document.writeln("                <!-- 使用藍底線 -->");
+  document.writeln("                <!-- <p class='line_ss'>");
+  document.writeln("                          真人");
+  document.writeln(
+    "                          <img src='../img/桌機index_img/headerArrow.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                        </p> -->");
+  document.writeln("                <span>真人</span>");
+  document.writeln(
+    "                <img src='../img/桌機index_img/headerArrow.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("              </div>");
+  document.writeln(
+    "              <div class='btn py-0 px-1 px-lg-2 my-auto hoverList'>"
+  );
+  document.writeln("                <span>體育</span>");
+  document.writeln(
+    "                <img src='../img/桌機index_img/headerArrow.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("              </div>");
+  document.writeln(
+    "              <div class='btn py-0 px-1 px-lg-2 my-auto hoverList'>"
+  );
+  document.writeln("                <span>賓果</span>");
+  document.writeln(
+    "                <img src='../img/桌機index_img/headerArrow.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("              </div>");
+  document.writeln(
+    "              <div class='btn py-0 px-1 px-lg-2 my-auto hoverList'>"
+  );
+  document.writeln("                <span>電子</span>");
+  document.writeln(
+    "                <img src='../img/桌機index_img/headerArrow.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("              </div>");
+  document.writeln(
+    "              <div class='btn py-0 px-1 px-lg-2 my-auto hoverList'>"
+  );
+  document.writeln("                <span>棋牌</span>");
+  document.writeln(
+    "                <img src='../img/桌機index_img/headerArrow.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("              </div>");
+  document.writeln(
+    "              <div class='btn py-0 px-1 px-lg-2 my-auto hoverList'>"
+  );
+  document.writeln("                <span>捕魚</span>");
+  document.writeln(
+    "                <img src='../img/桌機index_img/headerArrow.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("              </div>");
+  document.writeln(
+    "              <a href='../page/Promotion.html' class='btn py-0 px-1 px-lg-2 my-auto hoverList'>"
+  );
+  document.writeln("                <span>優惠</span>");
+  document.writeln(
+    "                <img src='../img/桌機index_img/headerArrow.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("              </a>");
+  document.writeln("            </div>");
+  document.writeln("          </div>");
+  document.writeln("          <div class='col-4 px-0' id='drw'>");
+  document.writeln("");
+  document.writeln(
+    "            <div class='row btn-group centerCenter p-0 m-0'>"
+  );
+  document.writeln("              <div class='col-5 p-0 d-flex pr-2'>");
+  document.writeln(
+    "                <a href='../page/deposit.html' class='centerCenter px-0'>"
+  );
+  document.writeln(
+    "                  <img src='../img/桌機index_img/header/9.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                </a>");
+  document.writeln(
+    "                <a href='../page/withdrawal.html' class='centerCenter px-0'>"
+  );
+  document.writeln(
+    "                  <img src='../img/桌機index_img/header/10.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                </a>");
+  document.writeln(
+    "                <a href='../page/PlatformTransfer.html' class='centerCenter px-0'>"
+  );
+  document.writeln(
+    "                  <img src='../img/桌機index_img/header/11.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                </a>");
+  document.writeln("              </div>");
+  document.writeln("              <div class='col-2 p-0'>");
+  document.writeln(
+    "                <img src='../img/桌機index_img/user.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("              </div>");
+  document.writeln(
+    "              <div class='col-5 p-0 pl-2' style='line-height: .6rem;'>"
+  );
+  document.writeln("                <div class='d-flex align-items-center'>");
+  document.writeln(
+    "                  <img src='../img/手機index_img/V1_1.png' class='img-fluid pl-1' alt=''>"
+  );
+  document.writeln("                  <p class=''>0987123654</p>");
+  document.writeln("                </div>");
+  document.writeln(
+    "                <img src='../img/桌機index_img/header/8.png' class='img-fluid cursor_pointer' alt=''>"
+  );
+  document.writeln(
+    "                <button class='uk-button bg-transparent p-0 m-0'><span class=''>$3,000.00</span><i"
+  );
+  document.writeln(
+    "                    class='fa-solid fa-angle-down pl-1'></i></button>"
+  );
+  document.writeln("                <!-- MMC -->");
+  document.writeln(
+    "                <div uk-dropdown='mode: click;pos: bottom-center;' class='py-1 px-3 m-0 pb-3 dropdown-toggle arrow_up1'"
+  );
+  document.writeln(
+    "                  style='background-color: rgba(0, 0, 0, 0.8); width: 16vw;z-index: 99999999999;'>"
+  );
+  document.writeln("                  <style>");
+  document.writeln("                    .arrow_up1:before {");
+  document.writeln(
+    "                      border-bottom: .5rem solid rgba(0, 0, 0, .8);"
+  );
+  document.writeln(
+    "                      border-left: .35rem solid transparent;"
+  );
+  document.writeln(
+    "                      border-right: .35rem solid transparent;"
+  );
+  document.writeln("                      content: '';");
+  document.writeln("                      position: absolute;");
+  document.writeln("                      right: 3.95rem;");
+  document.writeln("                      top: -.5rem;");
+  document.writeln("                    }");
+  document.writeln("                  </style>");
+  document.writeln("                  <!-- MMC -->");
+  document.writeln(
+    "                  <div class=' py-3' style='height: 250px;overflow-y: scroll;overflow-x: hidden;'>"
+  );
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>DG真人</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>歐博真人</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>SA真人</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>WM真人</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>OB真人</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>OG真人</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>SUPER體育</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>OB體育</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>SUPER彩票</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>9K彩票</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>DT電子</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>SP電子</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>RTG電子</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>BNG電子</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>必贏電子</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>PLAY電子</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>博樂棋牌</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>OB棋牌</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light border-bottom border-secondary'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>SP捕魚</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='row px-3 py-1 text-light'>"
+  );
+  document.writeln(
+    "                      <div class='col px-0 border-right border-secondary py-0'>必贏捕魚</div>"
+  );
+  document.writeln(
+    "                      <div class='col pl-2 text-theme5'>0</div>"
+  );
+  document.writeln("                    </div>");
+  document.writeln("                  </div>");
+  document.writeln(
+    "                  <div class='row pt-3 border-top border-secondary'>"
+  );
+  document.writeln(
+    "                    <div class='col text-right pl-2 text-theme5'>總額度:3,000.00</div>"
+  );
+  document.writeln("                  </div>");
+  document.writeln(
+    "                  <button class='btn bg-theme3 rounded rounded-pill py-1 my-1 btn-block text-light'>"
+  );
+  document.writeln("                    一鍵轉回");
+  document.writeln("                  </button>");
+  document.writeln("                </div>");
+  document.writeln("                <!-- index 舊的 dropdown 3,000 -->");
+  document.writeln(
+    "                <!-- <div uk-dropdown='mode: click;pos: bottom-center;' class='py-1 px-0 m-0 pb-3 arrow_up1 bg-theme'"
+  );
+  document.writeln(
+    "                  style='width: 250px;z-index: 99999999999;' id='UkBgc'>"
+  );
+  document.writeln("                  <style>");
+  document.writeln("                    .arrow_up1:before {");
+  document.writeln("                      border-bottom: .5rem solid #f1f8ff;");
+  document.writeln(
+    "                      border-left: .35rem solid transparent;"
+  );
+  document.writeln(
+    "                      border-right: .35rem solid transparent;"
+  );
+  document.writeln("                      content: '';");
+  document.writeln("                      position: absolute;");
+  document.writeln("                      right: 3.95rem;");
+  document.writeln("                      top: -.5rem;");
+  document.writeln("                    }");
+  document.writeln("                  </style>");
+  document.writeln("                  <div class='row px-1 m-0'>");
+  document.writeln(
+    "                    <a href='../page/MyPurse.html' class='col centerCenter'>"
+  );
+  document.writeln(
+    "                      <img src='../img/桌機index_img/list/clickList/a1.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    </a>");
+  document.writeln(
+    "                    <a href='../page/MyPurse.html' class='col centerCenter'>"
+  );
+  document.writeln(
+    "                      <img src='../img/桌機index_img/list/clickList/a2.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    </a>");
+  document.writeln(
+    "                    <a href='../page/MyPurse.html' class='col centerCenter'>"
+  );
+  document.writeln(
+    "                      <img src='../img/桌機index_img/list/clickList/a3.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    </a>");
+  document.writeln("                  </div>");
+  document.writeln(
+    "                  <a href='../page/MyPurse.html' class=' dropdown-item px-3 fsz-12' type='button'>"
+  );
+  document.writeln(
+    "                    <img src='../img/桌機index_img/list/clickList/PC/1.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    個人資料");
+  document.writeln("                  </a>");
+  document.writeln(
+    "                  <a href='../page/MyPurse.html' class=' dropdown-item px-3 fsz-12' type='button'>"
+  );
+  document.writeln(
+    "                    <img src='../img/桌機index_img/list/clickList/PC/2.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    VIP特權");
+  document.writeln("                  </a>");
+  document.writeln(
+    "                  <a href='../page/MyPurse.html' class=' dropdown-item px-3 fsz-12' type='button'>"
+  );
+  document.writeln(
+    "                    <img src='../img/桌機index_img/list/clickList/PC/3.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    優惠達標查詢");
+  document.writeln("                  </a>");
+  document.writeln(
+    "                  <a href='../page/MyPurse.html' class=' dropdown-item px-3 fsz-12' type='button'>"
+  );
+  document.writeln(
+    "                    <img src='../img/桌機index_img/list/clickList/PC/4.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    投注紀錄");
+  document.writeln("                  </a>");
+  document.writeln(
+    "                  <a href='../page/MyPurse.html' class=' dropdown-item px-3 fsz-12' type='button'>"
+  );
+  document.writeln(
+    "                    <img src='../img/桌機index_img/list/clickList/PC/5.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    交易紀錄");
+  document.writeln("                  </a>");
+  document.writeln(
+    "                  <a href='../page/MyPurse.html' class=' dropdown-item px-3 fsz-12' type='button'>"
+  );
+  document.writeln(
+    "                    <img src='../img/桌機index_img/list/clickList/PC/6.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    帳戶管理");
+  document.writeln("                  </a>");
+  document.writeln(
+    "                  <a href='../page/inviteFriends.html' class=' dropdown-item px-3 fsz-12' type='button'>"
+  );
+  document.writeln(
+    "                    <img src='../img/桌機index_img/list/clickList/PC/7.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    邀請好友");
+  document.writeln("                  </a>");
+  document.writeln(
+    "                  <a href='../page/MyPurse.html' class='dropdown-item px-3 fsz-12 list-inline' type='button'>"
+  );
+  document.writeln("                    <div class='list-inline-item'>");
+  document.writeln(
+    "                      <img src='../img/桌機index_img/list/clickList/PC/8.png' class='img-fluid' alt=''>"
+  );
+  document.writeln("                    </div>");
+  document.writeln(
+    "                    <div class='list-inline-item' style='line-height: .6rem;'>"
+  );
+  document.writeln("                      <p class='py-0'>幫助中心</p>");
+  document.writeln(
+    "                      <p class='fsz-08 py-0 list-inline-item'>(存款、提款、投注)</p>"
+  );
+  document.writeln("                    </div>");
+  document.writeln("                  </a>");
+  document.writeln("                  <a href='../index.html'");
+  document.writeln(
+    "                    class='d-flex bg-theme2-hover  border btn px-3 my-3 py-0 w-75 justify-content-center mx-auto rounded-pill bd-theme text-theme'"
+  );
+  document.writeln("                    style='border-width: 5rem;'>");
+  document.writeln("                    <p class='px-3 text-center'>登出</p>");
+  document.writeln("                  </a>");
+  document.writeln("                </div> -->");
+  document.writeln("              </div>");
+  document.writeln("            </div>");
+  document.writeln("          </div>");
+  document.writeln("        </div>");
+  document.writeln("      </div>");
+  document.writeln("");
+  document.writeln("      <!-- hoveList -->");
+  document.writeln(
+    "      <div class='p-0' style='background-color: rgba(255, 255, 255, 0.5);'>"
+  );
+  document.writeln("        <div class='container-lg'>");
+  document.writeln(
+    "          <!--  <div class='row px-5 py-3 hoverListIItem uk-position-fixed uk-position-top-center bg-light'"
+  );
+  document.writeln(
+    "                                style='top: 65px;z-index: 999999999999999999999;'> -->"
+  );
+  document.writeln("          <div class='row px-5 hoverListIItem'>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/baccarat/10035.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/baccarat/10036.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/baccarat/10037.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/baccarat/10038.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/baccarat/10039.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/baccarat/10040.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln("          </div>");
+  document.writeln("          <div class='row px-5 hoverListIItem'>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/sport/1.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/sport/2.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln("          </div>");
+  document.writeln("          <div class='row px-5 hoverListIItem'>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/bingo/1.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/bingo/2.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln("          </div>");
+  document.writeln("          <div class='row px-5 py-3 hoverListIItem'>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/slot/1.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/slot/2.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/slot/3.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/slot/4.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/slot/5.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/slot/6.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln("          </div>");
+  document.writeln("          <div class='row px-5 hoverListIItem'>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/card/1.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/card/2.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln("          </div>");
+  document.writeln("          <div class='row px-5 hoverListIItem'>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/fish/1.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln(
+    "            <button class='uk-button bg-transparent py-1 px-2 col centerCenter' data-toggle='modal'"
+  );
+  document.writeln("              data-target='#exampleModalCenter'>");
+  document.writeln(
+    "              <img src='../img/桌機index_img/list/fish/2.png' class='' alt=''>"
+  );
+  document.writeln("            </button>");
+  document.writeln("          </div>");
+  document.writeln("        </div>");
+  document.writeln("      </div>");
+  document.writeln("    </div>");
+  document.writeln("");
+  document.writeln("    <!--  uk-position-relative -->");
+  document.writeln(
+    "    <div class='container-fluid p-0 m-0 bgc-body-color d-none d-md-block marquee_bg border'>"
+  );
+  document.writeln("      <div class='container bgc-flex'>");
+  document.writeln("        <div class='row p-0 m-0'>");
+  document.writeln(
+    "          <div class='text-center' style='padding-top: 0.1em;width: 12%;'>"
+  );
+  document.writeln("            <img");
+  document.writeln(
+    "              src='data:image/png;base64,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'"
+  );
+  document.writeln("              alt='...'>");
+  document.writeln(
+    "            <span class='font-weight-bold pl-1'>最新公告</span>"
+  );
+  document.writeln("          </div>");
+  document.writeln("          <div class='' style='width: 80%;'>");
+  document.writeln(
+    "            <marquee direction='left' height='30' scrollamount='10' behavior='left' class=' h-100 pt-1'"
+  );
+  document.writeln(
+    "              onmouseover='this.stop()' onmouseout='this.start()'>"
+  );
+  document.writeln(
+    "              【維護公告0】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】"
+  );
+  document.writeln(
+    "              開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】"
+  );
+  document.writeln(
+    "              敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】"
+  );
+  document.writeln(
+    "              親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】"
+  );
+  document.writeln(
+    "              親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。"
+  );
+  document.writeln("            </marquee>");
+  document.writeln("          </div>");
+  document.writeln("        </div>");
+  document.writeln("      </div>");
+  document.writeln("    </div>");
+  document.writeln("");
+  document.writeln("  </div>");
+  document.writeln(
+    "  <div class=' d-none d-md-block' style='margin-top: 130px;'></div>"
+  );
+  document.writeln("");
+}
+
+// 0service
+function service() { 
+  document.writeln("<!-- 0service Modal -->");
+  document.writeln(
+    "  <div class='modal fade' id='exampleModalCenter2' tabindex='-1' role='dialog'"
+  );
+  document.writeln(
+    "    aria-labelledby='exampleModalCenterTitle2' aria-hidden='true'>"
+  );
+  document.writeln(
+    "    <div class='modal-dialog modal-dialog-centered' role='document'>"
+  );
+  document.writeln("      <div class='modal-content'>");
+  document.writeln("        <div class='modal-header border-0'>");
+  document.writeln(
+    "          <h5 class='modal-title h5 text-theme font-weight-bold' id='exampleModalLongTitle'>聯絡我們"
+  );
+  document.writeln("          </h5>");
+  document.writeln(
+    "          <button type='button' class='close' data-dismiss='modal' aria-label='Close'>"
+  );
+  document.writeln(
+    "            <span aria-hidden='true'><i class='fa-solid fa-xmark text-theme fa-lg'></i></span>"
+  );
+  document.writeln("          </button>");
+  document.writeln("        </div>");
+  document.writeln("        <div class='modal-body pt-0'>");
+  document.writeln("          <!-- 雙直btn -->");
+  document.writeln("          <div class=' py-2'>");
+  document.writeln(
+    "            <a type='button' class='uk-button bg-transparent p-0'>"
+  );
+  document.writeln(
+    "              <img src='../img/桌機index_img/Frame 554.png' class='img-fluid' alt='...'>"
+  );
+  document.writeln("            </a>");
+  document.writeln("          </div>");
+  document.writeln("          <div class=' py-2'>");
+  document.writeln(
+    "            <a type='button' class='uk-button bg-transparent p-0'>"
+  );
+  document.writeln(
+    "              <img src='../img/桌機index_img/Frame 555.png' class='img-fluid' alt='...'>"
+  );
+  document.writeln("            </a>");
+  document.writeln("          </div>");
+  document.writeln("          <div class=' py-2'>");
+  document.writeln(
+    "            <a href='../page/Feedback.html' class='uk-button bg-transparent p-0'>"
+  );
+  document.writeln(
+    "              <img src='../img/桌機index_img/Frame 556.png' class='img-fluid' alt='...'>"
+  );
+  document.writeln("            </a>");
+  document.writeln("          </div>");
+  document.writeln("        </div>");
+  document.writeln("        <!-- <div class='modal-footer'>");
+  document.writeln(
+    "                <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>"
+  );
+  document.writeln(
+    "                <button type='button' class='btn btn-primary'>Save changes</button>"
+  );
+  document.writeln("              </div> -->");
+  document.writeln("      </div>");
+  document.writeln("    </div>");
+  document.writeln("  </div>");
+}
