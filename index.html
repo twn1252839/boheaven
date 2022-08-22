@@ -379,7 +379,8 @@
               <div class="swiper-slide bg-transparent">
                 <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
                   data-target="#exampleModalCenter">
-                  <img src="./img/桌機index_img/GAME/gameList/gameItem/1/1.png" alt="" class="img-fluid">
+                  <img src="./img/桌機index_img/GAME/gameList/gameItem/1/1.png" alt="" class="img-fluid imgName" name=""
+                    value="WM真人">
                 </button>
               </div>
               <div class="swiper-slide bg-transparent">
@@ -1745,7 +1746,7 @@
             </div>
             <div class="col-5 px-2">
               <div class="bg-theme2 rounded centerCenter py-3">
-                <p class="centerCenter">DG真人</p>
+                <p class="centerCenter textChange">DG真人</p>
                 <p class="centerCenter text-theme font-weight-bold">$0.00</p>
               </div>
             </div>
@@ -1993,7 +1994,11 @@
   <!-- 滾動選軸 -->
   <script>
     $(document).ready(function () {
-
+      $('.imgName').click(function () {
+        $text = $(this).attr('value');
+        // $textChange = $('.textChange').text($text);
+        console.log($text);
+      });
 
       $("#arrowDownList").hide();
       // 最上方隱藏
