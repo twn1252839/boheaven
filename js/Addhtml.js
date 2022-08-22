@@ -15716,6 +15716,7 @@ function table() {
 
 // 登入頁面
 function indexLogin() {
+  document.writeln("  <link rel='stylesheet' href='../css/scrollbar.css'>");
   document.writeln("<!-- 右側中 -->");
   document.writeln(
     "  <div class='uk-position-fixed uk-position-center-right btn-fixed d-none d-md-block'"
@@ -15732,7 +15733,7 @@ function indexLogin() {
   );
   document.writeln("    </button>");
   document.writeln(
-    "    <a href='../page/MyPurse.html' class='uk-button bg-transparent  centerCenter px-0 py-1'>"
+    "    <a href='../page/HelpCenter.html' class='uk-button bg-transparent  centerCenter px-0 py-1'>"
   );
   document.writeln(
     "      <img src='../img/桌機index_img/2help.png' class='img-fluid' alt=''>"
