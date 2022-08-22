@@ -1468,95 +1468,89 @@
   </div>
 
   <!-- MD history.back ------------------------------------------------------------------------>
-  <div class="container-fluid p-0 m-0 d-md-none bg-light px-3 uk-position-relative">
+  <div class="container-fluid p-0 m-0 d-md-none bg-linear-theme px-3 min-vh-100">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 bg-white">
         <button class="btn py-0 uk-position-absolute uk-position-left" type="button" onclick="history.back()"
           value="回到上一頁">
           <i class="fa-solid fa-caret-left fa-lg"></i>
         </button>
-        <p class="text-center font-weight-bold h5 py-2">平台轉帳</p>
+        <p class="text-center font-weight-bold h5 py-2">平台轉點</p>
       </div>
-      <div class="col-12 bg-linear-theme py-1 px-0  min-vh-100">
+      <div class="col-12 py-1 px-0">
         <!-- 框字幕 -->
         <div class="bg-light px-3 rounded border">
           <div class="row">
-            <div class="col-12 font-weight-bold border-bottom py-3"><span class="pr-3">總額度</span><span
+            <div class="col-12 bg-white font-weight-bold border-bottom py-3"><span class="pr-3">總額度</span><span
                 class="green_txt">1,500</span></div>
-            <div class="col-12 font-weight-bold border-bottom py-3 clearfix"><span class="pr-3">轉出帳戶</span><span
-                class="">主帳戶</span>
-              <button type="button" class="btn p-0 bg-transparent float-right" data-toggle="modal"
-                data-target="#exampleModalCenter">
-                <span class="text-right">0<i class="fa-solid fa-sort-down pl-2 text-secondary"
+            <button type="button" class="col-12 uk-button bg-white py-0 px-3  border-bottom clearfix"
+              data-toggle="modal" data-target="#exampleModalCenter">
+              <div class="font-weight-bold py-3"><span class="pr-3">轉出帳戶</span><span class="text-theme">主帳戶</span>
+                <span class="text-right float-right">0<i class="fa-solid fa-sort-down pl-2 text-secondary"
                     style="margin-top: -10px;"></i></span>
-              </button>
+            </button>
+            <button type="button" class="col-12 uk-button bg-white py-0 px-3  border-bottom clearfix"
+              data-toggle="modal" data-target="#exampleModalCenter">
+              <div class="font-weight-bold py-3"><span class="pr-3">轉入帳戶</span><span class="text-theme">DG真人</span>
+                <span class="text-right float-right">0<i class="fa-solid fa-sort-down pl-2 text-secondary"
+                    style="margin-top: -10px;"></i></span>
+            </button>
 
-            </div>
-            <div class="col-12 font-weight-bold py-3 clearfix">
-              <span class="pr-3">轉入帳戶</span><span class="text-theme">DG真人</span>
-              <button type="button" class="btn p-0 bg-transparent float-right" data-toggle="modal"
-                data-target="#exampleModalCenter">
-                <span class="text-right">0<i class="fa-solid fa-sort-down pl-2 text-secondary"
-                    style="margin-top: -10px;"></i></span>
-              </button>
-            </div>
           </div>
         </div>
-        <div class="bg-light px-3 py-3 my-3 rounded border">
-          <div class="row">
-            <div class="col-12 font-weight-bold"><span class="pr-3">總額度</span><span class="text-black-50">請輸入金額</span>
-            </div>
-          </div>
-        </div>
-        <div class="row px-3">
-          <div class="col-6 p-0 text-center">
-            <button class="btn bg-transparent bd-theme w-85 py-3">一鍵轉回主帳戶</button>
-          </div>
-          <div class="col-6 p-0 text-center">
-            <button class="btn bg-theme3 text-light w-85 py-3">送出</button>
-          </div>
+        <div class="col-12 font-weight-bold border-bottom bg-white mt-3 border">
+          <span class="pr-3">總額度</span><input class="py-3 pl-3" type="text" placeholder="請輸入金額">
         </div>
       </div>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog uk-position-bottom h-75" role="document">
-          <div class="modal-content bg-theme" id="v-for-array">
-            <div class="modal-header border-bottom-0 py-1">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-            <div class="modal-body pt-0">
-              <div class="row centerCenter">
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col pl-2">
-                      <p class="text-left fsz-12">帳戶選擇</p>
-                    </div>
-                    <div class="col text-right">
-                      <button class="btn bg-theme3 text-light rounded rounded-pill px-4 py-0">完成
-                      </button>
-                    </div>
+    </div>
+    <div class="row p-3">
+      <div class="col p-0 centerCenter">
+        <button class="btn bg-transparent centerCenter btn-block bd-theme w-85 py-3">一鍵轉回主帳戶</button>
+      </div>
+      <div class="col p-0 centerCenter">
+        <button class="btn bg-theme3 centerCenter text-light w-85 py-3">送出</button>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog uk-position-bottom h-75" role="document">
+        <div class="modal-content bg-theme" id="v-for-array">
+          <div class="modal-header border-bottom-0 py-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body pt-0">
+            <div class="row centerCenter">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col pl-2">
+                    <p class="text-left fsz-12">帳戶選擇</p>
                   </div>
-                </div>
-                <div class="col-12 py-2">
-                  <div class="row px-0">
-                    <div class="col-5 px-2 centerCenter py-1 d-flex justify-content-between bg-light border">
-                      <p class="text-left col p-0">主帳戶</p>
-                      <p class="text-theme2 text-right col p-0">1,500</p>
-                    </div>
-                    <div class="col centerCenter">
-                      <img class="img-fluid" src="../img/手機各分頁img/mypurse/Group 156.png" alt="">
-                    </div>
-                    <div class="col-5 px-2 centerCenter py-1 d-flex justify-content-between bg-light border">
-                      <p class="text-left col p-0">DG真人</p>
-                      <p class="text-theme2 text-right col p-0">0</p>
-                    </div>
+                  <div class="col text-right">
+                    <button class="btn bg-theme3 text-light rounded rounded-pill px-4 py-0">完成
+                    </button>
                   </div>
                 </div>
               </div>
-              <!-- <div class="row centerCenter bg-light px-0">
+              <div class="col-12 py-2">
+                <div class="row px-0">
+                  <div class="col-5 px-2 centerCenter py-1 d-flex justify-content-between bg-light border">
+                    <p class="text-left col p-0">主帳戶</p>
+                    <p class="text-theme2 text-right col p-0">1,500</p>
+                  </div>
+                  <div class="col centerCenter">
+                    <img class="img-fluid" src="../img/手機各分頁img/mypurse/Group 156.png" alt="">
+                  </div>
+                  <div class="col-5 px-2 centerCenter py-1 d-flex justify-content-between bg-light border">
+                    <p class="text-left col p-0 textChange">DG真人</p>
+                    <p class="text-theme2 text-right col p-0">0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row centerCenter bg-light px-0">
                   <div class="col d-flex justify-content-between py-0 px-1 border-bottom" v-for="item in items">
                     <p class="text-left col p-0 ">{{ item.message }}</p>
                     <p class="text-theme2 text-right col p-0 ">{{ item.money }}</p>
@@ -1566,22 +1560,20 @@
                     <p class="text-theme2 text-right col p-0">{{ item.money }}</p>
                   </div>
                 </div> -->
-              <div class="row justify-content-center bg-light px-0">
-                <div class="col">
-                  <div class="row m-0 p-0">
-                    <div class="col-12 d-flex justify-content-between py-0 px-1 border-bottom" v-for="item in items"
-                      onclick="text(elem)">
-                      <p class="text-left col p-0 fsz09">{{ item.message }}</p>
-                      <p class="text-theme2 text-right col p-0 ">{{ item.money }}</p>
-                    </div>
+            <div class="row justify-content-center bg-light px-0">
+              <div class="col">
+                <div class="row m-0 p-0">
+                  <div class="text col-12 d-flex justify-content-between py-0 px-1 border-bottom" v-for="item in items">
+                    <p class="text-left col p-0 fsz09">{{ item.message }}</p>
+                    <p class="text-theme2 text-right col p-0 ">{{ item.money }}</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row m-0 p-0">
-                    <div class="col-12 d-flex justify-content-between py-0 px-1 border-bottom" v-for="item1 in items1">
-                      <p class="text-left col p-0 fsz09">{{ item1.message }}</p>
-                      <p class="text-theme2 text-right col p-0 ">{{ item1.money }}</p>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="row m-0 p-0">
+                  <div class="col-12 d-flex justify-content-between py-0 px-1 border-bottom" v-for="item1 in items1">
+                    <p class="text-left col p-0 fsz09">{{ item1.message }}</p>
+                    <p class="text-theme2 text-right col p-0 ">{{ item1.money }}</p>
                   </div>
                 </div>
               </div>
@@ -1591,12 +1583,8 @@
       </div>
     </div>
   </div>
+  </div>
   <script>
-    $(document).ready(function () {
-      let title = $('title').text();
-      $('#copyTitle').html(title);
-    });
-
     var example1 = new Vue({
       el: '#v-for-array',
       data: {
@@ -1645,15 +1633,27 @@
           { message: '必贏捕魚', money: '0' },
         ],
       },
-      watch: {
-        text(elem) {
-          // var elem_child = elem.childNodes.value;
-          // var elem_child = elem.childNodes;
-          // console.log(elem_child);
-        }
+      methods: {
+        // test() {
+        // $text = this.value;
+        // console.log('1');
+        // console.log($text);
+        // },
       },
     })
+
+
+    $(document).ready(function () {
+      let title = $('title').text();
+      $('#copyTitle').html(title);
+      $('.text').click(function () {
+        $text = $(this).children().first().text();
+        $textChange = $('.textChange').text($text);
+        // console.log($textChange);
+      });
+    });
   </script>
+
 
 
   <script>
